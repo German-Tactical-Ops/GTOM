@@ -1,0 +1,58 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+            "label": "Start Arma 3 (Mission Editing)",
+            "type": "process",
+            "options": {
+                "cwd": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3" // Change to your Arma 3 installation path
+            },
+            "command": "arma3_x64", // Also possible, if available: arma3profiling_x64, arma3diag_x64
+            "args": [
+                "C:\\Users\\mateu\\Documents\\Arma 3 - Other Profiles\\Lucyfer%20Angel\\missions\\modMission.Stratis\\mission.sqm",
+                "-mod=!Workshop\\@CBA_A3;!Workshop\\@ace;!Workshop\\@Zeus Enhanced;!Workshop\\@Zeus Enhanced - ACE3 Compatibility;!Workshop\\@Advanced Developer Tools;${workspaceFolder}\\@gto_mod", // Add mods seperated by ";", absolute paths work as well
+                "-debug",
+                "-skipIntro",
+                "-filePatching",
+                "-noSplash",
+                "-showScriptErrors"
+            ],
+            // Enable launching via shortcut "Tasks: Run Test Task"
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Stop Arma 3 Diag",
+            "type": "shell",
+            "command": "taskkill",
+            "args": [
+                "/F",
+                "/IM",
+                "arma3_x64.exe" // Other values: arma3diag_x64.exe, arma3profiling_x64.exe
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }, 
+        {
+            "label": "RPT Watcher",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-command",
+                "Get-ChildItem -Path $env:USERPROFILE\\AppData\\Local\\Arma` 3 -Filter *.rpt | Sort-Object LastAccessTime -Descending | Select-Object -First 1 | Get-Content -Tail 1 -Wait -Encoding utf8"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+	]
+}
