@@ -17,7 +17,8 @@
                 "-skipIntro",
                 "-filePatching",
                 "-noSplash",
-                "-showScriptErrors"
+                "-showScriptErrors",
+                "-window"
             ],
             // Enable launching via shortcut "Tasks: Run Test Task"
             "group": {

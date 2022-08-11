@@ -1,7 +1,23 @@
 #include "basicDefines_A3.hpp"
-#include "cfgPatches.hpp"
-#include "mod.cpp"
-// new line
+
+class CfgPatches
+{
+	class GTOMod
+	{
+		// Meta information for editor
+		name = "GTO Mod";
+		author = "LucyferHW";
+		url = "";
+
+		// Required addons, used for setting load order.
+		// When any of the addons is missing, pop-up warning will appear when launching the game.
+		requiredAddons[] = {"A3_Functions_F", "ace_main", "ace_modules", "ace_interact_menu", "A3_Supplies_F_Orange_Ammoboxes"};
+		// List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
+		units[] = {};
+		// List of weapons (CfgWeapons classes) contained in the addon.
+		weapons[] = {};
+	};
+};
 
 class cfgFunctions
 {
@@ -10,7 +26,7 @@ class cfgFunctions
 		tag = "BIS"; // Custom tag name
 		class vehicles
 		{
-			file = "gto_mod\vehicles"; // function will be loaded from this folder.
+			file = "gto_mod\functions\vehicles"; // function will be loaded from this folder.
 			class quadbike
 			{
 			}; // [this, "black"] call BIS_fnc_quadbike;
@@ -20,7 +36,7 @@ class cfgFunctions
 	{
 		class arsenal // This represent a group of function
 		{
-			file = "gto_mod\arsenal"; // Where my functions are
+			file = "gto_mod\functions\arsenal"; // Where my functions are
 
 			class setCategorie
 			{
@@ -38,7 +54,7 @@ class cfgFunctions
 
 		class diary
 		{
-			file = "gto_mod\diary";
+			file = "gto_mod\functions\diary";
 
 			class myFunction3
 			{
@@ -46,23 +62,18 @@ class cfgFunctions
 
 			class myFunction4
 			{
+				//description = "Function description"; // You can write some words about your fonction
+				//preInit = 1;						  // 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				//postInit = 1;						  // 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				//preStart = 1;						  // 1 to call the function upon game start, before title screen, but after all addons are loaded.
+				//recompile = 1;						  // 1 to recompile the function upon mission start
+				//headerType = -1;					  // Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			}; // [] call GTO_fnc_myFunction4
-
-			class myFunction5 // [] call GTO_fnc_myFunction5
-			{
-				description = "Function description"; // You can write some words about your fonction
-				preInit = 1;						  // 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-				postInit = 1;						  // 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				preStart = 1;						  // 1 to call the function upon game start, before title screen, but after all addons are loaded.
-				recompile = 1;						  // 1 to recompile the function upon mission start
-				ext = ".fsm";						  // Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
-				headerType = -1;					  // Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
 		};
 
 		class respawn
 		{
-			file = "gto_mod\respawn";
+			file = "gto_mod\functions\respawn";
 
 			class placeRalypoint
 			{
@@ -71,6 +82,11 @@ class cfgFunctions
 		};
 	};
 };
+
+
+#define MAG_XX(a,b) class _xx_##a {magazine = a; count = b;}
+#define WEAP_XX(a,b) class _xx_##a {weapon = a; count = b;}
+#define ITEM_XX(a,b) class _xx_##a {name = a; count = b;}
 
 class CfgVehicles
 {
@@ -92,6 +108,31 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class Land_PlasticCase_01_large_gray_F;
+	class GTO_Supply_Box : Land_PlasticCase_01_large_gray_F
+	{
+
+
+
+		displayName = "[GTO] Supply Box";
+		author = "LucyferHW";
+		hiddenSelectionsTextures[] = {"\gto_mod\textures\PlasticCase\PlasticCase_01_gray_GTO.paa"};
+		class TransportMagazines
+		{
+			//class specialMagazin {magazine = 100Rnd_65x39_caseless_mag; count = 4;};
+			MAG_XX(100Rnd_65x39_caseless_mag,4);
+			//MAG_XX(100Rnd_65x39_caseless_mag_Tracer,2);
+			//MAX_XX(130Rnd_338_Mag,2);
+		};
+		class TransportItems
+		{
+			//ITEM_XX(optic_tws_mg,1);
+			//ITEM_XX(bipod_01_F_snd,1);
+			//ITEM_XX(muzzle_snds_338_sand,1);
+			//ITEM_XX(muzzle_snds_H_SW,1);
+		};
+	}
 };
 
 // class CfgUnitInsignia
