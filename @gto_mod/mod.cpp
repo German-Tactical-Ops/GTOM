@@ -21,7 +21,7 @@
         tooltip = "GTO";
         tooltipOwned = "GTO Owned";
 
-        overview = "All skripts and units packed in one Mod.<br/>Version:1.0.2 ";
+        overview = "All skripts and units packed in one Mod.<br/>Version: 1.1.0";
 
         // fieldManualTopicAndHint[] = {"Curator", "Curator"};
 
