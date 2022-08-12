@@ -57,6 +57,7 @@ class cfgFunctions
 				recompile = 1;
 			}; //_itemArray = [] call GTO_fnc_mainArsenal
 
+			// TODO: make possible to insert Loadout via CBA Settings
 			class shareLoadouts
 			{
 				description = "Shares the basic loadout";
@@ -85,7 +86,7 @@ class cfgFunctions
 				// headerType = -1;					  // Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			}; // [] call GTO_fnc_myFunction4
 		};
-
+//TODO: add teleport function for Hebotes
 		class other
 		{
 			file = "gto_mod\functions\other";
@@ -134,7 +135,8 @@ class cfgFunctions
 		name = a;     \
 		count = b;    \
 	};
-
+//todo: make barrets
+//todo: disable weight of ["earPlugs", "barret", "Micro Dagre"]
 class CfgVehicles
 {
 	class Man;
@@ -156,6 +158,7 @@ class CfgVehicles
 		};
 	};
 
+	// TODO: make other boxes
 	class Box_IDAP_Uniforms_F;
 	class GTO_Supply_Box : Box_IDAP_Uniforms_F
 	{
