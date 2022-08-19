@@ -9,10 +9,11 @@
             "options": {
                 "cwd": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3" // Change to your Arma 3 installation path
             },
-            "command": "arma3_x64", // Also possible, if available: arma3profiling_x64, arma3diag_x64
+            "command": "arma3_x64.exe", // Also possible, if available: arma3profiling_x64, arma3diag_x64
             "args": [
-                "C:\\Users\\mateu\\Documents\\Arma 3 - Other Profiles\\Lucyfer%20Angel\\missions\\modMission.Stratis\\mission.sqm",
-                "-mod=!Workshop\\@CBA_A3;!Workshop\\@ace;!Workshop\\@Zeus Enhanced;!Workshop\\@Zeus Enhanced - ACE3 Compatibility;!Workshop\\@Advanced Developer Tools;${workspaceFolder}\\@gto_mod", // Add mods seperated by ";", absolute paths work as well
+                //"C:\\Users\\mateu\\Documents\\Arma 3 - Other Profiles\\Lucyfer%20Angel\\missions\\modMission.Stratis\\mission.sqm",
+                "C:\\Users\\mateu\\Documents\\Arma 3\\missions\\GTOMod.Stratis\\mission.sqm",
+                "-mod=!Workshop\\@CBA_A3;!Workshop\\@ace;!Workshop\\@Zeus Enhanced;!Workshop\\@HEBONTES MILITARY TRAINING GROUND;!Workshop\\@Zeus Enhanced - ACE3 Compatibility;!Workshop\\@Advanced Developer Tools;${workspaceFolder}\\@gto_mod", // Add mods seperated by ";", absolute paths work as well
                 "-debug",
                 "-skipIntro",
                 "-filePatching",

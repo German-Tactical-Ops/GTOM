@@ -86,7 +86,7 @@ class cfgFunctions
 				// headerType = -1;					  // Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			}; // [] call GTO_fnc_myFunction4
 		};
-//TODO: add teleport function for Hebotes
+		// TODO: add teleport function for Hebotes
 		class other
 		{
 			file = "gto_mod\functions\other";
@@ -135,8 +135,77 @@ class cfgFunctions
 		name = a;     \
 		count = b;    \
 	};
-//todo: make barrets
-//todo: disable weight of ["earPlugs", "barret", "Micro Dagre"]
+// todo: make barrets
+// todo: disable weight of ["earPlugs",, "Micro Dagre"]
+
+class CfgWeapons
+{
+	class H_Hebontes_Beret07_AAF;
+	class H_Beret_02;
+	class H_Beret_EAF_01_F;
+
+	// todo: make icons for berets
+	// todo: green brightes fix
+	// medic patch
+
+	class GTO_Beret_Empty : H_Beret_EAF_01_F
+	{
+		scope = 0;
+		author = "LucyferHW";
+		weight = 0;
+		size = 0;
+	};
+
+	class GTO_Beret_Red : GTO_Beret_Empty
+	{
+		scope = 2;
+		displayName = "[GTO] Beret (Red)";
+		hiddenSelectionsTextures[] = {"gto_mod\textures\Beret\export\GTO_Beret_Red.paa"};
+	};
+
+	class GTO_Beret_Blue : GTO_Beret_Empty
+	{
+		scope = 2;
+		displayName = "[GTO] Beret (Blue)";
+		hiddenSelectionsTextures[] = {"gto_mod\textures\Beret\export\GTO_Beret_Blue.paa"};
+	};
+
+	class GTO_Beret_Yellow : GTO_Beret_Empty
+	{
+		scope = 2;
+		displayName = "[GTO] Beret (Yellow)";
+		hiddenSelectionsTextures[] = {"gto_mod\textures\Beret\export\GTO_Beret_Yellow.paa"};
+	};
+
+	class GTO_Beret_Green : GTO_Beret_Empty
+	{
+		scope = 2;
+		displayName = "[GTO] Beret (Green)";
+		hiddenSelectionsTextures[] = {"gto_mod\textures\Beret\export\GTO_Beret_Green.paa"};
+	};
+
+	class GTO_Beret_Violett : GTO_Beret_Empty
+	{
+		scope = 2;
+		displayName = "[GTO] Beret (Violett)";
+		hiddenSelectionsTextures[] = {"gto_mod\textures\Beret\export\GTO_Beret_Violett.paa"};
+	};
+
+	class GTO_Beret_Pink : GTO_Beret_Empty
+	{
+		scope = 2;
+		displayName = "[GTO] Beret (Pink)";
+		hiddenSelectionsTextures[] = {"gto_mod\textures\Beret\export\GTO_Beret_Pink.paa"};
+	};
+
+	class GTO_Beret_Orange : GTO_Beret_Empty
+	{
+		scope = 2;
+		displayName = "[GTO] Beret (Orange)";
+		hiddenSelectionsTextures[] = {"gto_mod\textures\Beret\export\GTO_Beret_Orange.paa"};
+	};
+};
+
 class CfgVehicles
 {
 	class Man;
@@ -234,9 +303,12 @@ class CfgVehicles
 		};
 	};
 
+	// --- Ammo Box ---
+
 	class C_IDAP_supplyCrate_F;
 	class GTO_Arsenal : C_IDAP_supplyCrate_F
 	{
+		scopeCurator = 2;
 		displayName = "[GTO] Supply Box";
 		author = "LucyferHW";
 	};
@@ -244,6 +316,7 @@ class CfgVehicles
 	class B_Carryall_oli;
 	class GTO_Medic_Carryall_oli : B_Carryall_oli
 	{
+		scopeCurator = 2;
 		displayName = "Carryall B. Medic (Olive)";
 		author = "LucyferHW";
 		hiddenSelectionsTextures[] = {"gto_mod\textures\MedicBackpack\backpack_tortila_oli_co.paa"};
@@ -253,6 +326,7 @@ class CfgVehicles
 	class B_Carryall_cbr;
 	class GTO_Medic_Carryall_cbr : B_Carryall_cbr
 	{
+		scopeCurator = 2;
 		displayName = "Carryall B. Medic (Coyote)";
 		author = "LucyferHW";
 		hiddenSelectionsTextures[] = {"gto_mod\textures\MedicBackpack\backpack_tortila_cbr_co.paa"};
@@ -262,6 +336,7 @@ class CfgVehicles
 	class FlagMarker_01_F;
 	class GTO_MarkerFlag : FlagMarker_01_F
 	{
+		scopeCurator = 2;
 		displayName = "[GTO] Marker Flag";
 		author = "LucyferHW";
 		hiddenSelectionsTextures[] = {"gto_mod\logo\gto_unit_logo_2x1.paa"};
@@ -270,6 +345,7 @@ class CfgVehicles
 	class Banner_01_F;
 	class GTO_Banner : Banner_01_F
 	{
+		scopeCurator = 2;
 		//["A3_Structures_F_Mil_Flags"]e
 		displayName = "[GTO] Banner";
 		author = "LucyferHW";
