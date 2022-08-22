@@ -7,6 +7,8 @@ scriptName "fn_placeRalypoint";
 	
 	Parameter(s):
 	#0 OBJECT - player
+
+	Example: [player] call GTO_fnc_placeRalypoint
 */
 
 params ["_player"];

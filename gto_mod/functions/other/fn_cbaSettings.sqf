@@ -3,7 +3,7 @@ scriptName "fn_cbaSettings";
 	Author: LucyferHW
 	
 	Description:
-	Describe your function
+	Runs on start.
 	
 	Parameter(s):
 	#0 OBJECT - Description
@@ -22,21 +22,33 @@ scriptName "fn_cbaSettings";
 	} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
-/*[
-	"GTO_ArsenalContent", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-	"LIST", // setting type
-	"Arsenal", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+[
+	"GTO_SetRank", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+	"CHECKBOX", // setting type
+	"Set Rank", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 	"GTO Settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-	[[false, true], ["Custom", "Default"], 1], // data for this setting: [min, max, default, number of shown trailing decimals]
-	_isGlobal, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
+	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+	nil, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
 		params["_value"];
+		[player] call GTO_fnc_setPlayerRank;
+	} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
 
-		_itemArray = [] call GTO_fnc_mainArsenal;
-		if (_value) then {
-			systemChat "Default";
+[
+	"GTO_ShareLoadout", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+	"EDITBOX", // setting type
+	"Share Loadout", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+	"GTO Settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[""], // data for this setting: [min, max, default, number of shown trailing decimals]
+	1, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
+	{
+		params["_value"];
+		if (_value!="") then {
+			[_value] call ace_arsenal_fnc_addDefaultLoadout;
+			systemChat "Loading Loadout from CBA settings."
 		} else {
-			systemChat "Custom";
+			systemChat "No Loadout set.";
 		}
 	} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;*/
+] call CBA_fnc_addSetting;

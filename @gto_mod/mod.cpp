@@ -1,4 +1,4 @@
-        name = "GTO Mod"; // Full name of the mod
+        name = "GTOM"; // Full name of the mod
 
         author = "LucyferHW";
 
@@ -10,7 +10,7 @@
 
         //action = "https://github.com";
 
-        description = "GTO Mod - Usefull things in one mod.";
+        description = "This mod is made for the GTO Unit. Everybody can use it, but it will only work as intended with the GTO-modpack. This mod contains many small things for Players, Curators and Mission Makers.";
 
         logo = "gto_unit_logo.paa"; // Logo displayed in bottom left of main menu
 
@@ -18,10 +18,10 @@
 
         // logoSmall = "gto_mod\logo\gto_unit_logo.paa"; // Logo displayed next to all units and vehicles in the editor
 
-        tooltip = "GTO";
-        tooltipOwned = "GTO Owned";
+        tooltip = "GTOM";
+        tooltipOwned = "GTOM Owned";
 
-        overview = "All skripts and units packed in one Mod.<br/>Version: 1.1.1";
+        overview = "Version: 1.1.1<br/><br/>This mod is made for the GTO Unit. Everybody can use it, but it will only work as intended with the GTO-modpack. This mod contains many small things for Players, Curators and Mission Makers.";
 
         // fieldManualTopicAndHint[] = {"Curator", "Curator"};
 

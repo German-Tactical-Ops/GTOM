@@ -7,6 +7,8 @@ scriptName "fn_initArsenal";
 
 	Parameter(s):
 	#0 OBJECT - object
+
+	Example: [this] call GTO_fnc_initArsenal;
 */
 
 params ["_box"];
