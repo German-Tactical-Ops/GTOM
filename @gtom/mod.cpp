@@ -2,9 +2,9 @@ name = "GTOM"; // Full name of the mod
 
 author = "LucyferHW";
 
-picture = "GTOM.paa";
+picture = "gtom.paa";
 
-overviewPicture = "GTOM.paa";
+overviewPicture = "gtom.paa";
 
 //actionName = "GitHub";
 
@@ -12,7 +12,7 @@ overviewPicture = "GTOM.paa";
 
 description = "This mod is made for the GTO Unit. Everybody can use it, but it will only work as intended with the GTO-modpack. This mod contains many small things for Players, Curators and Mission Makers.";
 
-logo = "GTOM-a.paa"; // Logo displayed in bottom left of main menu
+logo = "gtom.paa"; // Logo displayed in bottom left of main menu
 
 //logoOver = "GTOM-hover.paa"; // Logo displayed in the mod menu when mod icon is clicked
 

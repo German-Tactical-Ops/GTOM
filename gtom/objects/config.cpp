@@ -19,6 +19,7 @@ class CfgPatches
     };
 };
 
+//{
 #define MAG_XX(a, b)  \
     class _xx_##a     \
     {                 \
@@ -37,6 +38,7 @@ class CfgPatches
         name = a;     \
         count = b;    \
     };
+//}
 
 // todo: disable weight of ["earPlugs",, "Micro Dagre"]
 
