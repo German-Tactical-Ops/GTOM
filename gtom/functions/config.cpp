@@ -25,7 +25,7 @@ class cfgFunctions
 	{
 		class arsenal // This represent a group of function
 		{
-			file = "gto_mod\functions\arsenal"; // Where my functions are
+			file = "gtom\functions\arsenal"; // Where my functions are
 
 			class setCategorie
 			{
@@ -57,7 +57,7 @@ class cfgFunctions
 
 		class diary
 		{
-			file = "gto_mod\functions\diary";
+			file = "gtom\functions\diary";
 
 			class addBasicDiary
 			{
@@ -78,7 +78,7 @@ class cfgFunctions
 		// TODO: add teleport function for Hebotes
 		class other
 		{
-			file = "gto_mod\functions\other";
+			file = "gtom\functions\other";
 
 			class setPlayerRank
 			{
@@ -96,7 +96,7 @@ class cfgFunctions
 
 		class respawn
 		{
-			file = "gto_mod\functions\respawn";
+			file = "gtom\functions\respawn";
 
 			class placeRalypoint
 			{

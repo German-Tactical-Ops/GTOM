@@ -16,7 +16,7 @@
 
         logoOver = "GTOM-hover.paa"; // Logo displayed in the mod menu when mod icon is clicked
 
-        // logoSmall = "gto_mod\logo\gto_unit_logo.paa"; // Logo displayed next to all units and vehicles in the editor
+        // logoSmall = "gtom\logo\gto_unit_logo.paa"; // Logo displayed next to all units and vehicles in the editor
 
         tooltip = "GTOM";
         tooltipOwned = "GTOM Owned";

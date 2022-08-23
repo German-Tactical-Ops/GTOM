@@ -59,70 +59,70 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[GTO] Beret (Red)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_Red.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Red.paa"};
     };
 
     class GTO_Beret_Blue : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (Blue)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_Blue.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Blue.paa"};
     };
 
     class GTO_Beret_Yellow : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (Yellow)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_Yellow.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Yellow.paa"};
     };
 
     class GTO_Beret_Green : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (Green)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_Green.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Green.paa"};
     };
 
     class GTO_Beret_Violett : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (Violett)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_Violett.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Violett.paa"};
     };
 
     class GTO_Beret_Pink : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (Pink)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_Pink.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Pink.paa"};
     };
 
     class GTO_Beret_Orange : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (Orange)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_Orange.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Orange.paa"};
     };
 
     class GTO_Beret_White : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (White)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_White.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_White.paa"};
     };
 
     class GTO_Beret_Gray : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (Gray)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_Gray.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Gray.paa"};
     };
 
     class GTO_Beret_Black : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (Black)";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\Beret\export\GTO_Beret_Black.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Black.paa"};
     };
 };
 
@@ -134,7 +134,7 @@ class CfgVehicles
     {
         displayName = "[GTO] Supply Box";
         author = "LucyferHW";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\PlasticCase\uniforms_box_idap_co.paa", "gto_mod\objects\textures\PlasticCase\uniforms_box_idap_CA_GTO.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\PlasticCase\uniforms_box_idap_co.paa", "gtom\objects\textures\PlasticCase\uniforms_box_idap_CA_GTO.paa"};
         class TransportMagazines
         {
             // MAG_XX(100Rnd_65x39_caseless_mag_Tracer,2);
@@ -220,7 +220,7 @@ class CfgVehicles
         scopeCurator = 2;
         displayName = "Carryall B. Medic (Olive)";
         author = "LucyferHW";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\MedicBackpack\backpack_tortila_oli_co.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\MedicBackpack\backpack_tortila_oli_co.paa"};
         maximumLoad = 400;
     };
 
@@ -230,7 +230,7 @@ class CfgVehicles
         scopeCurator = 2;
         displayName = "Carryall B. Medic (Coyote)";
         author = "LucyferHW";
-        hiddenSelectionsTextures[] = {"gto_mod\objects\textures\MedicBackpack\backpack_tortila_cbr_co.paa"};
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\MedicBackpack\backpack_tortila_cbr_co.paa"};
         maximumLoad = 400;
     };
 
@@ -240,7 +240,7 @@ class CfgVehicles
         scopeCurator = 2;
         displayName = "[GTO] Marker Flag";
         author = "LucyferHW";
-        hiddenSelectionsTextures[] = {"gto_mod\logo\gto_unit_logo_2x1.paa"};
+        hiddenSelectionsTextures[] = {"gtom\logo\gto_unit_logo_2x1.paa"};
     }
 
     class Banner_01_F;
@@ -250,7 +250,7 @@ class CfgVehicles
         //["A3_Structures_F_Mil_Flags"]e
         displayName = "[GTO] Banner";
         author = "LucyferHW";
-        hiddenSelectionsTextures[] = {"gto_mod\logo\gto_unit_logo_2x1.paa"};
+        hiddenSelectionsTextures[] = {"gtom\logo\gto_unit_logo_2x1.paa"};
     }
 
     class Man;
