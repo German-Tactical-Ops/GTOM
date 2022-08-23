@@ -24,6 +24,7 @@ _spawnedObjects = [[_player, "BOTTOM"], "GTO_MarkerFlag", 1, [0, 2, 0], 0, {
 }, true] call BIS_fnc_spawnObjects;
 respawnFlag = _spawnedObjects select 0;
 respawnPlace = [west, respawnFlag, "Respawn"] call BIS_fnc_addRespawnPosition;
+[respawnFlag] call GTO_fnc_initArsenal;
 
 _action = ["PickupRallypoint", "Pickup Rallypoint", "", {
 	deleteVehicle respawnFlag;

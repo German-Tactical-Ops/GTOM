@@ -20,7 +20,7 @@ class CfgPatches
 };
 
 //todo: add Field Manual
-/*
+
 class CfgHints
 {
 	class InfantryMovement
@@ -77,7 +77,7 @@ class CfgHints
 			};
 		};
 	};
-};*/
+};
 
 // class CfgUnitInsignia
 //{//
