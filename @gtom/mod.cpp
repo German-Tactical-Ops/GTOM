@@ -2,9 +2,9 @@ name = "GTOM"; // Full name of the mod
 
 author = "LucyferHW";
 
-picture = "GTOM-a.paa";
+picture = "GTOM.paa";
 
-overviewPicture = "GTOM-b.paa";
+overviewPicture = "GTOM.paa";
 
 //actionName = "GitHub";
 

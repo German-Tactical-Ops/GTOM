@@ -2,7 +2,7 @@
 
 class CfgPatches
 {
-	class GTOMod
+	class GTOM
 	{
 		// Meta information for editor
 		name = "GTO Mod";
@@ -89,7 +89,6 @@ class cfgFunctions
 			class cbaSettings
 			{
 				preInit = 1;
-				preStart = 1;
 				recompile = 1;
 			}; //
 		};
