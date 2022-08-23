@@ -2,19 +2,19 @@
 
         author = "LucyferHW";
 
-        picture = "gto_unit_logo.paa";
+        picture = "GTOM-a.paa";
 
-        overviewPicture = "logo_ace3_ca.paa";
+        overviewPicture = "GTOM-b.paa";
 
-        //actionName = "GitHub";
+        actionName = "GitHub";
 
-        //action = "https://github.com";
+        action = "https://github.com/MHWcreations/GTO_Mod";
 
         description = "This mod is made for the GTO Unit. Everybody can use it, but it will only work as intended with the GTO-modpack. This mod contains many small things for Players, Curators and Mission Makers.";
 
-        logo = "gto_unit_logo.paa"; // Logo displayed in bottom left of main menu
+        logo = "GTOM-a.paa"; // Logo displayed in bottom left of main menu
 
-        logoOver = "gto_mod\logo\gto_unit_logo.paa"; // Logo displayed in the mod menu when mod icon is clicked
+        logoOver = "GTOM-hover.paa"; // Logo displayed in the mod menu when mod icon is clicked
 
         // logoSmall = "gto_mod\logo\gto_unit_logo.paa"; // Logo displayed next to all units and vehicles in the editor
 
