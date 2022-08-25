@@ -1,23 +1,6 @@
-#include "basicDefines_A3.hpp"
-
-class CfgPatches
-{
-	class GTOM
-	{
-		// Meta information for editor
-		name = "GTO Mod";
-		author = "LucyferHW";
-		url = "";
-
-		// Required addons, used for setting load order.
-		// When any of the addons is missing, pop-up warning will appear when launching the game.
-		requiredAddons[] = {"A3_Functions_F", "ace_main", "ace_modules", "ace_interact_menu", "A3_Supplies_F_Orange_Ammoboxes", "cba_common", "cba_events"};
-		// List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
-		units[] = {};
-		// List of weapons (CfgWeapons classes) contained in the addon.
-		weapons[] = {};
-	};
-};
+#include "\gtom\basicDefines_A3.hpp"
+#include "\gtom\defines.hpp"
+#include "\gtom\cfgPatches.hpp"
 
 class cfgFunctions
 {
