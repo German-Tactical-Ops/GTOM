@@ -21,7 +21,7 @@ class CfgPatches
 
 // todo: add Field Manual
 
-class CfgHints
+/*class CfgHints
 {
 	class GTOTutorials
 	{
@@ -41,7 +41,7 @@ class CfgHints
 				{{"getOver"}}, // Double nested array means assigned key (will be specially formatted)
 				{"name"}, // Nested array means element (specially formatted part of text)
 				"name player" // Simple string will be simply compiled and called, String can also link to localization database in case it starts by str_
-			};*/
+			};
 			// Optional image
 			// image = "\path\image_ca.paa";
 			// optional parameter for not showing of image in context hint in mission (default false))
@@ -51,7 +51,7 @@ class CfgHints
 			// configfile >> "CfgHints" >> "DlcMessage" >> "Dlc#"; where # is this properties ( dlc appID ) number
 			dlc = -1;
 
-			/*class GTO_FirstSteps_subHint
+			class GTO_FirstSteps_subHint
 			{
 				// Sub-hint title, filled by arguments from 'arguments' param
 				displayName = "Stepping over obstacles";
@@ -74,10 +74,10 @@ class CfgHints
 				// if a dlc's appID Number is used ( see [[getDLCs]] ) and the user does not have the required dlc installed then the advHint will be replaced with
 				// configfile >> "CfgHints" >> "DlcMessage" >> "Dlc#"; where # is this properties ( dlc appID ) number
 				dlc = -1;
-			};*/
+			};
 		};
 	};
-};
+};*/
 
 // class CfgUnitInsignia
 //{//
