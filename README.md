@@ -9,8 +9,9 @@ This mod contains many small things for Players, Curators and Mission Makers.
 - In each Ace Arsenal you can find a shared basic rifleman loadout, so you can join and play.
 - In the briefing overview is a Radio schematic for the GTO Unit.
 - When an SL has a blue ACE flag in the Inventory, a Ralypoint/Spawnpoint can be placed
+- automatic adds the possibility of building from ACE
 - Adds CBA settings
-    - Set Viewdistance
+- - Set Viewdistance
 
 ## For Curator and Mission Maker
 - Adds a custom Ace GTO Arsenal to any object with one init line.
@@ -18,8 +19,9 @@ This mod contains many small things for Players, Curators and Mission Makers.
 - With one command, you can set the Player rank above the name. (Rank imported from KP Ranks)
 - Adds a GTO flag and a banner.
 - Adds a box with custom GTO supplies
+- Adds GTO Army (slot list)
 
-## How to use
+# How to use
 How to use the functions is written in the Arma3 Function Viewer.
 The most used functions will be listed here:
 
@@ -29,5 +31,12 @@ The most used functions will be listed here:
 
 `[player] call GTO_fnc_placeRalypoint` - places manual Ralypoint
 
-### Links
+
+# Links
+[Github](https://github.com/MHWcreations/GTOM GitHub)
+[GTOM Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2846987310)
 [GTO Discord](https://discord.gg/gCqkPWHrWj)
+
+
+This mod contains this [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1340701737]NATO Markers+[/url] 
+The original was not signed, I copied it and signed. When the author says I should delete it I will do this.
