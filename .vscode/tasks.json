@@ -12,7 +12,7 @@
             "command": "arma3_x64.exe", // Also possible, if available: arma3profiling_x64, arma3diag_x64
             "args": [
                 "${workspaceFolder}\\GTOM.vr\\mission.sqm",
-                "-mod=!Workshop\\@CBA_A3;!Workshop\\@ace;!Workshop\\@Zeus Enhanced;!Workshop\\@Virtual Reality Lighting Replace;!Workshop\\@Zeus Enhanced - ACE3 Compatibility;!Workshop\\@Advanced Developer Tools;!Workshop\\@3den Enhanced;!Workshop\\@KP Ranks;${workspaceFolder}\\@gtom", // Add mods seperated by ";", absolute paths work as well
+                "-mod=!Workshop\\@CBA_A3;!Workshop\\@ace;!Workshop\\@Zeus Enhanced;!Workshop\\@Virtual Reality Lighting Replace;!Workshop\\@Zeus Enhanced - ACE3 Compatibility;!Workshop\\@Advanced Developer Tools;!Workshop\\@3den Enhanced;!Workshop\\@GreenMag;!Workshop\\@KP Ranks;!Workshop\\@3den Enhanced;!Workshop\\@Task Force Arrowhead Radio (BETA!!!);${workspaceFolder}\\@gtom", // Add mods seperated by ";", absolute paths work as well
                 "-debug",
                 "-skipIntro",
                 "-filePatching",

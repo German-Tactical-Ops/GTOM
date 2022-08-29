@@ -24,7 +24,7 @@ class Cfg3DEN
     {
         class GTO_Army // one class per composition
         {
-            path = "gtom\compositions\GTO-Army"; // pbo path to a folder containing header.sqe/composition.sqe files
+            path = "gtom\compositions\GTO_Army"; // pbo path to a folder containing header.sqe/composition.sqe files
             side = 1;                            // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
             editorCategory = "GTO";              // link to CfgEditorCategories
             editorSubcategory = "GTO_Infantry";  // link to CfgEditorSubcategories

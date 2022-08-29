@@ -2,7 +2,6 @@
 #include "\gtom\defines.hpp"
 #include "\gtom\cfgPatches.hpp"
 
-//{
 #define MAG_XX(a, b)  \
     class _xx_##a     \
     {                 \
@@ -21,8 +20,6 @@
         name = a;     \
         count = b;    \
     };
-//}
-
 // todo: disable weight of ["earPlugs",, "Micro Dagre"]
 
 class CfgWeapons
@@ -111,8 +108,189 @@ class CfgWeapons
     };
 };
 
+#define MAG_2(a) a, a
+#define MAG_3(a) a, a, a
+#define MAG_4(a) a, a, a, a
+#define MAG_5(a) a, a, a, a, a
+#define MAG_6(a) a, a, a, a, a, a
+#define MAG_7(a) a, a, a, a, a, a, a
+#define MAG_8(a) a, a, a, a, a, a, a, a
+#define MAG_9(a) a, a, a, a, a, a, a, a, a
+#define MAG_10(a) a, a, a, a, a, a, a, a, a, a
+#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
+#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+#define MAG_15(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a, a,
+#define MAG_20(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+
 class CfgVehicles
 {
+    // B_Soldier_F
+    class B_Soldier_base_F;                   // For inheritance to work, the base class has to be defined.
+    class GTO_Soldier_base : B_Soldier_base_F // Define of a new class, which parameters are inherited from B_Soldier_base_F, with exception of those defined below.
+    {
+        author = "LucyferHW";                                               // The name of the author of the asset, which is displayed in the editor.
+        scope = 2;                                                          // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
+        scopeCurator = 2;                                                   // 2 = class is available in Zeus; 0 = class is unavailable in Zeus.
+        scopeArsenal = 2;                                                   // 2 = class is available in the Virtual Arsenal; 0 = class is unavailable in the Virtual Arsenal.
+        identityTypes[] = {"LanguageENG_F", "Head_NATO", "G_NATO_default"}; // Identity Types are explained in the Headgear section of this guide.
+        displayName = "GTO Soldier";                                        // The name of the soldier, which is displayed in the editor.
+        camouflage = 1.5;                                                   // How likely this character is spotted (smaller number = more stealthy).
+        sensitivity = 2.5;                                                  // How likely this character spots enemies when controlled by AI.
+
+        icon = "gtom\icons\Roles\Other_icon.paa";
+        picture = "gtom\icons\Roles\Other_icon.paa";
+
+        uniformClass = "U_B_GEN_Soldier_F"; // This links this soldier to a particular uniform. For the details, see below.
+        backpack = "";                      // Which backpack the character is wearing.
+
+        weapons[] = {};        // Which weapons the character has.
+        respawnWeapons[] = {}; // Which weapons the character respawns with.
+
+        Items[] = {MAG_15(ACE_packingBandage),
+                   ACE_EarPlugs,
+                   MAG_2(ACE_CableTie),
+                   ACE_IR_Strobe_Item,
+                   GTO_Beret_Black,
+                   ACE_splint}; // Which items the character has.
+        RespawnItems[] = {MAG_15(ACE_packingBandage),
+                          ACE_EarPlugs,
+                          MAG_2(ACE_CableTie),
+                          ACE_IR_Strobe_Item,
+                          GTO_Beret_Black,
+                          ACE_splint}; // Which items the character respawns with.
+
+        magazines[] = {ACE_Chemlight_HiGreen};        // What ammunition the character has.
+        respawnMagazines[] = {ACE_Chemlight_HiGreen}; // What ammunition the character respawns with.
+
+        linkedItems[] = {GTO_Beret_Black,
+                         ItemMap,
+                         ItemCompass,
+                         ItemWatch,
+                         TFAR_anprc152,
+                         Rangefinder,
+                         none}; // Which items the character has.
+
+        respawnLinkedItems[] = {GTO_Beret_Black,
+                                ItemMap,
+                                ItemCompass,
+                                ItemWatch,
+                                TFAR_anprc152,
+                                Rangefinder,
+                                none}; // Which items the character respawns with.
+    };
+
+    /*  canDeactivateMines = true;
+        engineer = true;
+        attendant = 1;
+        */
+
+    class GTO_Soldier_SL : GTO_Soldier_base
+    {
+        displayName = "GTO SL";
+        icon = "gtom\icons\Roles\SL_icon.paa";
+        picture = "gtom\icons\Roles\SL_icon.paa";
+    };
+
+    class GTO_Soldier_FTL : GTO_Soldier_base
+    {
+        displayName = "GTO FTL";
+        icon = "gtom\icons\Roles\Other_icon.paa";
+        picture = "gtom\icons\Roles\Other_icon.paa";
+    };
+
+    class GTO_Soldier_ExpSp : GTO_Soldier_base
+    {
+        displayName = "GTO Explosiv Specialist";
+        icon = "gtom\icons\Roles\ExpSp_icon.paa";
+        picture = "gtom\icons\Roles\ExpSp_icon.paa";
+
+        canDeactivateMines = true;
+    };
+
+    class GTO_Soldier_Med : GTO_Soldier_base
+    {
+        displayName = "GTO Medic";
+        icon = "gtom\icons\Roles\Med_icon.paa";
+        picture = "gtom\icons\Roles\Med_icon.paa";
+
+        attendant = 1;
+    };
+
+    class GTO_Soldier_Eng : GTO_Soldier_base
+    {
+        displayName = "GTO Engineer";
+        icon = "gtom\icons\Roles\Eng_icon.paa";
+        picture = "gtom\icons\Roles\Eng_icon.paa";
+
+        engineer = true;
+    };
+
+    class GTO_Soldier_AT : GTO_Soldier_base
+    {
+        displayName = "GTO AT";
+        icon = "gtom\icons\Roles\AT_icon.paa";
+        picture = "gtom\icons\Roles\AT_icon.paa";
+    };
+
+    class GTO_Soldier_LMG : GTO_Soldier_base
+    {
+        displayName = "GTO LMG";
+        icon = "gtom\icons\Roles\LMG_icon.paa";
+        picture = "gtom\icons\Roles\LMG_icon.paa";
+    };
+
+    class GTO_Soldier_MMG : GTO_Soldier_base
+    {
+        displayName = "GTO MMG";
+        icon = "gtom\icons\Roles\MMG_icon.paa";
+        picture = "gtom\icons\Roles\MMG_icon.paa";
+    };
+
+    class GTO_Soldier_Marksman : GTO_Soldier_base
+    {
+        displayName = "GTO Marksman";
+        icon = "gtom\icons\Roles\Marksman_icon.paa";
+        picture = "gtom\icons\Roles\Marksman_icon.paa";
+    };
+
+    class GTO_Soldier_Rifleman : GTO_Soldier_base
+    {
+        displayName = "GTO Rifleman";
+        icon = "gtom\icons\Roles\Rifleman_icon.paa";
+        picture = "gtom\icons\Roles\Rifleman_icon.paa";
+    };
+
+    class GTO_Soldier_Grenadier : GTO_Soldier_base
+    {
+        displayName = "GTO Grenadier";
+        icon = "gtom\icons\Roles\Grenadier_icon.paa";
+        picture = "gtom\icons\Roles\Grenadier_icon.paa";
+    };
+
+    
+    class GTO_Soldier_LC : GTO_Soldier_base
+    {
+        displayName = "GTO Lead Crewman";
+        icon = "gtom\icons\Roles\LC_icon.paa";
+        picture = "gtom\icons\Roles\LC_icon.paa";
+    };
+
+    
+    class GTO_Soldier_Crewman : GTO_Soldier_base
+    {
+        displayName = "GTO Crewman";
+        icon = "gtom\icons\Roles\Crewman_icon.paa";
+        picture = "gtom\icons\Roles\Crewman_icon.paa";
+    };
+
+    
+    class GTO_Soldier_Pilot : GTO_Soldier_base
+    {
+        displayName = "GTO Pilot";
+        icon = "gtom\icons\Roles\Pilot_icon.paa";
+        picture = "gtom\icons\Roles\Pilot_icon.paa";
+    };
+
     // TODO: make other boxes
     class Box_IDAP_Uniforms_F;
     class GTO_Supply_Box : Box_IDAP_Uniforms_F
@@ -127,6 +305,39 @@ class CfgVehicles
         };
         class TransportItems
         {
+
+            ITEM_XX(ACE_IR_Strobe_Item, 3);
+            ITEM_XX(ACE_CableTie, 5);
+            ITEM_XX(ACE_EntrenchingTool, 1);
+            ITEM_XX(SmokeShell, 10);
+            ITEM_XX(SmokeShellRed, 5);
+            ITEM_XX(SmokeShellGreen, 5);
+            ITEM_XX(SmokeShellBlue, 5);
+            ITEM_XX(HandGrenade, 10);
+            ITEM_XX(MiniGrenade, 5);
+            ITEM_XX(USP_PVS31, 1);
+            ITEM_XX(WBK_HeadLampItem, 5);
+            ITEM_XX(ItemcTabHCam, 5);
+            ITEM_XX(ACE_Humanitarian_Ration, 10);
+            ITEM_XX(ACE_WaterBottle, 10);
+            ITEM_XX(ToolKit, 1);
+            ITEM_XX(ACE_SpareBarrel_Item, 2);
+        };
+    };
+
+    class GTO_Medic_Box : Box_IDAP_Uniforms_F
+    {
+        displayName = "[GTO] Medic Box";
+        author = "LucyferHW";
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\PlasticCase\uniforms_box_idap_co.paa", "gtom\objects\textures\PlasticCase\uniforms_box_idap_CA_GTO.paa"};
+        class TransportMagazines
+        {
+            // MAG_XX(100Rnd_65x39_caseless_mag_Tracer,2);
+            // MAX_XX(130Rnd_338_Mag,2);
+        };
+        class TransportItems
+        {
+
             ITEM_XX(kat_Painkiller, 3);
             ITEM_XX(kat_Carbonate, 1);
             ITEM_XX(kat_IV_16, 10);
@@ -156,7 +367,7 @@ class CfgVehicles
             ITEM_XX(kat_naloxone, 5);
             ITEM_XX(kat_nitroglycerin, 10);
             ITEM_XX(kat_norepinephrine, 10);
-            // ITEM_XX(ACE_personalAidKit,1);
+            ITEM_XX(ACE_personalAidKit, 1);
             ITEM_XX(kat_phenylephrine, 10);
             ITEM_XX(ACE_plasmaIV, 10);
             ITEM_XX(ACE_plasmaIV_250, 10);
@@ -170,22 +381,6 @@ class CfgVehicles
             ITEM_XX(ACE_surgicalKit, 1);
             ITEM_XX(kat_TXA, 10);
             ITEM_XX(ACE_tourniquet, 20);
-            ITEM_XX(ACE_IR_Strobe_Item, 3);
-            ITEM_XX(ACE_CableTie, 5);
-            ITEM_XX(ACE_EntrenchingTool, 1);
-            ITEM_XX(SmokeShell, 10);
-            ITEM_XX(SmokeShellRed, 5);
-            ITEM_XX(SmokeShellGreen, 5);
-            ITEM_XX(SmokeShellBlue, 5);
-            ITEM_XX(HandGrenade, 10);
-            ITEM_XX(MiniGrenade, 5);
-            ITEM_XX(USP_PVS31, 1);
-            ITEM_XX(WBK_HeadLampItem, 5);
-            ITEM_XX(ItemcTabHCam, 5);
-            ITEM_XX(ACE_Humanitarian_Ration, 10);
-            ITEM_XX(ACE_WaterBottle, 10);
-            ITEM_XX(ToolKit, 1);
-            ITEM_XX(ACE_SpareBarrel_Item, 2);
         };
     };
 
