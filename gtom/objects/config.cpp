@@ -2,24 +2,6 @@
 #include "\gtom\defines.hpp"
 #include "\gtom\cfgPatches.hpp"
 
-#define MAG_XX(a, b)  \
-    class _xx_##a     \
-    {                 \
-        magazine = a; \
-        count = b;    \
-    };
-#define WEAP_XX(a, b) \
-    class _xx_##a     \
-    {                 \
-        weapon = a;   \
-        count = b;    \
-    };
-#define ITEM_XX(a, b) \
-    class _xx_##a     \
-    {                 \
-        name = a;     \
-        count = b;    \
-    };
 // todo: disable weight of ["earPlugs",, "Micro Dagre"]
 
 class CfgWeapons
@@ -121,6 +103,25 @@ class CfgWeapons
 #define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 #define MAG_15(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a, a,
 #define MAG_20(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+
+#define MAG_XX(a, b)  \
+    class _xx_##a     \
+    {                 \
+        magazine = a; \
+        count = b;    \
+    };
+#define WEAP_XX(a, b) \
+    class _xx_##a     \
+    {                 \
+        weapon = a;   \
+        count = b;    \
+    };
+#define ITEM_XX(a, b) \
+    class _xx_##a     \
+    {                 \
+        name = a;     \
+        count = b;    \
+    };
 
 class CfgVehicles
 {
@@ -267,7 +268,6 @@ class CfgVehicles
         picture = "gtom\icons\Roles\Grenadier_icon.paa";
     };
 
-    
     class GTO_Soldier_LC : GTO_Soldier_base
     {
         displayName = "GTO Lead Crewman";
@@ -275,7 +275,6 @@ class CfgVehicles
         picture = "gtom\icons\Roles\LC_icon.paa";
     };
 
-    
     class GTO_Soldier_Crewman : GTO_Soldier_base
     {
         displayName = "GTO Crewman";
@@ -283,7 +282,6 @@ class CfgVehicles
         picture = "gtom\icons\Roles\Crewman_icon.paa";
     };
 
-    
     class GTO_Soldier_Pilot : GTO_Soldier_base
     {
         displayName = "GTO Pilot";

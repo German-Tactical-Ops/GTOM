@@ -74,6 +74,12 @@ class cfgFunctions
 				preInit = 1;
 				recompile = 1;
 			}; //
+
+			class initFortify
+			{
+				postInit = 1;
+				recompile = 1;
+			}; //
 		};
 
 		class respawn
