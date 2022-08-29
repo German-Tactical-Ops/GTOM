@@ -33,10 +33,12 @@ The most used functions will be listed here:
 
 
 # Links
-[Github](https://github.com/MHWcreations/GTOM GitHub)
+[Github](https://github.com/MHWcreations/GTOM)
+
 [GTOM Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2846987310)
+
 [GTO Discord](https://discord.gg/gCqkPWHrWj)
 
 
-This mod contains this [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1340701737]NATO Markers+[/url] 
+This mod contains this [NATO Markers+](https://steamcommunity.com/sharedfiles/filedetails/?id=1340701737).
 The original was not signed, I copied it and signed. When the author says I should delete it I will do this.
