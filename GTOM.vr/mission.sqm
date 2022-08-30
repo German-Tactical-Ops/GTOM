@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=288;
+		nextID=306;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=75;
+		nextID=119;
 	};
 	class Camera
 	{
-		pos[]={4258.0986,19.051964,7645.0308};
-		dir[]={0.47997129,-0.65160054,-0.58757865};
-		up[]={0.41234958,0.75839376,-0.50479442};
-		aside[]={-0.77452254,1.2017481e-006,-0.6326797};
+		pos[]={4279.3398,8.0546503,7639.6484};
+		dir[]={0.77537668,-0.29895198,-0.55626667};
+		up[]={0.24291416,0.95426464,-0.17427067};
+		aside[]={-0.58292425,-4.2977626e-007,-0.8125335};
 	};
 };
 binarizationWanted=0;
@@ -52,13 +52,21 @@ addons[]=
 	"greenmag_main",
 	"ace_ballistics",
 	"A3_Weapons_F_Pistols_P07",
-	"A3_Characters_F_Exp"
+	"A3_Characters_F_Exp",
+	"tfar_handhelds",
+	"A3_Characters_F_Heads",
+	"A3_Characters_F_Enoch_Facewear",
+	"ace_chemlights",
+	"ace_hearing",
+	"ace_captives",
+	"ace_attach",
+	"ace_fortify"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=21;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -155,6 +163,54 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item14
+		{
+			className="tfar_handhelds";
+			name="tfar_handhelds";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
+		class Item15
+		{
+			className="A3_Characters_F_Enoch";
+			name="Arma 3 Contact Platform - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item16
+		{
+			className="ace_chemlights";
+			name="ace_chemlights";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item17
+		{
+			className="ace_hearing";
+			name="ACE3 - Hearing";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item18
+		{
+			className="ace_captives";
+			name="ACE3 - Captives";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item19
+		{
+			className="ace_attach";
+			name="ACE3 - Attach";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item20
+		{
+			className="ace_fortify";
+			name="ace_fortify";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
 	};
 };
 dlcs[]=
@@ -227,7 +283,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=16;
+		items=13;
 		class Item0
 		{
 			dataType="Layer";
@@ -1023,6 +1079,7 @@ class Mission
 				};
 			};
 			id=22;
+			atlOffset=-5;
 		};
 		class Item1
 		{
@@ -1158,36 +1215,6 @@ class Mission
 			atlOffset=-5;
 		};
 		class Item10
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=155;
-			atlOffset=-5;
-		};
-		class Item11
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=159;
-			atlOffset=-5;
-		};
-		class Item12
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=162;
-			atlOffset=-5;
-		};
-		class Item13
 		{
 			dataType="Group";
 			side="West";
@@ -1894,6 +1921,69 @@ class Mission
 					{
 						description="Engi";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_B_GEN_Soldier_F";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACE_Chemlight_HiGreen";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=7;
+									class Item0
+									{
+										name="ACE_packingBandage";
+										count=15;
+									};
+									class Item1
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACE_CableTie";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_IR_Strobe_Item";
+										count=1;
+									};
+									class Item4
+									{
+										name="GTO_Beret_Black";
+										count=1;
+									};
+									class Item5
+									{
+										name="ACE_splint";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_Fortify";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="TFAR_anprc152";
+							goggles="None";
+							headgear="GTO_Beret_Black";
+						};
 					};
 					id=221;
 					type="GTO_Soldier_Eng";
@@ -2197,7 +2287,7 @@ class Mission
 			};
 			id=209;
 		};
-		class Item14
+		class Item11
 		{
 			dataType="Group";
 			side="West";
@@ -2352,7 +2442,7 @@ class Mission
 			};
 			id=227;
 		};
-		class Item15
+		class Item12
 		{
 			dataType="Group";
 			side="West";

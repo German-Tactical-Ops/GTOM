@@ -71,9 +71,14 @@ class cfgFunctions
 
 			class cbaSettings
 			{
-				preInit = 1;
+				postInit = 1;
 				recompile = 1;
 			}; //
+
+			class initFortify
+			{
+				recompile = 1;
+			}; // [] call GTO_fnc_initFortify;
 		};
 
 		class respawn
