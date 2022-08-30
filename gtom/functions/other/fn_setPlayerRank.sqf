@@ -11,32 +11,30 @@ scriptName "fn_setPlayerRank";
 	Example: [player] call GTO_fnc_setPlayerRank;
 */
 
-//params ["_unit"];
-
-_unit = player;
+params ["_unit"];
  
 switch ([getPlayerUID _unit] call KPR_fnc_getRankScore) do  
 {  
- case 80: 	 {hint "set PRIVATE"; _unit setUnitRank "PRIVATE";};  
- case 320: 	 {hint "set PRIVATE"; _unit setUnitRank "PRIVATE";}; 
- case 720: 	 {hint "set PRIVATE"; _unit setUnitRank "PRIVATE";}; 
- case 1280:  {hint "set CORPORAL"; _unit setUnitRank "CORPORAL";}; 
- case 2000:  {hint "set CORPORAL"; _unit setUnitRank "CORPORAL";}; 
- case 2880:  {hint "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
- case 3920:  {hint "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
- case 5120:  {hint "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
- case 6480:  {hint "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
- case 8000:  {hint "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
- case 9680:  {hint "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
- case 11520: {hint "set SERGEANT"; _unit setUnitRank "SERGEANT";};  
- case 13520: {hint "set LIEUTENANT"; _unit setUnitRank "LIEUTENANT";}; 
- case 15680: {hint "set LIEUTENANT"; _unit setUnitRank "LIEUTENANT";}; 
- case 18000: {hint "set CAPTAIN"; _unit setUnitRank "CAPTAIN";}; 
- case 20480: {hint "set CAPTAIN"; _unit setUnitRank "CAPTAIN";};  
- case 23120: {hint "set MAJOR"; _unit setUnitRank "MAJOR";}; 
- case 25920: {hint "set MAJOR"; _unit setUnitRank "MAJOR";}; 
- case 28880: {hint "set COLONEL"; _unit setUnitRank "COLONEL";}; 
- default {hint "Error"};  
+ case 80: 	 {systemChat "set PRIVATE"; _unit setUnitRank "PRIVATE";};  
+ case 320: 	 {systemChat "set PRIVATE"; _unit setUnitRank "PRIVATE";}; 
+ case 720: 	 {systemChat "set PRIVATE"; _unit setUnitRank "PRIVATE";}; 
+ case 1280:  {systemChat "set CORPORAL"; _unit setUnitRank "CORPORAL";}; 
+ case 2000:  {systemChat "set CORPORAL"; _unit setUnitRank "CORPORAL";}; 
+ case 2880:  {systemChat "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
+ case 3920:  {systemChat "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
+ case 5120:  {systemChat "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
+ case 6480:  {systemChat "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
+ case 8000:  {systemChat "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
+ case 9680:  {systemChat "set SERGEANT"; _unit setUnitRank "SERGEANT";}; 
+ case 11520: {systemChat "set SERGEANT"; _unit setUnitRank "SERGEANT";};  
+ case 13520: {systemChat "set LIEUTENANT"; _unit setUnitRank "LIEUTENANT";}; 
+ case 15680: {systemChat "set LIEUTENANT"; _unit setUnitRank "LIEUTENANT";}; 
+ case 18000: {systemChat "set CAPTAIN"; _unit setUnitRank "CAPTAIN";}; 
+ case 20480: {systemChat "set CAPTAIN"; _unit setUnitRank "CAPTAIN";};  
+ case 23120: {systemChat "set MAJOR"; _unit setUnitRank "MAJOR";}; 
+ case 25920: {systemChat "set MAJOR"; _unit setUnitRank "MAJOR";}; 
+ case 28880: {systemChat "set COLONEL"; _unit setUnitRank "COLONEL";}; 
+ default {systemChat "Error"};  
 }; 
  
 /*  PRIVATE CORPORAL SERGEANT LIEUTENANT CAPTAIN MAJOR COLONEL  */
