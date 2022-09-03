@@ -1,0 +1,39 @@
+version=54;
+center[]={4284,5,7648};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.89242268,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="[this] call GTO_fnc_initArsenal;";
+		};
+		id=323;
+		type="GTO_Arsenal";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[[[[""FirstAidKit"",""Medikit""],[20,2]],[[],[]],[[""Binocular"",""MineDetector"",""ToolKit"",""H_PASGT_basic_blue_F"",""H_PASGT_basic_white_F"",""H_Cap_Black_IDAP_F"",""H_Cap_Orange_IDAP_F"",""H_Cap_White_IDAP_F"",""H_HeadBandage_clean_F"",""G_Respirator_white_F"",""G_EyeProtectors_F"",""V_EOD_blue_F"",""V_Plain_medical_F""],[1,1,1,1,1,2,2,2,2,2,2,1,4]],[[""B_Messenger_IDAP_F""],[2]]],false]";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

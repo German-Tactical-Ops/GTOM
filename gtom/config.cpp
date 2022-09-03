@@ -2,150 +2,143 @@
 #include "defines.hpp"
 #include "cfgPatches.hpp"
 
-/*
 class XtdGearModels
 {
-	class CamoBase;
-	class SleevesBase;
-	class CfgWeapons
-	{
-		class GTO_Beret_All // <- Name that will be used to group CfgWeapons entries, used in "model" property.
-		{
-			label = "GTO_Beret";
-			author = "LucyferHW";
-			options[] = {"camo"};
-			class camo : CamoBase // Reuse camos defined in ACEAX
-			{
-				values[] = {"Red", "Orange", "Yellow", "Green", "Blue", "Violett", "Pink", "WHT", "Gray", "Black"};
-			};
-		};
-	};
+    class CamoBase;
+    class CfgVehicles
+    {
+        class GTO_Carryall
+        {
+            label = "Carryall Backpack";
+            author = "LucyferHW";
+            options[] = {"camo", "role"};
+            class camo // coventional name
+            {
+                values[] = {"ocamo", "oucamo", "mcamo", "khk", "cbr", "oli", "ghex", "green", "taiga", "wdl", "eaf"};
+                // all values already exists, no need to create subentries
+            };
+            class role
+            {
+                label = "Role selection";
+                values[] = {"none", "medic"};
+                changeingame = 0;     // 1 if value can be changed in game via ACE menu
+                alwaysSelectable = 0; // allows the selection of the values even if there isn't an item with a complete match of options available, falling back to a weak match with this single value (optional)
+                // changedelay = 2; If can changeingame, wait delay before change is effective (can be 0, 0.1, or more)
+                // icon = "xxx"; If can changeingame, action group icon in ACE menu
+                class none
+                {
+                    label = "none";
+                    description = "Value 1 for option A"; // displayed as tooltip
+                    // image = "xxx"; Background image in Arsenal
+                    // icon = "xxx"; If can changeingame, action icon in ACE menu
+                    // actionlabel = "xxx"; If can changeingame, action label in ACE menu
+                    // itemingame = "xxx"; If can changeingame, requires this item to be present in inventory. Item will be removed from inventory (added back if an other value is choosen)
+                    // changedelay = (inherited by default); If can changeingame, wait delay before change is effective
+                    // faction[] = {"BLU_F", "BLU_T_F", "BLU_W_F"}; // shows this value only for selected factions, identified by their A3 code (optional)
+                };
+                class medic
+                {
+                    label = "Medic";
+                };
+            };
+        };
+    };
 };
 
-// We use the "all in one" appraoch here : it's much more easier, and you dot not risk breaking things
-class XtdGearInfo
+class XtdGearInfos
 {
-	class CfgWeapons
-	{
-		class GTO_Beret_Red // <- Class name in CfgWeapons
-		{
-			model = "GTO_Beret_All"; // <- Model name, from XtdGearModels >> CfgWeapons
-			camo = "Red";			 // <- "camo" option value
-		};
+    class CfgVehicles
+    {
+        class B_Carryall_ocamo // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "ocamo";
+            role = "none";
+        };
 
-		class GTO_Beret_Orange
-		{
-			model = "GTO_Beret_All";
-			camo = "Orange";
-		};
+        class B_Carryall_oucamo // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "oucamo";
+            role = "none";
+        };
 
-		class GTO_Beret_Yellow
-		{
-			model = "GTO_Beret_All";
-			camo = "Yellow";
-		};
+        class B_Carryall_mcamo // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "mcamo";
+            role = "none";
+        };
 
-		class GTO_Beret_Green
-		{
-			model = "GTO_Beret_All";
-			camo = "Green";
-		};
+        class B_Carryall_khk // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "khk";
+            role = "none";
+        };
 
-		class GTO_Beret_Blue
-		{
-			model = "GTO_Beret_All";
-			camo = "Blue";
-		};
+        class B_Carryall_cbr // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "cbr";
+            role = "none";
+        };
 
-		class GTO_Beret_Violett
-		{
-			model = "GTO_Beret_All";
-			camo = "Violett";
-		};
+        class GTO_Medic_Carryall_cbr // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "cbr";
+            role = "medic";
+        };
 
-		class GTO_Beret_Pink
-		{
-			model = "GTO_Beret_All";
-			camo = "Pink";
-		};
+        class B_Carryall_oli // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "oli";
+            role = "none";
+        };
 
-		class GTO_Beret_White
-		{
-			model = "GTO_Beret_All";
-			camo = "WHT";
-		};
-		class GTO_Beret_Gray
-		{
-			model = "GTO_Beret_All";
-			camo = "Gray";
-		};
-		class GTO_Beret_Black
-		{
-			model = "GTO_Beret_All";
-			camo = "Black";
-		};
-	};
-};*/
+        class GTO_Medic_Carryall_oli // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "oli";
+            role = "medic";
+        };
 
+        class B_Carryall_ghex_F // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "ghex";
+            role = "none";
+        };
 
-class XtdGearModels
-{
-	class CamoBase;
-	class SleevesBase;
-	class CfgWeapons 
-	{
-		class CBRN_Suit_01 // <- Name that will be used to group CfgWeapons entries, used in "model" property.
-		{
-			label = "GTO Beret";
-			author = "LucyferHW";
-			options[] = {"camo"};
-			class camo : CamoBase // Reuse camos defined in ACEAX
-			{
-				values[] = {"WHT", "BLU", "M81", "MTP", "Tropic", "AAF", "EAF"};
-			};
-		};
-	};
-};
+        class B_Carryall_green_F // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "green";
+            role = "none";
+        };
 
-// We use the "all in one" appraoch here : it's much more easier, and you dot not risk breaking things
-class XtdGearInfo
-{
-	class CfgWeapons
-	{
-		class U_C_CBRN_Suit_01_White_F // <- Class name in CfgWeapons
-		{
-			model = "CBRN_Suit_01"; // <- Model name, from XtdGearModels >> CfgWeapons
-			camo = "WHT"; // <- "camo" option value
-		};
-		class U_C_CBRN_Suit_01_Blue_F 
-		{
-			model = "CBRN_Suit_01";
-			camo = "BLU";
-		};
-		class U_B_CBRN_Suit_01_Wdl_F 
-		{
-			model = "CBRN_Suit_01";
-			camo = "M81";
-		};
-		class U_B_CBRN_Suit_01_MTP_F 
-		{
-			model = "CBRN_Suit_01";
-			camo = "MTP";
-		};
-		class U_B_CBRN_Suit_01_Tropic_F 
-		{
-			model = "CBRN_Suit_01";
-			camo = "Tropic";
-		};
-		class U_I_CBRN_Suit_01_AAF_F 
-		{
-			model = "CBRN_Suit_01";
-			camo = "AAF";
-		};
-		class U_I_E_CBRN_Suit_01_EAF_F 
-		{
-			model = "CBRN_Suit_01";
-			camo = "EAF";
-		};
-	};
+        class B_Carryall_taiga_F // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "taiga";
+            role = "none";
+        };
+
+        class B_Carryall_wdl_F // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "wdl";
+            role = "none";
+        };
+
+        class B_Carryall_eaf_F // exact class name in CfgWeapons (case sensitive !)
+        {
+            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            camo = "eaf";
+            role = "none";
+        };
+        // ...
+    };
 };
