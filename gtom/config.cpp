@@ -2,77 +2,150 @@
 #include "defines.hpp"
 #include "cfgPatches.hpp"
 
-// todo: make custom soldier for compositions
-
-// todo: add Field Manual
-
-/*class CfgHints
+/*
+class XtdGearModels
 {
-	class GTOTutorials
+	class CamoBase;
+	class SleevesBase;
+	class CfgWeapons
 	{
-		// Topic title (displayed only in topic listbox in Field Manual)
-		displayName = "GTO Tutorials";
-		class GTO_FirstSteps
+		class GTO_Beret_All // <- Name that will be used to group CfgWeapons entries, used in "model" property.
 		{
-			// Hint title, filled by arguments from 'arguments' param
-			displayName = "Using GTO Modpack";
-			// Optional hint subtitle, filled by arguments from 'arguments' param
-			displayNameShort = "Using GTO Modpack";
-			// Structured text, filled by arguments from 'arguments' param
-			description = "Press %11 to step over low obstacle. Your %13 is %14";
-			// Optional structured text, filled by arguments from 'arguments' param (first argument is %11, see notes below), grey color of text
-			tip = "The free look represents turning the head sideways and up or down.";
-			/*arguments[] = {
-				{{"getOver"}}, // Double nested array means assigned key (will be specially formatted)
-				{"name"}, // Nested array means element (specially formatted part of text)
-				"name player" // Simple string will be simply compiled and called, String can also link to localization database in case it starts by str_
-			};
-			// Optional image
-			// image = "\path\image_ca.paa";
-			// optional parameter for not showing of image in context hint in mission (default false))
-			noImage = true;
-			// -1 Creates no log in player diary, 0 Creates diary log ( default when not provided )
-			// if a dlc's appID Number is used ( see [[getDLCs]] ) and the user does not have the required dlc installed then the advHint will be replaced with
-			// configfile >> "CfgHints" >> "DlcMessage" >> "Dlc#"; where # is this properties ( dlc appID ) number
-			dlc = -1;
-
-			class GTO_FirstSteps_subHint
+			label = "GTO_Beret";
+			author = "LucyferHW";
+			options[] = {"camo"};
+			class camo : CamoBase // Reuse camos defined in ACEAX
 			{
-				// Sub-hint title, filled by arguments from 'arguments' param
-				displayName = "Stepping over obstacles";
-				// Optional sub-hint subtitle, filled by arguments from 'arguments' param
-				displayNameShort = "Stepping over obstacles";
-				// Structured text, filled by arguments from 'arguments' param
-				description = "Press %11 to step over low obstacle. Your %13 is %14";
-				// Optional structured text, filled by arguments from 'arguments' param (first argument is %11, see notes below), grey color of text
-				tip = "The free look represents turning the head sideways and up or down.";
-				arguments[] = {
-					{{"getOver"}}, // Double nested array means assigned key (will be specially formatted)
-					{"name"}, // Nested array means element (specially formatted part of text)
-					"name player" // Simple string will be simply compiled and called, String can also link to localization database in case it starts by str_
-				};
-				// Optional image
-				image = "\path\image_ca.paa";
-				// optional parameter for not showing of image in context hint in mission (default false))
-				noImage = false;
-				// -1 Creates no log in player diary, 0 Creates diary log ( default when not provided )
-				// if a dlc's appID Number is used ( see [[getDLCs]] ) and the user does not have the required dlc installed then the advHint will be replaced with
-				// configfile >> "CfgHints" >> "DlcMessage" >> "Dlc#"; where # is this properties ( dlc appID ) number
-				dlc = -1;
+				values[] = {"Red", "Orange", "Yellow", "Green", "Blue", "Violett", "Pink", "WHT", "Gray", "Black"};
 			};
+		};
+	};
+};
+
+// We use the "all in one" appraoch here : it's much more easier, and you dot not risk breaking things
+class XtdGearInfo
+{
+	class CfgWeapons
+	{
+		class GTO_Beret_Red // <- Class name in CfgWeapons
+		{
+			model = "GTO_Beret_All"; // <- Model name, from XtdGearModels >> CfgWeapons
+			camo = "Red";			 // <- "camo" option value
+		};
+
+		class GTO_Beret_Orange
+		{
+			model = "GTO_Beret_All";
+			camo = "Orange";
+		};
+
+		class GTO_Beret_Yellow
+		{
+			model = "GTO_Beret_All";
+			camo = "Yellow";
+		};
+
+		class GTO_Beret_Green
+		{
+			model = "GTO_Beret_All";
+			camo = "Green";
+		};
+
+		class GTO_Beret_Blue
+		{
+			model = "GTO_Beret_All";
+			camo = "Blue";
+		};
+
+		class GTO_Beret_Violett
+		{
+			model = "GTO_Beret_All";
+			camo = "Violett";
+		};
+
+		class GTO_Beret_Pink
+		{
+			model = "GTO_Beret_All";
+			camo = "Pink";
+		};
+
+		class GTO_Beret_White
+		{
+			model = "GTO_Beret_All";
+			camo = "WHT";
+		};
+		class GTO_Beret_Gray
+		{
+			model = "GTO_Beret_All";
+			camo = "Gray";
+		};
+		class GTO_Beret_Black
+		{
+			model = "GTO_Beret_All";
+			camo = "Black";
 		};
 	};
 };*/
 
-// class CfgUnitInsignia
-//{//
-//
-//	class insignia_gto
-//	{
-//		displayName = "GTO - Main";
-//		author = "LucyferHW";
-//		texture = "GTO_Insignia\icon\gto_unit_logo.paa";
-//		textureVehicle = "GTO_Insignia\icon\gto_unit_logo.paa";
-//	};
-//
-// };
+
+class XtdGearModels
+{
+	class CamoBase;
+	class SleevesBase;
+	class CfgWeapons 
+	{
+		class CBRN_Suit_01 // <- Name that will be used to group CfgWeapons entries, used in "model" property.
+		{
+			label = "GTO Beret";
+			author = "LucyferHW";
+			options[] = {"camo"};
+			class camo : CamoBase // Reuse camos defined in ACEAX
+			{
+				values[] = {"WHT", "BLU", "M81", "MTP", "Tropic", "AAF", "EAF"};
+			};
+		};
+	};
+};
+
+// We use the "all in one" appraoch here : it's much more easier, and you dot not risk breaking things
+class XtdGearInfo
+{
+	class CfgWeapons
+	{
+		class U_C_CBRN_Suit_01_White_F // <- Class name in CfgWeapons
+		{
+			model = "CBRN_Suit_01"; // <- Model name, from XtdGearModels >> CfgWeapons
+			camo = "WHT"; // <- "camo" option value
+		};
+		class U_C_CBRN_Suit_01_Blue_F 
+		{
+			model = "CBRN_Suit_01";
+			camo = "BLU";
+		};
+		class U_B_CBRN_Suit_01_Wdl_F 
+		{
+			model = "CBRN_Suit_01";
+			camo = "M81";
+		};
+		class U_B_CBRN_Suit_01_MTP_F 
+		{
+			model = "CBRN_Suit_01";
+			camo = "MTP";
+		};
+		class U_B_CBRN_Suit_01_Tropic_F 
+		{
+			model = "CBRN_Suit_01";
+			camo = "Tropic";
+		};
+		class U_I_CBRN_Suit_01_AAF_F 
+		{
+			model = "CBRN_Suit_01";
+			camo = "AAF";
+		};
+		class U_I_E_CBRN_Suit_01_EAF_F 
+		{
+			model = "CBRN_Suit_01";
+			camo = "EAF";
+		};
+	};
+};

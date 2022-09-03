@@ -4,9 +4,100 @@
 
 // todo: disable weight of ["earPlugs",, "Micro Dagre"]
 
+
+//todo: add colors for the menu
+class XtdGearModels
+{
+    class CfgWeapons
+    {
+        class GTO_Beret_All
+        {
+            label = "[GTO] Beret";
+            author = "LucyferHW";
+            options[] = {"optionA"};
+            class optionA
+            {
+                label = "Color";
+                values[] = {"black", "red", "orange", "yellow", "green", "blue", "violett", "pink", "white", "gray"};
+                changeingame = 1;     // 1 if value can be changed in game via ACE menu
+                alwaysSelectable = 1; // allows the selection of the values even if there isn't an item with a complete match of options available, falling back to a weak match with this single value (optional)
+                changedelay = 1;      // If can changeingame, wait delay before change is effective (can be 0, 0.1, or more)
+                // icon = "xxx"; If can changeingame, action group icon in ACE menu
+                class black
+                {
+                    label = "Black";
+                    description = "Soldier";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                };
+                class red
+                {
+                    label = "Red";
+                    description = "SL"; // displayed as tooltip
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                    // image = "xxx"; Background image in Arsenal
+                    // icon = "xxx"; If can changeingame, action icon in ACE menu
+                    // actionlabel = "xxx"; If can changeingame, action label in ACE menu
+                    // itemingame = "xxx"; If can changeingame, requires this item to be present in inventory. Item will be removed from inventory (added back if an other value is choosen)
+                    // changedelay = (inherited by default); If can changeingame, wait delay before change is effective
+                    // faction[] = {"BLU_F", "BLU_T_F", "BLU_W_F"}; // shows this value only for selected factions, identified by their A3 code (optional)
+                };
+                class orange
+                {
+                    label = "Orange";
+                    description = "not set";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                };
+                class yellow
+                {
+                    label = "Yellow";
+                    description = "not set";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                };
+                class green
+                {
+                    label = "Green";
+                    description = "FTL";
+                    image = "xxx";
+                };
+                class blue
+                {
+                    label = "Blue";
+                    description = "Medic";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                };
+                class violett
+                {
+                    label = "Violett";
+                    description = "Pilot";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                };
+                class pink
+                {
+                    label = "Pink";
+                    description = "JTAC";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                };
+                class white
+                {
+                    label = "White";
+                    description = "Zeus";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                };
+                class gray
+                {
+                    label = "Gray";
+                    description = "Guest";
+                    image = "xxx";
+                };
+            };
+        };
+    };
+};
+
 class CfgWeapons
 {
     class H_Beret_EAF_01_F;
+    class HeadgearItem;
 
     // todo: make icons for berets
     // todo: medic patch
@@ -17,48 +108,35 @@ class CfgWeapons
         author = "LucyferHW";
         weight = 0;
         size = 0;
+        DLC = "";
     };
+
+    /*     class GTO_Beret : GTO_Beret_Empty
+        {
+            scope = 2;
+            displayName = "[GTO] Beret";
+            hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Black.paa"};
+
+            class XtdGearInfo
+            {
+                model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+
+                optionA = "default";
+            };
+        }; */
 
     class GTO_Beret_Red : GTO_Beret_Empty
     {
         scope = 2;
         displayName = "[GTO] Beret (Red)";
         hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Red.paa"};
-    };
 
-    class GTO_Beret_Blue : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Blue)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Blue.paa"};
-    };
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
 
-    class GTO_Beret_Yellow : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Yellow)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Yellow.paa"};
-    };
-
-    class GTO_Beret_Green : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Green)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Green.paa"};
-    };
-
-    class GTO_Beret_Violett : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Violett)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Violett.paa"};
-    };
-
-    class GTO_Beret_Pink : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Pink)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Pink.paa"};
+            optionA = "red";
+        };
     };
 
     class GTO_Beret_Orange : GTO_Beret_Empty
@@ -66,6 +144,77 @@ class CfgWeapons
         scope = 2;
         displayName = "[GTO] Beret (Orange)";
         hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Orange.paa"};
+
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+            optionA = "orange";
+        };
+    };
+
+    class GTO_Beret_Yellow : GTO_Beret_Empty
+    {
+        scope = 2;
+        displayName = "[GTO] Beret (Yellow)";
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Yellow.paa"};
+
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+            optionA = "yellow";
+        };
+    };
+
+    class GTO_Beret_Green : GTO_Beret_Empty
+    {
+        scope = 2;
+        displayName = "[GTO] Beret (Green)";
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Green.paa"};
+
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+            optionA = "green";
+        };
+    };
+
+    class GTO_Beret_Blue : GTO_Beret_Empty
+    {
+        scope = 2;
+        displayName = "[GTO] Beret (Blue)";
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Blue.paa"};
+
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+            optionA = "blue";
+        };
+    };
+
+    class GTO_Beret_Violett : GTO_Beret_Empty
+    {
+        scope = 2;
+        displayName = "[GTO] Beret (Violett)";
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Violett.paa"};
+
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+            optionA = "violett";
+        };
+    };
+
+    class GTO_Beret_Pink : GTO_Beret_Empty
+    {
+        scope = 2;
+        displayName = "[GTO] Beret (Pink)";
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Pink.paa"};
+
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+            optionA = "pink";
+        };
     };
 
     class GTO_Beret_White : GTO_Beret_Empty
@@ -73,6 +222,12 @@ class CfgWeapons
         scope = 2;
         displayName = "[GTO] Beret (White)";
         hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_White.paa"};
+
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+            optionA = "white";
+        };
     };
 
     class GTO_Beret_Gray : GTO_Beret_Empty
@@ -80,6 +235,12 @@ class CfgWeapons
         scope = 2;
         displayName = "[GTO] Beret (Gray)";
         hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Gray.paa"};
+
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+            optionA = "gray";
+        };
     };
 
     class GTO_Beret_Black : GTO_Beret_Empty
@@ -87,7 +248,23 @@ class CfgWeapons
         scope = 2;
         displayName = "[GTO] Beret (Black)";
         hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Black.paa"};
+
+        class XtdGearInfo
+        {
+            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
+            optionA = "black";
+        };
     };
+
+    class ACE_ItemCore;
+    class CBA_MiscItem_ItemInfo;
+    class ACE_bodyBag : ACE_ItemCore
+    {
+        class ItemInfo : CBA_MiscItem_ItemInfo
+        {
+            mass = 0;
+        }
+    }
 };
 
 #define MAG_2(a) a, a
