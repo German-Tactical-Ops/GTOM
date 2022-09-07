@@ -3,8 +3,6 @@
 #include "\gtom\cfgPatches.hpp"
 
 // todo: disable weight of ["earPlugs",, "Micro Dagre"]
-
-// todo: add colors for the menu
 class XtdGearModels
 {
     class CfgWeapons
