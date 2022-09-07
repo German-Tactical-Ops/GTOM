@@ -37,6 +37,7 @@ scriptName "fn_cbaSettings";
 	} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
+//todo: add second option with building points param
 [
 	"GTO_InitFortify", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type

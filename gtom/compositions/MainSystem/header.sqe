@@ -1,0 +1,10 @@
+version=54;
+name="MainSystem";
+author="LucyferHW";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Modules_F_Curator_Curator",
+	"A3_Modules_F_Multiplayer",
+	"GTOM"
+};

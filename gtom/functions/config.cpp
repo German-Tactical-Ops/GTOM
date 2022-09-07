@@ -33,8 +33,8 @@ class cfgFunctions
 			class shareBasicLoadouts
 			{
 				description = "Shares the basic loadout";
-				recompile = 1;
 				postInit = 1;
+				recompile = 1;
 			}; // [] call GTO_fnc_shareBasicLoadouts;
 		};
 

@@ -59,7 +59,7 @@ player createDiaryRecord ["Diary", ["Feuerstatus", '
 	<font color="#fff200" size="16">🟡 Feuerstatus Gelb - Feuer bei Beschuss erwidern</font><br/>
 <font color="#00ff00" size="16">🟢 Feuerstatus Grün - Feuer auf erkannten Feind freigegeben</font>']];
 
-player createDiaryRecord ["Diary", ["Default Loadout", "<img image='gtom\images\Loadout.jpg' width='375'/>"]];
+player createDiaryRecord ["Diary", ["Default Loadout", "<img image='gtom\images\DefaultLoadout.jpg' width='375'/>"]];
 
 player createDiaryRecord ["Diary", ["NATO Alphabet", "A – ALPHA<br/>B – BRAVO<br/>C – CHARLIE<br/>D – DELTA<br/>E – echo<br/>F – FOXTROT<br/>G – GOLF<br/>H – HOTEL<br/>I – INDIA<br/>J – JULIETT<br/>K – KILO<br/>L – LIMA<br/>M – MIKE<br/>N – NOVEMBER<br/>O – OSCAR<br/>P – PAPA<br/>Q – QUEBEC<br/>R – ROMEO<br/>S – SIERRA<br/>T – TANGO<br/>U – uniform<br/>V – VICTOR<br/>W -WHISKEY<br/>X – XRAY<br/>Y – YANKEE<br/>Z – ZULU"]];
 
