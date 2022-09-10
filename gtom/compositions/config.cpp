@@ -17,10 +17,10 @@ class CfgEditorSubcategories
         displayName = "GTO Infantry";
     };
 
-    class GTO_MissionMaker // CfgGroups Armored
+    /* class GTO_MissionMaker // CfgGroups Armored
     {
         displayName = "GTO Mission Maker";
-    };
+    }; */
 };
 
 class Cfg3DEN
@@ -38,7 +38,7 @@ class Cfg3DEN
             useSideColorOnIcon = 1;                            // 1 == icon is always colored in faction color
         };
 
-        class GTO_MainSystem // one class per composition
+        /* class GTO_MainSystem // one class per composition
         {
             path = "gtom\compositions\MainSystem"; // pbo path to a folder containing header.sqe/composition.sqe files
             side = 8;                              // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
@@ -47,9 +47,9 @@ class Cfg3DEN
             displayName = "Main System";
             // icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa"; // left side icon in groups list
             useSideColorOnIcon = 1; // 1 == icon is always colored in faction color
-        };
+        }; */
 
-        class GTO_Arsenal // one class per composition
+        /* class GTO_Arsenal // one class per composition
         {
             path = "gtom\compositions\Arsenal"; // pbo path to a folder containing header.sqe/composition.sqe files
             side = 8;                              // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
@@ -58,6 +58,6 @@ class Cfg3DEN
             displayName = "Arsenal";
             // icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa"; // left side icon in groups list
             useSideColorOnIcon = 1; // 1 == icon is always colored in faction color
-        };
+        }; */
     };
 };
