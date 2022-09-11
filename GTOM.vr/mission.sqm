@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=353;
+		nextID=481;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=227;
+		nextID=299;
 	};
 	class Camera
 	{
-		pos[]={4286.4419,8.8634024,7641.521};
-		dir[]={0.68149799,-0.49387416,-0.54007477};
-		up[]={0.38706994,0.86952966,-0.30674571};
-		aside[]={-0.62110233,-1.063745e-007,-0.78374273};
+		pos[]={4265.9629,15.808327,7646.7158};
+		dir[]={0.14391921,-0.71775246,-0.68144804};
+		up[]={0.14831603,0.69630516,-0.7022652};
+		aside[]={-0.97851497,1.3243698e-006,-0.20665172};
 	};
 };
 binarizationWanted=0;
@@ -41,35 +41,29 @@ addons[]=
 	"A3_Weapons_F_Items",
 	"ace_medical_engine",
 	"ace_medical_treatment",
-	"A3_Weapons_F_Rifles_MX",
-	"A3_Weapons_F_Acc",
+	"A3_Weapons_F_Pistols_P07",
 	"ace_realisticnames",
-	"ace_scopes",
-	"ace_laserpointer",
+	"ace_ballistics",
 	"A3_Weapons_F",
 	"ace_smallarms",
-	"greenmag_main",
-	"ace_ballistics",
-	"A3_Weapons_F_Pistols_P07",
 	"GTOM",
-	"A3_Characters_F_AoW",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Modules_F_Multiplayer",
 	"tfar_handhelds",
 	"A3_Characters_F_Heads",
 	"A3_Characters_F_Enoch_Facewear",
-	"A3_Characters_F_Exp",
 	"ace_chemlights",
 	"ace_hearing",
 	"ace_captives",
 	"ace_attach",
-	"ace_fortify"
+	"ace_fortify",
+	"A3_Characters_F_Exp"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=24;
+		items=20;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -121,125 +115,97 @@ class AddonsMetaData
 		};
 		class Item7
 		{
-			className="ace_scopes";
-			name="ACE3 - Scopes";
+			className="ace_ballistics";
+			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item8
-		{
-			className="ace_laserpointer";
-			name="ACE3 - Laser Pointer";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item9
 		{
 			className="ace_smallarms";
 			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item10
-		{
-			className="greenmag_main";
-			name="GreenMag MAIN";
-			author="[W] Miller";
-		};
-		class Item11
-		{
-			className="ace_ballistics";
-			name="ACE3 - Ballistics";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item12
+		class Item9
 		{
 			className="GTOM";
 			name="GTO Mod";
 			author="LucyferHW";
 		};
-		class Item13
-		{
-			className="A3_Characters_F_AoW";
-			name="Arma 3 Art of War - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item14
+		class Item10
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item11
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item12
 		{
 			className="tfar_handhelds";
 			name="tfar_handhelds";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item17
+		class Item13
 		{
 			className="A3_Characters_F_Enoch";
 			name="Arma 3 Contact Platform - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
-		{
-			className="A3_Characters_F_Exp";
-			name="Arma 3 Apex - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item19
+		class Item14
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item20
+		class Item15
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item21
+		class Item16
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item22
+		class Item17
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item18
 		{
 			className="ace_fortify";
 			name="ace_fortify";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
+		class Item19
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
 {
-	"Enoch",
 	"Expansion",
 	"ORANGE"
 };
@@ -254,7 +220,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -321,7 +287,7 @@ class Mission
 					side="West";
 					class Entities
 					{
-						items=2;
+						items=3;
 						class Item0
 						{
 							dataType="Object";
@@ -414,21 +380,10 @@ class Mission
 							{
 								class Inventory
 								{
-									class primaryWeapon
-									{
-										name="arifle_MX_ACO_pointer_F";
-										optics="optic_Aco";
-										flashlight="acc_pointer_IR";
-										firemode="arifle_MX_ACO_pointer_F:Single";
-										class primaryMuzzleMag
-										{
-											name="30Rnd_65x39_caseless_mag";
-											ammoLeft=30;
-										};
-									};
 									class handgun
 									{
 										name="hgun_P07_F";
+										firemode="hgun_P07_F:Single";
 										class primaryMuzzleMag
 										{
 											name="16Rnd_9x21_Mag";
@@ -437,18 +392,8 @@ class Mission
 									};
 									class uniform
 									{
-										typeName="U_C_FormalSuit_01_tshirt_gray_F";
+										typeName="GTO_BaseUniform";
 										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="30Rnd_65x39_caseless_mag";
-												count=1;
-												ammoLeft=30;
-											};
-										};
 										class ItemCargo
 										{
 											items=1;
@@ -459,11 +404,6 @@ class Mission
 											};
 										};
 									};
-									class backpack
-									{
-										typeName="B_Carryall_ghex_F";
-										isBackpack=1;
-									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
@@ -473,6 +413,21 @@ class Mission
 							};
 							id=136;
 							type="B_Soldier_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4292.5117,5.0014391,7639.3325};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=354;
+							type="B_RangeMaster_F";
 						};
 					};
 					class Attributes
@@ -709,10 +664,9 @@ class Mission
 		{
 			dataType="Layer";
 			name="Layer 182";
-			state=1;
 			class Entities
 			{
-				items=3;
+				items=5;
 				class Item0
 				{
 					dataType="Group";
@@ -735,7 +689,7 @@ class Mission
 								description="SL";
 								isPlayable=1;
 							};
-							id=210;
+							id=400;
 							type="GTO_Soldier_SL";
 							class CustomAttributes
 							{
@@ -782,7 +736,7 @@ class Mission
 								description="Ammo Bearer";
 								isPlayable=1;
 							};
-							id=211;
+							id=401;
 							type="GTO_Soldier_Rifleman";
 							class CustomAttributes
 							{
@@ -868,7 +822,7 @@ class Mission
 								description="Ammo Bearer";
 								isPlayable=1;
 							};
-							id=212;
+							id=402;
 							type="GTO_Soldier_Rifleman";
 							class CustomAttributes
 							{
@@ -954,7 +908,7 @@ class Mission
 								description="AT";
 								isPlayable=1;
 							};
-							id=213;
+							id=403;
 							type="GTO_Soldier_AT";
 							class CustomAttributes
 							{
@@ -1001,7 +955,7 @@ class Mission
 								description="AT";
 								isPlayable=1;
 							};
-							id=214;
+							id=404;
 							type="GTO_Soldier_AT";
 							class CustomAttributes
 							{
@@ -1051,7 +1005,7 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_GEN_Soldier_F";
+										typeName="GTO_BaseUniform";
 										isBackpack=0;
 										class MagazineCargo
 										{
@@ -1102,11 +1056,11 @@ class Mission
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="TFAR_anprc152";
-									goggles="None";
+									goggles="none";
 									headgear="GTO_Beret_Black";
 								};
 							};
-							id=215;
+							id=405;
 							type="GTO_Soldier_MMG";
 							class CustomAttributes
 							{
@@ -1179,7 +1133,7 @@ class Mission
 								description="MG";
 								isPlayable=1;
 							};
-							id=216;
+							id=406;
 							type="GTO_Soldier_LMG";
 							class CustomAttributes
 							{
@@ -1226,7 +1180,7 @@ class Mission
 								description="MG";
 								isPlayable=1;
 							};
-							id=217;
+							id=407;
 							type="GTO_Soldier_LMG";
 							class CustomAttributes
 							{
@@ -1273,7 +1227,7 @@ class Mission
 								description="Medic";
 								isPlayable=1;
 							};
-							id=218;
+							id=408;
 							type="GTO_Soldier_Med";
 							class CustomAttributes
 							{
@@ -1346,7 +1300,7 @@ class Mission
 								description="Medic";
 								isPlayable=1;
 							};
-							id=219;
+							id=409;
 							type="GTO_Soldier_Med";
 							class CustomAttributes
 							{
@@ -1406,7 +1360,7 @@ class Mission
 								description="Marksman";
 								isPlayable=1;
 							};
-							id=220;
+							id=410;
 							type="GTO_Soldier_Marksman";
 							class CustomAttributes
 							{
@@ -1482,7 +1436,7 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_GEN_Soldier_F";
+										typeName="GTO_BaseUniform";
 										isBackpack=0;
 										class MagazineCargo
 										{
@@ -1538,11 +1492,11 @@ class Mission
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="TFAR_anprc152";
-									goggles="None";
+									goggles="none";
 									headgear="GTO_Beret_Black";
 								};
 							};
-							id=221;
+							id=411;
 							type="GTO_Soldier_Eng";
 							class CustomAttributes
 							{
@@ -1589,7 +1543,7 @@ class Mission
 								description="Doctor";
 								isPlayable=1;
 							};
-							id=222;
+							id=412;
 							type="GTO_Soldier_Med";
 							class CustomAttributes
 							{
@@ -1662,7 +1616,7 @@ class Mission
 								description="ExSp";
 								isPlayable=1;
 							};
-							id=223;
+							id=413;
 							type="GTO_Soldier_ExpSp";
 							class CustomAttributes
 							{
@@ -1709,7 +1663,7 @@ class Mission
 								description="JTAC";
 								isPlayable=1;
 							};
-							id=224;
+							id=414;
 							type="GTO_Soldier_base";
 							class CustomAttributes
 							{
@@ -1757,7 +1711,7 @@ class Mission
 								description="FTL";
 								isPlayable=1;
 							};
-							id=225;
+							id=415;
 							type="GTO_Soldier_FTL";
 							class CustomAttributes
 							{
@@ -1805,7 +1759,7 @@ class Mission
 								description="FTL";
 								isPlayable=1;
 							};
-							id=226;
+							id=416;
 							type="GTO_Soldier_FTL";
 							class CustomAttributes
 							{
@@ -1842,8 +1796,7 @@ class Mission
 					class Attributes
 					{
 					};
-					id=209;
-					atlOffset=-5;
+					id=399;
 				};
 				class Item1
 				{
@@ -1866,7 +1819,7 @@ class Mission
 								description="Crewman";
 								isPlayable=1;
 							};
-							id=236;
+							id=418;
 							type="GTO_Soldier_LC";
 							class CustomAttributes
 							{
@@ -1914,7 +1867,7 @@ class Mission
 								description="Crewman";
 								isPlayable=1;
 							};
-							id=237;
+							id=419;
 							type="GTO_Soldier_Crewman";
 							class CustomAttributes
 							{
@@ -1961,7 +1914,7 @@ class Mission
 								description="Crewman";
 								isPlayable=1;
 							};
-							id=238;
+							id=420;
 							type="GTO_Soldier_Crewman";
 							class CustomAttributes
 							{
@@ -1998,8 +1951,7 @@ class Mission
 					class Attributes
 					{
 					};
-					id=227;
-					atlOffset=-5;
+					id=417;
 				};
 				class Item2
 				{
@@ -2022,7 +1974,7 @@ class Mission
 								description="Pilot";
 								isPlayable=1;
 							};
-							id=234;
+							id=422;
 							type="GTO_Soldier_Pilot";
 							class CustomAttributes
 							{
@@ -2069,7 +2021,7 @@ class Mission
 								description="Pilot";
 								isPlayable=1;
 							};
-							id=235;
+							id=423;
 							type="GTO_Soldier_Pilot";
 							class CustomAttributes
 							{
@@ -2106,18 +2058,36 @@ class Mission
 					class Attributes
 					{
 					};
-					id=231;
+					id=421;
+				};
+				class Item3
+				{
+					dataType="Group";
+					side="West";
+					class Attributes
+					{
+					};
+					id=469;
+					atlOffset=-5;
+				};
+				class Item4
+				{
+					dataType="Group";
+					side="West";
+					class Attributes
+					{
+					};
+					id=473;
 					atlOffset=-5;
 				};
 			};
 			id=349;
-			atlOffset=-5;
+			atlOffset=-3.75;
 		};
 		class Item4
 		{
 			dataType="Layer";
 			name="Layer 183";
-			state=1;
 			class Entities
 			{
 				items=10;
@@ -2206,7 +2176,6 @@ class Mission
 					{
 					};
 					id=329;
-					atlOffset=-5;
 				};
 				class Item1
 				{
@@ -2293,7 +2262,6 @@ class Mission
 					{
 					};
 					id=331;
-					atlOffset=-5;
 				};
 				class Item2
 				{
@@ -2380,7 +2348,6 @@ class Mission
 					{
 					};
 					id=333;
-					atlOffset=-5;
 				};
 				class Item3
 				{
@@ -2467,7 +2434,6 @@ class Mission
 					{
 					};
 					id=335;
-					atlOffset=-5;
 				};
 				class Item4
 				{
@@ -2554,7 +2520,6 @@ class Mission
 					{
 					};
 					id=337;
-					atlOffset=-5;
 				};
 				class Item5
 				{
@@ -2641,7 +2606,6 @@ class Mission
 					{
 					};
 					id=339;
-					atlOffset=-5;
 				};
 				class Item6
 				{
@@ -2728,7 +2692,6 @@ class Mission
 					{
 					};
 					id=341;
-					atlOffset=-5;
 				};
 				class Item7
 				{
@@ -2815,7 +2778,6 @@ class Mission
 					{
 					};
 					id=343;
-					atlOffset=-5;
 				};
 				class Item8
 				{
@@ -2902,7 +2864,6 @@ class Mission
 					{
 					};
 					id=345;
-					atlOffset=-5;
 				};
 				class Item9
 				{
@@ -2989,17 +2950,14 @@ class Mission
 					{
 					};
 					id=347;
-					atlOffset=-5;
 				};
 			};
 			id=350;
-			atlOffset=-5;
 		};
 		class Item5
 		{
 			dataType="Layer";
 			name="Layer 184";
-			state=1;
 			class Entities
 			{
 				items=6;
@@ -3122,7 +3080,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Layer 185";
-			state=1;
 			class Entities
 			{
 				items=1;
@@ -3146,10 +3103,11 @@ class Mission
 							{
 								rank="COLONEL";
 								name="zeus1";
+								description="1: GTO Soldier";
 								isPlayer=1;
 								isPlayable=1;
 							};
-							id=328;
+							id=425;
 							type="GTO_Soldier_base";
 							class CustomAttributes
 							{
@@ -3186,12 +3144,10 @@ class Mission
 					class Attributes
 					{
 					};
-					id=327;
-					atlOffset=-5;
+					id=424;
 				};
 			};
 			id=352;
-			atlOffset=-5;
 		};
 	};
 };

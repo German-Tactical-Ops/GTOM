@@ -18,7 +18,7 @@ class XtdGearModels
                 values[] = {"black", "red", "orange", "yellow", "green", "blue", "violett", "pink", "white", "gray"};
                 changeingame = 1;     // 1 if value can be changed in game via ACE menu
                 alwaysSelectable = 1; // allows the selection of the values even if there isn't an item with a complete match of options available, falling back to a weak match with this single value (optional)
-                changedelay = 0.5;      // If can changeingame, wait delay before change is effective (can be 0, 0.1, or more)
+                changedelay = 0.5;    // If can changeingame, wait delay before change is effective (can be 0, 0.1, or more)
                 // icon = "xxx"; If can changeingame, action group icon in ACE menu
                 class black
                 {
@@ -92,19 +92,19 @@ class XtdGearModels
 
 class CfgWeapons
 {
+    class H_Beret_02;
     class H_Beret_EAF_01_F;
     class HeadgearItem;
 
     // todo: make icons for berets
     // todo: medic patch
 
-    class GTO_Beret_Empty : H_Beret_EAF_01_F
+    class GTO_Beret_Empty : H_Beret_02
     {
         scope = 0;
         author = "LucyferHW";
         weight = 0;
         size = 0;
-        DLC = "";
     };
 
     class GTO_Beret_Red : GTO_Beret_Empty
@@ -238,6 +238,25 @@ class CfgWeapons
         };
     };
 
+    class U_Rangemaster;
+    class UniformItem;
+
+    class GTO_BaseUniform : U_Rangemaster
+    {
+        author = "LucyferHW";
+        scope = 2;
+        displayName = "GTO Base Uniform";
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\GTO_Uniform\GTO_BaseUniform.paa"};
+
+        class ItemInfo : UniformItem
+        {
+            // uniformModel = "-";
+            uniformClass = GTO_Soldier_base;
+            containerClass = Supply40;
+            mass = 40;
+        };
+    };
+
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
     class ACE_bodyBag : ACE_ItemCore
@@ -285,8 +304,9 @@ class CfgWeapons
 class CfgVehicles
 {
     // B_Soldier_F
-    class B_Soldier_base_F;                   // For inheritance to work, the base class has to be defined.
-    class GTO_Soldier_base : B_Soldier_base_F // Define of a new class, which parameters are inherited from B_Soldier_base_F, with exception of those defined below.
+    class B_Soldier_base_F; // For inheritance to work, the base class has to be defined.
+    class B_RangeMaster_F;
+    class GTO_Soldier_base : B_RangeMaster_F // Define of a new class, which parameters are inherited from B_Soldier_base_F, with exception of those defined below.
     {
         author = "LucyferHW";                                               // The name of the author of the asset, which is displayed in the editor.
         scope = 2;                                                          // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
@@ -294,14 +314,18 @@ class CfgVehicles
         scopeArsenal = 2;                                                   // 2 = class is available in the Virtual Arsenal; 0 = class is unavailable in the Virtual Arsenal.
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "G_NATO_default"}; // Identity Types are explained in the Headgear section of this guide.
         displayName = "GTO Soldier";                                        // The name of the soldier, which is displayed in the editor.
-        camouflage = 1.5;                                                   // How likely this character is spotted (smaller number = more stealthy).
-        sensitivity = 2.5;                                                  // How likely this character spots enemies when controlled by AI.
+
+        // model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+        hiddenSelectionsTextures[] = {"gtom\objects\textures\GTO_Uniform\GTO_BaseUniform.paa"};
+
+        camouflage = 1.5;  // How likely this character is spotted (smaller number = more stealthy).
+        sensitivity = 2.5; // How likely this character spots enemies when controlled by AI.
 
         icon = "gtom\icons\Roles\Other_icon.paa";
         picture = "gtom\icons\Roles\Other_icon.paa";
 
-        uniformClass = "U_B_GEN_Soldier_F"; // This links this soldier to a particular uniform. For the details, see below.
-        backpack = "";                      // Which backpack the character is wearing.
+        uniformClass = "GTO_BaseUniform"; // This links this soldier to a particular uniform. For the details, see below.
+        backpack = "";                    // Which backpack the character is wearing.
 
         weapons[] = {};        // Which weapons the character has.
         respawnWeapons[] = {}; // Which weapons the character respawns with.
@@ -448,49 +472,84 @@ class CfgVehicles
         picture = "gtom\icons\Roles\Pilot_icon.paa";
     };
 
-    // TODO: make other boxes
+    // --- Box --- //
+
     class Box_IDAP_Uniforms_F;
-    class GTO_Supply_Box : Box_IDAP_Uniforms_F
+
+    class GTO_Base_Box : Box_IDAP_Uniforms_F
     {
-        displayName = "[GTO] Supply Box";
+        displayName = "[GTO] Base Box (Empty)";
         author = "LucyferHW";
         hiddenSelectionsTextures[] = {"gtom\objects\textures\PlasticCase\uniforms_box_idap_co.paa", "gtom\objects\textures\PlasticCase\uniforms_box_idap_CA_GTO.paa"};
         class TransportMagazines
         {
-            // MAG_XX(100Rnd_65x39_caseless_mag_Tracer,2);
-            // MAX_XX(130Rnd_338_Mag,2);
+        };
+        class TransportItems
+        {
+        };
+    };
+
+    class GTO_Ammo_Box : GTO_Base_Box
+    {
+        displayName = "[GTO] Ammo Box";
+        class TransportMagazines
+        {
+            MAG_XX(rhs_mag_30Rnd_556x45_M855_PMAG, 30);
+            MAG_XX(rhsusf_200Rnd_556x45_M855_soft_pouch, 5);
+            MAG_XX(rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red, 10);
+            MAG_XX(rhsusf_200Rnd_556x45_M855_mixed_soft_pouch, 2);
+        };
+        class TransportItems
+        {
+            ITEM_XX(SmokeShell, 10);
+            ITEM_XX(HandGrenade, 10);
+        };
+    };
+
+    class GTO_Explosiv_Box : GTO_Base_Box
+    {
+        displayName = "[GTO] Explosiv Box";
+        class TransportMagazines
+        {
+            MAG_XX(MRAWS_HE_F, 2);
+            MAG_XX(MRAWS_HEAT_F, 4);
+            MAG_XX(Titan_AP, 2);
+            MAG_XX(Titan_AT, 4);
+        };
+        class TransportItems
+        {
+            ITEM_XX(rhs_weap_m72a7, 3);
+        };
+    };
+
+    class GTO_Equipment_Box : GTO_Base_Box
+    {
+        displayName = "[GTO] Equipment Box";
+        class TransportMagazines
+        {
         };
         class TransportItems
         {
 
-            ITEM_XX(ACE_IR_Strobe_Item, 3);
-            ITEM_XX(ACE_CableTie, 5);
-            ITEM_XX(ACE_EntrenchingTool, 1);
-            ITEM_XX(SmokeShell, 10);
-            ITEM_XX(SmokeShellRed, 5);
-            ITEM_XX(SmokeShellGreen, 5);
-            ITEM_XX(SmokeShellBlue, 5);
-            ITEM_XX(HandGrenade, 10);
-            ITEM_XX(MiniGrenade, 5);
-            ITEM_XX(USP_PVS31, 1);
-            ITEM_XX(WBK_HeadLampItem, 5);
-            ITEM_XX(ItemcTabHCam, 5);
+            ITEM_XX(ACE_EarPlugs, 5);
+            ITEM_XX(ACE_CableTie, 10);
+
+            ITEM_XX(rhsusf_acc_rotex5_grey, 10);
+
+            ITEM_XX(USP_PVS31, 10);
+
             ITEM_XX(ACE_Humanitarian_Ration, 10);
             ITEM_XX(ACE_WaterBottle, 10);
+
             ITEM_XX(ToolKit, 1);
-            ITEM_XX(ACE_SpareBarrel_Item, 2);
         };
     };
 
-    class GTO_Medic_Box : Box_IDAP_Uniforms_F
+    class GTO_Medic_Box : GTO_Base_Box
     {
         displayName = "[GTO] Medic Box";
-        author = "LucyferHW";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\PlasticCase\uniforms_box_idap_co.paa", "gtom\objects\textures\PlasticCase\uniforms_box_idap_CA_GTO.paa"};
         class TransportMagazines
         {
-            // MAG_XX(100Rnd_65x39_caseless_mag_Tracer,2);
-            // MAX_XX(130Rnd_338_Mag,2);
         };
         class TransportItems
         {
@@ -541,8 +600,6 @@ class CfgVehicles
         };
     };
 
-    // --- Ammo Box ---
-
     class B_Carryall_Base;
 
     class C_IDAP_supplyCrate_F;
@@ -560,13 +617,6 @@ class CfgVehicles
         author = "LucyferHW";
         hiddenSelectionsTextures[] = {"gtom\objects\textures\MedicBackpack\backpack_tortila_oli_co.paa"};
         maximumLoad = 400;
-
-        /*         class XtdGearInfo
-                {
-                    model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
-                    camo = "oli";
-                    role = "medic";
-                }; */
     };
 
     class GTO_Medic_Carryall_cbr : B_Carryall_Base
@@ -576,13 +626,6 @@ class CfgVehicles
         author = "LucyferHW";
         hiddenSelectionsTextures[] = {"gtom\objects\textures\MedicBackpack\backpack_tortila_cbr_co.paa"};
         maximumLoad = 400;
-
-        /* class XtdGearInfo
-        {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
-            camo = "cbr";
-            role = "medic";
-        }; */
     };
 
     class FlagMarker_01_F;
@@ -592,7 +635,7 @@ class CfgVehicles
         displayName = "[GTO] Marker Flag";
         author = "LucyferHW";
         hiddenSelectionsTextures[] = {"gtom\logo\gto_unit_logo_2x1.paa"};
-    }
+    };
 
     class Banner_01_F;
     class GTO_Banner : Banner_01_F
@@ -602,7 +645,7 @@ class CfgVehicles
         displayName = "[GTO] Banner";
         author = "LucyferHW";
         hiddenSelectionsTextures[] = {"gtom\logo\gto_unit_logo_2x1.paa"};
-    }
+    };
 
     class Man;
     class CAManBase : Man
