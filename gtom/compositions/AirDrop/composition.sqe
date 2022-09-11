@@ -1,0 +1,211 @@
+version=54;
+center[]={2494.967,73.459595,5675.3452};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		id=10;
+		type="SSS_module_AddLogisticsAirdrop";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="SSS_module_AddLogisticsAirdrop_UniversalInitCode";
+				expression="_this setVariable ['UniversalInitCode',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="SSS_module_AddLogisticsAirdrop_AccessCondition";
+				expression="_this setVariable ['AccessCondition',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="true";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="SSS_module_AddLogisticsAirdrop_Callsign";
+				expression="_this setVariable ['Callsign',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="Golf";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="SSS_module_AddLogisticsAirdrop_CustomInit";
+				expression="_this setVariable ['CustomInit',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="SSS_module_AddLogisticsAirdrop_Classname";
+				expression="_this setVariable ['Classname',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="RHS_CH_47F_cargo";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="SSS_module_AddLogisticsAirdrop_FlyingHeight";
+				expression="_this setVariable ['FlyingHeight',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="400";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="SSS_module_AddLogisticsAirdrop_MaxAmount";
+				expression="_this setVariable ['MaxAmount',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="1";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="SSS_module_AddLogisticsAirdrop_AccessItems";
+				expression="_this setVariable ['AccessItems',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="ItemcTab";
+					};
+				};
+			};
+			class Attribute8
+			{
+				property="SSS_module_AddLogisticsAirdrop_Cooldown";
+				expression="_this setVariable ['Cooldown',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="1";
+					};
+				};
+			};
+			class Attribute9
+			{
+				property="SSS_module_AddLogisticsAirdrop_SpawnPosition";
+				expression="_this setVariable ['SpawnPosition',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute10
+			{
+				property="SSS_module_AddLogisticsAirdrop_LandingSignal";
+				expression="_this setVariable ['LandingSignal',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=1;
+					};
+				};
+			};
+			class Attribute11
+			{
+				property="SSS_module_AddLogisticsAirdrop_ListFunction";
+				expression="_this setVariable ['ListFunction',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[""ACE_medicalSupplyCrate_advanced"",""GTO_Ammo_Box"",""GTO_Explosiv_Box"",""GTO_Equipment_Box""]";
+					};
+				};
+			};
+			class Attribute12
+			{
+				property="SSS_module_AddLogisticsAirdrop_SpawnDelay";
+				expression="_this setVariable ['SpawnDelay',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="30";
+					};
+				};
+			};
+			class Attribute13
+			{
+				property="SSS_module_AddLogisticsAirdrop_Side";
+				expression="_this setVariable ['Side',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0;
+					};
+				};
+			};
+			class Attribute14
+			{
+				property="SSS_module_AddLogisticsAirdrop_RequestApprovalCondition";
+				expression="_this setVariable ['RequestApprovalCondition',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="true";
+					};
+				};
+			};
+			nAttributes=15;
+		};
+	};
+};
