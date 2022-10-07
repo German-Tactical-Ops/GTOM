@@ -600,8 +600,6 @@ class CfgVehicles
         };
     };
 
-    class B_Carryall_Base;
-
     class C_IDAP_supplyCrate_F;
     class GTO_Arsenal : C_IDAP_supplyCrate_F
     {
@@ -609,6 +607,8 @@ class CfgVehicles
         displayName = "[GTO] Arsenal (only object)";
         author = "LucyferHW";
     };
+
+    class B_Carryall_Base;
 
     class GTO_Medic_Carryall_oli : B_Carryall_Base
     {
