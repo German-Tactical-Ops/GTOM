@@ -29,7 +29,6 @@ class cfgFunctions
 				recompile = 1;
 			}; //_itemArray = [] call GTO_fnc_mainArsenal
 
-			// TODO: make possible to insert Loadout via CBA Settings
 			class shareBasicLoadouts
 			{
 				description = "Shares the basic loadout";
@@ -48,7 +47,7 @@ class cfgFunctions
 				recompile = 1;
 			}; //
 
-			class myFunction4
+			class empty
 			{
 				// description = "Function description"; // You can write some words about your fonction
 				// preInit = 1;						  // 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
@@ -58,6 +57,7 @@ class cfgFunctions
 				// headerType = -1;					  // Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			}; // [] call GTO_fnc_myFunction4
 		};
+
 		// TODO: add teleport function for Hebotes
 		class other
 		{
@@ -65,7 +65,7 @@ class cfgFunctions
 
 			class setPlayerRank
 			{
-				description = "Creates a arsenal on the given object";
+				description = "Gives Player his Rank";
 				recompile = 1;
 			}; // [_player] call GTO_fnc_setPlayerRank;
 

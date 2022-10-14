@@ -609,8 +609,10 @@ class CfgVehicles
     };
 
     class B_Carryall_Base;
+    class B_Carryall_cbr;
+    class B_Carryall_oli;
 
-    class GTO_Medic_Carryall_oli : B_Carryall_Base
+    class GTO_Medic_Carryall_oli : B_Carryall_oli
     {
         scopeCurator = 2;
         displayName = "Carryall B. Medic (Olive)";
@@ -619,7 +621,7 @@ class CfgVehicles
         maximumLoad = 400;
     };
 
-    class GTO_Medic_Carryall_cbr : B_Carryall_Base
+    class GTO_Medic_Carryall_cbr : B_Carryall_cbr
     {
         scopeCurator = 2;
         displayName = "Carryall B. Medic (Coyote)";
