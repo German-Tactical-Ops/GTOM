@@ -1,22 +1,15 @@
 class CfgVehicles
 {
-    // ###################### Makros ######################
-    #define MAKE_PUBLIC(D_NAME,A_TYPE) displayName = #D_NAME; \
-        arsenalType = #A_TYPE; \
-        scope = 2; \
-        scopeCurator = 2
-
-    // ###################### ArsenalBoxes ######################
     class C_IDAP_supplyCrate_F;
-    class TB_arsenal_base : C_IDAP_supplyCrate_F
+    class GTO_arsenal_base : C_IDAP_supplyCrate_F
     {
         displayName = "BASE";
-        author = "shukari";
+        author = "LucyferHW";
 
         arsenalType = "";
 
-        editorCategory = "A_Testing";
-        editorSubcategory = "TB_Arsenal";
+        editorCategory = "GTO";
+        editorSubcategory = "GTO_Arsenal";
 
         scope = 1;
         scopeCurator = 1;
@@ -33,79 +26,196 @@ class CfgVehicles
 
         class ACE_Actions
         {
+				class openArsenalA
+				{
+					displayName = "Open Arsenal";
+                	statement = "[_target, _player, false] call ace_arsenal_fnc_openBox;";
+                	condition =  "true"; //!isNil {_target getVariable 'ace_arsenal_virtualItems'};
+                	exceptions[] = {}; //"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"
+                	priority = 1;
+				};
+
             class ACE_MainActions
             {
-                /* displayName = "Interaktionen";
-                modifierFunction = "[_this] call FUNC(modifierMainAction);"; 
-                statement =  "[_this] call FUNC(actionMain);";
-                runOnHover = 1;
-                distance = 6; */
 
-                displayName = "Interaktionen";
-                modifierFunction = QUOTE([_this] call FUNC(modifierMainAction));
-                statement =  QUOTE([_this] call FUNC(actionMain));
-                runOnHover = 1;
-                distance = 6;				
+			    displayName = "Main";
+                statement = "[_target, [] call GTO_fnc_returnArsenal_Basic, false] call ace_arsenal_fnc_addVirtualItems;";
 
-                // class changeArsenalType
-                // {
-                //     displayName = "Wechsel zu...";
-                //     modifierFunction =  QUOTE([_this, getText (configOf _target >> 'arsenalType')] call FUNC(modifierChangeArsenalType));
-                //     statement = QUOTE(_player setVariable ['TB_arsenalType', getText (configOf _target >> 'arsenalType'), true]; _player setVariable ['TB_rolle', nil, true]; _player setVariable [QQGVAR(arsenalCargo), nil]);
-                //     condition =  QUOTE(!([_target] call FUNC(isArsenalType)));
-                //     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                //     priority = 1;
-                // };
+				runOnHover = 1;
+                distance = 6;
 
-                class openArsenal
-                {
-                    displayName = "Öffne Arsenal";
-                    statement = "[_target, _player] call ace_arsenal_fnc_openBox";
-                    condition =  "!isNil {_target getVariable 'ace_arsenal_virtualItems'}";
-                    exceptions[] = {/*"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"*/};
-                    priority = 1;
-                };
+				class openArsenal
+				{
+					displayName = "Open Arsenal";
+                	statement = "[_target, _player, false] call ace_arsenal_fnc_openBox;";
+                	condition =  "true"; //!isNil {_target getVariable 'ace_arsenal_virtualItems'};
+                	exceptions[] = {}; //"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"
+                	priority = 1;
+				};
 
-                // class rollen
-                // {
-                //     displayName = "Rollen";
-                //     condition =  QUOTE([_target] call FUNC(isArsenalType));
-                //     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                //     priority = 3;
+				class takeRole
+				{
+					displayName = "Take Role";
+                	statement = "systemchat 'select Role';";
+                	condition =  "true"; //!isNil {_target getVariable 'ace_arsenal_virtualItems'};
+                	exceptions[] = {};
+					priority = 2;
 
-                //     #define ADD_ROLLE(ROLLEN_NAME) \
-                //         class rolle_##ROLLEN_NAME \
-                //         { \
-                //             displayName = ""; \
-                //             condition = QUOTE(!('ROLLEN_NAME' in GVAR(blacklistRollen))); \
-                //             modifierFunction = QUOTE([_this, 'ROLLEN_NAME'] call FUNC(modifierRollenname)); \
-                //             statement = QUOTE(['ROLLEN_NAME', getText (configOf _target >> 'arsenalType'), _target] call FUNC(changeRolle); [_target, _player] call ace_arsenal_fnc_openBox;); \
-                //             exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"}; \
-                //         }
+					class role_SL
+                    {
+                        displayName = "SL";
+                        condition = "true"; 
+                        statement = "['sl'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
 
-                //     ADD_ROLLE(lead);
-                //     ADD_ROLLE(grena);
-                //     ADD_ROLLE(sani);
-                //     ADD_ROLLE(mg);
-                //     ADD_ROLLE(spreng);
-                //     ADD_ROLLE(aaat);
-                //     ADD_ROLLE(trag);
-                //     ADD_ROLLE(dmr);
-                //     ADD_ROLLE(pilot);
-                //     ADD_ROLLE(sniper);
-                //     ADD_ROLLE(spotter);
-                //     ADD_ROLLE(jtac);
-                //     ADD_ROLLE(arzt);
-                //     ADD_ROLLE(rifle);
-                //     ADD_ROLLE(pionier);
-                // };
+					class role_FTL
+                    {
+                        displayName = "FTL";
+                        condition = "true"; 
+                        statement = "['ftl'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Doctor
+                    {
+                        displayName = "Doctor";
+                        condition = "true"; 
+                        statement = "['doctor'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Medic
+                    {
+                        displayName = "Medic";
+                        condition = "true"; 
+                        statement = "['medic'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Rifleman
+                    {
+                        displayName = "Rifleman";
+                        condition = "true"; 
+                        statement = "['rifleman'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Ammo_Carrier
+                    {
+                        displayName = "Ammo Carrier";
+                        condition = "true"; 
+                        statement = "['ammoCarrier'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_MG
+                    {
+                        displayName = "MG";
+                        condition = "true"; 
+                        statement = "['mg'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Grenadier
+                    {
+                        displayName = "Grenadier";
+                        condition = "true"; 
+                        statement = "['grenadier'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_AT
+                    {
+                        displayName = "AT";
+                        condition = "true"; 
+                        statement = "['at'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Sniper
+                    {
+                        displayName = "Sniper";
+                        condition = "true"; 
+                        statement = "['sniper'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Spotter
+                    {
+                        displayName = "Spotter";
+                        condition = "true"; 
+                        statement = "['spotter'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Sapper
+                    {
+                        displayName = "Sapper";
+                        condition = "true"; 
+                        statement = "['sapper'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Pionier
+                    {
+                        displayName = "Pionier";
+                        condition = "true"; 
+                        statement = "['pionier'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Enginier
+                    {
+                        displayName = "Enginier";
+                        condition = "true"; 
+                        statement = "['enginier'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_JTAC
+                    {
+                        displayName = "JTAC";
+                        condition = "true"; 
+                        statement = "['jtac'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Pilot
+                    {
+                        displayName = "Pilot";
+                        condition = "true"; 
+                        statement = "['pilot'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Crewman
+                    {
+                        displayName = "Crewman";
+                        condition = "true"; 
+                        statement = "['crewman'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+
+					class role_Admin
+                    {
+                        displayName = "Admin";
+                        condition = "true"; 
+                        statement = "['admin'] call GTO_fnc_setRole;";
+                        exceptions[] = {}; 
+                    };
+				};	
             };
         };
     };
 
-    class TB_arsenal_usa : TB_arsenal_base
+    class GTO_arsenal_usa : GTO_arsenal_base
     {
-        MAKE_PUBLIC(USA,USA);
-        //hiddenSelectionsTextures[] = {QPATHTOF(pics\Arsenal_USA.paa)};
+        displayName = "Arsenal USA";
+        //arsenalType = "USA";
+        scope = 2;
+        scopeCurator = 2;
+        //hiddenSelectionsTextures[] = {gtom\arsenal\pics\Arsenal_USA.paa};
     };
 };
+//ADD_ROLE(dmr,);

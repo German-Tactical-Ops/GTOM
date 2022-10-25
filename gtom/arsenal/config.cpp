@@ -28,6 +28,7 @@
 
 // Configs
 #include "configs\CfgVehicles.hpp"
-#include "configs\Cfg3DEN.hpp"
+//#include "configs\Cfg3DEN.hpp"
 //#include "configs\ExtendedEventHandlers.hpp"
 #include "configs\CfgEditorSubcategories.hpp"
+#include "configs\CfgFunctions.hpp"

@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=488;
+		nextID=489;
 	};
 	class MarkerIDProvider
 	{
@@ -20,11 +20,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=347;
+		nextID=365;
 	};
 	class Camera
 	{
-		pos[]={4254.7188,9.9389687,7639.7935};
+		pos[]={4254.6616,9.4134588,7639.7783};
 		dir[]={0.030217549,-0.56911469,-0.82172656};
 		up[]={0.020914609,0.82225162,-0.5687412};
 		aside[]={-0.99934918,-2.4658402e-007,-0.036747914};
@@ -437,6 +437,7 @@ class Mission
 				};
 			};
 			id=22;
+			atlOffset=-5;
 		};
 		class Item1
 		{
@@ -2010,6 +2011,7 @@ class Mission
 				};
 			};
 			id=349;
+			atlOffset=-5;
 		};
 		class Item4
 		{
@@ -2880,6 +2882,7 @@ class Mission
 				};
 			};
 			id=350;
+			atlOffset=-5;
 		};
 		class Item5
 		{
@@ -3058,23 +3061,9 @@ class Mission
 				};
 			};
 			id=352;
+			atlOffset=-5;
 		};
 		class Item7
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4255.8188,5.8924227,7632.0234};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=485;
-			type="TB_arsenal_usa";
-		};
-		class Item8
 		{
 			dataType="Group";
 			side="West";
@@ -3133,6 +3122,21 @@ class Mission
 			{
 			};
 			id=487;
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4255.0981,5.8924227,7632.2671};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=488;
+			type="GTO_arsenal_usa";
 		};
 	};
 };
