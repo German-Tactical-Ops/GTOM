@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=481;
+		nextID=488;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=299;
+		nextID=347;
 	};
 	class Camera
 	{
-		pos[]={4265.9629,15.808327,7646.7158};
-		dir[]={0.14391921,-0.71775246,-0.68144804};
-		up[]={0.14831603,0.69630516,-0.7022652};
-		aside[]={-0.97851497,1.3243698e-006,-0.20665172};
+		pos[]={4254.7188,9.9389687,7639.7935};
+		dir[]={0.030217549,-0.56911469,-0.82172656};
+		up[]={0.020914609,0.82225162,-0.5687412};
+		aside[]={-0.99934918,-2.4658402e-007,-0.036747914};
 	};
 };
 binarizationWanted=0;
@@ -273,7 +273,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=9;
 		class Item0
 		{
 			dataType="Layer";
@@ -666,7 +666,7 @@ class Mission
 			name="Layer 182";
 			class Entities
 			{
-				items=5;
+				items=3;
 				class Item0
 				{
 					dataType="Group";
@@ -755,32 +755,6 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="greenmag_main_MagSkillCoef";
-									expression="_this setVariable [""greenmag_main_MagSkillCoef"", parseNumber (_value toFixed 1), true]";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.4;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="greenmag_main_BeltSkillCoef";
-									expression="_this setVariable [""greenmag_main_BeltSkillCoef"", parseNumber (_value toFixed 1), true]";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.4;
-										};
-									};
-								};
-								class Attribute3
-								{
 									property="pitch";
 									expression="_this setpitch _value;";
 									class Value
@@ -792,7 +766,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute2
 								{
 									property="ENH_unitTraits_loadCoef";
 									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
@@ -805,7 +779,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=3;
 							};
 						};
 						class Item2
@@ -854,32 +828,6 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="greenmag_main_MagSkillCoef";
-									expression="_this setVariable [""greenmag_main_MagSkillCoef"", parseNumber (_value toFixed 1), true]";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.4;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="greenmag_main_BeltSkillCoef";
-									expression="_this setVariable [""greenmag_main_BeltSkillCoef"", parseNumber (_value toFixed 1), true]";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.4;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="ENH_unitTraits_loadCoef";
 									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
 									class Value
@@ -891,7 +839,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=3;
 							};
 						};
 						class Item3
@@ -2060,29 +2008,8 @@ class Mission
 					};
 					id=421;
 				};
-				class Item3
-				{
-					dataType="Group";
-					side="West";
-					class Attributes
-					{
-					};
-					id=469;
-					atlOffset=-5;
-				};
-				class Item4
-				{
-					dataType="Group";
-					side="West";
-					class Attributes
-					{
-					};
-					id=473;
-					atlOffset=-5;
-				};
 			};
 			id=349;
-			atlOffset=-3.75;
 		};
 		class Item4
 		{
@@ -2960,7 +2887,7 @@ class Mission
 			name="Layer 184";
 			class Entities
 			{
-				items=6;
+				items=5;
 				class Item0
 				{
 					dataType="Object";
@@ -2997,22 +2924,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4311,5.3815289,7631};
-						angles[]={0,4.7545128,0};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-					};
-					id=36;
-					type="GTO_Supply_Box";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={4299,5.8924227,7631.5};
 					};
 					side="Empty";
@@ -3041,7 +2952,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -3057,7 +2968,7 @@ class Mission
 					id=40;
 					type="GTO_Medic_Carryall_cbr";
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -3104,7 +3015,6 @@ class Mission
 								rank="COLONEL";
 								name="zeus1";
 								description="1: GTO Soldier";
-								isPlayer=1;
 								isPlayable=1;
 							};
 							id=425;
@@ -3148,6 +3058,81 @@ class Mission
 				};
 			};
 			id=352;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4255.8188,5.8924227,7632.0234};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=485;
+			type="TB_arsenal_usa";
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4255.5,5.0014391,7634.5498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=486;
+					type="GTO_Soldier_SL";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=487;
 		};
 	};
 };
