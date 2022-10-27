@@ -78,20 +78,20 @@ class cfgFunctions
 			}; // [] call GTO_fnc_initFortify;
 		};
 
-		class permissionCheck
-		{
-			file = "gtom\functions\permissionCheck";
+		// class permissionCheck
+		// {
+		// 	file = "gtom\functions\permissionCheck";
 
-			class isZeus
-			{
-				recompile = 1;
-			};
+		// 	class isZeus
+		// 	{
+		// 		recompile = 1;
+		// 	};
 
-			class isAdmin
-			{
-				recompile = 1;
-			};
-		};
+		// 	class isAdmin
+		// 	{
+		// 		recompile = 1;
+		// 	};
+		// };
 
 		class respawn
 		{

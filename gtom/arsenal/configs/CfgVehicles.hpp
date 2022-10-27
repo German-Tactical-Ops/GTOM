@@ -30,7 +30,7 @@ class CfgVehicles
             {
 
 			    displayName = "Arsenal";
-                statement = ""; //[_target, [] call GTO_fnc_returnArsenal_Basic, false] call ace_arsenal_fnc_addVirtualItems;
+                statement = "";
 				runOnHover = 1;
                 distance = 6;
 

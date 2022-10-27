@@ -6,11 +6,6 @@ class cfgFunctions
 		{
 			file = "gtom\arsenal\functions";
 
-			class returnArsenal_Basic
-			{
-				recompile = 1;
-			}; // [] call GTO_fnc_returnArsenal_Basic;
-
 			class setRole
 			{
 				recompile = 1;

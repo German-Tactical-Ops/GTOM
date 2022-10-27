@@ -77,7 +77,6 @@ removeUniform ACE_player;
 removeVest ACE_player;
 removeBackpack ACE_player;
 removeHeadgear ACE_player;
-removeGoggles ACE_player;
 
 //ACE_player setUnitLoadout [[[],[],[],["GTO_BaseUniform",[]],[],[],"GTO_Beret_Black","",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","TFAR_rf7800str","ItemCompass","TFAR_microdagr",""]],true];
 
