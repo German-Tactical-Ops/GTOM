@@ -52,7 +52,6 @@ if (_role == "admin") then {
 
 	ACE_player setUnitTrait ["explosiveSpecialist", true];
 
-	ACE_player setVariable ["ACE_GForceCoef", 0.4, true];
 } else {
 	ACE_player setVariable ["ace_medical_medicClass", 0, true];
 	ACE_player setUnitTrait ["medic", false];
@@ -61,8 +60,6 @@ if (_role == "admin") then {
 	ACE_player setUnitTrait ["engineer", false];
 
 	ACE_player setUnitTrait ["explosiveSpecialist", false];
-
-	ACE_player setVariable ["ACE_GForceCoef", 2, true];
 
 	ACE_player setVariable ["ace_medical_medicClass", 0, true];
 };
