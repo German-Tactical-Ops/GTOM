@@ -8,14 +8,13 @@ class cfgFunctions
 	{
 		class arsenal // This represent a group of function
 		{
-			file = "gtom\functions\arsenal"; // Where my functions are
+			file = "gtom\functions\arsenal";
 
 			class setCategorie
 			{
 				description = "Makes a medical categorie in the arsenal";
-				postInit = 1;
 				recompile = 1;
-			}; //
+			}; // [] call GTO_fnc_setCategorie;
 
 			class initArsenal
 			{
@@ -27,12 +26,11 @@ class cfgFunctions
 			{
 				description = "Returns arsenal item ARRAY";
 				recompile = 1;
-			}; //_itemArray = [] call GTO_fnc_mainArsenal
+			}; //_itemArray = [] call GTO_fnc_mainArsenal;
 
 			class shareBasicLoadouts
 			{
 				description = "Shares the basic loadout";
-				postInit = 1;
 				recompile = 1;
 			}; // [] call GTO_fnc_shareBasicLoadouts;
 		};
@@ -43,9 +41,8 @@ class cfgFunctions
 
 			class addBasicDiary
 			{
-				postInit = 1;
 				recompile = 1;
-			}; //
+			}; // [] call GTO_fnc_addBasicDiary;
 
 			class empty
 			{
