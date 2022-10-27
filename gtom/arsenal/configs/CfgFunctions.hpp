@@ -26,6 +26,16 @@ class cfgFunctions
 				recompile = 1;
 			}; // [] call GTO_fnc_getRoleName;
 
+			class getRankNumber
+			{
+				recompile = 1;
+			}; // [_player] call GTO_fnc_getRankNumber;
+
+			class modifierRoleName
+			{
+				recompile = 1;
+			}; // [_this, _player] call GTO_fnc_modifierRoleName;
+
 			// class empty
 			// {
 			// 	// description = "Function description"; // You can write some words about your fonction

@@ -42,17 +42,17 @@ if (_role == "pilot") then {
 };
 
 if (_role == "zeus") then {
-//todo: add zeus permissions
+	// todo: add zeus permissions
 };
 
 if (_role == "admin") then {
-//todo: add all things
+	// todo: add all things
 };
 
 // player Arsenal
 [_target, _role] call GTO_fnc_setArsenal;
 
-systemChat format ["Du bist nun: %1 (%2)", [_role] call GTO_fnc_getRoleName, _arsenalType];
+systemChat format ["You are now: %1 (%2)", [_role] call GTO_fnc_getRoleName, _arsenalType];
 
 // Remove current stuff
 removeAllWeapons ACE_player;
@@ -64,4 +64,4 @@ removeBackpack ACE_player;
 removeHeadgear ACE_player;
 removeGoggles ACE_player;
 
-//todo: [] call FUNC(loadDefault);
+// todo: [] call FUNC(loadDefault);

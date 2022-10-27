@@ -31,7 +31,6 @@ class CfgVehicles
 
 			    displayName = "Arsenal";
                 statement = ""; //[_target, [] call GTO_fnc_returnArsenal_Basic, false] call ace_arsenal_fnc_addVirtualItems;
-
 				runOnHover = 1;
                 distance = 6;
 
@@ -40,7 +39,7 @@ class CfgVehicles
 					displayName = "Open Arsenal";
                 	statement = "[_target, _player, false] call ace_arsenal_fnc_openBox;";
                 	condition =  "!isNil {_target getVariable 'ace_arsenal_virtualItems'}";
-                	exceptions[] = {}; //"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"
+                	exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                 	priority = 1;
 				};
 
@@ -48,13 +47,13 @@ class CfgVehicles
 				{
 					displayName = "Take Role";
                 	condition =  "true"; //!isNil {_target getVariable 'ace_arsenal_virtualItems'};
-                	exceptions[] = {};
-					priority = 2;
+                	exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+					priority = 2;                
 
                     class categorie_lead
                     {
                         displayName = "Lead";
-                	    condition =  "true"; //todo: has a vanilla rank greater then coprol
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has a vanilla rank greater then coprol
                 	    exceptions[] = {};
 
                         class role_PL
@@ -62,46 +61,45 @@ class CfgVehicles
                             displayName = "PL (Coming soon)";
                             condition = "true"; 
                             //statement = "['pl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
                         };
 
                         class role_SL
                         {
                             displayName = "SL";
-                            condition = "true"; 
+                            condition = "30 <= ([_player] call GTO_fnc_getRankNumber)"; 
                             statement = "['sl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon= "gtom\icons\Roles\SL_icon.paa";                                                  
                         };
 
 					    class role_FTL
                         {
                             displayName = "FTL";
-                            condition = "true"; 
+                            condition = "20 <= ([_player] call GTO_fnc_getRankNumber)"; 
                             statement = "['ftl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon= "gtom\icons\Roles\SL_icon.paa";                            
                         };
                     };
 
                     class categorie_support
                     {
                         displayName = "Support";
-                	    condition =  "true"; //todo: has a vanilla rank greater then coprol
+                	    condition =  "10 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has a vanilla rank greater then coprol
                 	    exceptions[] = {};				
 
 					    class role_Doctor
                         {
                             displayName = "Doctor";
-                            condition = "true"; 
-                            statement = "['doctor', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;    ";
-                            exceptions[] = {}; 
+                            condition = "20 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            statement = "['doctor', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
+                            icon ="gtom\icons\Roles\Med_icon.paa";                            
                         };
 
 					    class role_Medic
                         {
                             displayName = "Medic";
-                            condition = "true"; 
-                            statement = "['medic', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; ";
-                            exceptions[] = {}; 
+                            condition = "10 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            statement = "['medic', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
+                            icon ="gtom\icons\Roles\Med_icon.paa";                            
                         };
                     };
 
@@ -117,7 +115,7 @@ class CfgVehicles
                             displayName = "Heavy Weapon";
                             condition = "true"; 
                             statement = "['rifleman', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\LMG_icon.paa";                            
                         };
 
 					    class role_Ammo_Carrier
@@ -125,7 +123,7 @@ class CfgVehicles
                             displayName = "Ammo Carrier";
                             condition = "true"; 
                             statement = "['ammoCarrier', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call    ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Rifleman_icon.paa";                            
                         };
 
 					    class role_MG
@@ -133,7 +131,7 @@ class CfgVehicles
                             displayName = "MG";
                             condition = "true"; 
                             statement = "['mg', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\MMG_icon.paa";                            
                         };
 
 					    class role_Grenadier
@@ -141,7 +139,7 @@ class CfgVehicles
                             displayName = "Grenadier";
                             condition = "true"; 
                             statement = "['grenadier', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call  ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Grenadier_icon.paa";                            
                         };
 
 					    class role_AT
@@ -149,7 +147,7 @@ class CfgVehicles
                             displayName = "AT";
                             condition = "true"; 
                             statement = "['at', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\AT_icon.paa";                            
                         };
 
                         class role_Marksman
@@ -157,22 +155,22 @@ class CfgVehicles
                             displayName = "Marksman";
                             condition = "true"; 
                             statement = "['marksman', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Marksman_icon.paa";                            
                         };
                     };
 
                     class categorie_special
                     {
                         displayName = "Special";
-                	    condition =  "true"; //todo: coprol
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: coprol
                 	    exceptions[] = {};
 
 					    class role_Sniper
                         {
                             displayName = "Sniper";
                             condition = "true"; 
-                            statement = "['sniper', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;    ";
-                            exceptions[] = {}; 
+                            statement = "['sniper', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
+                            icon = "gtom\icons\Roles\Sniper_icon.paa";                       
                         };
 
 					    class role_Spotter
@@ -180,15 +178,15 @@ class CfgVehicles
                             displayName = "Spotter";
                             condition = "true"; 
                             statement = "['spotter', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call    ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Sniper_icon.paa";                            
                         };                        
 
 					    class role_Sapper
                         {
                             displayName = "Sapper";
                             condition = "true"; 
-                            statement = "['sapper', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;    ";
-                            exceptions[] = {}; 
+                            statement = "['sapper', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
+                            icon = "gtom\icons\Roles\ExpSp_icon.paa";                            
                         };
 
 					    class role_Pionier
@@ -196,7 +194,8 @@ class CfgVehicles
                             displayName = "Pionier";
                             condition = "true"; 
                             statement = "['pionier', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call    ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Eng_icon.paa";
+                            
                         };
 
 					    class role_Enginier
@@ -204,7 +203,8 @@ class CfgVehicles
                             displayName = "Enginier";
                             condition = "true"; 
                             statement = "['enginier', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Eng_icon.paa";
+                            
                         };
 
 					    class role_JTAC
@@ -212,7 +212,8 @@ class CfgVehicles
                             displayName = "JTAC";
                             condition = "true"; 
                             statement = "['jtac', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Pilot_icon.paa";
+                            
                         };
 
                         class role_UAV
@@ -220,22 +221,24 @@ class CfgVehicles
                             displayName = "UAV (Coming soon)";
                             condition = "true"; 
                             //statement = "['uav', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Pilot_icon.paa";
+                            
                         };
                     };
 
                     class categorie_Vehicle
                     {
                         displayName = "Vehicle";
-                	    condition =  "true"; //todo: has a vanilla rank greater then coprol
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has a vanilla rank greater then coprol
                 	    exceptions[] = {};
 
 					    class role_Pilot
                         {
                             displayName = "Pilot";
                             condition = "true"; 
-                            statement = "['pilot', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; ";
-                            exceptions[] = {}; 
+                            statement = "['pilot', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
+                            icon = "gtom\icons\Roles\Pilot_icon.paa";
+                            
                         };
 
 					    class role_Crewman
@@ -243,14 +246,15 @@ class CfgVehicles
                             displayName = "Crewman";
                             condition = "true"; 
                             statement = "['crewman', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call    ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Crewman_icon.paa";
+                            
                         };                        
                     };
 
                     class categorie_other
                     {
                         displayName = "Other";
-                	    condition =  "true"; //todo: has permissions
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has permissions
                 	    exceptions[] = {};
 
                         class role_Zeus
@@ -258,15 +262,15 @@ class CfgVehicles
                             displayName = "Zeus";
                             condition = "true"; 
                             statement = "['zeus', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Other_icon.paa";
                         };
 
 					    class role_Admin
                         {
                             displayName = "Admin";
-                            condition = "true"; 
+                            condition = "100 <= ([_player] call GTO_fnc_getRankNumber)"; 
                             statement = "['admin', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; ";
-                            exceptions[] = {}; 
+                            icon = "gtom\icons\Roles\Other_icon.paa";
                         };
                     };
 				};	
@@ -280,7 +284,7 @@ class CfgVehicles
         arsenalType = "USA";
         scope = 2;
         scopeCurator = 2;
-        //hiddenSelectionsTextures[] = {gtom\arsenal\pics\Arsenal_USA.paa};
+        hiddenSelectionsTextures[] = {gtom\arsenal\textures\export\Arsenal_USA.paa};
     };
 
     class GTO_arsenal_vanilla : GTO_arsenal_base
@@ -289,6 +293,6 @@ class CfgVehicles
         arsenalType = "Vanilla";
         scope = 1; //todo: change when working
         scopeCurator = 1;
-        //hiddenSelectionsTextures[] = {gtom\arsenal\pics\Arsenal_USA.paa};
+        hiddenSelectionsTextures[] = {gtom\arsenal\pics\Arsenal_USA.paa};
     };
 };
