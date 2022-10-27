@@ -31,15 +31,15 @@ class cfgFunctions
 				recompile = 1;
 			}; // [_player] call GTO_fnc_getRankNumber;
 
-			class modifierRoleName
-			{
-				recompile = 1;
-			}; // [_this, _player] call GTO_fnc_modifierRoleName;
-
 			class whitelist
 			{
 				recompile = 1;
-			}; //[_items] call GTO_fnc_whitelist;
+			}; // [_items] call GTO_fnc_whitelist;
+
+			class loadDefault 
+			{
+				recompile = 1;
+			}; // [_arsenalType, _role] call GTO_fnc_loadDefault;
 
 			// class empty
 			// {

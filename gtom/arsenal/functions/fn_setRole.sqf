@@ -19,7 +19,7 @@ if (_role in ["medic", "doctor"]) then {
 	ACE_player setUnitTrait ["medic", false];
 };
 
-if if (_role in ["engi"]) then {
+if (_role == "enginier") then {
 	ACE_player setVariable ["ACE_IsEngineer", 2, true];
 	ACE_player setUnitTrait ["engineer", true];
 } else {
@@ -35,16 +35,10 @@ if (_role in ["crewman", "pilot"]) then {
 	ACE_player setUnitTrait ["engineer", false];
 };
 
-if (_role in ["sapper"]) then {
+if (_role == "sapper") then {
 	ACE_player setUnitTrait ["explosiveSpecialist", true];
 } else {
 	ACE_player setUnitTrait ["explosiveSpecialist", false];
-};
-
-if (_role == "pilot") then {
-	ACE_player setVariable ["ACE_GForceCoef", 0.4, true];
-} else {
-	ACE_player setVariable ["ACE_GForceCoef", 2, true];
 };
 
 if (_role == "zeus") then {} else {};
@@ -88,4 +82,6 @@ removeBackpack ACE_player;
 removeHeadgear ACE_player;
 removeGoggles ACE_player;
 
-// todo: [] call FUNC(loadDefault);
+//ACE_player setUnitLoadout [[[],[],[],["GTO_BaseUniform",[]],[],[],"GTO_Beret_Black","",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","TFAR_rf7800str","ItemCompass","TFAR_microdagr",""]],true];
+
+[_arsenalType, _role] call GTO_fnc_loadDefault;

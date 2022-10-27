@@ -21,7 +21,7 @@ private _allItems = [_role] call (switch (_type) do
     default {hint "Schwerer Fehler #300 | Arsenaltyp unbekannt"; {[]}};
 });
 
-[_allItems] call GTO_fnc_whitelist;
+_allItems = [_allItems] call GTO_fnc_whitelist;
 
 ace_arsenal_cameraPosition = [4, -8, 15, [0, 0, 1]];
 
@@ -42,5 +42,3 @@ ACE_player setVariable ["gto_arsenalCargo", _gtoCargo];
         _x setVariable ["ace_arsenal_virtualItems", _gtoCargo];
     };
 } forEach (entities (typeOf _ammoBox));
-
-//[_x] call FUNC(isArsenalType) && 
