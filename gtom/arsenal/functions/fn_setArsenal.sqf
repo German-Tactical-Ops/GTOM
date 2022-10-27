@@ -21,8 +21,7 @@ private _allItems = [_role] call (switch (_type) do
     default {hint "Schwerer Fehler #300 | Arsenaltyp unbekannt"; {[]}};
 });
 
-//todo: check if needed
-//[_allItems] call FUNC(whitelist);
+[_allItems] call GTO_fnc_whitelist;
 
 ace_arsenal_cameraPosition = [4, -8, 15, [0, 0, 1]];
 

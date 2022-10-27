@@ -19,14 +19,20 @@ if (_role in ["medic", "doctor"]) then {
 	ACE_player setUnitTrait ["medic", false];
 };
 
-if (_role in ["crewman", "pilot"]) then {
-	ACE_player setVariable ["ACE_IsEngineer", [1, 2] select (_role == "engi"), true];
+if if (_role in ["engi"]) then {
+	ACE_player setVariable ["ACE_IsEngineer", 2, true];
 	ACE_player setUnitTrait ["engineer", true];
-	ACE_player setUnitTrait ["explosiveSpecialist", true];
 } else {
 	ACE_player setVariable ["ACE_IsEngineer", 0, true];
 	ACE_player setUnitTrait ["engineer", false];
-	ACE_player setUnitTrait ["explosiveSpecialist", false];
+};
+
+if (_role in ["crewman", "pilot"]) then {
+	ACE_player setVariable ["ACE_IsEngineer", 1, true];
+	ACE_player setUnitTrait ["engineer", true];
+} else {
+	ACE_player setVariable ["ACE_IsEngineer", 0, true];
+	ACE_player setUnitTrait ["engineer", false];
 };
 
 if (_role in ["sapper"]) then {
@@ -38,15 +44,33 @@ if (_role in ["sapper"]) then {
 if (_role == "pilot") then {
 	ACE_player setVariable ["ACE_GForceCoef", 0.4, true];
 } else {
-	ACE_player setVariable ["ACE_GForceCoef", 1, true];
+	ACE_player setVariable ["ACE_GForceCoef", 2, true];
 };
 
-if (_role == "zeus") then {
-	// todo: add zeus permissions
-};
+if (_role == "zeus") then {} else {};
 
 if (_role == "admin") then {
-	// todo: add all things
+	ACE_player setVariable ["ace_medical_medicClass", 2, true];
+	ACE_player setUnitTrait ["medic", true];
+
+	ACE_player setVariable ["ACE_IsEngineer", 2, true];
+	ACE_player setUnitTrait ["engineer", true];
+
+	ACE_player setUnitTrait ["explosiveSpecialist", true];
+
+	ACE_player setVariable ["ACE_GForceCoef", 0.4, true];
+} else {
+	ACE_player setVariable ["ace_medical_medicClass", 0, true];
+	ACE_player setUnitTrait ["medic", false];
+
+	ACE_player setVariable ["ACE_IsEngineer", 0, true];
+	ACE_player setUnitTrait ["engineer", false];
+
+	ACE_player setUnitTrait ["explosiveSpecialist", false];
+
+	ACE_player setVariable ["ACE_GForceCoef", 2, true];
+
+	ACE_player setVariable ["ace_medical_medicClass", 0, true];
 };
 
 // player Arsenal

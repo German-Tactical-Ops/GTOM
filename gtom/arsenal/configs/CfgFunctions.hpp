@@ -36,6 +36,11 @@ class cfgFunctions
 				recompile = 1;
 			}; // [_this, _player] call GTO_fnc_modifierRoleName;
 
+			class whitelist
+			{
+				recompile = 1;
+			}; //[_items] call GTO_fnc_whitelist;
+
 			// class empty
 			// {
 			// 	// description = "Function description"; // You can write some words about your fonction

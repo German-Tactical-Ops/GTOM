@@ -8,8 +8,7 @@ scriptName "fn_arsenal_USA";
 
 params ["_role"];
 
-//todo: gto
-private _gto_main = [];
+private _gto_main = ["GTO_BaseUniform","GTO_Beret_Black"];
 
 private _weapon_main = ["rhs_weap_m4","rhs_weap_m4_carryhandle","rhs_weap_m4_carryhandle_mstock","rhs_weap_m4_mstock","rhs_weap_m4a1_carryhandle","rhs_weap_m4a1_carryhandle_mstock","rhs_weap_m4a1_blockII","rhs_weap_m4a1_blockII_bk","rhs_weap_m4a1_blockII_KAC_bk","rhs_weap_m4a1_blockII_d","rhs_weap_m4a1_blockII_KAC_d","rhs_weap_m4a1_blockII_KAC","rhs_weap_m4a1_blockII_wd","rhs_weap_m4a1_blockII_M203_wd","rhs_weap_m4a1_blockII_KAC_wd","rhs_weap_m4a1","rhs_weap_m4a1_d","rhs_weap_m4a1_d_mstock","rhs_weap_m4a1_mstock","rhs_weap_m4a1_wd","rhs_weap_m4a1_wd_mstock","rhs_weap_m16a4","rhs_weap_m16a4_carryhandle","rhs_weap_m16a4_imod","rhs_weap_m27iar","rhs_weap_m27iar_grip","rhs_weap_hk416d10","rhs_weap_hk416d10_LMT","rhs_weap_hk416d10_LMT_d","rhs_weap_hk416d10_LMT_wd","rhs_weap_hk416d145","rhs_weap_hk416d145_d","rhs_weap_hk416d145_d_2","rhs_weap_hk416d145_wd","rhs_weap_hk416d145_wd_2","arifle_SPAR_01_blk_F","arifle_SPAR_01_khk_F","arifle_SPAR_01_snd_F","rhs_weap_mk18","rhs_weap_mk18_bk","rhs_weap_mk18_KAC_bk","rhs_weap_mk18_d","rhs_weap_mk18_KAC_d","rhs_weap_mk18_KAC","rhs_weap_mk18_wd","rhs_weap_mk18_KAC_wd"];
 
@@ -91,7 +90,7 @@ private _helmet_sniper =["VSM_ProjectHonor_Boonie","VSM_OCP_Boonie","VSM_Multica
 
 // --------------------------------------------------
 
-private _uniform_main = ["GTO_BaseUniform","VSM_AOR1_BDU_Camo","DTS_BDU_Camo","VSM_M81_BDU_Camo","VSM_Multicam_BDU_Camo","VSM_MulticamTropic_BDU_Camo","VSM_OCP_BDU_Camo","VSM_ProjectHonor_BDU_Camo","Alpine_Crye_Camo","DTS_Crye_SS_Camo","DTS_Crye_Camo","VSM_AOR1_Crye_Camo","AOR_2_Crye_Camo","Arid_Crye_Camo","VSM_M81_Crye_Camo","black_Crye_Camo","VSM_Multicam_Crye_Camo","VSM_MulticamTropic_Crye_Camo","VSM_OCP_Crye_Camo","VSM_OGA_Crye_grey_Camo","VSM_OGA_Crye_od_Camo","VSM_OGA_Crye_Camo","VSM_ProjectHonor_Crye_Camo","VSM_Scorpion_Crye_Camo","Alpine_Crye_SS_Camo","VSM_AOR1_Crye_SS_Camo","AOR_2_CryeSS_Camo","Arid_Crye_SS_Camo","VSM_M81_Crye_SS_Camo","Black_Crye_SS_Camo","VSM_Multicam_Crye_SS_Camo","VSM_MulticamTropic_Crye_SS_Camo","VSM_OCP_Crye_SS_Camo","VSM_OGA_Crye_SS_grey_Camo","VSM_OGA_Crye_SS_od_Camo","VSM_OGA_Crye_SS_Camo","VSM_ProjectHonor_Crye_SS_Camo","VSM_Scorpion_Crye_SS_Camo","Alpine_Massif_Camo","VSM_AOR1_Camo","AOR2_camo","VSM_M81_Camo","VSM_Multicam_Camo","VSM_MulticamTropic_Camo","VSM_OCP_Camo","VSM_OGA_od_Camo","VSM_OGA_Camo","VSM_ProjectHonor_Camo","DTS_Massif_Camo","Alpine_Massif_Camo_SS","VSM_AOR1_Camo_SS","AOR2_SS_camo","DTS_Massif_SS_Camo","VSM_M81_Camo_SS","VSM_Multicam_Camo_SS","VSM_MulticamTropic_Camo_SS","VSM_OCP_Camo_SS","VSM_OGA_od_Camo_SS","VSM_OGA_Camo_SS","VSM_ProjectHonor_Camo_SS"];
+private _uniform_main = ["VSM_AOR1_BDU_Camo","DTS_BDU_Camo","VSM_M81_BDU_Camo","VSM_Multicam_BDU_Camo","VSM_MulticamTropic_BDU_Camo","VSM_OCP_BDU_Camo","VSM_ProjectHonor_BDU_Camo","Alpine_Crye_Camo","DTS_Crye_SS_Camo","DTS_Crye_Camo","VSM_AOR1_Crye_Camo","AOR_2_Crye_Camo","Arid_Crye_Camo","VSM_M81_Crye_Camo","black_Crye_Camo","VSM_Multicam_Crye_Camo","VSM_MulticamTropic_Crye_Camo","VSM_OCP_Crye_Camo","VSM_OGA_Crye_grey_Camo","VSM_OGA_Crye_od_Camo","VSM_OGA_Crye_Camo","VSM_ProjectHonor_Crye_Camo","VSM_Scorpion_Crye_Camo","Alpine_Crye_SS_Camo","VSM_AOR1_Crye_SS_Camo","AOR_2_CryeSS_Camo","Arid_Crye_SS_Camo","VSM_M81_Crye_SS_Camo","Black_Crye_SS_Camo","VSM_Multicam_Crye_SS_Camo","VSM_MulticamTropic_Crye_SS_Camo","VSM_OCP_Crye_SS_Camo","VSM_OGA_Crye_SS_grey_Camo","VSM_OGA_Crye_SS_od_Camo","VSM_OGA_Crye_SS_Camo","VSM_ProjectHonor_Crye_SS_Camo","VSM_Scorpion_Crye_SS_Camo","Alpine_Massif_Camo","VSM_AOR1_Camo","AOR2_camo","VSM_M81_Camo","VSM_Multicam_Camo","VSM_MulticamTropic_Camo","VSM_OCP_Camo","VSM_OGA_od_Camo","VSM_OGA_Camo","VSM_ProjectHonor_Camo","DTS_Massif_Camo","Alpine_Massif_Camo_SS","VSM_AOR1_Camo_SS","AOR2_SS_camo","DTS_Massif_SS_Camo","VSM_M81_Camo_SS","VSM_Multicam_Camo_SS","VSM_MulticamTropic_Camo_SS","VSM_OCP_Camo_SS","VSM_OGA_od_Camo_SS","VSM_OGA_Camo_SS","VSM_ProjectHonor_Camo_SS"];
 
 // --------------------------------------------------
 
@@ -169,6 +168,7 @@ _items append (switch (_role) do
 {
     case "sl":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -187,11 +187,14 @@ _items append (switch (_role) do
         _mapCompasRadio+
         _granades+
         _items_main+
-        ["rhs_weap_M320","ACE_HuntIR_M203","UGL_FlareGreen_F","UGL_FlareCIR_F","UGL_FlareRed_F","UGL_FlareWhite_F","UGL_FlareYellow_F","ACE_40mm_Flare_white","ACE_40mm_Flare_green","ACE_40mm_Flare_red","ACE_40mm_Flare_ir","Laserdesignator","Laserdesignator_03","Laserdesignator_01_khk_F","Laserdesignator_02","Laserdesignator_02_ghex_F","Rangefinder","ACE_VectorDay","ACE_Vector","TFAR_anprc152","B_UavTerminal","ACE_HuntIR_monitor","ItemcTab"]
+        ["rhs_weap_M320","ACE_HuntIR_M203","UGL_FlareGreen_F","UGL_FlareCIR_F","UGL_FlareRed_F","UGL_FlareWhite_F","UGL_FlareYellow_F","ACE_40mm_Flare_white","ACE_40mm_Flare_green","ACE_40mm_Flare_red","ACE_40mm_Flare_ir","Laserdesignator","Laserdesignator_03","Laserdesignator_01_khk_F","Laserdesignator_02","Laserdesignator_02_ghex_F","Rangefinder","ACE_VectorDay","ACE_Vector","TFAR_anprc152","B_UavTerminal","ACE_HuntIR_monitor","ItemcTab"]+
+        ["GTO_Beret_Red"]
+
     };
 
     case "ftl":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -213,11 +216,13 @@ _items append (switch (_role) do
         _mapCompasRadio+
         _granades+
         _items_main+
-        _better_radio
+        _better_radio+
+        ["GTO_Beret_Green"]
     };
 
     case "doctor":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -236,11 +241,13 @@ _items append (switch (_role) do
         _mapCompasRadio+
         _granades+
         _items_main+
-        _medic_heavy
+        _medic_heavy+
+        ["GTO_Beret_Blue"]
     };
 
     case "medic":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -259,11 +266,13 @@ _items append (switch (_role) do
         _mapCompasRadio+
         _granades+
         _items_main+
-        _medic_medium
+        _medic_medium+
+        ["GTO_Beret_Blue"]
     };
 
     case "rifleman":
     {
+        _gto_main+
         _weapon_heavy+
         _ammo_heavy+
         _weapon_pistoles+
@@ -287,6 +296,7 @@ _items append (switch (_role) do
 
     case "ammoCarrier":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -309,6 +319,7 @@ _items append (switch (_role) do
 
     case "mg":
     {
+        _gto_main+
         _weapon_mg+
         _ammo_mg+
         _weapon_pistoles+
@@ -333,6 +344,7 @@ _items append (switch (_role) do
 
     case "grenadier":
     {
+        _gto_main+
         _weapon_grenadier+
         _ammo_grenadier+
         _weapon_pistoles+
@@ -355,6 +367,7 @@ _items append (switch (_role) do
 
     case "at":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -379,6 +392,7 @@ _items append (switch (_role) do
 
     case "marksman":
     {
+        _gto_main+
         _weapon_dmr+
         _ammo_dmr+
         _weapon_pistoles+
@@ -404,6 +418,7 @@ _items append (switch (_role) do
 
     case "sniper":
     {
+        _gto_main+
         _weapon_sniper+
         _ammo_sniper+
         _weapon_pistoles+
@@ -430,6 +445,7 @@ _items append (switch (_role) do
 
     case "spotter":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -458,6 +474,7 @@ _items append (switch (_role) do
 
     case "sapper":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -485,6 +502,7 @@ _items append (switch (_role) do
 
     case "pionier":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -508,6 +526,7 @@ _items append (switch (_role) do
 
     case "enginier":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -531,6 +550,7 @@ _items append (switch (_role) do
 
     case "jtac":
     {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+
@@ -549,11 +569,13 @@ _items append (switch (_role) do
         _mapCompasRadio+
         _granades+
         _items_main+
+        ["GTO_Beret_Pink"]+
         ["UGL_FlareGreen_F","UGL_FlareCIR_F","UGL_FlareRed_F","UGL_FlareWhite_F","UGL_FlareYellow_F","ACE_40mm_Flare_white","ACE_40mm_Flare_green","ACE_40mm_Flare_red","ACE_40mm_Flare_ir","Laserdesignator","Laserdesignator_03","Laserdesignator_01_khk_F","Laserdesignator_02","Laserdesignator_02_ghex_F","Rangefinder","ACE_VectorDay","ACE_Vector","TFAR_anprc152","B_UavTerminal","ItemcTab","rhs_weap_M320","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell"]
     };
 
     case "pilot":
     {
+        _gto_main+
         _weapon_light+
         _ammo_light+
         _weapon_pistoles+
@@ -570,12 +592,14 @@ _items append (switch (_role) do
         _mapCompasRadio+
         _granades+
         _items_main+
+        ["GTO_Beret_Violett"]+
         ["ToolKit","TFAR_anprc152"]+
         ["H_PilotHelmetHeli_I","H_PilotHelmetHeli_O","H_PilotHelmetHeli_I_E","H_PilotHelmetHeli_B","RHS_jetpilot_usaf","H_PilotHelmetFighter_I","H_PilotHelmetFighter_O","H_PilotHelmetFighter_I_E","H_PilotHelmetFighter_B","rhsusf_hgu56p_black","rhsusf_hgu56p_mask_black","rhsusf_hgu56p_mask_black_skull","rhsusf_hgu56p_visor_black","rhsusf_hgu56p_visor_mask_black","rhsusf_hgu56p_visor_mask_Empire_black","rhsusf_hgu56p_visor_mask_black_skull","rhsusf_hgu56p_green","rhsusf_hgu56p_mask_green","rhsusf_hgu56p_visor_green","rhsusf_hgu56p_visor_mask_green","rhsusf_hgu56p_visor_mask_green_mo","rhsusf_hgu56p","rhsusf_hgu56p_mask","rhsusf_hgu56p_mask_skull","rhsusf_hgu56p_visor","rhsusf_hgu56p_visor_mask","rhsusf_hgu56p_visor_mask_mo","rhsusf_hgu56p_visor_mask_skull","rhsusf_hgu56p_saf","rhsusf_hgu56p_mask_saf","rhsusf_hgu56p_visor_saf","rhsusf_hgu56p_visor_mask_saf","rhsusf_hgu56p_tan","rhsusf_hgu56p_mask_tan","rhsusf_hgu56p_visor_tan","rhsusf_hgu56p_visor_mask_tan","rhsusf_hgu56p_white","rhsusf_hgu56p_visor_white","U_I_HeliPilotCoveralls","U_I_E_Uniform_01_coveralls_F","U_B_HeliPilotCoveralls","U_I_pilotCoveralls","U_O_PilotCoveralls","U_B_PilotCoveralls"]
     };
 
     case "crewman":
     {
+        _gto_main+
         _weapon_light+
         _ammo_light+
         _weapon_pistoles+
@@ -593,19 +617,23 @@ _items append (switch (_role) do
         _mapCompasRadio+
         _granades+
         _items_main+
+        ["GTO_Beret_Yellow"]+
         ["ToolKit","TFAR_anprc152"]+
         ["rhs_gssh18","rhs_6m2","rhs_6m2_1","rhsusf_cvc_green_helmet","rhsusf_cvc_green_alt_helmet","rhsusf_cvc_green_ess","rhsusf_cvc_helmet","rhsusf_cvc_alt_helmet","rhsusf_cvc_ess"]
     };
 
     case "zeus":{
+        _gto_main+
         _googles+
         _nvg_main+
         _binoculars_main+
         _mapCompasRadio+
-        ["rhs_weap_SCARH_USA_CQC","GTO_Beret_White","GTO_BaseUniform","VSM_MBSS_PACA_WTF","VSM_MBSS_WTF","TFAR_mr6000l","TFAR_anprc152","H_Construction_headset_white_F","H_Construction_earprot_white_F","H_Construction_basic_white_F","H_Construction_headset_vrana_F","H_Construction_earprot_vrana_F","H_Construction_basic_vrana_F"]
+        ["GTO_Beret_White"]+
+        ["rhs_weap_SCARH_USA_CQC","VSM_MBSS_PACA_WTF","VSM_MBSS_WTF","TFAR_mr6000l","TFAR_anprc152","H_Construction_headset_white_F","H_Construction_earprot_white_F","H_Construction_basic_white_F","H_Construction_headset_vrana_F","H_Construction_earprot_vrana_F","H_Construction_basic_vrana_F"]
     };
 
     case "admin": {
+        _gto_main+
         _weapon_main+
         _ammo_main+
         _weapon_pistoles+

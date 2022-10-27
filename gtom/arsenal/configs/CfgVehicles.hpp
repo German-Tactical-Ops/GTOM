@@ -53,7 +53,7 @@ class CfgVehicles
                     class categorie_lead
                     {
                         displayName = "Lead";
-                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has a vanilla rank greater then coprol
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)";
                 	    exceptions[] = {};
 
                         class role_PL
@@ -83,7 +83,7 @@ class CfgVehicles
                     class categorie_support
                     {
                         displayName = "Support";
-                	    condition =  "10 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has a vanilla rank greater then coprol
+                	    condition =  "10 <= ([_player] call GTO_fnc_getRankNumber)";
                 	    exceptions[] = {};				
 
 					    class role_Doctor
@@ -106,7 +106,7 @@ class CfgVehicles
                     class categorie_Weapon
                     {
                         displayName = "Weapon";
-                	    condition =  "true"; //todo: has a vanilla rank greater then coprol
+                	    condition =  "true";
                 	    exceptions[] = {};
 					    priority = 1;
 
@@ -162,7 +162,7 @@ class CfgVehicles
                     class categorie_special
                     {
                         displayName = "Special";
-                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: coprol
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)";
                 	    exceptions[] = {};
 
 					    class role_Sniper
@@ -229,7 +229,7 @@ class CfgVehicles
                     class categorie_Vehicle
                     {
                         displayName = "Vehicle";
-                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has a vanilla rank greater then coprol
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)";
                 	    exceptions[] = {};
 
 					    class role_Pilot
