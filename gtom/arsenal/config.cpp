@@ -1,6 +1,18 @@
 #include "\gtom\basicDefines_A3.hpp"
 #include "\gtom\defines.hpp"
-#include "\gtom\cfgPatches.hpp"
+
+class CfgPatches
+{
+    class ADDON
+    {
+        name = "GTO Arsenal";
+
+        units[] = {
+            "GTO_arsenal_usa"};
+
+        requiredAddons[] = {};
+    };
+};
 
 // Configs
 #include "configs\CfgVehicles.hpp"
