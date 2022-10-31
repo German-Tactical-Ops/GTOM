@@ -15,13 +15,14 @@ switch (_shortName) do
 {
     case "sl": {_name = "Squad Leader";};
     case "ftl": {_name = "Fire Team Leader";};
-    case "doctor": {_name = "Doctor"};
-    case "medic": {_name = "Medic"};
-    case "rifleman": {_name = "Heavy Weapon";};
+    case "doctor": {_name = "Doctor";};
+    case "medic": {_name = "Medic";};
     case "ammoCarrier": {_name = "Ammo Carrier";};
+    case "at": {_name = "AT";};
+    case "weaponSpecialist": {_name = "Weapon Specialist";};
     case "mg": {_name =  "MG";};
     case "grenadier": {_name = "Grenadier";};
-    case "at": {_name = "AT";};
+    case "hat": {_name = "HAT";};
     case "marksman": {_name = "Marksman";};
     case "sniper": {_name = "Sniper";};
     case "spotter": {_name = "Spotter";};

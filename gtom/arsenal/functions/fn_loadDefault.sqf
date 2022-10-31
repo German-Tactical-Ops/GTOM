@@ -11,7 +11,7 @@ if (_arsenalType == "USA") exitWith {
 	private _layout = switch (_role) do
 	{
 		case "sl": {
-			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
+			[["rhs_weap_m4a1_carryhandle","","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_ACOG_RMR",["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",30],[],"rhsusf_acc_kac_grip"],[],["rhs_weap_M320","","","",["ACE_HuntIR_M203",1],[],""],["VSM_Multicam_Crye_Camo",[["ACE_EarPlugs",1],["ACE_IR_Strobe_Item",1],["ACE_CableTie",3],["ItemAndroid",1],["ACE_MapTools",1],["ace_marker_flags_blue",1],["ACE_packingBandage",25],["ACE_tourniquet",4],["ACE_splint",1],["A3_GPNVG18b_F",1],["GTO_Beret_Red",1],["rhsusf_acc_rotex5_grey",1],["kat_Painkiller",1,10]]],["lbt_comms_mc",[["ACE_EntrenchingTool",1],["WBK_HeadLampItem",1],["ACE_HuntIR_monitor",1],["ItemcTab",1],["ItemcTabHCam",1],["SmokeShellBlue",1,1],["SmokeShell",2,1],["UGL_FlareRed_F",1,1],["B_IR_Grenade",1,1],["ACE_HuntIR_M203",4,1]]],["TFAR_rt1523g_big_rhs",[["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",8,30]]],"VSM_OPS_2_multicam","",["Laserdesignator","","","",[],[],""],["ItemMap","ItemGPS","TFAR_anprc152_8","ItemCompass","ItemWatch",""]]
 		};
 		case "ftl": {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
@@ -22,7 +22,7 @@ if (_arsenalType == "USA") exitWith {
 		case "medic": {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
 		};
-		case "rifleman": {
+		case "weaponSpecialist": {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
 		};
 		case "ammoCarrier": {

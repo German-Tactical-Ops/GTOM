@@ -31,6 +31,11 @@ class cfgFunctions
 				recompile = 1;
 			}; // [_items] call GTO_fnc_whitelist;
 
+			class blacklistItems
+			{
+				recompile = 1;
+			}; // [_items] call GTO_fnc_blacklistItems;
+
 			class loadDefault 
 			{
 				recompile = 1;

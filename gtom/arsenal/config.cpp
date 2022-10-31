@@ -3,12 +3,14 @@
 
 class CfgPatches
 {
-    class ADDON
+    class GTOM_Arsenal
     {
         name = "GTO Arsenal";
+        author = "LucyferHW";
+        url = "";
 
         units[] = {
-            "GTO_arsenal_usa"};
+            "GTO_arsenal_usa","GTO_arsenal_usa_noElectronics"};
 
         requiredAddons[] = {};
     };

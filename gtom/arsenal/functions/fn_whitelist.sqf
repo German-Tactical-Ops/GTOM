@@ -9,13 +9,18 @@ params ["_items"];
 
 if ("76561198287292572" == getPlayerUID player) then {
 	_items append
-	["H_Cap_headphones", "V_Rangemaster_belt"];
-};
+	["H_Cap_headphones", "V_Rangemaster_belt","TFAR_anprc152"];
+};// Lucyfer Angel
 
 if ("76561198137853279" == getPlayerUID player) then {
 	_items append
 	["H_Cap_headphones", "V_Rangemaster_belt"];
-};
+}; // Drake Murphy
+
+if ("76561198181304607" == getPlayerUID player) then {
+	_items append
+	["H_Cap_headphones", "V_Rangemaster_belt"];
+}; // Lars
 
 // // Spieler Whitelist
 // _items append (switch (getPlayerUID player) do
@@ -31,6 +36,10 @@ if ("76561198137853279" == getPlayerUID player) then {
 // 	case "76561198137853279": {
 // 		["H_Beret_EAF_01_F"]
 // 	}; // Drake Murphy
+
+// 	case "76561198181304607": {
+// 		["H_Beret_EAF_01_F"]
+// 	}; // Lars
 
 // 	default {
 // 		[]
