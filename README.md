@@ -38,7 +38,3 @@ The most used functions will be listed here:
 [GTOM Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2846987310)
 
 [GTO Discord](https://discord.gg/gCqkPWHrWj)
-
-
-This mod contains this [NATO Markers+](https://steamcommunity.com/sharedfiles/filedetails/?id=1340701737).
-The original was not signed, I copied it and signed. When the author says I should delete it I will do this.
