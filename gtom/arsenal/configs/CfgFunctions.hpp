@@ -6,11 +6,6 @@ class cfgFunctions
 		{
 			file = "gtom\arsenal\functions";
 
-			class returnArsenal_Basic
-			{
-				recompile = 1;
-			}; // [] call GTO_fnc_returnArsenal_Basic;
-
 			class setRole
 			{
 				recompile = 1;
@@ -35,6 +30,11 @@ class cfgFunctions
 			{
 				recompile = 1;
 			}; // [_items] call GTO_fnc_whitelist;
+
+			class blacklistItems
+			{
+				recompile = 1;
+			}; // [_items] call GTO_fnc_blacklistItems;
 
 			class loadDefault 
 			{
