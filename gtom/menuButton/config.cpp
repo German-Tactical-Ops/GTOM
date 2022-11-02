@@ -1,6 +1,19 @@
 #include "\gtom\basicDefines_A3.hpp"
 #include "\gtom\defines.hpp"
-#include "\gtom\cfgPatches.hpp"
+
+class CfgPatches
+{
+    class GTOM_MenuButton
+    {
+        name = "GTO menu button";
+        author = "LucyferHW";
+        url = "";
+
+        units[] = {};
+
+        requiredAddons[] = {};
+    };
+};
 
 class CfgMainMenuSpotlight
 {
@@ -14,15 +27,16 @@ class CfgMainMenuSpotlight
         condition = "true";
     };
 
-    class JoinServerFschJgRgt
-    {
-        text = "FschJgRgt Server";
-        picture = "gtom\logo\Fallschirmjagerregiment_42.paa";
-        //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
-        action = "connectToServer ['185.240.242.109', 2302, 'FschJgRgt42']";
-        actionText = "Join FschJgRgt Server";
-        condition = "false";
-    };
+    // class JoinServerFschJgRgt
+    // {
+    //     text = "FschJgRgt Server";
+    //     picture = "gtom\logo\Fallschirmjagerregiment_42.paa";
+    //     //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
+    //     action = "connectToServer ['185.240.242.109', 2302, 'FschJgRgt42']";
+    //     actionText = "Join FschJgRgt Server";
+    //     condition = "false";
+    // };
+
     delete ApexProtocol;
     delete BootCamp;
     delete EastWind;

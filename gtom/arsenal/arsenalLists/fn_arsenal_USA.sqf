@@ -8,7 +8,7 @@ scriptName "fn_arsenal_USA";
 
 params ["_role"];
 
-private _gto_main = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform"];
+private _gto_main = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform","KNB_Notebook"];
 
 private _weapon_mp = ["SMG_01_F", "rhsusf_weap_MP7A2_aor1", "rhsusf_weap_MP7A2_desert", "rhsusf_weap_MP7A2_winter", "rhsusf_weap_MP7A2", "SMG_05_F", "SMG_02_F"];
 
@@ -152,11 +152,11 @@ private _items_main = ["ACE_RangeTable_82mm", "ACE_artilleryTable", "Attachable_
 
 private _medic_light = ["ACE_packingBandage", "ACE_quikclot", "kat_Painkiller", "ACE_splint", "ACE_tourniquet"];
 
-private _medic_medium = ["ACE_packingBandage", "ACE_quikclot", "kat_Painkiller", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "kat_guedel", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_chestSeal", "kat_aatKit", "kat_Carbonate"];
+private _medic_medium = ["ACE_packingBandage","ACE_quikclot","ACE_splint","ACE_tourniquet","kat_IV_16","ACE_adenosine","kat_AED","ACE_bodyBag","ACE_epinephrine","kat_IO_FAST","kat_guedel","ACE_morphine","kat_naloxone","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","kat_Pulseoximeter","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","kat_stethoscope","kat_TXA","kat_chestSeal","kat_aatKit","kat_CarbonateItem","kat_EACA","kat_PainkillerItem","KNB_PanelRed"];
 
-private _medic_heavy = ["ACE_packingBandage", "ACE_quikclot", "kat_Painkiller", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_bloodIV_O", "kat_bloodIV_O_N", "kat_bloodIV_A", "kat_bloodIV_A_N", "kat_bloodIV_AB", "kat_bloodIV_AB_N", "kat_bloodIV_B", "kat_bloodIV_B_N", "kat_bloodIV_O_250", "kat_bloodIV_O_250_N", "kat_bloodIV_A_250", "kat_bloodIV_A_250_N", "kat_bloodIV_AB_250", "kat_bloodIV_AB_250_N", "kat_bloodIV_B_250", "kat_bloodIV_B_250_N", "kat_bloodIV_O_500", "kat_bloodIV_A_500_N", "kat_bloodIV_AB_500", "kat_bloodIV_AB_500_N", "kat_bloodIV_B_500", "kat_bloodIV_B_500_N", "kat_bloodIV_A_500", "kat_bloodIV_O_500_N", "ACE_elasticBandage", "kat_accuvac", "kat_aatKit", "kat_X_AED", "kat_atropine", "kat_amiodarone", "kat_crossPanel", "kat_chestSeal", "KAT_Empty_bloodIV_250", "KAT_Empty_bloodIV_500", "kat_guedel", "kat_larynx", "kat_lidocaine", "kat_phenylephrine", "ACE_personalAidKit", "ACE_surgicalKit", "kat_Carbonate"];
+private _medic_heavy = ["ACE_packingBandage","ACE_quikclot","ACE_splint","ACE_tourniquet","kat_IV_16","ACE_adenosine","kat_AED","ACE_bodyBag","ACE_epinephrine","kat_IO_FAST","ACE_morphine","kat_naloxone","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","kat_Pulseoximeter","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","kat_stethoscope","kat_TXA","kat_bloodIV_O_N","kat_bloodIV_A_N","kat_bloodIV_AB_N","kat_bloodIV_B_N","ACE_elasticBandage","kat_accuvac","kat_aatKit","kat_X_AED","kat_atropine","kat_amiodarone","kat_crossPanel","kat_chestSeal","KAT_Empty_bloodIV_250","KAT_Empty_bloodIV_500","kat_guedel","kat_larynx","kat_lidocaine","kat_phenylephrine","ACE_personalAidKit","ACE_surgicalKit","kat_CarbonateItem","kat_bloodIV_O_N_250","kat_bloodIV_A_N_250","kat_bloodIV_AB_N_250","kat_bloodIV_B_N_250","kat_bloodIV_O_N_500","kat_bloodIV_A_N_500","kat_bloodIV_AB_N_500","kat_bloodIV_B_N_500","kat_plate","kat_clamp","kat_vacuum","kat_EACA","kat_etomidate","kat_fentanyl","kat_flumazenil","kat_ketamine","kat_lorazepam","kat_nalbuphine","kat_nitroglycerin","kat_norepinephrine","kat_PainkillerItem","kat_retractor","kat_scalpel","KNB_PanelRed"];
 
-private _items_sniper = [["ACE_ATragMX", "ACE_DAGR", "ACE_Kestrel4500", "ACE_RangeCard", "ACE_SpottingScope", "ACE_Tripod"]];
+private _items_sniper = ["ACE_ATragMX", "ACE_DAGR", "ACE_Kestrel4500", "ACE_RangeCard", "ACE_SpottingScope", "ACE_Tripod"];
 
 private _items_engi = ["ToolKit"];
 

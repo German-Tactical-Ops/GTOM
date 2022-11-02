@@ -1,12 +1,12 @@
 version=54;
-center[]={2494.967,73.459595,5675.3452};
+center[]={1803.238,5.5,5461.1509};
 class items
 {
 	items=1;
 	class Item0
 	{
 		dataType="Logic";
-		id=10;
+		id=149;
 		type="SSS_module_AddLogisticsAirdrop";
 		class CustomAttributes
 		{
@@ -45,7 +45,7 @@ class items
 					class data
 					{
 						singleType="STRING";
-						value="Golf";
+						value="Tango";
 					};
 				};
 			};
@@ -162,7 +162,7 @@ class items
 					class data
 					{
 						singleType="STRING";
-						value="[""ACE_medicalSupplyCrate_advanced"",""GTO_Ammo_Box"",""GTO_Explosiv_Box"",""GTO_Equipment_Box""]";
+						value="[""GTO_Box_Base"", ""GTO_Box_Ammo"",""GTO_Box_BasicItems"",""GTO_Box_Explosives"",""GTO_Box_Grenades"",""GTO_Box_MapCompasRadio"", ""GTO_Box_Medic"",""GTO_Box_NVG""]";
 					};
 				};
 			};
