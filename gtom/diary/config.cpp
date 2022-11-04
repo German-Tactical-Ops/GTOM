@@ -1,19 +1,17 @@
 #include "\gtom\basicDefines_A3.hpp"
-#include "\gtom\defines.hpp"
 
 class CfgPatches
 {
-    class GTOM_Placeables
+    class GTOM_Diary
     {
-        name = "GTO Placeables";
+        name = "GTO Diary";
         author = "LucyferHW";
         url = "";
 
         units[] = {};
 
-        requiredAddons[] = {"GTOM_Main"};
+        requiredAddons[] = {"cba_common","GTOM_Main"};
     };
 };
 
-#include "configs\CfgVehicles.hpp"
 #include "configs\CfgFunctions.hpp"

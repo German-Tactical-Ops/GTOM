@@ -18,7 +18,7 @@ class CfgPatches
                    "GTO_Box_Medic",
                    "GTO_Box_NVG"};
 
-        requiredAddons[] = {"GTOM_Main","A3_Supplies_F_Orange_Ammoboxes"};
+        requiredAddons[] = {"A3_Supplies_F_Orange_Ammoboxes","GTOM_Main",};
     };
 };
 

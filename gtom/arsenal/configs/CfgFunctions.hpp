@@ -41,6 +41,11 @@ class cfgFunctions
 				recompile = 1;
 			}; // [_arsenalType, _role] call GTO_fnc_loadDefault;
 
+			class setMedicationCategorie
+			{
+				recompile = 1;
+			}; // [] call GTO_fnc_setMedicationCategorie;
+
 			// class empty
 			// {
 			// 	// description = "Function description"; // You can write some words about your fonction
