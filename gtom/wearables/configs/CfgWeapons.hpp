@@ -1,4 +1,4 @@
-CfgWeapons
+class CfgWeapons
 {
 	class H_HelmetSpecB;
 
