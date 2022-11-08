@@ -38,3 +38,6 @@ The most used functions will be listed here:
 [GTOM Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2846987310)
 
 [GTO Discord](https://discord.gg/gCqkPWHrWj)
+
+# Contributers
+[Wollkopf](https://github.com/w0llkopf)
