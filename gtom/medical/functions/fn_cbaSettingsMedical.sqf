@@ -15,9 +15,7 @@ scriptName "fn_cbaSettingsMedical";
 	["GTOM Settings", "Medical"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[0, 1, 0.1, 3], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
-	{
-
-	} // function that will be executed once on mission start and every time the setting is changed.
+	{} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
 [
@@ -29,7 +27,6 @@ scriptName "fn_cbaSettingsMedical";
 	1,
 	{
 		if (_this) then {
-
 			private _codeToRun = {
 				private _state = [player, ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
 
@@ -133,3 +130,18 @@ scriptName "fn_cbaSettingsMedical";
 	}, true
 ] call CBA_fnc_addSetting;
 
+[
+	"GTO_SetBloodGroup", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+	"CHECKBOX", // setting type
+	["Set Blood Group", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+	["GTOM Settings", "Medical"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+	false, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
+	{
+		params ["_value"];
+
+		if (_value) then {
+			[] call GTO_fnc_setBloodGroup;
+		};
+	}, true // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;

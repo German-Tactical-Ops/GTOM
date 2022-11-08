@@ -1,17 +1,16 @@
 #include "\gtom\basicDefines_A3.hpp"
-#include "\gtom\defines.hpp"
 
 class CfgPatches
 {
     class GTOM_MenuButton
     {
-        name = "GTO menu button";
+        name = "GTOM MenuButton";
         author = "LucyferHW";
         url = "";
 
-        units[] = {};
+        units[] = {"JoinServerGTO"};
 
-        requiredAddons[] = {};
+        requiredAddons[] = {"GTOM_Main"};
     };
 };
 
@@ -27,15 +26,15 @@ class CfgMainMenuSpotlight
         condition = "true";
     };
 
-    // class JoinServerFschJgRgt
-    // {
-    //     text = "FschJgRgt Server";
-    //     picture = "gtom\logo\Fallschirmjagerregiment_42.paa";
-    //     //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
-    //     action = "connectToServer ['185.240.242.109', 2302, 'FschJgRgt42']";
-    //     actionText = "Join FschJgRgt Server";
-    //     condition = "false";
-    // };
+    class JoinServerFschJgRgt
+    {
+        text = "FschJgRgt Server";
+        picture = "gtom\logo\Fallschirmjagerregiment_42.paa";
+        //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
+        action = "connectToServer ['185.240.242.109', 2302, 'FschJgRgt42']";
+        actionText = "Join FschJgRgt Server";
+        condition = "false";
+    };
 
     delete ApexProtocol;
     delete BootCamp;
@@ -57,22 +56,15 @@ class CfgMainMenuSpotlight
     delete AoW_Showcase_Future;
 };
 
-/*Server name: [GTO] German Tactical Ops
+/*
+Server name: [GTO] German Tactical Ops
 Address: 5.83.170.148:21000
 Server version: 210149954
 Required game version: 2.10.0
 
-Map: Hebontes
-Mission: GTO_Training_Ground
-Players: 1/12
-*/
 
 /*Server name: Fallschirmjägerregiment 42 Offizieller Gameserver
 Address: 185.240.242.109:2302
 Server version: 210149799
 Required game version: 2.10.0
-
-Map: Altis
-Mission: TrainingsmapV1
-Players: 0/23
 */
