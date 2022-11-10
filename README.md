@@ -41,4 +41,4 @@ Lars
 # Credits
 [Tactical Bacon](https://tacticalbacon.de)
 
-VSM Team- [VSM](https://steamcommunity.com/sharedfiles/filedetails/?id=823636749&searchtext=vsm), Roadrunner, Spectre, Zeealex, Jarrad96, CrazyCorky, Bacon, Ghost.
+[VSM](https://steamcommunity.com/sharedfiles/filedetails/?id=823636749&searchtext=vsm) Team: Roadrunner, Spectre, Zeealex, Jarrad96, CrazyCorky, Bacon, Ghost.
