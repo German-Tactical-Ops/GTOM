@@ -262,16 +262,11 @@ class CfgVehicles {
         displayName = "[GTO] basic Items Box";
 
         class TransportItems
-        {
-			ITEM_XX(ACE_RangeTable_82mm, 20); 
-			ITEM_XX(ACE_artilleryTable, 20); 
+        { 
 			ITEM_XX(Attachable_Helistretcher, 20); 
 			ITEM_XX(ACE_CableTie, 20); 
 			ITEM_XX(ACE_Canteen, 20); 
-			ITEM_XX(ACE_Canteen_Empty, 20); 
-			ITEM_XX(ACE_Canteen_Half, 20); 
 			ITEM_XX(ACE_Chemlight_Shield, 20); 
-			ITEM_XX(ACE_Cellphone, 20); 
 			ITEM_XX(ACE_EarPlugs, 20); 
 			ITEM_XX(ACE_EntrenchingTool, 20); 
 			ITEM_XX(ACE_Flashlight_MX991, 20); 
@@ -279,8 +274,6 @@ class CfgVehicles {
 			ITEM_XX(WBK_HeadLampItem, 20); 
 			ITEM_XX(ItemcTabHCam, 20); 
 			ITEM_XX(ACE_IR_Strobe_Item, 20); 
-			ITEM_XX(ACE_Flashlight_KSF1, 20); 
-			ITEM_XX(ACE_Flashlight_XL50, 20); 
 			ITEM_XX(ACE_MapTools, 20); 
 			ITEM_XX(ItemMicroDAGR, 20); 
 			ITEM_XX(ACE_microDAGR, 20); 
@@ -288,8 +281,6 @@ class CfgVehicles {
 			ITEM_XX(ACE_SpareBarrel_Item, 20); 
 			ITEM_XX(ACE_UAVBattery, 20); 
 			ITEM_XX(ACE_WaterBottle, 20); 
-			ITEM_XX(ACE_WaterBottle_Empty, 20); 
-			ITEM_XX(ACE_WaterBottle_Half, 20); 
 			ITEM_XX(B_Parachute, 20);
         };
     };
