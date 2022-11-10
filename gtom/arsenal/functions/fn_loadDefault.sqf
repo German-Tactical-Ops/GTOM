@@ -34,7 +34,7 @@ if (_arsenalType == "USA") exitWith {
 		case "grenadier": {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
 		};
-		case "at": {
+		case "lat": {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
 		};
 		case "marksman": {

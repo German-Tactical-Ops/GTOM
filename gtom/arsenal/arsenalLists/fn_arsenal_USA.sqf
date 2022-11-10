@@ -300,7 +300,7 @@ _items append (switch (_role) do
 		_medic_light
 	};
 
-	case "at":
+	case "lat":
 	{
 		_gto_main+
 		_weapon_light+
