@@ -39,4 +39,6 @@ This mod contains many small things for Players, Curators and Mission Makers.
 Lars
 
 # Credits
-Special thanks for help to [Tactical Bacon](https://tacticalbacon.de)
+[Tactical Bacon](https://tacticalbacon.de)
+
+VSM Team- [VSM](https://steamcommunity.com/sharedfiles/filedetails/?id=823636749&searchtext=vsm), Roadrunner, Spectre, Zeealex, Jarrad96, CrazyCorky, Bacon, Ghost.
