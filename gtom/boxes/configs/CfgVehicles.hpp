@@ -254,6 +254,9 @@ class CfgVehicles {
 			ITEM_XX(TFAR_microdagr, 20);
 			ITEM_XX(ACE_Altimeter, 20);
 			ITEM_XX(ItemGPS, 20);
+			ITEM_XX(ItemAndroid, 20);
+			ITEM_XX(ItemMicroDAGR, 20);
+			ITEM_XX(ACE_microDAGR, 20);
         };
     };
 
@@ -270,13 +273,10 @@ class CfgVehicles {
 			ITEM_XX(ACE_EarPlugs, 20); 
 			ITEM_XX(ACE_EntrenchingTool, 20); 
 			ITEM_XX(ACE_Flashlight_MX991, 20); 
-			ITEM_XX(ItemAndroid, 20); 
 			ITEM_XX(WBK_HeadLampItem, 20); 
 			ITEM_XX(ItemcTabHCam, 20); 
 			ITEM_XX(ACE_IR_Strobe_Item, 20); 
 			ITEM_XX(ACE_MapTools, 20); 
-			ITEM_XX(ItemMicroDAGR, 20); 
-			ITEM_XX(ACE_microDAGR, 20); 
 			ITEM_XX(ACE_RangeCard, 20); 
 			ITEM_XX(ACE_SpareBarrel_Item, 20); 
 			ITEM_XX(ACE_UAVBattery, 20); 
