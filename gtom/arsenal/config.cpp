@@ -23,3 +23,5 @@ class CfgPatches
 
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgFunctions.hpp"
+
+// todo: make function that returns full arsenal list
