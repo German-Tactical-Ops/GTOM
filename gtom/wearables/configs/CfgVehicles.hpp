@@ -8,7 +8,7 @@ class CfgVehicles {
 	{
 		scope= 0;
 		author= "w0llkopf";
-		picture= "gtom\wearables\icons\gto_medic_icon.paa";
+		picture= "\gtom\wearables\icons\gto_medic_icon.paa";
 		maximumLoad= 400;
 	};
 
