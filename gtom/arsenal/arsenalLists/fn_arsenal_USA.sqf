@@ -654,7 +654,7 @@ _items append (switch (_role) do
 		       // _helmet_main+
 		_uniform_main+
 		_vest_light+
-		       // _backpack_small+
+		_backpack_small+
 		_googles+
 		_nvg_main+
 		_binoculars_medium+

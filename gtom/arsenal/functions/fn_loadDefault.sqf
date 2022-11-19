@@ -59,7 +59,7 @@ if (_arsenalType == "USA") exitWith {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
 		};
 		case "crewman": {
-			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
+			[["rhsusf_weap_MP7A2","","","optic_Yorris",["rhsusf_mag_40Rnd_46x30_JHP",40],[],""],[],["rhsusf_weap_glock17g4","","acc_flashlight_pistol","",["rhsusf_mag_17Rnd_9x19_JHP",17],[],""],["VSM_Multicam_Camo",[["ACE_EarPlugs",1],["ItemAndroid",1],["WBK_HeadLampItem",1],["ItemcTabHCam",1],["ACE_IR_Strobe_Item",1],["ACE_Flashlight_XL50",1],["ACE_MapTools",1],["ACE_tourniquet",4],["ACE_splint",2],["ACE_quikclot",16],["ACE_CableTie",1],["rhsusf_mag_17Rnd_9x19_JHP",1,17]]],["lbt_light_mc",[["ToolKit",1],["rhsusf_mag_17Rnd_9x19_JHP",3,17]]],[],"rhsusf_cvc_helmet","",["Rangefinder","","","",[],[],""],["ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr","A3_GPNVG18_F"]]
 		};
 		default {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
