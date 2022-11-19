@@ -121,9 +121,9 @@ class CfgVehicles
 
                         class role_AT
                         {
-                            displayName = "AT";
+                            displayName = "LAT";
                             condition = "true"; 
-                            statement = "['at', getText (configOf _target>> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
+                            statement = "['lat', getText (configOf _target>> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
                             icon = "gtom\icons\Roles\AT_icon.paa";                            
                         };
                     };

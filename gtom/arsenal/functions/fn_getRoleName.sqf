@@ -18,7 +18,7 @@ switch (_shortName) do
     case "doctor": {_name = "Doctor";};
     case "medic": {_name = "Medic";};
     case "ammoCarrier": {_name = "Ammo Carrier";};
-    case "at": {_name = "AT";};
+    case "lat": {_name = "LAT";};
     case "weaponSpecialist": {_name = "Weapon Specialist";};
     case "mg": {_name =  "MG";};
     case "grenadier": {_name = "Grenadier";};
