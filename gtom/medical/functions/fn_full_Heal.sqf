@@ -2,20 +2,44 @@ scriptName "fn_full_Heal";
 
 params ["_target", "_player", "_type", "_self"];
 
-private _time = 1; 
-
 if (!_self) then {
-
-	if (_type=="GTO_Medikit") then {
-		_player removeItem "GTO_Medikit";	
-		_time = 5;
-	} else {
-		_player removeItem "GTO_FirstAidKit";
-		_time = 10;
+	switch (_type) do {
+		case "GTO_Medikit": {
+			_player removeItem "GTO_Medikit";
+			[_target] call ace_medical_treatment_fnc_fullHealLocal;
+		};
+		case "GTO_FirstAidKit": {
+			_player removeItem "GTO_FirstAidKit";
+			[_target] call ace_medical_treatment_fnc_fullHealLocal;
+		};
+		default {};
 	};
 
-	[_time, [], {[_target] call ace_medical_treatment_fnc_fullHealLocal;}, {}, "Full Healing"] call ace_common_fnc_progressBar;
-		
-} else {
-	
-};
+	/* // if (_type=="GTO_Medikit") exitWith {
+		// _player removeItem "GTO_Medikit";
+
+		// [10, [], {
+			// [_target] call ace_medical_treatment_fnc_fullHealLocal
+			//
+		}, {
+			// hint "error"
+			//
+		}, "Full Healing"] call ace_common_fnc_progressBar;
+
+		//
+	}; */
+
+	/* // if (_type=="GTO_FirstAidKit") exitWith {
+		// _player removeItem "GTO_FirstAidKit";
+
+		// [5, [], {
+			// [_target] call ace_medical_treatment_fnc_fullHealLocal
+			//
+		}, {
+			// hint "error"
+			//
+		}, "Full Healing"] call ace_common_fnc_progressBar;
+
+		//
+	}; */
+} else {};
