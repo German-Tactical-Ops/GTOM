@@ -19,7 +19,7 @@ class CfgVehicles
                 class GTO_FirstAidKit_Heal
                 {
                     displayName = "Use FirstAidKit";
-                    condition = "'GTO_FirstAidKit' in (items player)";
+                    condition = "'GTO_FirstAidKit' in (items player) && [_target] call ace_medical_status_fnc_hasStableVitals";
                     //exceptions[] = {};
                     statement = "[_target, _player, 'GTO_FirstAidKit', false] call GTO_fnc_full_Heal";
                     //icon = "";
@@ -28,3 +28,5 @@ class CfgVehicles
         };
     };
 };
+
+//todo: add [cursorObject] call ace_medical_status_fnc_hasStableVitals
