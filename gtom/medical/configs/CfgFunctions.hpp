@@ -19,6 +19,11 @@ class cfgFunctions
 			{
 				recompile = 1;
 			}; // [] call GTO_fnc_setBloodGroup;
+
+			class full_Heal
+			{
+				recompile = 1;
+			}; // [] call GTO_fnc_full_Heal;
 		};
 	};
 };
