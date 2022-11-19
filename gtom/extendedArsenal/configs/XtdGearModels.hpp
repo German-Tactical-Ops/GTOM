@@ -8,7 +8,7 @@ class camoType \
 	alwaysSelectable = 0;\
     changeingame = 1;\
     changedelay = 5;\
-	class alpine{label = "alpine"; image = "gtom\extendedArsenal\textures\camoFragments\camo_alpine.paa";};\
+	class alpine{label = "Alpine"; image = "gtom\extendedArsenal\textures\camoFragments\camo_alpine.paa";};\
 	class aor1{label = "AOR1"; image = "gtom\extendedArsenal\textures\camoFragments\camo_aor1.paa";};\
 	class aor2{label = "AOR2"; image = "gtom\extendedArsenal\textures\camoFragments\camo_aor2.paa";};\
 	class dts{label = "Tiger"; image = "gtom\extendedArsenal\textures\camoFragments\camo_dts.paa";};\
@@ -21,8 +21,8 @@ class camoType \
 	class oga{label = "OGA"; image = "gtom\extendedArsenal\textures\camoFragments\camo_oga.paa";};\
 	class oga_grey{label = "OGA grey"; image = "gtom\extendedArsenal\textures\camoFragments\camo_oga_grey.paa";};\
 	class oga_od{label = "OGA od"; image = "gtom\extendedArsenal\textures\camoFragments\camo_oga_od.paa";};\
-	class projecthonor{label = "projecthonor"; image = "gtom\extendedArsenal\textures\camoFragments\camo_projecthonor.paa";};\
-	class scorpion{label = "scorpion"; image = "gtom\extendedArsenal\textures\camoFragments\camo_scorpion.paa";};\
+	class projecthonor{label = "Projecthonor"; image = "gtom\extendedArsenal\textures\camoFragments\camo_projecthonor.paa";};\
+	class scorpion{label = "Scorpion"; image = "gtom\extendedArsenal\textures\camoFragments\camo_scorpion.paa";};\
     class apex{label = "Apex"; image = "gtom\extendedArsenal\textures\camoFragments\camo_multicam_tropic.paa";};\
 };
 
