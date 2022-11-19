@@ -300,7 +300,7 @@ _items append (switch (_role) do
 		_medic_light
 	};
 
-	case "at":
+	case "lat":
 	{
 		_gto_main+
 		_weapon_light+
@@ -314,7 +314,7 @@ _items append (switch (_role) do
 		_helmet_main+
 		_uniform_main+
 		_vest_heavy+
-		_backpack_middle+
+		_backpack_small+
 		_googles+
 		_nvg_main+
 		_binoculars_main+
@@ -654,7 +654,7 @@ _items append (switch (_role) do
 		       // _helmet_main+
 		_uniform_main+
 		_vest_light+
-		       // _backpack_small+
+		_backpack_small+
 		_googles+
 		_nvg_main+
 		_binoculars_medium+
