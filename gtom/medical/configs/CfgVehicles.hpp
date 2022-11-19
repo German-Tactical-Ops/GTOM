@@ -10,7 +10,7 @@ class CfgVehicles
                 class GTO_Medikit_Heal
                 {
                     displayName = "Use Medikit";
-                    condition = "'GTO_Medikit' in (items player) && (player getUnitTrait 'Medic' || player getVariable ['ace_medical_medicClass', true] > 0)";
+                    condition = "'GTO_Medikit' in (items player) && player getUnitTrait 'Medic'";
                     //exceptions[] = {};
                     statement = "[_target, _player,'GTO_Medikit', false] call GTO_fnc_full_Heal";
                     //icon = "";
