@@ -110,7 +110,7 @@ private _backpack_small = ["Alpine_Backpack_Compact", "VSM_AOR1_Backpack_Compact
 
 private _backpack_middle = ["Alpine_Backpack_kitbag", "VSM_AOR1_Backpack_Kitbag", "AOR2_Backpack_kitbag", "DTS_Backpack_kitbag", "VSM_M81_Backpack_Kitbag", "Arid_Backpack_kitbag", "Black_Backpack_kitbag", "VSM_Multicam_Backpack_Kitbag", "VSM_MulticamTropic_Backpack_Kitbag", "VSM_OCP_Backpack_Kitbag", "VSM_OGA_Backpack_Kitbag", "VSM_OGA_OD_Backpack_Kitbag", "VSM_ProjectHonor_Backpack_Kitbag"];
 
-private _backpack_big = ["Alpine_Carryall", "VSM_AOR1_carryall", "AOR2_Carryall", "DTS_Carryall", "VSM_M81_carryall", "Arid_Carryall", "Black_Carryall", "VSM_Multicam_carryall", "VSM_MulticamTropic_carryall", "VSM_OCP_carryall", "VSM_OGA_carryall", "VSM_OGA_OD_carryall", "VSM_ProjectHonor_carryall", "B_Carryall_cbr", "B_Carryall_eaf_F", "B_Carryall_ghex_F", "B_Carryall_green_F", "B_Carryall_ocamo", "B_Carryall_khk", "B_Carryall_mcamo", "B_Carryall_oli", "B_Carryall_taiga_F", "B_Carryall_oucamo", "B_Carryall_wdl_F"];
+private _backpack_big = ["Alpine_Carryall", "VSM_AOR1_carryall", "AOR2_Carryall", "DTS_Carryall", "VSM_M81_carryall", "Arid_Carryall", "Black_Carryall", "VSM_Multicam_carryall", "VSM_MulticamTropic_carryall", "VSM_OCP_carryall", "VSM_OGA_carryall", "VSM_OGA_OD_carryall", "VSM_ProjectHonor_carryall"];
 
 private _backpack_medic = ["GTO_Carryall_Medic_multicam_tropic", "GTO_Carryall_Medic_projecthonor", "GTO_Carryall_Medic_oga_od", "GTO_Carryall_Medic_oga", "GTO_Carryall_Medic_ocp", "GTO_Carryall_Medic_multicam", "GTO_Carryall_Medic_m81", "GTO_Carryall_Medic_dts", "GTO_Carryall_Medic_multicam_black", "GTO_Carryall_Medic_multicam_arid", "GTO_Carryall_Medic_aor2", "GTO_Carryall_Medic_aor1", "GTO_Carryall_Medic_alpine"];
 

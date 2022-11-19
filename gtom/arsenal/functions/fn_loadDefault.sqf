@@ -32,10 +32,13 @@ if (_arsenalType == "USA") exitWith {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
 		};
 		case "grenadier": {
-			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
+			[["rhs_weap_m4a1_m320","","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_ACOG_RMR_3d",["rhs_mag_30Rnd_556x45_M855A1_Stanag",30],["rhs_mag_M441_HE",1],""],[],[],["VSM_Multicam_Crye_Camo",[["ACE_packingBandage",15],["ACE_CableTie",2],["ACE_EarPlugs",1],["ACE_IR_Strobe_Item",1],["ACE_splint",1],["ACE_tourniquet",4],["GTO_Beret_Black",1],["WBK_HeadLampItem",1],["ItemcTabHCam",1],["kat_Painkiller",1,10]]],["VSM_RAV_MG_Multicam",[["ACE_EntrenchingTool",1],["ItemAndroid",1],["A3_GPNVG18_F",1],["KNB_Notebook",1],["HandGrenade",1,1],["SmokeShell",1,1],["rhs_mag_30Rnd_556x45_M855_Stanag",12,30]]],["VSM_Multicam_Backpack_Compact",[["rhs_mag_M433_HEDP",6,1],["rhs_mag_M441_HE",18,1],["UGL_FlareRed_F",1,1]]],"VSM_OPS_multicam","G_Tactical_Black",["Rangefinder","","","",[],[],""],["ItemMap","ItemGPS","TFAR_rf7800str_4","ItemCompass","TFAR_microdagr",""]]
 		};
 		case "lat": {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
+		};
+		case "hat": {
+			[["rhs_weap_m4a1_carryhandle","","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_ACOG_RMR_3d",["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",30],[],"rhsusf_acc_grip3"],["launch_MRAWS_sand_F","","","",["MRAWS_HEAT_F",1],[],""],[],["VSM_Multicam_Crye_Camo",[["ACE_packingBandage",15],["ACE_CableTie",2],["ACE_EarPlugs",1],["ACE_IR_Strobe_Item",1],["ACE_splint",1],["ACE_tourniquet",4],["GTO_Beret_Black",1],["WBK_HeadLampItem",1],["ItemcTabHCam",1],["kat_Painkiller",1,10]]],["VSM_RAV_MG_Multicam",[["ACE_EntrenchingTool",1],["A3_GPNVG18_F",1],["KNB_Notebook",1],["ItemMicroDAGR",1],["HandGrenade",1,1],["SmokeShell",1,1],["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",8,30]]],["VSM_OCP_Backpack_Kitbag",[["MRAWS_HEAT_F",2,1]]],"VSM_OPS_multicam","G_Tactical_Black",["Rangefinder","","","",[],[],""],["ItemMap","ItemGPS","TFAR_rf7800str","ItemCompass","TFAR_microdagr",""]]
 		};
 		case "marksman": {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
@@ -47,7 +50,7 @@ if (_arsenalType == "USA") exitWith {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
 		};
 		case "sapper": {
-			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
+			[["rhs_weap_m4a1_carryhandle_grip3","","rhsusf_acc_anpeq15_bk","rhsusf_acc_ACOG_RMR_3d",["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",30],[],"rhsusf_acc_grip3"],[],[],["VSM_Multicam_Crye_SS_Camo",[["ACE_CableTie",2],["ACE_IR_Strobe_Item",1],["GTO_Beret_Black",1],["WBK_HeadLampItem",1],["ItemcTabHCam",1],["ACE_packingBandage",15],["ACE_tourniquet",4],["ACE_splint",2]]],["V_PlateCarrierGL_rgr",[["MineDetector",1],["ACE_M26_Clacker",1],["KNB_Notebook",1],["ItemMicroDAGR",1],["ACE_EntrenchingTool",1],["ACE_DefusalKit",1],["SmokeShell",1,1],["SmokeShellGreen",1,1],["HandGrenade",1,1]]],["VSM_OCP_Backpack_Kitbag",[["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",12,30]]],"VSM_OPS_multicam","G_Tactical_Clear",["Rangefinder","","","",[],[],""],["ItemMap","ItemGPS","TFAR_rf7800str_5","ItemCompass","ItemWatch","A3_GPNVG18_F"]]
 		};
 		case "pionier": {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]]
