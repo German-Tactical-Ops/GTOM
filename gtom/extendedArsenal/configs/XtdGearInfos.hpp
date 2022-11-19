@@ -2,97 +2,381 @@ class XtdGearInfos {
 	
 	class CfgVehicles
     {
-		class GTO_Carryall_Medic_alpine // exact class name in CfgWeapons (case sensitive !)
+
+        // ---------- GTO_Medic_Carryall ---------- //
+
+		class GTO_Carryall_Medic_alpine 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "alpine";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_aor1 // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_aor1 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "aor1";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_aor2 // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_aor2 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "aor2";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_dts // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_dts 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "dts";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_m81 // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_m81 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "m81";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_multicam // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_multicam 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "multicam";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_multicam_arid // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_multicam_arid 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "multicam_arid";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_multicam_black // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_multicam_black 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "multicam_black";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_multicam_tropic // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_multicam_tropic 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "multicam_tropic";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_ocp // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_ocp 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "ocp";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_oga // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_oga 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "oga";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_oga_od // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_oga_od 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "oga_od";
-            role = "medic";
+           
         };
 
-        class GTO_Carryall_Medic_projecthonor // exact class name in CfgWeapons (case sensitive !)
+        class GTO_Carryall_Medic_projecthonor 
         {
-            model = "GTO_Carryall"; // class name in XtdGearModels >> CfgWeapons
+            model = "GTO_Medic_Carryall"; 
             camoType = "projecthonor";
-            role = "medic";
+           
+        };
+
+        // ---------- GTO_Compact ---------- //
+
+        class Alpine_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "alpine";
+           
+        };
+
+        class VSM_AOR1_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "aor1";
+           
+        };
+
+        class AOR2_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "aor2";
+           
+        };
+
+        class DTS_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "dts";
+           
+        };
+
+        class VSM_M81_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "m81";
+           
+        };
+
+        class VSM_Multicam_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "multicam";
+           
+        };
+
+        class Arid_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "multicam_arid";
+           
+        };
+
+        class Black_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "multicam_black";
+           
+        };
+
+        class VSM_MulticamTropic_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "multicam_tropic";
+           
+        };
+
+        class VSM_OCP_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "ocp";
+           
+        };
+
+        class VSM_OGA_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "oga";
+           
+        };
+
+        class VSM_OGA_OD_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "oga_od";
+           
+        };
+
+        class VSM_ProjectHonor_Backpack_Compact 
+        {
+            model = "GTO_Compact"; 
+            camoType = "projecthonor";
+           
+        };
+
+        // ---------- GTO_Kitbag ---------- //
+
+        class Alpine_Backpack_kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "alpine";
+           
+        };
+
+        class VSM_AOR1_Backpack_Kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "aor1";
+           
+        };
+
+        class AOR2_Backpack_kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "aor2";
+           
+        };
+
+        class DTS_Backpack_kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "dts";
+           
+        };
+
+        class VSM_M81_Backpack_Kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "m81";
+           
+        };
+
+        class VSM_Multicam_Backpack_Kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "multicam";
+           
+        };
+
+        class Arid_Backpack_kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "multicam_arid";
+           
+        };
+
+        class Black_Backpack_kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "multicam_black";
+           
+        };
+
+        class VSM_MulticamTropic_Backpack_Kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "multicam_tropic";
+           
+        };
+
+        class VSM_OCP_Backpack_Kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "ocp";
+           
+        };
+
+        class VSM_OGA_Backpack_Kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "oga";
+           
+        };
+
+        class VSM_OGA_OD_Backpack_Kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "oga_od";
+           
+        };
+
+        class VSM_ProjectHonor_Backpack_Kitbag 
+        {
+            model = "GTO_Kitbag"; 
+            camoType = "projecthonor";
+           
+        };
+
+        // ---------- GTO_Carryall ---------- //
+
+        class Alpine_Carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "alpine";
+           
+        };
+
+        class VSM_AOR1_carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "aor1";
+           
+        };
+
+        class AOR2_Carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "aor2";
+           
+        };
+
+        class DTS_Carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "dts";
+           
+        };
+
+        class VSM_M81_carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "m81";
+           
+        };
+
+        class VSM_Multicam_carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "multicam";
+           
+        };
+
+        class Arid_Carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "multicam_arid";
+           
+        };
+
+        class Black_Carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "multicam_black";
+           
+        };
+
+        class VSM_MulticamTropic_carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "multicam_tropic";
+           
+        };
+
+        class VSM_OCP_carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "ocp";
+           
+        };
+
+        class VSM_OGA_carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "oga";
+           
+        };
+
+        class VSM_OGA_OD_carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "oga_od";
+           
+        };
+
+        class VSM_ProjectHonor_carryall 
+        {
+            model = "GTO_Carryall"; 
+            camoType = "projecthonor";
+           
         };
 	};
+
+
 
     class CfgWeapons
     {
@@ -100,299 +384,285 @@ class XtdGearInfos {
 
         class VSM_AOR1_BDU_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_BDU";
             camoType = "aor1";
-            style = "bdu";
-            rolledSleeves = "rolledSleevesFalse";
         };
 
         class DTS_BDU_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_BDU";
             camoType = "tiger";
-            style = "bdu";
-            rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_M81_BDU_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_BDU";
             camoType = "m81";
-            style = "bdu";
-            rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_Multicam_BDU_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_BDU";
             camoType = "multicam";
-            style = "bdu";
-            rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_MulticamTropic_BDU_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_BDU";
             camoType = "multicam_tropic";
-            style = "bdu";
-            rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_OCP_BDU_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_BDU";
             camoType = "ocp";
-            style = "bdu";
-            rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_ProjectHonor_BDU_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_BDU";
             camoType = "projecthonor";
-            style = "bdu";
-            rolledSleeves = "rolledSleevesFalse";
         };
 
         // ---------- Crey ---------- //
 
         class Alpine_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "alpine";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class Alpine_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "alpine";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_AOR1_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "aor1";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_AOR1_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "aor1";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class AOR_2_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "aor2";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class AOR_2_CryeSS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "aor2";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_M81_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "m81";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_M81_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "m81";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_Multicam_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "multicam";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_Multicam_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "multicam";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class black_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "multicam_black";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class Black_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "multicam_black";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_MulticamTropic_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "multicam_tropic";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_MulticamTropic_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "multicam_tropic";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_OCP_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "ocp";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_OCP_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "ocp";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_OGA_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "oga";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_OGA_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "oga";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_OGA_Crye_grey_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "oga_grey";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_OGA_Crye_SS_grey_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "oga_grey";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_OGA_Crye_od_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "oga_od";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_OGA_Crye_SS_od_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "oga_od";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_ProjectHonor_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "projecthonor";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_ProjectHonor_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "projecthonor";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_Scorpion_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "scorpion";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_Scorpion_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "scorpion";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class Arid_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "arid";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class Arid_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "arid";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class DTS_Crye_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "tiger";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class DTS_Crye_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_CG3";
             camoType = "tiger";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
@@ -400,193 +670,193 @@ class XtdGearInfos {
 
         class Alpine_Massif_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "alpine";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class Alpine_Massif_Camo_SS
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "alpine";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_AOR1_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "aor1";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_AOR1_Camo_SS
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "aor1";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class AOR2_camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "aor2";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class AOR2_SS_camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "aor2";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_M81_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "m81";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_M81_Camo_SS
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "m81";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_Multicam_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "multicam";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_Multicam_Camo_SS
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "multicam";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_MulticamTropic_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "multicam_tropic";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_MulticamTropic_Camo_SS
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "multicam_tropic";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_OCP_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "ocp";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_OCP_Camo_SS
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "ocp";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_OGA_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "oga";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_OGA_Camo_SS
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "oga";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_OGA_od_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "oga_od";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_OGA_od_Camo_SS
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "oga_od";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class VSM_ProjectHonor_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "projecthonor";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class VSM_ProjectHonor_Camo_SS
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "projecthonor";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class DTS_Massif_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "dts";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class DTS_Massif_SS_Camo
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "dts";
-            style = "mcu";
+
             rolledSleeves = "rolledSleevesTrue";
         };
 
         class U_B_T_Soldier_F
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "apex";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesFalse";
         };
 
         class U_B_T_Soldier_SL_F
         {
-            model = "GTO_Uniform";
+            model = "GTO_Uniform_MCU";
             camoType = "apex";
-            style = "cg3";
+            
             rolledSleeves = "rolledSleevesTrue";
         };
 
