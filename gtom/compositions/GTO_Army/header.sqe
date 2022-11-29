@@ -4,17 +4,5 @@ author="LucyferHW";
 category="EdSubcat_Default";
 requiredAddons[]=
 {
-	"GTOM",
-	"A3_Weapons_F",
-	"tfar_handhelds",
-	"A3_Characters_F_Heads",
-	"A3_Characters_F_Orange_Facewear",
-	"A3_Characters_F_Enoch_Facewear",
-	"ace_goggles",
-	"ace_chemlights",
-	"ace_medical_treatment",
-	"ace_hearing",
-	"ace_captives",
-	"ace_attach",
-	"ace_fortify"
+	"GTOM"
 };
