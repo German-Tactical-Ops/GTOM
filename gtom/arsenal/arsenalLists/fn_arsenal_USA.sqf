@@ -132,7 +132,7 @@ private _binoculars_medium = ["Rangefinder", "ACE_VectorDay", "ACE_Vector", "ACE
 
 private _binoculars_sniper = ["Rangefinder", "ACE_VectorDay", "ACE_Vector", "ACE_Yardage450", "ACE_MX2A"];
 
-private _binoculars_sl = ["Rangefinder", "ACE_VectorDay", "ACE_Vector", "ACE_Yardage450", "ACE_MX2A"];
+private _binoculars_sl = ["Rangefinder", "ACE_VectorDay", "ACE_Vector", "ACE_Yardage450", "ACE_MX2A", "Laserdesignator", "Laserdesignator_03", "Laserdesignator_01_khk_F", "Laserdesignator_02", "Laserdesignator_02_ghex_F","Laserbatteries"];
 
 // --------------------------------------------------
 
@@ -144,6 +144,8 @@ private _better_radio = ["TFAR_anprc152"];
 
 private _granades = ["ACE_M14", "ACE_Chemlight_HiBlue", "ACE_Chemlight_HiGreen", "ACE_Chemlight_HiRed", "ACE_Chemlight_HiWhite", "ACE_Chemlight_HiYellow", "ACE_Chemlight_UltraHiOrange", "ACE_CTS9", "B_IR_Grenade", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow", "HandGrenade", "rhs_mag_m69", "rhs_mag_m7a3_cs", "SmokeShell", "MiniGrenade", "ACE_M84"];
 
+private _flares = ["UGL_FlareGreen_F", "UGL_FlareCIR_F", "UGL_FlareRed_F", "UGL_FlareWhite_F", "UGL_FlareYellow_F", "ACE_40mm_Flare_white", "ACE_40mm_Flare_green", "ACE_40mm_Flare_red", "ACE_40mm_Flare_ir"];
+
 // --------------------------------------------------
 
 private _explosives = ["ACE_Cellphone", "tsp_frameCharge_mag", "APERSMineDispenser_Mag", "tsp_popperCharge_mag", "tsp_popperCharge_auto_mag", "DemoCharge_Remote_Mag", "ATMine_Range_Mag", "SatchelCharge_Remote_Mag", "ClaymoreDirectionalMine_Remote_Mag", "APERSBoundingMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag", "tsp_stickCharge_mag", "tsp_stickCharge_auto_mag", "TrainingMine_Mag", "ACE_FlareTripMine_Mag", "APERSMine_Range_Mag"];
@@ -152,17 +154,17 @@ private _explosives = ["ACE_Cellphone", "tsp_frameCharge_mag", "APERSMineDispens
 
 private _items_main = ["ACE_CableTie", "ACE_Canteen", "ACE_EarPlugs", "ACE_EntrenchingTool", "ACE_Flashlight_MX991", "ItemAndroid", "WBK_HeadLampItem", "ItemcTabHCam", "ACE_IR_Strobe_Item", "ACE_Flashlight_XL50", "ACE_MapTools", "ItemMicroDAGR", "ACE_microDAGR", "ACE_SpareBarrel_Item", "ACE_UAVBattery", "ACE_WaterBottle", "B_Parachute"];
 
-private _medic_light = ["ACE_packingBandage", "ACE_quikclot", "kat_Painkiller", "ACE_splint", "ACE_tourniquet"];
+private _medic_light = ["ACE_packingBandage", "ACE_quikclot", "kat_Painkiller", "kat_PainkillerItem", "ACE_splint", "ACE_tourniquet"];
 
-private _medic_medium = ["Attachable_Helistretcher", "ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "kat_guedel", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_chestSeal", "kat_aatKit", "kat_CarbonateItem", "kat_EACA", "kat_PainkillerItem"];
+private _medic_medium = ["ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "kat_guedel", "kat_larynx" , "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_chestSeal", "kat_aatKit", "kat_Carbonate" , "kat_CarbonateItem", "kat_EACA", "kat_Painkiller", "kat_PainkillerItem"];
 
-private _medic_heavy = ["Attachable_Helistretcher", "ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_bloodIV_O_N", "kat_bloodIV_A_N", "kat_bloodIV_AB_N", "kat_bloodIV_B_N", "ACE_elasticBandage", "kat_accuvac", "kat_aatKit", "kat_X_AED", "kat_atropine", "kat_amiodarone", "kat_crossPanel", "kat_chestSeal", "KAT_Empty_bloodIV_250", "KAT_Empty_bloodIV_500", "kat_guedel", "kat_larynx", "kat_lidocaine", "kat_phenylephrine", "ACE_personalAidKit", "ACE_surgicalKit", "kat_CarbonateItem", "kat_bloodIV_O_N_250", "kat_bloodIV_A_N_250", "kat_bloodIV_AB_N_250", "kat_bloodIV_B_N_250", "kat_bloodIV_O_N_500", "kat_bloodIV_A_N_500", "kat_bloodIV_AB_N_500", "kat_bloodIV_B_N_500", "kat_plate", "kat_clamp", "kat_vacuum", "kat_EACA", "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin", "kat_norepinephrine", "kat_PainkillerItem", "kat_retractor", "kat_scalpel"];
+private _medic_heavy = ["ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_bloodIV_O_N", "kat_bloodIV_A_N", "kat_bloodIV_AB_N", "kat_bloodIV_B_N", "ACE_elasticBandage", "kat_accuvac", "kat_aatKit", "kat_X_AED", "kat_atropine", "kat_amiodarone", "kat_crossPanel", "kat_chestSeal", "KAT_Empty_bloodIV_250", "KAT_Empty_bloodIV_500", "kat_guedel", "kat_larynx", "kat_lidocaine", "kat_phenylephrine", "ACE_personalAidKit", "ACE_surgicalKit", "kat_Carbonate" , "kat_CarbonateItem", "kat_bloodIV_O_N_250", "kat_bloodIV_A_N_250", "kat_bloodIV_AB_N_250", "kat_bloodIV_B_N_250", "kat_bloodIV_O_N_500", "kat_bloodIV_A_N_500", "kat_bloodIV_AB_N_500", "kat_bloodIV_B_N_500", "kat_plate", "kat_clamp", "kat_vacuum", "kat_EACA", "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin", "kat_norepinephrine", "kat_Painkiller", "kat_PainkillerItem", "kat_retractor", "kat_scalpel"];
 
 private _items_sniper = ["ACE_ATragMX", "ACE_DAGR", "ACE_Kestrel4500", "ACE_RangeCard", "ACE_SpottingScope", "ACE_Tripod"];
 
 private _items_engi = ["ToolKit"];
 
-private _items_other = ["immersion_cigs_cigar0", "murshun_cigs_cig0", "immersion_pops_pop0", "murshun_cigs_lighter", "immersion_pops_poppack", "murshun_cigs_matches", "acex_intelitems_notepad"];
+private _items_other = ["acex_intelitems_notepad"];
 
 // --------------------------------------------------
 
@@ -180,6 +182,7 @@ _items append (switch (_role) do
 		_gto_main+
 		_weapon_medium+
 		_ammo_medium+
+		["rhs_weap_M320"]+
 		_weapon_pistoles+
 		_ammo_pistoles+
 		_scope_main+
@@ -192,12 +195,15 @@ _items append (switch (_role) do
 		_backpack_radio+
 		_googles+
 		_nvg_main+
-		_binoculars_main+
+		_binoculars_sl+
 		_mapCompasRadio+
+		_better_radio+
 		_granades+
+		_flares+
 		_items_main+
 		_medic_light+
-		["rhs_weap_M320", "ACE_HuntIR_M203", "UGL_FlareGreen_F", "UGL_FlareCIR_F", "UGL_FlareRed_F", "UGL_FlareWhite_F", "UGL_FlareYellow_F", "ACE_40mm_Flare_white", "ACE_40mm_Flare_green", "ACE_40mm_Flare_red", "ACE_40mm_Flare_ir", "Laserdesignator", "Laserdesignator_03", "Laserdesignator_01_khk_F", "Laserdesignator_02", "Laserdesignator_02_ghex_F", "Rangefinder", "ACE_VectorDay", "ACE_Vector", "TFAR_anprc152", "B_UavTerminal", "ACE_HuntIR_monitor", "ItemcTab", "ace_marker_flags_blue"]
+		["ACE_HuntIR_M203","ACE_HuntIR_monitor"]+
+		["B_UavTerminal", "ItemcTab", "ace_marker_flags_blue"]
 	};
 
 	case "ftl":
@@ -588,6 +594,7 @@ _items append (switch (_role) do
 		_gto_main+
 		_weapon_mp+
 		_ammo_mp+
+		["rhs_weap_M320"]+
 		_weapon_medium+
 		_ammo_medium+
 		_weapon_pistoles+
@@ -602,13 +609,14 @@ _items append (switch (_role) do
 		_backpack_radio+
 		_googles+
 		_nvg_main+
-		_binoculars_main+
+		_binoculars_sl+
 		_mapCompasRadio+
 		_better_radio+
 		_granades+
+		_flares+
 		_items_main+
 		_medic_light+
-		["UGL_FlareGreen_F", "UGL_FlareCIR_F", "UGL_FlareRed_F", "UGL_FlareWhite_F", "UGL_FlareYellow_F", "ACE_40mm_Flare_white", "ACE_40mm_Flare_green", "ACE_40mm_Flare_red", "ACE_40mm_Flare_ir", "Laserdesignator", "Laserdesignator_03", "Laserdesignator_01_khk_F", "Laserdesignator_02", "Laserdesignator_02_ghex_F", "Rangefinder", "ACE_VectorDay", "ACE_Vector", "B_UavTerminal", "ItemcTab", "rhs_weap_M320", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell"]+
+		["B_UavTerminal", "ItemcTab", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell"]+
 		["KNB_PanelGreen","KNB_PanelRed","KNB_PanelYellow"]
 	};
 
@@ -625,7 +633,7 @@ _items append (switch (_role) do
 		_railAttachments_main+
 		_muzzleAttachments_main+
 		       // _helmet_main+
-		_vest_light+
+		_vest_sl+
 		       // _backpack_small+
 		_googles+
 		_nvg_main+
