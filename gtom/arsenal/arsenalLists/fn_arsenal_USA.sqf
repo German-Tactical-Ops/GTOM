@@ -8,7 +8,7 @@ scriptName "fn_arsenal_USA";
 
 params ["_role"];
 
-private _gto_main = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform", "KNB_Notebook"];
+private _gto_main = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform", "KNB_Notebook","Black_Black_Camo","U_B_Wetsuit","V_RebreatherB","G_Diving","G_B_Diving","V_Pocketed_black_F"];
 
 private _weapon_mp = ["SMG_01_F", "rhsusf_weap_MP7A2_aor1", "rhsusf_weap_MP7A2_desert", "rhsusf_weap_MP7A2_winter", "rhsusf_weap_MP7A2", "SMG_05_F", "SMG_02_F"];
 
@@ -114,7 +114,7 @@ private _backpack_big = ["Alpine_Carryall", "VSM_AOR1_carryall", "AOR2_Carryall"
 
 private _backpack_medic = ["GTO_Carryall_Medic_multicam_tropic", "GTO_Carryall_Medic_projecthonor", "GTO_Carryall_Medic_oga_od", "GTO_Carryall_Medic_oga", "GTO_Carryall_Medic_ocp", "GTO_Carryall_Medic_multicam", "GTO_Carryall_Medic_m81", "GTO_Carryall_Medic_dts", "GTO_Carryall_Medic_multicam_black", "GTO_Carryall_Medic_multicam_arid", "GTO_Carryall_Medic_aor2", "GTO_Carryall_Medic_aor1", "GTO_Carryall_Medic_alpine"];
 
-private _backpack_radio = ["TFAR_anarc164", "TFAR_anarc210", "TFAR_anprc155", "TFAR_anprc155_coyote", "TFAR_rt1523g", "TFAR_rt1523g_big", "TFAR_rt1523g_big_bwmod", "TFAR_rt1523g_big_bwmod_tropen", "TFAR_rt1523g_big_rhs", "TFAR_rt1523g_black", "TFAR_rt1523g_bwmod", "TFAR_rt1523g_fabric", "TFAR_rt1523g_green", "TFAR_rt1523g_rhs", "TFAR_rt1523g_sage", "TFAR_bussole", "B_RadioBag_01_black_F", "B_RadioBag_01_digi_F", "B_RadioBag_01_eaf_F", "B_RadioBag_01_ghex_F", "B_RadioBag_01_hex_F", "B_RadioBag_01_mtp_F", "B_RadioBag_01_tropic_F", "B_RadioBag_01_oucamo_F", "B_RadioBag_01_wdl_F"];
+private _backpack_radio = ["TFAR_anarc164", "TFAR_anarc210", "TFAR_anprc155", "TFAR_anprc155_coyote", "TFAR_rt1523g", "TFAR_rt1523g_big", "TFAR_rt1523g_big_bwmod", "TFAR_rt1523g_big_bwmod_tropen", "TFAR_rt1523g_big_rhs", "TFAR_rt1523g_black", "TFAR_rt1523g_bwmod", "TFAR_rt1523g_fabric", "TFAR_rt1523g_green", "TFAR_rt1523g_rhs", "TFAR_rt1523g_sage", "TFAR_bussole", "B_RadioBag_01_black_F", "B_RadioBag_01_digi_F", "B_RadioBag_01_eaf_F", "B_RadioBag_01_ghex_F", "B_RadioBag_01_hex_F", "B_RadioBag_01_mtp_F", "B_RadioBag_01_tropic_F", "B_RadioBag_01_oucamo_F", "B_RadioBag_01_wdl_F","tfw_ilbe_blade_alpine","tfw_ilbe_blade_arid","tfw_ilbe_blade_black","tfw_ilbe_blade_mc","tfw_ilbe_blade_gr","tfw_ilbe_blade_ocp","tfw_ilbe_DD_alpine","tfw_ilbe_DD_arid","tfw_ilbe_DD_black","tfw_ilbe_DD_gr","tfw_ilbe_DD_mc","tfw_ilbe_DD_ocp","tfw_ilbe_blade_wd2","tfw_ilbe_blade_mct","tfw_ilbe_DD_mct","tfw_ilbe_DD_wd2","tfw_ilbe_whip_alpine","tfw_ilbe_whip_arid","tfw_ilbe_whip_black","tfw_ilbe_whip_gr","tfw_ilbe_whip_mct","tfw_ilbe_whip_mc","tfw_ilbe_whip_ocp","tfw_ilbe_whip_wd2"];
 
 // --------------------------------------------------
 
