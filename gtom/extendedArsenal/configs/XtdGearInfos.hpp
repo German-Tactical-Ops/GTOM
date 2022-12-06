@@ -860,6 +860,44 @@ class XtdGearInfos {
             rolledSleeves = "rolledSleevesTrue";
         };
 
-    };
+        // ---------- Wetsuit ---------- //
 
+        class U_B_Wetsuit
+        {
+            model = "GTO_Uniform_Wetsuit";
+            wetsuit = "wetsuitTrue";
+            
+            //rolledSleeves = "rolledSleevesFalse";
+        };
+
+        class Black_Black_Camo
+        {
+            model = "GTO_Uniform_Wetsuit";
+            wetsuit = "wetsuitFalse";
+            
+            //rolledSleeves = "rolledSleevesFalse";
+        };
+
+        /*class Black_Black_SS_Camo
+        {
+            model = "GTO_Uniform_Wetsuit";
+            wetsuit = "wetsuitFalse";
+            
+            rolledSleeves = "rolledSleevesTrue";
+        }; */
+
+        // ---------- Rebreather ---------- //
+
+        class V_RebreatherB
+        {
+            model = "GTO_Vest_Rebreather";
+            rebreather = "rebreatherTrue";
+        };
+
+        class V_Pocketed_black_F
+        {
+            model = "GTO_Vest_Rebreather";
+            rebreather = "rebreatherFalse";
+        };
+    };
 };
