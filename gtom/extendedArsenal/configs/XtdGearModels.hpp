@@ -7,7 +7,7 @@ class camoType \
     values[] = {"alpine", "aor1", "aor2", "dts", "m81", "multicam", "multicam_arid", "multicam_black", "multicam_tropic", "ocp", "oga","oga_grey","oga_od","projecthonor","scorpion","apex"};\
 	alwaysSelectable = 0;\
     changeingame = 1;\
-    changedelay = 5;\
+    changedelay = 3;\
 	class alpine{label = "Alpine"; image = "gtom\extendedArsenal\textures\camoFragments\camo_alpine.paa";};\
 	class aor1{label = "AOR1"; image = "gtom\extendedArsenal\textures\camoFragments\camo_aor1.paa";};\
 	class aor2{label = "AOR2"; image = "gtom\extendedArsenal\textures\camoFragments\camo_aor2.paa";};\
@@ -26,12 +26,12 @@ class camoType \
     class apex{label = "Apex"; image = "gtom\extendedArsenal\textures\camoFragments\camo_multicam_tropic.paa";};\
 };
 
-#define ROLLEDSLEEVESM() \
+#define ROLLEDSLEEVESM(SELECTABLE) \
 class rolledSleeves \
 {\
     label = "Rolled Sleeves";\
     values[] = {"rolledSleevesFalse", "rolledSleevesTrue"};\
-    alwaysSelectable = 0;\
+    alwaysSelectable = ##SELECTABLE##;\
     changeingame = 1;\
     changedelay = 1;\
     class rolledSleevesFalse\
@@ -98,7 +98,7 @@ class rolledSleeves \
             
             CAMOTYPEM();
 
-            ROLLEDSLEEVESM();
+            ROLLEDSLEEVESM(0);
         };
 
         class GTO_Uniform_MCU
@@ -109,7 +109,47 @@ class rolledSleeves \
             
             CAMOTYPEM();
 
-            ROLLEDSLEEVESM();
+            ROLLEDSLEEVESM(0);
+        };
+
+        class GTO_Uniform_Wetsuit
+        {
+            label = "Wetsuit";
+            author = "LucyferHW";
+            options[] = {"wetsuit"};
+            
+            class wetsuit
+            {
+                label = "Wetsuit";
+                values[] = {"wetsuitTrue","wetsuitFalse"};
+                alwaysSelectable = 0;
+                changeingame = 1;
+                changedelay = 5;
+                class wetsuitTrue
+                {label = "Wetsuit";};
+                class wetsuitFalse
+                {label = "not Wetsuit";};
+            };            
+        };
+
+        class GTO_Vest_Rebreather
+        {
+            label = "Rebreather";
+            author = "LucyferHW";
+            options[] = {"rebreather"};
+            
+            class rebreather
+            {
+                label = "Rebreather";
+                values[] = {"rebreatherTrue","rebreatherFalse"};
+                alwaysSelectable = 0;
+                changeingame = 1;
+                changedelay = 5;
+                class rebreatherTrue
+                {label = "Rebreather";};
+                class rebreatherFalse
+                {label = "not Rebreather";};
+            };            
         };
     };
 };
