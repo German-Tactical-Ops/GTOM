@@ -31,6 +31,23 @@ class cfgFunctions
 			}; // [] call GTO_fnc_persistentPlayer;
 		};
 
+		class arsenal
+		{
+			file = "gtom\main\functions";
+
+			class initArsenal
+			{
+				description = "Creates a arsenal on the given object";
+				recompile = 1;
+			}; // [box] call GTO_fnc_initArsenal;
+
+			class mainArsenal
+			{
+				description = "Returns arsenal item ARRAY";
+				recompile = 1;
+			}; //_itemArray = [] call GTO_fnc_mainArsenal;
+		};
+
 		// class permissionCheck
 		// {
 		// 	file = "gtom\functions\permissionCheck";
