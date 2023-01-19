@@ -3,260 +3,9 @@
 #include "\gtom\cfgPatches.hpp"
 
 // todo: disable weight of ["earPlugs",, "Micro Dagre"]
-class XtdGearModels
-{
-    class CfgWeapons
-    {
-        class GTO_Beret_All
-        {
-            label = "[GTO] Beret";
-            author = "LucyferHW";
-            options[] = {"optionA"};
-            class optionA
-            {
-                label = "Beret Color";
-                values[] = {"black", "red", "orange", "yellow", "green", "blue", "violett", "pink", "white", "gray"};
-                changeingame = 1;     // 1 if value can be changed in game via ACE menu
-                alwaysSelectable = 1; // allows the selection of the values even if there isn't an item with a complete match of options available, falling back to a weak match with this single value (optional)
-                changedelay = 0.5;    // If can changeingame, wait delay before change is effective (can be 0, 0.1, or more)
-                // icon = "xxx"; If can changeingame, action group icon in ACE menu
-                class black
-                {
-                    label = "Black";
-                    description = "Soldier";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
-                };
-                class red
-                {
-                    label = "Red";
-                    description = "SL"; // displayed as tooltip
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Red.paa";
-                    // icon = "xxx"; If can changeingame, action icon in ACE menu
-                    // actionlabel = "xxx"; If can changeingame, action label in ACE menu
-                    // itemingame = "xxx"; If can changeingame, requires this item to be present in inventory. Item will be removed from inventory (added back if an other value is choosen)
-                    // changedelay = (inherited by default); If can changeingame, wait delay before change is effective
-                    // faction[] = {"BLU_F", "BLU_T_F", "BLU_W_F"}; // shows this value only for selected factions, identified by their A3 code (optional)
-                };
-                class orange
-                {
-                    label = "Orange";
-                    description = "not set";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Orange.paa";
-                };
-                class yellow
-                {
-                    label = "Yellow";
-                    description = "not set";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Yellow.paa";
-                };
-                class green
-                {
-                    label = "Green";
-                    description = "FTL";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Green.paa";
-                };
-                class blue
-                {
-                    label = "Blue";
-                    description = "Medic";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Blue.paa";
-                };
-                class violett
-                {
-                    label = "Violett";
-                    description = "Pilot";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Violett.paa";
-                };
-                class pink
-                {
-                    label = "Pink";
-                    description = "JTAC";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Pink.paa";
-                };
-                class white
-                {
-                    label = "White";
-                    description = "Zeus";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_White.paa";
-                };
-                class gray
-                {
-                    label = "Gray";
-                    description = "Guest";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Gray.paa";
-                };
-            };
-        };
-    };
-};
 
 class CfgWeapons
 {
-    class H_Beret_02;
-    class H_Beret_EAF_01_F;
-    class HeadgearItem;
-
-    // todo: make icons for berets
-    // todo: medic patch
-
-    class GTO_Beret_Empty : H_Beret_02
-    {
-        scope = 0;
-        author = "LucyferHW";
-        weight = 0;
-        size = 0;
-    };
-
-    class GTO_Beret_Red : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Red)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Red.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-
-            optionA = "red";
-        };
-    };
-
-    class GTO_Beret_Orange : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Orange)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Orange.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "orange";
-        };
-    };
-
-    class GTO_Beret_Yellow : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Yellow)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Yellow.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "yellow";
-        };
-    };
-
-    class GTO_Beret_Green : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Green)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Green.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "green";
-        };
-    };
-
-    class GTO_Beret_Blue : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Blue)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Blue.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "blue";
-        };
-    };
-
-    class GTO_Beret_Violett : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Violett)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Violett.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "violett";
-        };
-    };
-
-    class GTO_Beret_Pink : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Pink)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Pink.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "pink";
-        };
-    };
-
-    class GTO_Beret_White : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (White)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_White.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "white";
-        };
-    };
-
-    class GTO_Beret_Gray : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Gray)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Gray.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "gray";
-        };
-    };
-
-    class GTO_Beret_Black : GTO_Beret_Empty
-    {
-        scope = 2;
-        displayName = "[GTO] Beret (Black)";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\Beret\export\GTO_Beret_Black.paa"};
-
-        class XtdGearInfo
-        {
-            model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "black";
-        };
-    };
-
-    class U_Rangemaster;
-    class UniformItem;
-
-    class GTO_BaseUniform : U_Rangemaster
-    {
-        author = "LucyferHW";
-        scope = 2;
-        displayName = "GTO Base Uniform";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\GTO_Uniform\GTO_BaseUniform.paa"};
-
-        class ItemInfo : UniformItem
-        {
-            // uniformModel = "-";
-            uniformClass = GTO_Soldier_base;
-            containerClass = Supply40;
-            mass = 40;
-        };
-    };
-
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
     class ACE_bodyBag : ACE_ItemCore
@@ -303,10 +52,8 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    // B_Soldier_F
-    class B_Soldier_base_F; // For inheritance to work, the base class has to be defined.
     class B_RangeMaster_F;
-    class GTO_Soldier_base : B_RangeMaster_F // Define of a new class, which parameters are inherited from B_Soldier_base_F, with exception of those defined below.
+    class GTO_Soldier_base : B_RangeMaster_F
     {
         author = "LucyferHW";                                               // The name of the author of the asset, which is displayed in the editor.
         scope = 2;                                                          // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
@@ -362,11 +109,6 @@ class CfgVehicles
                                 Rangefinder,
                                 none}; // Which items the character respawns with.
     };
-
-    /*  canDeactivateMines = true;
-        engineer = true;
-        attendant = 1;
-        */
 
     class GTO_Soldier_SL : GTO_Soldier_base
     {
@@ -471,37 +213,36 @@ class CfgVehicles
         icon = "gtom\icons\Roles\Pilot_icon.paa";
         picture = "gtom\icons\Roles\Pilot_icon.paa";
     };
-    
 
-    class C_IDAP_supplyCrate_F;
-    class GTO_Arsenal : C_IDAP_supplyCrate_F
-    {
-        scopeCurator = 2;
-        displayName = "[GTO] Arsenal (only object)";
-        author = "LucyferHW";
-    };
+    /*     class C_IDAP_supplyCrate_F;
+        class GTO_Arsenal : C_IDAP_supplyCrate_F
+        {
+            scopeCurator = 2;
+            displayName = "[GTO] Arsenal (only object)";
+            author = "LucyferHW";
+        }; */
 
     class B_Carryall_Base;
     class B_Carryall_cbr;
     class B_Carryall_oli;
 
-    class GTO_Medic_Carryall_oli : B_Carryall_oli
-    {
-        scopeCurator = 2;
-        displayName = "Carryall B. Medic (Olive)";
-        author = "LucyferHW";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\MedicBackpack\backpack_tortila_oli_co.paa"};
-        maximumLoad = 400;
-    };
+    /*     class GTO_Medic_Carryall_oli : B_Carryall_oli
+        {
+            scopeCurator = 2;
+            displayName = "Carryall B. Medic (Olive)";
+            author = "LucyferHW";
+            hiddenSelectionsTextures[] = {"gtom\objects\textures\MedicBackpack\backpack_tortila_oli_co.paa"};
+            maximumLoad = 400;
+        };
 
-    class GTO_Medic_Carryall_cbr : B_Carryall_cbr
-    {
-        scopeCurator = 2;
-        displayName = "Carryall B. Medic (Coyote)";
-        author = "LucyferHW";
-        hiddenSelectionsTextures[] = {"gtom\objects\textures\MedicBackpack\backpack_tortila_cbr_co.paa"};
-        maximumLoad = 400;
-    };
+        class GTO_Medic_Carryall_cbr : B_Carryall_cbr
+        {
+            scopeCurator = 2;
+            displayName = "Carryall B. Medic (Coyote)";
+            author = "LucyferHW";
+            hiddenSelectionsTextures[] = {"gtom\objects\textures\MedicBackpack\backpack_tortila_cbr_co.paa"};
+            maximumLoad = 400;
+        }; */
 
     class FlagMarker_01_F;
     class GTO_MarkerFlag : FlagMarker_01_F

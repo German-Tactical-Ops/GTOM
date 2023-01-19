@@ -1,9 +1,9 @@
 class XtdGearModels {
-
-#define CAMOTYPEM() \
+//todo: make a input field -> Backpack and Uniform have the same text //todo: test if this is working
+#define CAMOTYPEM(DNAME) \
 class camoType \
 { \
-	label = "U. Camo selection";\
+	label = "##DNAME## Camo";\
     values[] = {"alpine", "aor1", "aor2", "dts", "m81", "multicam", "multicam_arid", "multicam_black", "multicam_tropic", "ocp", "oga","oga_grey","oga_od","projecthonor","scorpion","apex"};\
 	alwaysSelectable = 0;\
     changeingame = 1;\
@@ -40,6 +40,7 @@ class rolledSleeves \
     {label = "Rolled";};\
 };
 	class CamoBase;
+
     class CfgVehicles
     {
         class GTO_Medic_Carryall
@@ -48,7 +49,7 @@ class rolledSleeves \
             author = "LucyferHW";
             options[] = {"camoType"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Backpack);
         };
 
         class GTO_Compact
@@ -57,7 +58,7 @@ class rolledSleeves \
             author = "LucyferHW";
             options[] = {"camoType"};
 
-            CAMOTYPEM();
+            CAMOTYPEM(Backpack);
         };
 
         class GTO_Kitbag
@@ -66,7 +67,7 @@ class rolledSleeves \
             author = "LucyferHW";
             options[] = {"camoType"};
 
-            CAMOTYPEM();
+            CAMOTYPEM(Backpack);
         };
 
         class GTO_Carryall
@@ -75,7 +76,7 @@ class rolledSleeves \
             author = "LucyferHW";
             options[] = {"camoType"};
 
-            CAMOTYPEM();
+            CAMOTYPEM(Backpack);
         };
     };
 
@@ -87,7 +88,7 @@ class rolledSleeves \
             author = "LucyferHW";
             options[] = {"camoType"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Uniform);
         };
 
         class GTO_Uniform_CG3
@@ -96,7 +97,7 @@ class rolledSleeves \
             author = "LucyferHW";
             options[] = {"camoType", "rolledSleeves"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Uniform);
 
             ROLLEDSLEEVESM(0);
         };
@@ -107,7 +108,7 @@ class rolledSleeves \
             author = "LucyferHW";
             options[] = {"camoType", "rolledSleeves"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Uniform);
 
             ROLLEDSLEEVESM(0);
         };
@@ -151,8 +152,85 @@ class rolledSleeves \
                 {label = "not Rebreather";};
             };            
         };
+
+        class GTO_Beret_All
+        {
+            label = "[GTO] Beret";
+            author = "LucyferHW";
+            options[] = {"optionA"};
+            class optionA
+            {
+                label = "Beret Color";
+                values[] = {"black", "red", "orange", "yellow", "green", "blue", "violett", "pink", "white", "gray"};
+                changeingame = 1;
+                alwaysSelectable = 1;
+                changedelay = 0.5;
+
+                class black
+                {
+                    label = "Black";
+                    description = "Soldier";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                };
+                class red
+                {
+                    label = "Red";
+                    description = "SL";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Red.paa";
+                };
+                class orange
+                {
+                    label = "Orange";
+                    description = "Clan Leader";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Orange.paa";
+                };
+                class yellow
+                {
+                    label = "Yellow";
+                    description = "Tank Crew";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Yellow.paa";
+                };
+                class green
+                {
+                    label = "Green";
+                    description = "FTL";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Green.paa";
+                };
+                class blue
+                {
+                    label = "Blue";
+                    description = "Medic";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Blue.paa";
+                };
+                class violett
+                {
+                    label = "Violett";
+                    description = "Pilot";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Violett.paa";
+                };
+                class pink
+                {
+                    label = "Pink";
+                    description = "JTAC";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Pink.paa";
+                };
+                class white
+                {
+                    label = "White";
+                    description = "Zeus";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_White.paa";
+                };
+                class gray
+                {
+                    label = "Gray";
+                    description = "Guest";
+                    image = "gtom\objects\textures\Beret\color\BeretColor_Gray.paa";
+                };
+            };
+        };
     };
 };
+
 
 /*label = "none";
                     //description = ""; // displayed as tooltip
