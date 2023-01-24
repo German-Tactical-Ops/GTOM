@@ -4,7 +4,7 @@ class XtdGearModels {
 class camoType \
 { \
 	label = "U. Camo selection";\
-    values[] = {"alpine", "aor1", "aor2", "dts", "m81", "multicam", "multicam_arid", "multicam_black", "multicam_tropic", "ocp", "oga","oga_grey","oga_od","projecthonor","scorpion","apex"};\
+    values[] = {"alpine", "aor1", "aor2", "dts", "m81", "multicam", "multicam_arid", "multicam_black", "multicam_tropic", "ocp", "oga","tan","oga_grey","oga_od", "oga_od_spray","projecthonor","scorpion","apex","black","white"};\
 	alwaysSelectable = 0;\
     changeingame = 1;\
     changedelay = 3;\
@@ -19,11 +19,15 @@ class camoType \
 	class multicam_tropic{label = "MC tropic"; image = "gtom\extendedArsenal\textures\camoFragments\camo_multicam_tropic.paa";};\
 	class ocp{label = "OCP"; image = "gtom\extendedArsenal\textures\camoFragments\camo_ocp.paa";};\
 	class oga{label = "OGA"; image = "gtom\extendedArsenal\textures\camoFragments\camo_oga.paa";};\
+	class tan{label = "Tan"; image = "gtom\extendedArsenal\textures\camoFragments\camo_oga.paa";};\
 	class oga_grey{label = "OGA grey"; image = "gtom\extendedArsenal\textures\camoFragments\camo_oga_grey.paa";};\
-	class oga_od{label = "OGA od"; image = "gtom\extendedArsenal\textures\camoFragments\camo_oga_od.paa";};\
+	class oga_od{label = "OGA OD"; image = "gtom\extendedArsenal\textures\camoFragments\camo_oga_od.paa";};\
+	class oga_od_spray{label = "OD Spray"; image = "gtom\extendedArsenal\textures\camoFragments\camo_oga_od.paa";};\
 	class projecthonor{label = "Projecthonor"; image = "gtom\extendedArsenal\textures\camoFragments\camo_projecthonor.paa";};\
 	class scorpion{label = "Scorpion"; image = "gtom\extendedArsenal\textures\camoFragments\camo_scorpion.paa";};\
     class apex{label = "Apex"; image = "gtom\extendedArsenal\textures\camoFragments\camo_multicam_tropic.paa";};\
+    class black{label = "Black"; image = "gtom\extendedArsenal\textures\camoFragments\BeretColor_Black.paa";};\
+    class white{label = "White"; image = "gtom\extendedArsenal\textures\camoFragments\BeretColor_White.paa";};\
 };
 
 #define ROLLEDSLEEVESM(SELECTABLE) \
@@ -38,6 +42,20 @@ class rolledSleeves \
     {label = "not Rolled";};\
     class rolledSleevesTrue\
     {label = "Rolled";};\
+};
+
+#define VARIANT() \
+class variant \
+{\
+    label = "Variant";\
+    values[] = {"v1", "v2"};\
+    alwaysSelectable = 0;\
+    changeingame = 0;\
+    changedelay = 1;\
+    class v1\
+    {label = "V-1";};\
+    class v2\
+    {label = "V-2";};\
 };
 	class CamoBase;
     class CfgVehicles
@@ -150,6 +168,75 @@ class rolledSleeves \
                 class rebreatherFalse
                 {label = "not Rebreather";};
             };            
+        };
+
+        class GTO_MiliCap
+        {
+            label = "Cap";
+            author = "LucyferHW";
+            options[] = {"camoType"};
+            
+            CAMOTYPEM();
+        };
+
+        class GTO_Mich2000
+        {
+            label = "Mich 2000";
+            author = "LucyferHW";
+            options[] = {"camoType", "variant"};
+            
+            CAMOTYPEM();
+
+            VARIANT();
+        };
+
+        class GTO_Opscore
+        {
+            label = "Opscore";
+            author = "LucyferHW";
+            options[] = {"camoType", "variant"};
+            
+            CAMOTYPEM();
+
+            VARIANT();
+        };
+
+        class GTO_HighCut
+        {
+            label = "High Cut";
+            author = "LucyferHW";
+            options[] = {"camoType", "variant"};
+            
+            CAMOTYPEM();
+
+            VARIANT();
+        };
+
+        class GTO_ModularHelmet
+        {
+            label = "Modular Helmet";
+            author = "LucyferHW";
+            options[] = {"camoType", "variant"};
+            
+            CAMOTYPEM();
+        };
+
+        class GTO_Beanie
+        {
+            label = "Beanie";
+            author = "LucyferHW";
+            options[] = {"camoType"};
+            
+            CAMOTYPEM();
+        };
+
+        class GTO_Boonie
+        {
+            label = "Boonie";
+            author = "LucyferHW";
+            options[] = {"camoType"};
+            
+            CAMOTYPEM();
         };
     };
 };

@@ -391,7 +391,7 @@ class XtdGearInfos {
         class DTS_BDU_Camo
         {
             model = "GTO_Uniform_BDU";
-            camoType = "tiger";
+            camoType = "dts";
         };
 
         class VSM_M81_BDU_Camo
@@ -653,7 +653,7 @@ class XtdGearInfos {
         class DTS_Crye_Camo
         {
             model = "GTO_Uniform_CG3";
-            camoType = "tiger";
+            camoType = "dts";
             
             rolledSleeves = "rolledSleevesFalse";
         };
@@ -661,7 +661,7 @@ class XtdGearInfos {
         class DTS_Crye_SS_Camo
         {
             model = "GTO_Uniform_CG3";
-            camoType = "tiger";
+            camoType = "dts";
             
             rolledSleeves = "rolledSleevesTrue";
         };
@@ -898,6 +898,707 @@ class XtdGearInfos {
         {
             model = "GTO_Vest_Rebreather";
             rebreather = "rebreatherFalse";
+        };
+
+        // ---------- Cap ---------- //
+
+        class Alpine_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "alpine";
+        };
+
+        class VSM_AOR1_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "aor1";
+        };
+
+        class AOR2_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "aor2";
+        };
+
+        class Arid_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "arid";
+        };
+
+        class DTS_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "dts";
+        };
+
+        class VSM_M81_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "m81";
+        };
+
+        class VSM_Multicam_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "multicam";
+        };
+
+        class VSM_MulticamTropic_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "multicam_tropic";
+        };
+
+        class VSM_OCP_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "ocp";
+        };
+
+        class VSM_ProjectHonor_Cap
+        {
+            model = "GTO_MiliCap";
+            camoType = "projecthonor";
+        };
+
+        // ---------- Mich 2000 v1 ---------- //
+
+/*         class Alpine_Cap
+        {
+            model = "GTO_Mich2000";
+            camoType = "alpine";
+            variant = "v1";
+        }; */
+
+        class VSM_Mich2000_AOR1
+        {
+            model = "GTO_Mich2000";
+            camoType = "aor1";
+            variant = "v1";
+        };
+
+/*         class AOR2_Cap
+        {
+            model = "GTO_Mich2000";
+            camoType = "aor2";
+            variant = "v1";
+        }; */
+
+/*         class Arid_Cap
+        {
+            model = "GTO_Mich2000";
+            camoType = "arid";
+            variant = "v1";
+        }; */
+
+/*         class DTS_Cap
+        {
+            model = "GTO_Mich2000";
+            camoType = "dts";
+            variant = "v1";
+        }; */
+
+        class VSM_Mich2000_M81
+        {
+            model = "GTO_Mich2000";
+            camoType = "m81";
+            variant = "v1";
+        };
+
+        class VSM_Mich2000_Multicam
+        {
+            model = "GTO_Mich2000";
+            camoType = "multicam";
+            variant = "v1";
+        };
+
+        class VSM_Mich2000_MulticamTropic
+        {
+            model = "GTO_Mich2000";
+            camoType = "multicam_tropic";
+            variant = "v1";
+        };
+
+        class VSM_Mich2000_ocp
+        {
+            model = "GTO_Mich2000";
+            camoType = "ocp";
+            variant = "v1";
+        };
+
+        class VSM_Mich2000_ProjectHonor
+        {
+            model = "GTO_Mich2000";
+            camoType = "projecthonor";
+            variant = "v1";
+        };
+
+        class VSM_Mich2000_OGA
+        {
+            model = "GTO_Mich2000";
+            camoType = "oga";
+            variant = "v1";
+        };
+
+        class VSM_Mich2000_OGA_OD
+        {
+            model = "GTO_Mich2000";
+            camoType = "oga_od";
+            variant = "v1";
+        };
+
+        class VSM_Mich2000_CamoSprayOD
+        {
+            model = "GTO_Mich2000";
+            camoType = "oga_od_spray";
+            variant = "v1";
+        };
+
+        class VSM_Mich2000_CamoSprayTAN
+        {
+            model = "GTO_Mich2000";
+            camoType = "tan";
+            variant = "v1";
+        };
+
+        // ---------- Mich 2000 v2 ---------- //
+
+        /*         class Alpine_Cap
+        {
+            model = "GTO_Mich2000";
+            camoType = "alpine";
+            variant = "v2";
+        }; */
+
+        class VSM_Mich2000_2_aor1
+        {
+            model = "GTO_Mich2000";
+            camoType = "aor1";
+            variant = "v2";
+        };
+
+/*         class AOR2_Cap
+        {
+            model = "GTO_Mich2000";
+            camoType = "aor2";
+            variant = "v2";
+        }; */
+
+/*         class Arid_Cap
+        {
+            model = "GTO_Mich2000";
+            camoType = "arid";
+            variant = "v2";
+        }; */
+
+/*         class DTS_Cap
+        {
+            model = "GTO_Mich2000";
+            camoType = "dts";
+            variant = "v2";
+        }; */
+
+        class VSM_Mich2000_2_M81
+        {
+            model = "GTO_Mich2000";
+            camoType = "m81";
+            variant = "v2";
+        };
+
+        class VSM_Mich2000_2_Multicam
+        {
+            model = "GTO_Mich2000";
+            camoType = "multicam";
+            variant = "v2";
+        };
+
+        class VSM_Mich2000_2_MulticamTropic
+        {
+            model = "GTO_Mich2000";
+            camoType = "multicam_tropic";
+            variant = "v2";
+        };
+
+        class VSM_Mich2000_2_OCP
+        {
+            model = "GTO_Mich2000";
+            camoType = "ocp";
+            variant = "v2";
+        };
+
+        class VSM_Mich2000_2_ProjectHonor
+        {
+            model = "GTO_Mich2000";
+            camoType = "projecthonor";
+            variant = "v2";
+        };
+
+        class VSM_Mich2000_2_OGA
+        {
+            model = "GTO_Mich2000";
+            camoType = "oga";
+            variant = "v2";
+        };
+
+        class VSM_Mich2000_2_OGA_OD
+        {
+            model = "GTO_Mich2000";
+            camoType = "oga_od";
+            variant = "v2";
+        };
+
+        class VSM_Mich2000_2_CamoSprayOD
+        {
+            model = "GTO_Mich2000";
+            camoType = "oga_od_spray";
+            variant = "v2";
+        };
+
+        class VSM_Mich2000_2_CamoSprayTAN
+        {
+            model = "GTO_Mich2000";
+            camoType = "tan";
+            variant = "v2";
+        };
+
+        // ---------- Opscore ---------- //
+
+        class Alpine_opscore
+        {
+            model = "GTO_Opscore";
+            camoType = "alpine";
+            variant = "v1";
+        };
+
+        class VSM_OPS_aor1
+        {
+            model = "GTO_Opscore";
+            camoType = "aor1";
+            variant = "v1";
+        };
+
+        class AOR2_opscore
+        {
+            model = "GTO_Opscore";
+            camoType = "aor2";
+            variant = "v1";
+        };
+
+        class ARD_opscore
+        {
+            model = "GTO_Opscore";
+            camoType = "arid";
+            variant = "v1";
+        };
+
+        class VSM_Black_OPS
+        {
+            model = "GTO_Opscore";
+            camoType = "black";
+            variant = "v1";
+        };
+
+        class VSM_M81_OPS
+        {
+            model = "GTO_Opscore";
+            camoType = "m81";
+            variant = "v1";
+        };
+
+        class VSM_OPS_multicam
+        {
+            model = "GTO_Opscore";
+            camoType = "multicam";
+            variant = "v1";
+        };
+
+        class VSM_MulticamTropic_OPS
+        {
+            model = "GTO_Opscore";
+            camoType = "multicam_tropic";
+            variant = "v1";
+        };
+
+        class BLK2_opscore
+        {
+            model = "GTO_Opscore";
+            camoType = "multicam_black";
+            variant = "v1";
+        };
+
+        class VSM_OPS_ocp
+        {
+            model = "GTO_Opscore";
+            camoType = "ocp";
+            variant = "v1";
+        };
+
+        class VSM_oga_OPS
+        {
+            model = "GTO_Opscore";
+            camoType = "oga";
+            variant = "v1";
+        };
+
+        class VSM_OPS
+        {
+            model = "GTO_Opscore";
+            camoType = "oga_grey";
+            variant = "v1";
+        };
+
+        class VSM_OGA_OD_OPS
+        {
+            model = "GTO_Opscore";
+            camoType = "oga_od";
+            variant = "v1";
+        };
+
+        class VSM_OD_spray_OPS
+        {
+            model = "GTO_Opscore";
+            camoType = "oga_od_spray";
+            variant = "v1";
+        };
+
+        class VSM_ProjectHonor_OPS
+        {
+            model = "GTO_Opscore";
+            camoType = "projecthonor";
+            variant = "v1";
+        };
+
+        class White_opscore
+        {
+            model = "GTO_Opscore";
+            camoType = "white";
+            variant = "v1";
+        };
+
+        class VSM_Tan_spray_OPS
+        {
+            model = "GTO_Opscore";
+            camoType = "tan";
+            variant = "v1";
+        };
+
+        // ---------- Opscore v2 ---------- //
+
+        class Alpine_opscore_2
+        {
+            model = "GTO_Opscore";
+            camoType = "alpine";
+            variant = "v2";
+        };
+
+        class VSM_OPS_2_AOR1
+        {
+            model = "GTO_Opscore";
+            camoType = "aor1";
+            variant = "v2";
+        };
+
+        class AOR2_opscore_2
+        {
+            model = "GTO_Opscore";
+            camoType = "aor2";
+            variant = "v2";
+        };
+
+        class ARD_opscore_2
+        {
+            model = "GTO_Opscore";
+            camoType = "arid";
+            variant = "v2";
+        };
+
+        class VSM_Black_OPS_2
+        {
+            model = "GTO_Opscore";
+            camoType = "black";
+            variant = "v2";
+        };
+
+        class VSM_M81_OPS_2
+        {
+            model = "GTO_Opscore";
+            camoType = "m81";
+            variant = "v2";
+        };
+
+        class BLK_opscore_2
+        {
+            model = "GTO_Opscore";
+            camoType = "multicam_black";
+            variant = "v2";
+        };
+
+        class VSM_OPS_2_multicam
+        {
+            model = "GTO_Opscore";
+            camoType = "multicam";
+            variant = "v2";
+        };
+
+        class VSM_MulticamTropic_OPS_2
+        {
+            model = "GTO_Opscore";
+            camoType = "multicam_tropic";
+            variant = "v2";
+        };
+
+        class VSM_OPS_2_ocp
+        {
+            model = "GTO_Opscore";
+            camoType = "ocp";
+            variant = "v2";
+        };
+
+        class VSM_OD_Spray_OPS_2
+        {
+            model = "GTO_Opscore";
+            camoType = "oga_od_spray";
+            variant = "v2";
+        };
+
+        class VSM_OGA_OD_OPS_2
+        {
+            model = "GTO_Opscore";
+            camoType = "oga_od";
+            variant = "v2";
+        };
+
+        class VSM_oga_OPS_2
+        {
+            model = "GTO_Opscore";
+            camoType = "oga";
+            variant = "v2";
+        };
+
+        class VSM_ProjectHonor_OPS_2
+        {
+            model = "GTO_Opscore";
+            camoType = "projecthonor";
+            variant = "v2";
+        };
+
+        class White_opscore_2
+        {
+            model = "GTO_Opscore";
+            camoType = "white";
+            variant = "v2";
+        };
+
+        class VSM_OPS_2
+        {
+            model = "GTO_Opscore";
+            camoType = "oga_grey";
+            variant = "v2";
+        };
+
+        class VSM_Tan_spray_OPS_2
+        {
+            model = "GTO_Opscore";
+            camoType = "tan";
+            variant = "v2";
+        };
+
+        // ---------- HighCut v1 ---------- //
+
+        class VSM_fasthelmet_alpinecover
+        {
+            model = "GTO_HighCut";
+            camoType = "alpine";
+            variant = "v1";
+        };
+
+        class VSM_fasthelmet_coveraor1
+        {
+            model = "GTO_HighCut";
+            camoType = "aor1";
+            variant = "v1";
+        };
+        
+        class VSM_fasthelmet_black
+        {
+            model = "GTO_HighCut";
+            camoType = "black";
+            variant = "v1";
+        };
+
+        class VSM_fast_helmet_covermcblack
+        {
+            model = "GTO_HighCut";
+            camoType = "multicam_black";
+            variant = "v1";
+        };
+
+        class VSM_fasthelmet_covermulticam
+        {
+            model = "GTO_HighCut";
+            camoType = "multicam";
+            variant = "v1";
+        };
+
+        class VSM_fasthelmet_OD
+        {
+            model = "GTO_HighCut";
+            camoType = "oga_od";
+            variant = "v1";
+        };
+
+        class VSM_fast_helmet_covertropic
+        {
+            model = "GTO_HighCut";
+            camoType = "multicam_tropic";
+            variant = "v1";
+        };
+
+        class VSM_fasthelmet_white
+        {
+            model = "GTO_HighCut";
+            camoType = "white";
+            variant = "v1";
+        };
+
+        class VSM_fasthelmet_tan
+        {
+            model = "GTO_HighCut";
+            camoType = "tan";
+            variant = "v1";
+        };
+
+        // ---------- HighCut v2 ---------- //
+
+        class VSM_highcutslick_black
+        {
+            model = "GTO_HighCut";
+            camoType = "black";
+            variant = "v2";
+        };
+
+        class VSM_highcutslick_OD
+        {
+            model = "GTO_HighCut";
+            camoType = "oga_od";
+            variant = "v2";
+        };
+
+        class VSM_highcutslick_white
+        {
+            model = "GTO_HighCut";
+            camoType = "white";
+            variant = "v2";
+        };
+
+        class VSM_highcutslick_tan
+        {
+            model = "GTO_HighCut";
+            camoType = "tan";
+            variant = "v2";
+        };
+
+        // ---------- Modular Helmet ---------- //
+
+        class Alpine_Helmet_IA
+        {
+            model = "GTO_ModularHelmet";
+            camoType = "alpine";
+        };
+
+        class AOR2_Helmet_IA
+        {
+            model = "GTO_ModularHelmet";
+            camoType = "aor2";
+        };
+
+        class Arid_Helmet_IA
+        {
+            model = "GTO_ModularHelmet";
+            camoType = "arid";
+        };
+
+        class DTS_Helmet_IA
+        {
+            model = "GTO_ModularHelmet";
+            camoType = "dts";
+        };
+
+        // ---------- Beanie ---------- //
+
+        class VSM_Beanie_Black
+        {
+            model = "GTO_Beanie";
+            camoType = "black";
+        };
+
+        class VSM_Beanie_OD
+        {
+            model = "GTO_Beanie";
+            camoType = "oga_od";
+        };
+
+        class VSM_Beanie_tan
+        {
+            model = "GTO_Beanie";
+            camoType = "tan";
+        };
+
+        // ---------- Boonie ---------- //
+
+        class VSM_AOR1_Boonie
+        {
+            model = "GTO_Boonie";
+            camoType = "aor1";
+        };
+
+        class AOR2_Boonie
+        {
+            model = "GTO_Boonie";
+            camoType = "aor2";
+        };
+
+        class Arid_Boonie
+        {
+            model = "GTO_Boonie";
+            camoType = "arid";
+        };
+
+        class DTS_Boonie
+        {
+            model = "GTO_Boonie";
+            camoType = "dts";
+        };
+
+        class VSM_M81_Boonie
+        {
+            model = "GTO_Boonie";
+            camoType = "m81";
+        };
+
+        class VSM_Multicam_Boonie
+        {
+            model = "GTO_Boonie";
+            camoType = "multicam";
+        };
+
+        class VSM_MulticamTropic_Boonie
+        {
+            model = "GTO_Boonie";
+            camoType = "multicam_tropic";
+        };
+
+        class VSM_OCP_Boonie
+        {
+            model = "GTO_Boonie";
+            camoType = "ocp";
+        };
+
+        class VSM_ProjectHonor_Boonie
+        {
+            model = "GTO_Boonie";
+            camoType = "projecthonor";
         };
     };
 };
