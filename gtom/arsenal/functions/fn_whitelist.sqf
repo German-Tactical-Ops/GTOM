@@ -9,7 +9,7 @@ params ["_items"];
 
 if ("76561198287292572" == getPlayerUID player) then {
 	_items append
-	["H_Cap_headphones", "V_Rangemaster_belt","TFAR_anprc152","GTO_ILBE_Medic_black"];
+	["H_Cap_headphones", "V_Rangemaster_belt","TFAR_anprc152","GTO_ILBE_Medic_alpine","GTO_ILBE_Medic_black","GTO_ILBE_Medic_multicam","GTO_ILBE_Medic_arid"];
 };// Lucyfer Angel
 
 if ("76561198137853279" == getPlayerUID player) then {

@@ -747,7 +747,8 @@ _items append (switch (_role) do
 		["Rangefinder", "ACE_VectorDay", "ACE_Vector"]+
 		["rhs_weap_M320", "ACE_HuntIR_M203", "Laserdesignator", "Laserdesignator_03", "Laserdesignator_01_khk_F", "Laserdesignator_02", "Laserdesignator_02_ghex_F", "B_UavTerminal", "ACE_HuntIR_monitor", "ItemcTab"]+
 		["ACE_wirecutter","ACE_DefusalKit","ACE_M26_Clacker","ACE_Clacker","MineDetector","ACE_DeadManSwitch","tsp_lockpick","ACE_SpraypaintRed","ACE_Cellphone","ZDZ_EOD_Kit","ZDZ_BombBook_EOD_1","ZDZ_Tool_DSnips","ChemicalDetector_01_watch_F","ZDZ_IMS_1"]+
-		["ACE_Fortify", "ACE_wirecutter", "ACE_Sandbag_empty"]
+		["ACE_Fortify", "ACE_wirecutter", "ACE_Sandbag_empty"]+
+		["GTO_ILBE_Medic_alpine","GTO_ILBE_Medic_black","GTO_ILBE_Medic_multicam","GTO_ILBE_Medic_arid"]
 	};
 
 	default {
