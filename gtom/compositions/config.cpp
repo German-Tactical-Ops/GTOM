@@ -11,7 +11,8 @@ class CfgPatches
 
         units[] = {"GTO_Army","GTO_MainSystem","GTO_AirDrop"};
 
-        requiredAddons[] = {"GTOM_Main"};
+        requiredAddons[] = {"A3_Modules_F_Curator_Curator",
+	"A3_Modules_F_Multiplayer","GTOM_Main"};
     };
 };
 

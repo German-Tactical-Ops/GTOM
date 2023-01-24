@@ -210,4 +210,34 @@ class CfgWeapons
 			};
 		};
 	};
+
+	class Uniform_Base;
+	class UniformItem;
+
+	class U_B_Wetsuit : Uniform_Base
+	{
+		class ItemInfo : UniformItem
+		{
+			containerClass = "Supply70";
+		};
+	};
+
+	class Vest_Camo_Base;
+	class VestItem;
+
+	class V_RebreatherB : Vest_Camo_Base 
+	{
+		class ItemInfo : VestItem
+		{
+			containerClass = "Supply40";
+		};
+	};
+
+	class V_Pocketed_black_F : Vest_Camo_Base 
+	{
+		class ItemInfo : VestItem
+		{
+			containerClass = "Supply40";
+		};
+	};
 };
