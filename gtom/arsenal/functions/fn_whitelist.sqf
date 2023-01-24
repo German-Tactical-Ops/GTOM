@@ -9,18 +9,28 @@ params ["_items"];
 
 if ("76561198287292572" == getPlayerUID player) then {
 	_items append
-	["H_Cap_headphones", "V_Rangemaster_belt","TFAR_anprc152","GTO_ILBE_Medic_black"];
+	["H_Cap_headphones", "V_Rangemaster_belt","TFAR_anprc152","GTO_ILBE_Medic_alpine","GTO_ILBE_Medic_black","GTO_ILBE_Medic_multicam","GTO_ILBE_Medic_arid"];
 };// Lucyfer Angel
 
 if ("76561198137853279" == getPlayerUID player) then {
 	_items append
-	["H_Cap_headphones", "V_Rangemaster_belt"];
+	["H_Cap_headphones", "V_Rangemaster_belt", "TFAR_anprc152"];
 }; // Drake Murphy
 
 if ("76561198181304607" == getPlayerUID player) then {
 	_items append
-	["H_Cap_headphones", "V_Rangemaster_belt"];
+	["H_Cap_headphones", "V_Rangemaster_belt","TFAR_anprc152"];
 }; // Lars
+
+if ("76561197988272443" == getPlayerUID player) then {
+	_items append
+	["TFAR_anprc152"];
+}; // Panda
+
+if ("76561198226760432" == getPlayerUID player) then {
+	_items append
+	["TFAR_anprc152"];
+}; // Mojo
 
 // // Spieler Whitelist
 // _items append (switch (getPlayerUID player) do
