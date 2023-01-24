@@ -52,7 +52,7 @@ scriptName "fn_cbaSettingsMedical";
 				player setVariable ["ace_medical_bloodVolume", (_volume + (_lost * GTO_BloodRegenSpeed)) min 6];
 
 				// Prellungen entfernen
-				private _openWounds = (player getVariable ["ace_medical_openWounds", []]) select {
+/* 				private _openWounds = (player getVariable ["ace_medical_openWounds", []]) select {
 					(_x # 2) > 0
 				};
 				private _prellungsId = _openWounds findIf {
@@ -61,17 +61,17 @@ scriptName "fn_cbaSettingsMedical";
 				if (_prellungsId != -1) then {
 					_openWounds deleteAt _prellungsId;
 					player setVariable ["ace_medical_openWounds", _openWounds, true];
-				};
+				}; */
 
 				// Genähte Wunden entfernen
-				private _stitchedWounds = player getVariable ["ace_medical_stitchedWounds", []];
+/* 				private _stitchedWounds = player getVariable ["ace_medical_stitchedWounds", []];
 				private _stitched = _stitchedWounds deleteAt 0;
 				if (!isNil "_stitched") then {
 					player setVariable ["ace_medical_stitchedWounds", _stitchedWounds, true]
-				};
+				}; */
 
 				// ace_medical_bodyPartDamage updaten
-				private _updateBodyPartVisuals = false;
+				/* private _updateBodyPartVisuals = false;
 				for "_i" from 0 to 5 do
 				{
 					private _partIndex = _i;
@@ -104,7 +104,7 @@ scriptName "fn_cbaSettingsMedical";
 
 						_updateBodyPartVisuals = true;
 					};
-				};
+				}; */
 			};
 			private _parameters = player;
 			private _exitCode = {
