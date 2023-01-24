@@ -13,6 +13,8 @@ GTO_fnc_loadClientData = {
       player setDir _dir;
       player setPosASL _positionASL;
 
+      systemChat "Please check your role permissions after reconnect. (Medic, Sapper, Engi)";
+
 	//todo: add unit trait sync (medic, sl, ...)
     };
 

@@ -111,7 +111,7 @@ class CfgVehicles
                         exceptions[] = {};
 				        priority = 1;
 
-                        class role_Ammo_Carrier
+                        class role_Ammo_Carrier //ftl
                         {
                             displayName = "Ammo Carrier";
                             condition = "true"; 
@@ -119,11 +119,11 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\Rifleman_icon.paa";                            
                         };
 
-                        class role_AT
+                        class role_AT //ftl
                         {
-                            displayName = "AT";
+                            displayName = "LAT";
                             condition = "true"; 
-                            statement = "['at', getText (configOf _target>> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
+                            statement = "['lat', getText (configOf _target>> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
                             icon = "gtom\icons\Roles\AT_icon.paa";                            
                         };
                     };
@@ -135,7 +135,7 @@ class CfgVehicles
                 	    exceptions[] = {};
 					    priority = 1;
 
-					    class role_weaponSpecialist
+					    class role_weaponSpecialist // ftl
                         {
                             displayName = "Weapon Specialist";
                             condition = "true"; 
@@ -143,7 +143,7 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\LMG_icon.paa";                            
                         };
 
-					    class role_MG
+					    class role_MG //ftl
                         {
                             displayName = "MG";
                             condition = "true"; 
@@ -151,7 +151,7 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\MMG_icon.paa";                            
                         };
 
-					    class role_Grenadier
+					    class role_Grenadier //ftl
                         {
                             displayName = "Grenadier";
                             condition = "true"; 
@@ -159,7 +159,7 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\Grenadier_icon.paa";                            
                         };
 
-					    class role_HAT
+					    class role_HAT //ftl
                         {
                             displayName = "HAT";
                             condition = "true"; 
@@ -167,7 +167,7 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\HAT_icon.paa";                            
                         };
 
-                        class role_Marksman
+                        class role_Marksman //ftl
                         {
                             displayName = "Marksman";
                             condition = "true"; 

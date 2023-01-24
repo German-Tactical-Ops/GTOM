@@ -10,7 +10,7 @@ class CfgWeapons
 	{
 		scope= 0;	
 		author= "Wollkopf";
-		picture= "gtom\wearables\icons\gto_medic_icon.paa";
+		picture= "\gtom\wearables\icons\gto_medic_icon";
 	};
 	class GTO_HelmetSpec_Medic_Black : GTO_HelmetSpec_Medic_Base
 	{
@@ -29,8 +29,8 @@ class CfgWeapons
 		ace_hearing_protection=0.75;
         ace_hearing_lowerVolume= 0;
 		displayName= "[VSM] Opscore (Medic)";
-		picture= "gtom\wearables\icons\gto_medic_icon.paa";
-		model= "gtom\wearables\models\VSMHelmets\VSM_ops";
+		picture= "\gtom\wearables\icons\gto_medic_icon";
+		model= "\gtom\wearables\models\VSMHelmets\VSM_ops";
 		hiddenSelections[]=
 		{
 			"_helmBase",
@@ -49,7 +49,7 @@ class CfgWeapons
 		{
 			mass= 15;
 			allowedSlots[]= {901,605};
-			uniformModel= "gtom\wearables\models\VSMHelmets\VSM_ops";
+			uniformModel= "\gtom\wearables\models\VSMHelmets\VSM_ops";
 			modelSides[]= {3,1};
 			hiddenSelections[]=
 			{
@@ -78,8 +78,8 @@ class CfgWeapons
 		ace_hearing_protection= 0.75;
         ace_hearing_lowerVolume= 0;
 		displayName= "[VSM] Opscore 2 (Medic)";
-		picture= "gtom\wearables\icons\gto_medic_icon.paa";
-		model= "gtom\wearables\models\VSMHelmets\VSM_ops_2";
+		picture= "\gtom\wearables\icons\gto_medic_icon";
+		model= "\gtom\wearables\models\VSMHelmets\VSM_ops_2";
 		hiddenSelections[]=
 		{
 			"_helmBase",
@@ -98,7 +98,7 @@ class CfgWeapons
 		{
 			mass= 15;
 			allowedSlots[]= {901,605};
-			uniformModel= "gtom\wearables\models\VSMHelmets\VSM_ops_2";
+			uniformModel= "\gtom\wearables\models\VSMHelmets\VSM_ops_2";
 			modelSides[]= {3,1};
 			hiddenSelections[]=
 			{
@@ -127,13 +127,13 @@ class CfgWeapons
 		ace_hearing_protection= 0.75;
         ace_hearing_lowerVolume= 0;
 		displayName= "[VSM] MICH 2000 (Medic)";
-		picture= "gtom\wearables\icons\gto_medic_icon.paa";
-		model= "gtom\wearables\models\VSMHelmets\VSM_Mich";
+		picture= "\gtom\wearables\icons\gto_medic_icon";
+		model= "\gtom\wearables\models\VSMHelmets\VSM_Mich";
 		hiddenSelections[]=
 		{
 			"_helmBase",
 			"_helmStraps",
-			"_helmnvgBattery",
+			"_helmNvgBattery",
 			"_surefire2"
 		};
 		hiddenSelectionsTextures[]=
@@ -147,7 +147,7 @@ class CfgWeapons
 		{
 			mass= 15;
 			allowedSlots[]= {901,605};
-			uniformModel= "gtom\wearables\models\VSMHelmets\VSM_Mich";
+			uniformModel= "\gtom\wearables\models\VSMHelmets\VSM_Mich";
 			modelSides[]= {3,1};
 			hiddenSelections[]=
 			{
@@ -176,8 +176,8 @@ class CfgWeapons
 		ace_hearing_protection= 0.75;
         ace_hearing_lowerVolume= 0;
 		displayName= "[VSM] MICH 2 2000 (Medic)";
-		picture= "gtom\wearables\icons\gto_medic_icon.paa";
-		model= "gtom\wearables\models\VSMHelmets\VSM_Mich_2";
+		picture= "\gtom\wearables\icons\gto_medic_icon";
+		model= "\gtom\wearables\models\VSMHelmets\VSM_Mich_2";
 		hiddenSelections[]=
 		{
 			"_helmBase",
@@ -186,13 +186,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"gtom\wearables\textures\VSMHelmetsMedic\mich2\mich2_base.paa",
-			"gtom\wearables\textures\VSMHelmetsMedic\mich2\mich2_straps.paa",
+			"gtom\wearables\textures\VSMHelmetsMedic\mich2\mich2_straps.paa"
 		};
 		class ItemInfo : HeadgearItem
 		{
 			mass= 15;
 			allowedSlots[]= {901,605};
-			uniformModel= "gtom\wearables\models\VSMHelmets\VSM_Mich_2";
+			uniformModel= "\gtom\wearables\models\VSMHelmets\VSM_Mich_2";
 			modelSides[]= {3,1};
 			hiddenSelections[]=
 			{
@@ -208,6 +208,36 @@ class CfgWeapons
 					passThrough= 0.5;
 				};
 			};
+		};
+	};
+
+	class Uniform_Base;
+	class UniformItem;
+
+	class U_B_Wetsuit : Uniform_Base
+	{
+		class ItemInfo : UniformItem
+		{
+			containerClass = "Supply70";
+		};
+	};
+
+	class Vest_Camo_Base;
+	class VestItem;
+
+	class V_RebreatherB : Vest_Camo_Base 
+	{
+		class ItemInfo : VestItem
+		{
+			containerClass = "Supply40";
+		};
+	};
+
+	class V_Pocketed_black_F : Vest_Camo_Base 
+	{
+		class ItemInfo : VestItem
+		{
+			containerClass = "Supply40";
 		};
 	};
 };
