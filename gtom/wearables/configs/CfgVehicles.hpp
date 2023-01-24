@@ -132,14 +132,25 @@ class CfgVehicles {
 
 
     class tfw_ilbe_DD_Base;
+    class tfw_ilbe_blade_Base;
 
-    class GTO_ILBE_Medic_Base : tfw_ilbe_DD_Base
+    class GTO_ILBE_Medic_Base : tfw_ilbe_blade_Base
 	{
 		scope= 0;
-		author= "w0llkopf";
+		author= "LucyferHW";
 		picture= "\gtom\wearables\icons\gto_medic_icon.paa";
 		maximumLoad= 400;
 	};
+
+    class GTO_ILBE_Medic_alpine : GTO_ILBE_Medic_Base
+    {
+        scope= 2;
+		scopeCurator= 2;
+		scopeArsenal= 2;
+        displayName= "ILBE B. Medic (alpine)";
+        //todo: add textrure with Medic Patch
+        hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_alpine.paa"};
+    };
 
     class GTO_ILBE_Medic_black : GTO_ILBE_Medic_Base
     {
@@ -150,5 +161,24 @@ class CfgVehicles {
         //todo: add textrure with Medic Patch
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_black.paa"};
     };
-};
 
+    class GTO_ILBE_Medic_multicam : GTO_ILBE_Medic_Base
+    {
+        scope= 2;
+		scopeCurator= 2;
+		scopeArsenal= 2;
+        displayName= "ILBE B. Medic (multicam)";
+        //todo: add textrure with Medic Patch
+        hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_multicam.paa"};
+    };
+
+    class GTO_ILBE_Medic_arid : GTO_ILBE_Medic_Base
+    {
+        scope= 2;
+		scopeCurator= 2;
+		scopeArsenal= 2;
+        displayName= "ILBE B. Medic (arid)";
+        //todo: add textrure with Medic Patch
+        hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_arid.paa"};
+    };
+};
