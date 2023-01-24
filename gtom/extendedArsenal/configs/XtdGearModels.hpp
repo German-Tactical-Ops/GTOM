@@ -246,14 +246,14 @@ class variant \
                 };
             };
 
-            
+
         class GTO_MiliCap
         {
             label = "Cap";
             author = "LucyferHW";
             options[] = {"camoType"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Cap);
         };
 
         class GTO_Mich2000
@@ -262,7 +262,7 @@ class variant \
             author = "LucyferHW";
             options[] = {"camoType", "variant"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Helmet);
 
             VARIANT();
         };
@@ -273,7 +273,7 @@ class variant \
             author = "LucyferHW";
             options[] = {"camoType", "variant"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Helmet);
 
             VARIANT();
         };
@@ -284,7 +284,7 @@ class variant \
             author = "LucyferHW";
             options[] = {"camoType", "variant"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Helmet);
 
             VARIANT();
         };
@@ -295,7 +295,7 @@ class variant \
             author = "LucyferHW";
             options[] = {"camoType", "variant"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Helmet);
         };
 
         class GTO_Beanie
@@ -304,7 +304,7 @@ class variant \
             author = "LucyferHW";
             options[] = {"camoType"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Beanie);
         };
 
         class GTO_Boonie
@@ -313,7 +313,7 @@ class variant \
             author = "LucyferHW";
             options[] = {"camoType"};
             
-            CAMOTYPEM();
+            CAMOTYPEM(Boonie);
         };
     };
 };
