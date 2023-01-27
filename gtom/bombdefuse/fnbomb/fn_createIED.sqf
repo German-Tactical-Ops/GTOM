@@ -236,7 +236,8 @@ _dummy setvariable ["iedAmbush", false, true];
 _dummy setvariable ["GTOM_IEDtype", "ied", true];
 
 //Create helper
-[[_dummy,"ACE SelfInteraction to disarm"], "GTOM_fnc_createHelper", false] call BIS_fnc_MP;
+//[[_dummy,"ACE SelfInteraction to disarm"], "GTOM_fnc_createHelper", false] call BIS_fnc_MP;
+[_dummy,"ACE SelfInteraction to disarm"] remoteExec ["GTOM_fnc_createHelper",2];
 
 //If it is radio IED
 if (_IEDTriggerType == 1) then {
@@ -250,7 +251,8 @@ _fakeIed setvariable ["realIed", _dummy ,true];
 //Sync it with pre-sync IED
 if (str (_fakeIed getVariable ["syncedObject", [0,0,0]]) != "[0,0,0]") then
 {
-	[[getpos _fakeIed , (_fakeIed getVariable ["syncedObject", [0,0,0]])],"GTOM_fnc_iedSync",false,false] call BIS_fnc_MP;
+	//[[getpos _fakeIed , (_fakeIed getVariable ["syncedObject", [0,0,0]])],"GTOM_fnc_iedSync",false,false] call BIS_fnc_MP;
+	[getpos _fakeIed , (_fakeIed getVariable ["syncedObject", [0,0,0]])] remoteExec ["GTOM_fnc_iedSync",2];
 };
 
 //Spawn the IED script

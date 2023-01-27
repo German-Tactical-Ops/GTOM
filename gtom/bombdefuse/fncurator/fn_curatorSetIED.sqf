@@ -86,8 +86,8 @@ if (_object isKindOf "Man") then {
 	_iedside 			= (_resualt select 6) call BIS_fnc_sideType;
 
 
-	_ok = [_object, _trapvolume, _IEDExplosionType, _IEDDisarmTime, _IEDJammable, _IEDTriggerType, _trapdistance, _iedside] execVM "gtom\bombdefuse\fnbomb\fn_createIED.sqf";
-	//[_object, _trapvolume, _IEDExplosionType, _IEDDisarmTime, _IEDJammable, _IEDTriggerType, _trapdistance, _iedside] remoteExec ["GTOM_fnc_createIED",2];
+	//_ok = [_object, _trapvolume, _IEDExplosionType, _IEDDisarmTime, _IEDJammable, _IEDTriggerType, _trapdistance, _iedside] execVM "gtom\bombdefuse\fnbomb\fn_createIED.sqf";
+	[_object, _trapvolume, _IEDExplosionType, _IEDDisarmTime, _IEDJammable, _IEDTriggerType, _trapdistance, _iedside] remoteExec ["GTOM_fnc_createIED",2];
 };
 
 
