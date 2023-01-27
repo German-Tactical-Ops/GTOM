@@ -1,7 +1,7 @@
 #include "\gtom\basicDefines_A3.hpp"
 #include "\gtom\defines.hpp"
-#include "\gtom\bombDefuse\dialogs\dynamicDialogUi.hpp"
-#include "\gtom\bombDefuse\dialogs\bombDefuse.hpp"
+#include "dialogs\dynamicDialogUi.hpp"
+#include "dialogs\bombDefuse.hpp"
 
 
 
@@ -86,4 +86,4 @@ class cfgFunctions
 	};
 };
 
-#include "\gtom\bombdefuse\config\cfgVehicles.hpp"
+#include "config\cfgVehicles.hpp"

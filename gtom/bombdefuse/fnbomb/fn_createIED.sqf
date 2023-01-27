@@ -236,7 +236,7 @@ _dummy setvariable ["iedAmbush", false, true];
 _dummy setvariable ["GTOM_IEDtype", "ied", true];
 
 //Create helper
-[[_dummy,"Hold %1 to disarm"], "GTOM_fnc_createHelper", false] call BIS_fnc_MP;
+[[_dummy,"ACE SelfInteraction to disarm"], "GTOM_fnc_createHelper", false] call BIS_fnc_MP;
 
 //If it is radio IED
 if (_IEDTriggerType == 1) then {
