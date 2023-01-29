@@ -1,13 +1,14 @@
 class XtdGearModels {
+
 //todo: make a input field -> Backpack and Uniform have the same text //todo: test if this is working
-#define CAMOTYPEM(DNAME) \
+#define CAMOTYPEM(NAME) \
 class camoType \
 { \
-	label = "##NAME## Camo";\
+	label = ##NAME##;\
     values[] = {"alpine", "aor1", "aor2", "dts", "m81", "multicam", "multicam_arid", "multicam_black", "multicam_tropic", "ocp", "oga","tan","oga_grey","oga_od", "oga_od_spray","projecthonor","scorpion","apex","black","white"};\
 	alwaysSelectable = 0;\
     changeingame = 1;\
-    changedelay = 3;\
+    changedelay = 1;\
 	class alpine{label = "Alpine"; image = "gtom\extendedArsenal\textures\camoFragments\camo_alpine.paa";};\
 	class aor1{label = "AOR1"; image = "gtom\extendedArsenal\textures\camoFragments\camo_aor1.paa";};\
 	class aor2{label = "AOR2"; image = "gtom\extendedArsenal\textures\camoFragments\camo_aor2.paa";};\
@@ -39,9 +40,9 @@ class rolledSleeves \
     changeingame = 1;\
     changedelay = 1;\
     class rolledSleevesFalse\
-    {label = "not Rolled";};\
+    {label = "No";};\
     class rolledSleevesTrue\
-    {label = "Rolled";};\
+    {label = "Yes";};\
 };
 
 #define VARIANT() \
@@ -57,6 +58,71 @@ class variant \
     class v2\
     {label = "V-2";};\
 };
+
+#define WEAPON(CLASSNAME, NAME)\
+class ##CLASSNAME##\
+        {\
+            label = ##NAME##;\
+            author = "LucyferHW";\
+            options[] = {"weaponCamo"};\
+            \
+            class weaponCamo\
+            {\
+                label = "Weapon";\
+                values[] = {"black","desert","woodland"};\
+                alwaysSelectable = 0;\
+                changeingame = 1;\
+                changedelay = 1;\
+\
+                class black\
+                {label = "Black";};\
+                class desert\
+                {label = "Desert";};\
+                class woodland\
+                {label = "Woodland";};\
+            };  \
+        };
+
+#define WEAPON_HK(CLASSNAME, NAME)\
+class ##CLASSNAME##\
+        {\
+            label = ##NAME##;\
+            author = "LucyferHW";\
+            options[] = {"weaponCamo",version};\
+            \
+            class weaponCamo\
+            {\
+                label = "Weapon";\
+                values[] = {"black","desert","woodland"};\
+                alwaysSelectable = 0;\
+                changeingame = 1;\
+                changedelay = 1;\
+\
+                class black\
+                {label = "Black";};\
+                class desert\
+                {label = "Desert";};\
+                class woodland\
+                {label = "Woodland";};\
+            };  \
+\
+            class version\
+            {\
+                label = "Weapon";\
+                values[] = {"d145","d10","a5"};\
+                alwaysSelectable = 0;\
+                changeingame = 0;\
+                changedelay = 1;\
+\
+                class d145\
+                {label = "D 14.5";};\
+                class d10\
+                {label = "D 10";};\
+                class a5\
+                {label = "A5 11";};\
+            };  \
+        };
+
 	class CamoBase;
 
     class CfgVehicles
@@ -106,7 +172,7 @@ class variant \
             author = "LucyferHW";
             options[] = {"camoType"};
             
-            CAMOTYPEM(Uniform);
+            CAMOTYPEM("Uniform");
         };
 
         class GTO_Uniform_CG3
@@ -115,7 +181,7 @@ class variant \
             author = "LucyferHW";
             options[] = {"camoType", "rolledSleeves"};
             
-            CAMOTYPEM(Uniform);
+            CAMOTYPEM("Uniform");
 
             ROLLEDSLEEVESM(0);
         };
@@ -126,7 +192,7 @@ class variant \
             author = "LucyferHW";
             options[] = {"camoType", "rolledSleeves"};
             
-            CAMOTYPEM(Uniform);
+            CAMOTYPEM("Uniform");
 
             ROLLEDSLEEVESM(0);
         };
@@ -175,8 +241,8 @@ class variant \
         {
             label = "[GTO] Beret";
             author = "LucyferHW";
-            options[] = {"optionA"};
-            class optionA
+            options[] = {"color"};
+            class color
             {
                 label = "Beret Color";
                 values[] = {"black", "red", "orange", "yellow", "green", "blue", "violett", "pink", "white", "gray"};
@@ -188,64 +254,64 @@ class variant \
                 {
                     label = "Black";
                     description = "Soldier";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Black.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_Black.paa";
                 };
                 class red
                 {
                     label = "Red";
                     description = "SL";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Red.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_Red.paa";
                 };
                 class orange
                 {
                     label = "Orange";
                     description = "Clan Leader";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Orange.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_Orange.paa";
                 };
                 class yellow
                 {
                     label = "Yellow";
                     description = "Tank Crew";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Yellow.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_Yellow.paa";
                 };
                 class green
                 {
                     label = "Green";
                     description = "FTL";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Green.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_Green.paa";
                 };
                 class blue
                 {
                     label = "Blue";
                     description = "Medic";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Blue.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_Blue.paa";
                 };
                 class violett
                 {
                     label = "Violett";
                     description = "Pilot";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Violett.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_Violett.paa";
                 };
                 class pink
                 {
                     label = "Pink";
                     description = "JTAC";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Pink.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_Pink.paa";
                 };
                 class white
                 {
                     label = "White";
                     description = "Zeus";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_White.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_White.paa";
                 };
                 class gray
                 {
                     label = "Gray";
                     description = "Guest";
-                    image = "gtom\objects\textures\Beret\color\BeretColor_Gray.paa";
+                    image = "gtom\extendedArsenal\textures\colors\BeretColor_Gray.paa";
                 };
             };
-
+        };
 
         class GTO_MiliCap
         {
@@ -314,6 +380,170 @@ class variant \
             options[] = {"camoType"};
             
             CAMOTYPEM(Boonie);
+        };
+
+        WEAPON(GTO_rhs_mk18,"MK 18");
+
+        WEAPON(GTO_arifle_SPAR,"HK416 A5");
+
+        WEAPON(GTO_rhs_m4a1_blockII,"M4A1 B2");
+
+        WEAPON(GTO_rhs_hk416d145,"HK416 D14.5");
+
+        WEAPON_HK(GTO_HK,"HK");
+
+        WEAPON(GTO_pistol_heavy,"Pistol Heavy");
+
+        WEAPON(GTO_pistol_P07,"P99");
+
+        class GTO_m249
+        {
+            label = "M249 PIP";
+            author = "LucyferHW";
+            options[] = {length, version};
+              
+            class length
+            {
+                label = "Length";
+                values[] = {"long","short"};
+                alwaysSelectable = 0;
+                changeingame = 0;
+                changedelay = 1;
+
+                class long
+                {label = "Long";};
+                class short\
+                {label = "Short";};
+            };  
+            class version
+            {
+                label = "Version";
+                values[] = {"lcba","para","savit","ris","basic"};
+                alwaysSelectable = 0;
+                changeingame = 0;
+                changedelay = 1;
+                
+                class lcba
+                {label = "LCBA";};
+                class para
+                {label = "Para";};
+                class savit
+                {label = "Savit";};
+                class ris
+                {label = "RIS";};
+                class basic
+                {label = "Classic";};
+            };
+        };
+
+        WEAPON(GTO_lwmmg,"LWMMG");
+
+        class GTO_Stoner
+        {
+            label = "Stoner";
+            author = "LucyferHW";
+            options[] = {"weaponCamo"};
+            
+            class weaponCamo
+            {
+                label = "Camo";
+                values[] = {"black","desert"};
+                alwaysSelectable = 0;
+                changeingame = 1;
+                changedelay = 1;
+
+                class black
+                {label = "Black";};
+                class desert
+                {label = "Desert";};
+            };  
+        };
+
+        class GTO_rhs_m240
+        {
+            label = "M240";
+            author = "LucyferHW";
+            options[] = {"version"};
+            
+            class version
+            {
+                label = "Version";
+                values[] = {"b","g"};
+                alwaysSelectable = 0;
+                changeingame = 0;
+                changedelay = 1;
+
+                class b
+                {label = "B";};
+                class g
+                {label = "G";};
+            };  
+        };
+
+        class GTO_MMG
+        {
+            label = "MMG";
+            author = "LucyferHW";
+            options[] = {"weaponCamo"};
+            
+            class weaponCamo
+            {
+                label = "Camo";
+                values[] = {"tan","hex"};
+                alwaysSelectable = 0;
+                changeingame = 1;
+                changedelay = 1;
+
+                class tan
+                {label = "Tan";};
+                class hex
+                {label = "Hex";};
+            };  
+        };
+
+
+        class GTO_Vest_VSM
+        {
+            label = "VSM";
+            author = "LucyferHW";
+            options[] = {"camoType", "version", "role"};
+            
+            CAMOTYPEM("Vest");
+
+            class version
+            {
+                label = "Version";
+                values[] = {"facp","carrierRig","lbt","par"};
+                alwaysSelectable = 0;
+                changeingame = 1;
+                changedelay = 1;
+
+                class facp
+                {label = "DT FACP";};
+                class carrierRig
+                {label = "LBT";};
+                class lbt
+                {label = "LBT 6094";};
+                class par
+                {label = "Paraclete RAV";};
+            };
+
+            class role
+            {
+                label = "Role";
+                values[] = {"breacher","gunner","operator"};
+                alwaysSelectable = 0;
+                changeingame = 1;
+                changedelay = 1;
+
+                class breacher
+                {label = "Special";description = "Sapper, Engi, Pionier";};
+                class gunner
+                {label = "Weapon";description = "-all weapon roles-";};
+                class operator
+                {label = "Lead & Medic";description = "SL, FTL, Doktor, Medic";};
+            };
+
         };
     };
 };

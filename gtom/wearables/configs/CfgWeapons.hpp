@@ -23,7 +23,7 @@ class CfgWeapons
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
 
-            optionA = "red";
+            color = "red";
         };
     };
 
@@ -36,7 +36,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "orange";
+            color = "orange";
         };
     };
 
@@ -49,7 +49,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "yellow";
+            color = "yellow";
         };
     };
 
@@ -62,7 +62,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "green";
+            color = "green";
         };
     };
 
@@ -75,7 +75,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "blue";
+            color = "blue";
         };
     };
 
@@ -88,7 +88,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "violett";
+            color = "violett";
         };
     };
 
@@ -101,7 +101,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "pink";
+            color = "pink";
         };
     };
 
@@ -114,7 +114,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "white";
+            color = "white";
         };
     };
 
@@ -127,7 +127,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "gray";
+            color = "gray";
         };
     };
 
@@ -140,26 +140,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model = "GTO_Beret_All"; // class name in XtdGearModels >> CfgWeapons
-            optionA = "black";
-        };
-    };
-
-    class U_Rangemaster;
-    class UniformItem;
-
-    class GTO_BaseUniform : U_Rangemaster
-    {
-        author = "LucyferHW";
-        scope = 2;
-        displayName = "GTO Base Uniform";
-        hiddenSelectionsTextures[] = {"gtom\wearables\textures\GTO_Uniform\GTO_BaseUniform.paa"};
-
-        class ItemInfo : UniformItem
-        {
-            // uniformModel = "-";
-            uniformClass = GTO_Soldier_base;
-            containerClass = Supply40;
-            mass = 40;
+            color = "black";
         };
     };
 
@@ -175,6 +156,7 @@ class CfgWeapons
 		author= "Wollkopf";
 		picture= "\gtom\wearables\icons\gto_medic_icon";
 	};
+
 	class GTO_HelmetSpec_Medic_Black : GTO_HelmetSpec_Medic_Base
 	{
 		scope= 2;
@@ -183,6 +165,7 @@ class CfgWeapons
         displayName= "Enhanced Combat Helmet (Medic)";
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\VanillaHelmetsMedic\HelmetSpec_Medic_black.paa"};
 	};
+
 	class GTO_Opscore_Medic : ItemCore
 	{
 		scope= 2;
@@ -232,6 +215,7 @@ class CfgWeapons
 			};
 		};
 	};
+
 	class GTO_Opscore2_Medic : ItemCore
 	{
 		scope= 2;
@@ -281,6 +265,7 @@ class CfgWeapons
 			};
 		};
 	};
+
 	class GTO_Mich_Medic : ItemCore
 	{
 		scope= 2;
@@ -330,6 +315,7 @@ class CfgWeapons
 			};
 		};
 	};
+	
 	class GTO_Mich2_Medic : ItemCore
 	{
 		scope= 2;
