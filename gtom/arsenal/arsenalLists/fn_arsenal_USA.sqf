@@ -82,7 +82,7 @@ private _helmet_main = ["VSM_BackwardsHat_Peltor_black", "VSM_BackwardsHat_Pelto
 
 private _helmet_medic = ["GTO_HelmetSpec_Medic_Black", "GTO_Opscore2_Medic", "GTO_Opscore_Medic", "GTO_Mich_Medic", "GTO_Mich2_Medic"];
 
-private _helmet_sniper =["VSM_ProjectHonor_Boonie", "VSM_OCP_Boonie", "VSM_MulticamTropic_Boonie", "VSM_Multicam_Boonie", "VSM_M81_Boonie", "DTS_Boonie", "Arid_Boonie", "AOR2_Boonie", "VSM_AOR1_Boonie"];
+private _helmet_sniper = ["VSM_ProjectHonor_Boonie", "VSM_OCP_Boonie", "VSM_MulticamTropic_Boonie", "VSM_Multicam_Boonie", "VSM_M81_Boonie", "DTS_Boonie", "Arid_Boonie", "AOR2_Boonie", "VSM_AOR1_Boonie"];
 
 // --------------------------------------------------
 
