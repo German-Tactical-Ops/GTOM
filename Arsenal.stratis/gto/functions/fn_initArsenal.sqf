@@ -5,7 +5,7 @@ _actionOpenArsenal = ["openArsenal", "Open Arsenal", "", {[_target, _player, fal
 
 // Take Role
 
-_actionTakeRole = ["takeRole", "Take Role", "", {[_target, _target] call ace_common_fnc_claim;}, {true},{},[],"",4,[false, false, false, true, false]] call ace_interact_menu_fnc_createAction;
+_actionTakeRole = ["takeRole", "Take Role", "", {[_target] call GTO_fnc_transformArsenal;}, {true},{},[],"",4,[false, false, false, true, false]] call ace_interact_menu_fnc_createAction;
 ["C_IDAP_supplyCrate_F", 0, ["ACE_MainActions"], _actionTakeRole, true] call ace_interact_menu_fnc_addActionToClass;
 
 // Category

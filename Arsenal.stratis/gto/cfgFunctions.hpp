@@ -44,6 +44,9 @@ class cfgFunctions
 			{
 				postInit = 1;
 			}; //
+
+			class transformArsenal
+			{}; // [_target] call GTO_fnc_transformArsenal;
 		};
 
 		class arsenalLists
