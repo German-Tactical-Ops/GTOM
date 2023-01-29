@@ -8,7 +8,7 @@ scriptName "fn_arsenal_USA";
 
 params ["_role"];
 
-private _gto_main = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform", "KNB_Notebook","Black_Black_Camo","U_B_Wetsuit","V_RebreatherB","G_Diving","G_B_Diving","V_Pocketed_black_F"];
+private _gto_equipment = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform", "Black_Black_Camo", "U_B_Wetsuit", "V_RebreatherB", "G_Diving", "G_B_Diving", "V_Pocketed_black_F"];
 
 private _weapon_mp = ["SMG_01_F", "rhsusf_weap_MP7A2_aor1", "rhsusf_weap_MP7A2_desert", "rhsusf_weap_MP7A2_winter", "rhsusf_weap_MP7A2", "SMG_05_F", "SMG_02_F"];
 
@@ -62,11 +62,11 @@ private _scope_sniper = ["rhsusf_acc_nxs_5522x56_md_sun", "rhsusf_acc_nxs_5522x5
 
 // --------------------------------------------------
 
-private _railAttachments_main = ["rhsusf_acc_anpeq15side", "rhsusf_acc_anpeq15_top", "rhsusf_acc_anpeq15_wmx", "rhsusf_acc_anpeq15_wmx_light", "rhsusf_acc_anpeq15side_bk", "rhsusf_acc_anpeq15_bk_top", "rhsusf_acc_anpeq15_bk", "rhsusf_acc_anpeq15_bk_light", "rhsusf_acc_anpeq16a", "rhsusf_acc_anpeq16a_light", "rhsusf_acc_anpeq16a_top", "rhsusf_acc_anpeq16a_light_top", "rhsusf_acc_M952V", "acc_flashlight_pistol", "acc_esd_01_flashlight", "acc_flashlight_smg_01", "acc_flashlight", "rhsusf_acc_wmx", "rhsusf_acc_wmx_bk"];
+private _railAttachments = ["rhsusf_acc_anpeq15side", "rhsusf_acc_anpeq15_top", "rhsusf_acc_anpeq15_wmx", "rhsusf_acc_anpeq15_wmx_light", "rhsusf_acc_anpeq15side_bk", "rhsusf_acc_anpeq15_bk_top", "rhsusf_acc_anpeq15_bk", "rhsusf_acc_anpeq15_bk_light", "rhsusf_acc_anpeq16a", "rhsusf_acc_anpeq16a_light", "rhsusf_acc_anpeq16a_top", "rhsusf_acc_anpeq16a_light_top", "rhsusf_acc_M952V", "acc_flashlight_pistol", "acc_esd_01_flashlight", "acc_flashlight_smg_01", "acc_flashlight", "rhsusf_acc_wmx", "rhsusf_acc_wmx_bk"];
 
 // --------------------------------------------------
 
-private _muzzleAttachments_main = ["rhs_acc_6p9_suppressor", "rhsusf_acc_aac_762sd_silencer", "rhsusf_acc_aac_762sdn6_silencer", "rhsusf_acc_aac_scarh_silencer", "rhsusf_acc_ARDEC_M240", "rhs_acc_dtk1l", "ACE_muzzle_mzls_338", "ACE_muzzle_mzls_smg_01", "ACE_muzzle_mzls_L", "ACE_muzzle_mzls_H", "ACE_muzzle_mzls_B", "ACE_muzzle_mzls_smg_02", "ACE_muzzle_mzls_93mmg", "rhsusf_acc_aac_m14dcqd_silencer", "rhsusf_acc_aac_m14dcqd_silencer_d", "rhsusf_acc_aac_m14dcqd_silencer_wd", "rhsusf_acc_m14_flashsuppresor", "rhsusf_acc_m24_muzzlehider_black", "rhsusf_acc_m24_muzzlehider_d", "rhsusf_acc_m24_muzzlehider_wd", "rhsusf_acc_m24_silencer_black", "rhsusf_acc_m24_silencer_d", "rhsusf_acc_m24_silencer_wd", "rhsusf_acc_nt4_black", "rhsusf_acc_nt4_tan", "rhsusf_acc_rotex5_grey", "rhsusf_acc_rotex5_tan", "rhsusf_acc_rotex_mp7_aor1", "rhsusf_acc_rotex_mp7", "rhsusf_acc_rotex_mp7_desert", "rhsusf_acc_rotex_mp7_winter", "muzzle_antenna_02_f", "muzzle_antenna_03_f", "muzzle_antenna_01_f", "muzzle_snds_338_black", "muzzle_snds_338_green", "muzzle_snds_338_sand", "muzzle_snds_acp", "muzzle_snds_M", "muzzle_snds_m_khk_F", "muzzle_snds_m_snd_F", "muzzle_snds_570", "muzzle_snds_H", "muzzle_snds_H_khk_F", "muzzle_snds_H_snd_F", "muzzle_snds_B", "muzzle_snds_B_arid_F", "muzzle_snds_B_khk_F", "muzzle_snds_B_lush_F", "muzzle_snds_B_snd_F", "muzzle_snds_L", "muzzle_snds_93mmg", "muzzle_snds_93mmg_tan", "muzzle_snds_H_MG_blk_F", "muzzle_snds_H_MG", "muzzle_snds_H_MG_khk_F", "rhsusf_acc_SR25S", "rhsusf_acc_SR25S_d", "rhsusf_acc_SR25S_wd", "muzzle_snds_58_blk_F", "muzzle_snds_58_ghex_F", "muzzle_snds_58_hex_F", "muzzle_snds_65_TI_blk_F", "muzzle_snds_65_TI_ghex_F", "muzzle_snds_65_TI_hex_F", "rhsusf_acc_M2010S", "rhsusf_acc_M2010S_d", "rhsusf_acc_M2010S_sa", "rhsusf_acc_M2010S_wd"];
+private _muzzleAttachments = ["rhs_acc_6p9_suppressor", "rhsusf_acc_aac_762sd_silencer", "rhsusf_acc_aac_762sdn6_silencer", "rhsusf_acc_aac_scarh_silencer", "rhsusf_acc_ARDEC_M240", "rhs_acc_dtk1l", "ACE_muzzle_mzls_338", "ACE_muzzle_mzls_smg_01", "ACE_muzzle_mzls_L", "ACE_muzzle_mzls_H", "ACE_muzzle_mzls_B", "ACE_muzzle_mzls_smg_02", "ACE_muzzle_mzls_93mmg", "rhsusf_acc_aac_m14dcqd_silencer", "rhsusf_acc_aac_m14dcqd_silencer_d", "rhsusf_acc_aac_m14dcqd_silencer_wd", "rhsusf_acc_m14_flashsuppresor", "rhsusf_acc_m24_muzzlehider_black", "rhsusf_acc_m24_muzzlehider_d", "rhsusf_acc_m24_muzzlehider_wd", "rhsusf_acc_m24_silencer_black", "rhsusf_acc_m24_silencer_d", "rhsusf_acc_m24_silencer_wd", "rhsusf_acc_nt4_black", "rhsusf_acc_nt4_tan", "rhsusf_acc_rotex5_grey", "rhsusf_acc_rotex5_tan", "rhsusf_acc_rotex_mp7_aor1", "rhsusf_acc_rotex_mp7", "rhsusf_acc_rotex_mp7_desert", "rhsusf_acc_rotex_mp7_winter", "muzzle_antenna_02_f", "muzzle_antenna_03_f", "muzzle_antenna_01_f", "muzzle_snds_338_black", "muzzle_snds_338_green", "muzzle_snds_338_sand", "muzzle_snds_acp", "muzzle_snds_M", "muzzle_snds_m_khk_F", "muzzle_snds_m_snd_F", "muzzle_snds_570", "muzzle_snds_H", "muzzle_snds_H_khk_F", "muzzle_snds_H_snd_F", "muzzle_snds_B", "muzzle_snds_B_arid_F", "muzzle_snds_B_khk_F", "muzzle_snds_B_lush_F", "muzzle_snds_B_snd_F", "muzzle_snds_L", "muzzle_snds_93mmg", "muzzle_snds_93mmg_tan", "muzzle_snds_H_MG_blk_F", "muzzle_snds_H_MG", "muzzle_snds_H_MG_khk_F", "rhsusf_acc_SR25S", "rhsusf_acc_SR25S_d", "rhsusf_acc_SR25S_wd", "muzzle_snds_58_blk_F", "muzzle_snds_58_ghex_F", "muzzle_snds_58_hex_F", "muzzle_snds_65_TI_blk_F", "muzzle_snds_65_TI_ghex_F", "muzzle_snds_65_TI_hex_F", "rhsusf_acc_M2010S", "rhsusf_acc_M2010S_d", "rhsusf_acc_M2010S_sa", "rhsusf_acc_M2010S_wd"];
 
 // --------------------------------------------------
 
@@ -86,7 +86,7 @@ private _helmet_sniper =["VSM_ProjectHonor_Boonie", "VSM_OCP_Boonie", "VSM_Multi
 
 // --------------------------------------------------
 
-private _uniform_main = ["VSM_AOR1_BDU_Camo", "DTS_BDU_Camo", "VSM_M81_BDU_Camo", "VSM_Multicam_BDU_Camo", "VSM_MulticamTropic_BDU_Camo", "VSM_OCP_BDU_Camo", "VSM_ProjectHonor_BDU_Camo", "Alpine_Crye_Camo", "DTS_Crye_SS_Camo", "DTS_Crye_Camo", "VSM_AOR1_Crye_Camo", "AOR_2_Crye_Camo", "Arid_Crye_Camo", "VSM_M81_Crye_Camo", "black_Crye_Camo", "VSM_Multicam_Crye_Camo", "VSM_MulticamTropic_Crye_Camo", "VSM_OCP_Crye_Camo", "VSM_OGA_Crye_grey_Camo", "VSM_OGA_Crye_od_Camo", "VSM_OGA_Crye_Camo", "VSM_ProjectHonor_Crye_Camo", "VSM_Scorpion_Crye_Camo", "Alpine_Crye_SS_Camo", "VSM_AOR1_Crye_SS_Camo", "AOR_2_CryeSS_Camo", "Arid_Crye_SS_Camo", "VSM_M81_Crye_SS_Camo", "Black_Crye_SS_Camo", "VSM_Multicam_Crye_SS_Camo", "VSM_MulticamTropic_Crye_SS_Camo", "VSM_OCP_Crye_SS_Camo", "VSM_OGA_Crye_SS_grey_Camo", "VSM_OGA_Crye_SS_od_Camo", "VSM_OGA_Crye_SS_Camo", "VSM_ProjectHonor_Crye_SS_Camo", "VSM_Scorpion_Crye_SS_Camo", "Alpine_Massif_Camo", "VSM_AOR1_Camo", "AOR2_camo", "VSM_M81_Camo", "VSM_Multicam_Camo", "VSM_MulticamTropic_Camo", "VSM_OCP_Camo", "VSM_OGA_od_Camo", "VSM_OGA_Camo", "VSM_ProjectHonor_Camo", "DTS_Massif_Camo", "Alpine_Massif_Camo_SS", "VSM_AOR1_Camo_SS", "AOR2_SS_camo", "DTS_Massif_SS_Camo", "VSM_M81_Camo_SS", "VSM_Multicam_Camo_SS", "VSM_MulticamTropic_Camo_SS", "VSM_OCP_Camo_SS", "VSM_OGA_od_Camo_SS", "VSM_OGA_Camo_SS", "VSM_ProjectHonor_Camo_SS", "U_B_T_Soldier_F", "U_B_T_Soldier_SL_F"];
+private _uniform = ["VSM_AOR1_BDU_Camo", "DTS_BDU_Camo", "VSM_M81_BDU_Camo", "VSM_Multicam_BDU_Camo", "VSM_MulticamTropic_BDU_Camo", "VSM_OCP_BDU_Camo", "VSM_ProjectHonor_BDU_Camo", "Alpine_Crye_Camo", "DTS_Crye_SS_Camo", "DTS_Crye_Camo", "VSM_AOR1_Crye_Camo", "AOR_2_Crye_Camo", "Arid_Crye_Camo", "VSM_M81_Crye_Camo", "black_Crye_Camo", "VSM_Multicam_Crye_Camo", "VSM_MulticamTropic_Crye_Camo", "VSM_OCP_Crye_Camo", "VSM_OGA_Crye_grey_Camo", "VSM_OGA_Crye_od_Camo", "VSM_OGA_Crye_Camo", "VSM_ProjectHonor_Crye_Camo", "VSM_Scorpion_Crye_Camo", "Alpine_Crye_SS_Camo", "VSM_AOR1_Crye_SS_Camo", "AOR_2_CryeSS_Camo", "Arid_Crye_SS_Camo", "VSM_M81_Crye_SS_Camo", "Black_Crye_SS_Camo", "VSM_Multicam_Crye_SS_Camo", "VSM_MulticamTropic_Crye_SS_Camo", "VSM_OCP_Crye_SS_Camo", "VSM_OGA_Crye_SS_grey_Camo", "VSM_OGA_Crye_SS_od_Camo", "VSM_OGA_Crye_SS_Camo", "VSM_ProjectHonor_Crye_SS_Camo", "VSM_Scorpion_Crye_SS_Camo", "Alpine_Massif_Camo", "VSM_AOR1_Camo", "AOR2_camo", "VSM_M81_Camo", "VSM_Multicam_Camo", "VSM_MulticamTropic_Camo", "VSM_OCP_Camo", "VSM_OGA_od_Camo", "VSM_OGA_Camo", "VSM_ProjectHonor_Camo", "DTS_Massif_Camo", "Alpine_Massif_Camo_SS", "VSM_AOR1_Camo_SS", "AOR2_SS_camo", "DTS_Massif_SS_Camo", "VSM_M81_Camo_SS", "VSM_Multicam_Camo_SS", "VSM_MulticamTropic_Camo_SS", "VSM_OCP_Camo_SS", "VSM_OGA_od_Camo_SS", "VSM_OGA_Camo_SS", "VSM_ProjectHonor_Camo_SS", "U_B_T_Soldier_F", "U_B_T_Soldier_SL_F"];
 
 // --------------------------------------------------
 
@@ -96,9 +96,7 @@ private _vest_light = ["cpc_light_coy", "cpc_lightbelt_coy", "cpc_light_mc", "cp
 
 private _vest_heavy = ["cpc_weapons_coy", "cpc_weaponsbelt_coy", "cpc_weapons_mc", "cpc_weaponsbelt_mc", "cpc_weapons_rngr", "cpc_weaponsbelt_rngr", "lbt_weapons_aor1", "lbt_weapons_aor2", "lbt_weapons_coy", "lbt_weapons_mc", "lbt_weapons_od", "dr_Alpinefacp_mg", "CarrierRig_Gunner_Alpine", "dr_Alpinelbt_mg", "dr_Alpinepar_mg", "VSM_FAPC_MG_AOR1", "VSM_CarrierRig_Gunner_AOR1", "VSM_LBT6094_MG_AOR1", "VSM_RAV_MG_AOR1", "dr_AOR2facp_mg", "CarrierRig_Gunner_AOR2", "dr_AOR2lbt_mg", "dr_AOR2par_mg", "DTSfacp_mg", "CarrierRig_Gunner_DTS", "DTSlbt_mg", "DTSpar_mg", "VSM_FAPC_MG_M81", "VSM_CarrierRig_Gunner_M81", "VSM_LBT6094_MG_M81", "VSM_RAV_MG_M81", "dr_ARDfacp_mg", "CarrierRig_Gunner_Arid", "dr_ARDlbt_mg", "dr_ARDpar_mg", "dr_BLKfacp_mg", "dr_BLKlbt_mg", "dr_BLKpar_mg", "VSM_FAPC_MG_Multicam", "VSM_CarrierRig_Gunner_Multicam", "VSM_LBT6094_MG_Multicam", "VSM_RAV_MG_Multicam", "VSM_FAPC_MG_MulticamTropic", "VSM_CarrierRig_Gunner_multicamTropic", "VSM_LBT6094_MG_multicamTropic", "VSM_RAV_MG_MulticamTropic", "VSM_FAPC_MG_OCP", "VSM_CarrierRig_Gunner_OCP", "VSM_LBT6094_MG_OCP", "VSM_RAV_MG_OCP", "VSM_FAPC_MG_OGA", "VSM_CarrierRig_Gunner_OGA", "VSM_LBT6094_MG_OGA", "VSM_FAPC_MG_OGA_OD", "VSM_CarrierRig_Gunner_OGA_OD", "VSM_LBT6094_MG_OGA_OD", "VSM_RAV_MG_OGA_OD", "VSM_RAV_MG_OGA", "VSM_FAPC_MG_ProjectHonor", "VSM_CarrierRig_Gunner_ProjectHonor", "VSM_LBT6094_MG_ProjectHonor", "VSM_RAV_MG_ProjectHonor", "V_PlateCarrierSpec_tna_F"];
 
-private _vest_sl = ["lbt_operator_aor1", "lbt_operator_aor2", "lbt_operator_coy", "lbt_operator_mc", "lbt_operator_od", "dr_Alpinefacp_op", "CarrierRig_Operator_Alpine", "dr_Alpinelbt_op", "dr_Alpinepar_op", "VSM_FAPC_Operator_AOR1", "VSM_CarrierRig_Operator_AOR1", "VSM_LBT6094_operator_AOR1", "VSM_RAV_operator_AOR1", "dr_AOR2facp_op", "CarrierRig_Operator_AOR2", "dr_AOR2lbt_op", "dr_AOR2par_op", "DTSfacp_op", "CarrierRig_Operator_DTS", "DTSlbt_op", "DTSpar_op", "VSM_FAPC_Operator_M81", "VSM_CarrierRig_Operator_M81", "VSM_LBT6094_operator_M81", "VSM_RAV_operator_M81", "dr_ARDfacp_op", "CarrierRig_Operator_Arid", "dr_ARDlbt_op", "dr_ARDpar_op", "dr_BLKfacp_op", "dr_BLKlbt_op", "dr_BLKpar_op", "VSM_FAPC_Operator_Multicam", "VSM_CarrierRig_Operator_Multicam", "VSM_LBT6094_operator_Multicam", "VSM_RAV_operator_Multicam", "VSM_FAPC_Operator_MulticamTropic", "VSM_CarrierRig_Operator_multicamTropic", "VSM_LBT6094_operator_multicamTropic", "VSM_RAV_operator_MulticamTropic", "VSM_FAPC_Operator_OCP", "VSM_CarrierRig_Operator_OCP", "VSM_LBT6094_operator_OCP", "VSM_RAV_operator_OCP", "VSM_FAPC_Operator_OGA", "VSM_CarrierRig_Operator_OGA", "VSM_LBT6094_operator_OGA", "VSM_FAPC_Operator_OGA_OD", "VSM_CarrierRig_Operator_OGA_OD", "VSM_LBT6094_operator_OGA_OD", "VSM_RAV_operator_OGA_OD", "VSM_RAV_operator_OGA", "VSM_FAPC_Operator_ProjectHonor", "VSM_CarrierRig_Operator_ProjectHonor", "VSM_LBT6094_operator_ProjectHonor", "VSM_RAV_operator_ProjectHonor", "cpc_communications_coy", "cpc_communicationsbelt_coy", "cpc_communications_mc", "cpc_communicationsbelt_mc", "cpc_communications_rngr", "cpc_communicationsbelt_rngr", "lbt_comms_aor1", "lbt_comms_aor2", "lbt_comms_coy", "lbt_comms_mc", "lbt_comms_od", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_tna_F"];
-
-private _vest_ftl = ["lbt_operator_aor1", "lbt_operator_aor2", "lbt_operator_coy", "lbt_operator_mc", "lbt_operator_od", "dr_Alpinefacp_op", "CarrierRig_Operator_Alpine", "dr_Alpinelbt_op", "dr_Alpinepar_op", "VSM_FAPC_Operator_AOR1", "VSM_CarrierRig_Operator_AOR1", "VSM_LBT6094_operator_AOR1", "VSM_RAV_operator_AOR1", "dr_AOR2facp_op", "CarrierRig_Operator_AOR2", "dr_AOR2lbt_op", "dr_AOR2par_op", "DTSfacp_op", "CarrierRig_Operator_DTS", "DTSlbt_op", "DTSpar_op", "VSM_FAPC_Operator_M81", "VSM_CarrierRig_Operator_M81", "VSM_LBT6094_operator_M81", "VSM_RAV_operator_M81", "dr_ARDfacp_op", "CarrierRig_Operator_Arid", "dr_ARDlbt_op", "dr_ARDpar_op", "dr_BLKfacp_op", "dr_BLKlbt_op", "dr_BLKpar_op", "VSM_FAPC_Operator_Multicam", "VSM_CarrierRig_Operator_Multicam", "VSM_LBT6094_operator_Multicam", "VSM_RAV_operator_Multicam", "VSM_FAPC_Operator_MulticamTropic", "VSM_CarrierRig_Operator_multicamTropic", "VSM_LBT6094_operator_multicamTropic", "VSM_RAV_operator_MulticamTropic", "VSM_FAPC_Operator_OCP", "VSM_CarrierRig_Operator_OCP", "VSM_LBT6094_operator_OCP", "VSM_RAV_operator_OCP", "VSM_FAPC_Operator_OGA", "VSM_CarrierRig_Operator_OGA", "VSM_LBT6094_operator_OGA", "VSM_FAPC_Operator_OGA_OD", "VSM_CarrierRig_Operator_OGA_OD", "VSM_LBT6094_operator_OGA_OD", "VSM_RAV_operator_OGA_OD", "VSM_RAV_operator_OGA", "VSM_FAPC_Operator_ProjectHonor", "VSM_CarrierRig_Operator_ProjectHonor", "VSM_LBT6094_operator_ProjectHonor", "VSM_RAV_operator_ProjectHonor", "cpc_tl_coy", "cpc_tlbelt_coy", "cpc_tl_mc", "cpc_tlbelt_mc", "cpc_tl_rngr", "cpc_tlbelt_rngr", "lbt_tl_aor1", "lbt_tl_aor2", "lbt_tl_coy", "lbt_tl_mc", "lbt_tl_od", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_tna_F"];
+private _vest_sl = ["lbt_operator_aor1", "lbt_operator_aor2", "lbt_operator_coy", "lbt_operator_mc", "lbt_operator_od", "dr_Alpinefacp_op", "CarrierRig_Operator_Alpine", "dr_Alpinelbt_op", "dr_Alpinepar_op", "VSM_FAPC_Operator_AOR1", "VSM_CarrierRig_Operator_AOR1", "VSM_LBT6094_operator_AOR1", "VSM_RAV_operator_AOR1", "dr_AOR2facp_op", "CarrierRig_Operator_AOR2", "dr_AOR2lbt_op", "dr_AOR2par_op", "DTSfacp_op", "CarrierRig_Operator_DTS", "DTSlbt_op", "DTSpar_op", "VSM_FAPC_Operator_M81", "VSM_CarrierRig_Operator_M81", "VSM_LBT6094_operator_M81", "VSM_RAV_operator_M81", "dr_ARDfacp_op", "CarrierRig_Operator_Arid", "dr_ARDlbt_op", "dr_ARDpar_op", "dr_BLKfacp_op", "dr_BLKlbt_op", "dr_BLKpar_op", "VSM_FAPC_Operator_Multicam", "VSM_CarrierRig_Operator_Multicam", "VSM_LBT6094_operator_Multicam", "VSM_RAV_operator_Multicam", "VSM_FAPC_Operator_MulticamTropic", "VSM_CarrierRig_Operator_multicamTropic", "VSM_LBT6094_operator_multicamTropic", "VSM_RAV_operator_MulticamTropic", "VSM_FAPC_Operator_OCP", "VSM_CarrierRig_Operator_OCP", "VSM_LBT6094_operator_OCP", "VSM_RAV_operator_OCP", "VSM_FAPC_Operator_OGA", "VSM_CarrierRig_Operator_OGA", "VSM_LBT6094_operator_OGA", "VSM_FAPC_Operator_OGA_OD", "VSM_CarrierRig_Operator_OGA_OD", "VSM_LBT6094_operator_OGA_OD", "VSM_RAV_operator_OGA_OD", "VSM_RAV_operator_OGA", "VSM_FAPC_Operator_ProjectHonor", "VSM_CarrierRig_Operator_ProjectHonor", "VSM_LBT6094_operator_ProjectHonor", "VSM_RAV_operator_ProjectHonor", "cpc_communications_coy", "cpc_communicationsbelt_coy", "cpc_communications_mc", "cpc_communicationsbelt_mc", "cpc_communications_rngr", "cpc_communicationsbelt_rngr", "cpc_tl_coy", "cpc_tlbelt_coy", "cpc_tl_mc", "cpc_tlbelt_mc", "cpc_tl_rngr", "cpc_tlbelt_rngr", "lbt_tl_aor1", "lbt_tl_aor2", "lbt_tl_coy", "lbt_tl_mc", "lbt_tl_od", "lbt_comms_aor1", "lbt_comms_aor2", "lbt_comms_coy", "lbt_comms_mc", "lbt_comms_od", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_tna_F"];
 
 private _vest_medic = ["dr_Alpinelbt_op", "VSM_LBT6094_operator_AOR1", "dr_AOR2lbt_op", "DTSlbt_op", "VSM_LBT6094_operator_M81", "dr_ARDlbt_op", "dr_BLKlbt_op", "VSM_LBT6094_operator_Multicam", "VSM_LBT6094_operator_multicamTropic", "VSM_LBT6094_operator_OCP", "VSM_LBT6094_operator_OGA", "VSM_LBT6094_operator_OGA_OD", "VSM_LBT6094_operator_ProjectHonor", "dr_Alpinepar_op", "VSM_RAV_operator_AOR1", "dr_AOR2par_op", "DTSpar_op", "VSM_RAV_operator_M81", "dr_ARDpar_op", "dr_BLKpar_op", "VSM_RAV_operator_Multicam", "VSM_RAV_operator_MulticamTropic", "VSM_RAV_operator_OCP", "VSM_RAV_operator_OGA_OD", "VSM_RAV_operator_OGA", "VSM_RAV_operator_ProjectHonor", "V_TacVestIR_blk", "cpc_medical_coy", "cpc_medicalbelt_coy", "cpc_medical_mc", "cpc_medicalbelt_mc", "cpc_medical_rngr", "cpc_medicalbelt_rngr", "lbt_medical_aor1", "lbt_medical_aor2", "lbt_medical_coy", "lbt_medical_mc", "lbt_medical_od", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_tna_F"];
 
@@ -114,7 +112,9 @@ private _backpack_big = ["Alpine_Carryall", "VSM_AOR1_carryall", "AOR2_Carryall"
 
 private _backpack_medic = ["GTO_Carryall_Medic_multicam_tropic", "GTO_Carryall_Medic_projecthonor", "GTO_Carryall_Medic_oga_od", "GTO_Carryall_Medic_oga", "GTO_Carryall_Medic_ocp", "GTO_Carryall_Medic_multicam", "GTO_Carryall_Medic_m81", "GTO_Carryall_Medic_dts", "GTO_Carryall_Medic_multicam_black", "GTO_Carryall_Medic_multicam_arid", "GTO_Carryall_Medic_aor2", "GTO_Carryall_Medic_aor1", "GTO_Carryall_Medic_alpine"];
 
-private _backpack_radio = ["TFAR_anarc164","TFAR_anarc210","TFAR_anprc155","TFAR_anprc155_coyote","TFAR_rt1523g","TFAR_rt1523g_big","TFAR_rt1523g_big_bwmod","TFAR_rt1523g_big_bwmod_tropen","TFAR_rt1523g_big_rhs","TFAR_rt1523g_black","TFAR_rt1523g_bwmod","TFAR_rt1523g_fabric","TFAR_rt1523g_green","TFAR_rt1523g_rhs","TFAR_rt1523g_sage","TFAR_bussole","B_RadioBag_01_black_F","B_RadioBag_01_digi_F","B_RadioBag_01_eaf_F","B_RadioBag_01_ghex_F","B_RadioBag_01_hex_F","B_RadioBag_01_mtp_F","B_RadioBag_01_tropic_F","B_RadioBag_01_oucamo_F","B_RadioBag_01_wdl_F","tfw_ilbe_blade_alpine","tfw_ilbe_blade_arid","tfw_ilbe_blade_black","tfw_ilbe_blade_mc","tfw_ilbe_blade_gr","tfw_ilbe_blade_ocp","tfw_ilbe_DD_alpine","tfw_ilbe_DD_arid","tfw_ilbe_DD_black","tfw_ilbe_DD_gr","tfw_ilbe_DD_mc","tfw_ilbe_DD_ocp","tfw_ilbe_blade_wd2","tfw_ilbe_blade_mct","tfw_ilbe_DD_mct","tfw_ilbe_DD_wd2","tfw_ilbe_whip_alpine","tfw_ilbe_whip_arid","tfw_ilbe_whip_black","tfw_ilbe_whip_gr","tfw_ilbe_whip_mct","tfw_ilbe_whip_mc","tfw_ilbe_whip_ocp","tfw_ilbe_whip_wd2","tfw_rf3080Item","tfw_blade","tfw_whip","tfw_dd"];
+private _backpack_radio_medic = ["GTO_ILBE_Medic_alpine", "GTO_ILBE_Medic_black", "GTO_ILBE_Medic_multicam", "GTO_ILBE_Medic_arid"];
+
+private _backpack_radio = ["TFAR_anprc155", "TFAR_anprc155_coyote", "TFAR_rt1523g", "TFAR_rt1523g_big", "TFAR_rt1523g_big_bwmod", "TFAR_rt1523g_big_bwmod_tropen", "TFAR_rt1523g_big_rhs", "TFAR_rt1523g_black", "TFAR_rt1523g_bwmod", "TFAR_rt1523g_fabric", "TFAR_rt1523g_green", "TFAR_rt1523g_rhs", "TFAR_rt1523g_sage", "B_RadioBag_01_black_F", "B_RadioBag_01_digi_F", "B_RadioBag_01_eaf_F", "B_RadioBag_01_ghex_F", "B_RadioBag_01_hex_F", "B_RadioBag_01_mtp_F", "B_RadioBag_01_tropic_F", "B_RadioBag_01_oucamo_F", "B_RadioBag_01_wdl_F", "tfw_ilbe_blade_alpine", "tfw_ilbe_blade_arid", "tfw_ilbe_blade_black", "tfw_ilbe_blade_mc", "tfw_ilbe_blade_gr", "tfw_ilbe_blade_ocp", "tfw_ilbe_DD_alpine", "tfw_ilbe_DD_arid", "tfw_ilbe_DD_black", "tfw_ilbe_DD_gr", "tfw_ilbe_DD_mc", "tfw_ilbe_DD_ocp", "tfw_ilbe_blade_wd2", "tfw_ilbe_blade_mct", "tfw_ilbe_DD_mct", "tfw_ilbe_DD_wd2", "tfw_ilbe_whip_alpine", "tfw_ilbe_whip_arid", "tfw_ilbe_whip_black", "tfw_ilbe_whip_gr", "tfw_ilbe_whip_mct", "tfw_ilbe_whip_mc", "tfw_ilbe_whip_ocp", "tfw_ilbe_whip_wd2", "tfw_rf3080Item", "tfw_blade", "tfw_whip", "tfw_dd"];
 
 // --------------------------------------------------
 
@@ -122,51 +122,57 @@ private _googles = ["VSM_balaclava_Black_Skull", "VSM_balaclava_Black", "VSM_bal
 
 // --------------------------------------------------
 
-private _nvg_main = ["A3_GPNVG18_BLK_F", "A3_GPNVG18_F"];
+private _nvg = ["A3_GPNVG18_BLK_F", "A3_GPNVG18_F"];
 
 // --------------------------------------------------
 
 private _binoculars_main = ["Rangefinder", "Binocular"];
 
-private _binoculars_medium = ["Rangefinder", "ACE_VectorDay", "ACE_Vector", "ACE_Yardage450"];
-
 private _binoculars_sniper = ["Rangefinder", "ACE_VectorDay", "ACE_Vector", "ACE_Yardage450", "ACE_MX2A"];
 
-private _binoculars_sl = ["Rangefinder", "ACE_VectorDay", "ACE_Vector", "ACE_Yardage450", "ACE_MX2A", "Laserdesignator", "Laserdesignator_03", "Laserdesignator_01_khk_F", "Laserdesignator_02", "Laserdesignator_02_ghex_F","Laserbatteries"];
+private _binoculars_sl = ["Rangefinder", "ACE_VectorDay", "ACE_Vector", "ACE_Yardage450", "ACE_MX2A", "Laserdesignator", "Laserdesignator_03", "Laserdesignator_01_khk_F", "Laserdesignator_02", "Laserdesignator_02_ghex_F", "Laserbatteries"];
 
 // --------------------------------------------------
 
-private _mapCompasRadio = ["ItemMap", "ItemCompass", "TFAR_rf7800str", "ItemWatch", "TFAR_microdagr", "ACE_Altimeter", "ItemGPS"];
-
-private _better_radio = ["TFAR_anprc152"];
+private _mapCompasRadio = ["ItemMap", "ItemCompass", "TFAR_rf7800str", "TFAR_anprc152", "ItemWatch", "TFAR_microdagr", "ACE_Altimeter", "ItemGPS"];
 
 // --------------------------------------------------
 
-private _granades = ["ACE_M14", "ACE_Chemlight_HiBlue", "ACE_Chemlight_HiGreen", "ACE_Chemlight_HiRed", "ACE_Chemlight_HiWhite", "ACE_Chemlight_HiYellow", "ACE_Chemlight_UltraHiOrange", "ACE_CTS9", "B_IR_Grenade", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow", "HandGrenade", "rhs_mag_m69", "rhs_mag_m7a3_cs", "SmokeShell", "MiniGrenade", "ACE_M84"];
+private _granades = ["ACE_M14", "ACE_Chemlight_HiBlue", "ACE_Chemlight_HiGreen", "ACE_Chemlight_HiRed", "ACE_Chemlight_HiWhite", "ACE_Chemlight_HiYellow", "ACE_Chemlight_UltraHiOrange", "ACE_CTS9", "B_IR_Grenade", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow", "HandGrenade", "rhs_mag_m69", "SmokeShell", "MiniGrenade", "ACE_M84", "KAT_M7A3"];
 
 private _flares = ["UGL_FlareGreen_F", "UGL_FlareCIR_F", "UGL_FlareRed_F", "UGL_FlareWhite_F", "UGL_FlareYellow_F", "ACE_40mm_Flare_white", "ACE_40mm_Flare_green", "ACE_40mm_Flare_red", "ACE_40mm_Flare_ir"];
 
 // --------------------------------------------------
 
-private _explosives = ["ACE_Cellphone", "tsp_frameCharge_mag", "APERSMineDispenser_Mag", "tsp_popperCharge_mag", "tsp_popperCharge_auto_mag", "DemoCharge_Remote_Mag", "ATMine_Range_Mag", "SatchelCharge_Remote_Mag", "ClaymoreDirectionalMine_Remote_Mag", "APERSBoundingMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag", "tsp_stickCharge_mag", "tsp_stickCharge_auto_mag", "TrainingMine_Mag", "ACE_FlareTripMine_Mag", "APERSMine_Range_Mag"];
+private _explosives = ["ACE_Cellphone", "tsp_frameCharge_mag", "APERSMineDispenser_Mag", "tsp_popperCharge_mag", "tsp_popperCharge_auto_mag", "DemoCharge_Remote_Mag", "ATMine_Range_Mag", "SatchelCharge_Remote_Mag", "ClaymoreDirectionalMine_Remote_Mag", "APERSBoundingMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag", "tsp_stickCharge_mag", "tsp_stickCharge_auto_mag", "TrainingMine_Mag", "ACE_FlareTripMine_Mag", "APERSMine_Range_Mag", "IEDLandBig_Remote_Mag", "APERSTripMine_Wire_Mag", "KAT_Gas_TripWireMine_Mag"];
 
 // --------------------------------------------------
 
-private _items_main = ["ACE_CableTie","ACE_Canteen","ACE_EarPlugs","ACE_EntrenchingTool","ACE_Flashlight_MX991","ItemAndroid","WBK_HeadLampItem","ItemcTabHCam","ACE_IR_Strobe_Item","ACE_Flashlight_XL50","ACE_MapTools","ItemMicroDAGR","ACE_microDAGR","ACE_SpareBarrel_Item","ACE_UAVBattery","ACE_WaterBottle","B_Parachute","kat_gasmaskFilter","vtx_stretcher_item"];
+private _items_main = ["ACE_CableTie", "ACE_Canteen", "ACE_EarPlugs", "ACE_EntrenchingTool", "ACE_Flashlight_MX991", "ItemAndroid", "WBK_HeadLampItem", "ItemcTabHCam", "ACE_IR_Strobe_Item", "ACE_Flashlight_XL50", "ACE_MapTools", "ItemMicroDAGR", "ACE_microDAGR", "ACE_SpareBarrel_Item", "ACE_UAVBattery", "ACE_WaterBottle", "B_Parachute", "kat_gasmaskFilter", "vtx_stretcher_item", "ACE_Chemlight_Shield", "KNB_Notebook"];
 
-private _medic_light = ["ACE_packingBandage","ACE_quikclot","kat_Painkiller","kat_PainkillerItem","ACE_splint","ACE_tourniquet","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","ACE_salineIV_500","ACE_salineIV_250","ACE_salineIV"];
+private _medic_light = ["ACE_packingBandage", "ACE_quikclot", "kat_Painkiller", "kat_PainkillerItem", "ACE_splint", "ACE_tourniquet", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_salineIV_500", "ACE_salineIV_250", "ACE_salineIV"];
 
-private _medic_medium = ["ACE_packingBandage","ACE_quikclot","ACE_splint","ACE_tourniquet","kat_IV_16","ACE_adenosine","kat_AED","ACE_bodyBag","ACE_epinephrine","kat_IO_FAST","ACE_morphine","kat_naloxone","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","kat_Pulseoximeter","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","kat_stethoscope","kat_TXA","kat_bloodIV_O_N","kat_bloodIV_A_N","kat_bloodIV_AB_N","kat_bloodIV_B_N","ACE_elasticBandage","kat_aatKit","kat_atropine","kat_amiodarone","kat_crossPanel","kat_chestSeal","KAT_Empty_bloodIV_250","KAT_Empty_bloodIV_500","kat_guedel","kat_larynx","kat_lidocaine","kat_phenylephrine","ACE_surgicalKit","kat_Carbonate","kat_CarbonateItem","kat_bloodIV_O_N_250","kat_bloodIV_A_N_250","kat_bloodIV_AB_N_250","kat_bloodIV_B_N_250","kat_bloodIV_O_N_500","kat_bloodIV_A_N_500","kat_bloodIV_AB_N_500","kat_bloodIV_B_N_500","kat_plate","kat_clamp","kat_vacuum","kat_EACA","kat_etomidate","kat_fentanyl","kat_flumazenil","kat_ketamine","kat_lorazepam","kat_nalbuphine","kat_nitroglycerin","kat_norepinephrine","kat_Painkiller","kat_PainkillerItem","kat_retractor","kat_scalpel","kat_CaffeineItem","kat_ncdKit","kat_PervitinItem","kat_sealant"];
+private _medic_medium = ["ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_bloodIV_O_N", "kat_bloodIV_A_N", "kat_bloodIV_AB_N", "kat_bloodIV_B_N", "ACE_elasticBandage", "kat_aatKit", "kat_atropine", "kat_amiodarone", "kat_crossPanel", "kat_chestSeal", "KAT_Empty_bloodIV_250", "KAT_Empty_bloodIV_500", "kat_guedel", "kat_larynx", "kat_lidocaine", "kat_phenylephrine", "ACE_surgicalKit", "kat_Carbonate", "kat_CarbonateItem", "kat_bloodIV_O_N_250", "kat_bloodIV_A_N_250", "kat_bloodIV_AB_N_250", "kat_bloodIV_B_N_250", "kat_bloodIV_O_N_500", "kat_bloodIV_A_N_500", "kat_bloodIV_AB_N_500", "kat_bloodIV_B_N_500", "kat_plate", "kat_clamp", "kat_vacuum", "kat_EACA", "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin", "kat_norepinephrine", "kat_Painkiller", "kat_PainkillerItem", "kat_retractor", "kat_scalpel", "kat_CaffeineItem", "kat_ncdKit", "kat_PervitinItem", "kat_sealant", "ChemicalDetector_01_watch_F"];
 
-private _medic_heavy = ["ACE_packingBandage","ACE_quikclot","ACE_splint","ACE_tourniquet","kat_IV_16","ACE_adenosine","kat_AED","ACE_bodyBag","ACE_epinephrine","kat_IO_FAST","ACE_morphine","kat_naloxone","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","kat_Pulseoximeter","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","kat_stethoscope","kat_TXA","kat_bloodIV_O_N","kat_bloodIV_A_N","kat_bloodIV_AB_N","kat_bloodIV_B_N","ACE_elasticBandage","kat_accuvac","kat_aatKit","kat_X_AED","kat_atropine","kat_amiodarone","kat_crossPanel","kat_chestSeal","KAT_Empty_bloodIV_250","KAT_Empty_bloodIV_500","kat_guedel","kat_larynx","kat_lidocaine","kat_phenylephrine","ACE_personalAidKit","ACE_surgicalKit","kat_Carbonate","kat_CarbonateItem","kat_bloodIV_O_N_250","kat_bloodIV_A_N_250","kat_bloodIV_AB_N_250","kat_bloodIV_B_N_250","kat_bloodIV_O_N_500","kat_bloodIV_A_N_500","kat_bloodIV_AB_N_500","kat_bloodIV_B_N_500","kat_plate","kat_clamp","kat_vacuum","kat_EACA","kat_etomidate","kat_fentanyl","kat_flumazenil","kat_ketamine","kat_lorazepam","kat_nalbuphine","kat_nitroglycerin","kat_norepinephrine","kat_Painkiller","kat_PainkillerItem","kat_retractor","kat_scalpel","kat_CaffeineItem","kat_ncdKit","kat_PervitinItem","kat_sealant"];
+private _medic_heavy = ["ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_bloodIV_O_N", "kat_bloodIV_A_N", "kat_bloodIV_AB_N", "kat_bloodIV_B_N", "ACE_elasticBandage", "kat_accuvac", "kat_aatKit", "kat_X_AED", "kat_atropine", "kat_amiodarone", "kat_crossPanel", "kat_chestSeal", "KAT_Empty_bloodIV_250", "KAT_Empty_bloodIV_500", "kat_guedel", "kat_larynx", "kat_lidocaine", "kat_phenylephrine", "ACE_personalAidKit", "ACE_surgicalKit", "kat_Carbonate", "kat_CarbonateItem", "kat_bloodIV_O_N_250", "kat_bloodIV_A_N_250", "kat_bloodIV_AB_N_250", "kat_bloodIV_B_N_250", "kat_bloodIV_O_N_500", "kat_bloodIV_A_N_500", "kat_bloodIV_AB_N_500", "kat_bloodIV_B_N_500", "kat_plate", "kat_clamp", "kat_vacuum", "kat_EACA", "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin", "kat_norepinephrine", "kat_Painkiller", "kat_PainkillerItem", "kat_retractor", "kat_scalpel", "kat_CaffeineItem", "kat_ncdKit", "kat_PervitinItem", "kat_sealant", "ChemicalDetector_01_watch_F"];
 
 private _items_sniper = ["ACE_ATragMX", "ACE_DAGR", "ACE_Kestrel4500", "ACE_RangeCard", "ACE_SpottingScope", "ACE_Tripod"];
 
+private _items_sapper = ["ACE_wirecutter", "ACE_DefusalKit", "ACE_M26_Clacker", "ACE_Clacker", "MineDetector", "ACE_DeadManSwitch", "tsp_lockpick", "ACE_SpraypaintRed", "ACE_Cellphone", "ZDZ_EOD_Kit", "ZDZ_BombBook_EOD_1", "ZDZ_Tool_DSnips", "ChemicalDetector_01_watch_F", "ZDZ_IMS_1"];
+
+private _items_pionier = ["ACE_Fortify", "ACE_wirecutter", "ACE_Sandbag_empty"];
+
 private _items_engi = ["ToolKit"];
 
-private _items_lead = ["ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed"];
+private _items_lead = ["rhs_weap_M320", "B_UavTerminal", "ItemcTab", "ACE_HuntIR_M203", "ACE_HuntIR_monitor", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed"];
 
-private _items_other = ["acex_intelitems_notepad"];
+// --------------------------------------------------
+
+private _soldierBase = _gto_equipment+_weapon_medium+_ammo_medium+_weapon_pistoles+_ammo_pistoles+_scope_main+_railAttachments+_muzzleAttachments+_bipod_main+_helmet_main+_uniform+_googles+_nvg+_binoculars_main+_mapCompasRadio+_granades+_items_main+_medic_light;
+
+private _soldierBaseNoWeapon = _gto_equipment+_weapon_pistoles+_ammo_pistoles+_scope_main+_railAttachments+_muzzleAttachments+_bipod_main+_helmet_main+_uniform+_googles+_nvg+_binoculars_main+_mapCompasRadio+_granades+_items_main+_medic_light;
+
+private _soldierBaseNoHelmet = _gto_equipment+_weapon_medium+_ammo_medium+_weapon_pistoles+_ammo_pistoles+_scope_main+_railAttachments+_muzzleAttachments+_bipod_main+_uniform+_googles+_nvg+_binoculars_main+_mapCompasRadio+_granades+_items_main+_medic_light;
 
 // --------------------------------------------------
 
@@ -181,522 +187,221 @@ _items append (switch (_role) do
 {
 	case "sl":
 	{
-		_gto_main+
-		_weapon_medium+
-		_ammo_medium+
-		["rhs_weap_M320"]+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
+		_soldierBase+
 		_vest_sl+
 		_backpack_radio+
-		_googles+
-		_nvg_main+
 		_binoculars_sl+
-		_mapCompasRadio+
-		_better_radio+
-		_granades+
 		_flares+
-		_items_main+
-		_medic_light+
-		_items_lead+
-		["ACE_HuntIR_M203","ACE_HuntIR_monitor"]+
-		["B_UavTerminal", "ItemcTab", "ace_marker_flags_blue"]
+		_items_lead
 	};
 
-	case "ftl":
+	case "ldoctor":
 	{
-		_gto_main+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
-		_vest_ftl+
-		_backpack_middle+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_binoculars_sniper+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light+
-		_better_radio+
+		_soldierBase+
+		_weapon_mp+
+		_ammo_mp+
+		_helmet_medic+
+		_vest_medic+
+		_backpack_medic+
+		_backpack_radio_medic+
+		_binoculars_sl+
+		_medic_heavy+
+		_flares+
 		_items_lead
 	};
 
 	case "doctor":
 	{
-		_gto_main+
+		_soldierBase+
 		_weapon_mp+
 		_ammo_mp+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
 		_helmet_medic+
-		_uniform_main+
 		_vest_medic+
 		_backpack_medic+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_heavy+
-		["ChemicalDetector_01_watch_F"]
+		_medic_heavy
 	};
 
 	case "medic":
 	{
-		_gto_main+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
+		_soldierBase+
 		_helmet_medic+
-		_uniform_main+
 		_vest_medic+
 		_backpack_medic+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_medium+
-		["ChemicalDetector_01_watch_F"]
+		_medic_medium
 	};
 
 	case "ammoCarrier":
 	{
-		_gto_main+
+		_soldierBaseNoWeapon+
 		_weapon_light+
 		_ammo_light+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
 		_vest_heavy+
-		_backpack_middle+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light
+		_backpack_middle
 	};
 
 	case "lat":
 	{
-		_gto_main+
-		_weapon_light+
-		_ammo_light+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
+		_soldierBase+
 		_vest_heavy+
 		_backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light+
 		["rhs_weap_M136_hp", "rhs_weap_M136_hedp", "rhs_weap_M136", "rhs_weap_m72a7"]
 	};
 
 	case "weaponSpecialist":
 	{
-		_gto_main+
+		_soldierBaseNoWeapon+
 		_weapon_heavy+
 		_ammo_heavy+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
 		_vest_heavy+
-		_backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light
+		_backpack_small
 	};
 
 	case "mg":
 	{
-		_gto_main+
+		_soldierBaseNoWeapon+
 		_weapon_mg+
 		_ammo_mg+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
 		_bipod_mg+
-		_helmet_main+
-		_uniform_main+
 		_vest_heavy+
-		_backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light
+		_backpack_small
 	};
 
 	case "grenadier":
 	{
-		_gto_main+
+		_soldierBaseNoWeapon+
 		_weapon_grenadier+
 		_ammo_grenadier+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
 		_vest_heavy+
-		_backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light
+		_backpack_small
 	};
 
 	case "hat":
 	{
-		_gto_main+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
+		_soldierBase+
 		_HAT_Pack+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
 		_vest_heavy+
-		_backpack_middle+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light
+		_backpack_middle
 	};
 
 	case "marksman":
 	{
-		_gto_main+
+		_soldierBaseNoWeapon+
 		_weapon_dmr+
 		_ammo_dmr+
-		_weapon_pistoles+
-		_ammo_pistoles+
 		_scope_sniper+
-		_railAttachments_main+
-		_muzzleAttachments_main+
 		_bipod_mg+
-		_helmet_main+
-		_uniform_main+
 		_vest_light+
 		_backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_sniper+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light+
-		_better_radio
+		_binoculars_sniper
 	};
 
 	case "sniper":
 	{
-		_gto_main+
+		_soldierBaseNoWeapon+
 		_weapon_sniper+
 		_ammo_sniper+
-		_weapon_pistoles+
-		_ammo_pistoles+
 		_scope_sniper+
-		_railAttachments_main+
-		_muzzleAttachments_main+
 		_bipod_sniper+
-		_helmet_main+
 		_helmet_sniper+
-		_uniform_main+
 		_vest_light+
 		_backpack_small+
-		_googles+
-		_nvg_main+
 		_binoculars_sniper+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light+
-		_items_sniper+
-		_better_radio
+		_items_sniper
 	};
 
 	case "spotter":
 	{
-		_gto_main+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
+		_soldierBase+
 		_scope_sniper+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
 		_helmet_sniper+
-		_uniform_main+
 		_vest_medium+
 		_backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
 		_binoculars_sniper+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light+
-		_items_sniper+
-		_better_radio
+		_items_sniper
 	};
 
 	case "sapper":
 	{
-		_gto_main+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
+		_soldierBase+
 		_weapon_sapper+
 		_ammo_sapper+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
 		_vest_explosive+
 		_backpack_middle+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
 		_explosives+
-		_items_main+
-		_medic_light+
-		["ACE_wirecutter","ACE_DefusalKit","ACE_M26_Clacker","ACE_Clacker","MineDetector","ACE_DeadManSwitch","tsp_lockpick","ACE_SpraypaintRed","ACE_Cellphone","ZDZ_EOD_Kit","ZDZ_BombBook_EOD_1","ZDZ_Tool_DSnips","ChemicalDetector_01_watch_F","ZDZ_IMS_1"]
+		_items_sapper
 	};
 
 	case "pionier":
 	{
-		_gto_main+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
+		_soldierBase+
 		_vest_light+
 		_backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light+
-		["ACE_Fortify", "ACE_wirecutter", "ACE_Sandbag_empty"]
+		_items_pionier
 	};
 
 	case "enginier":
 	{
-		_gto_main+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
+		_soldierBase+
 		_vest_light+
 		_backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_main+
-		_mapCompasRadio+
-		_granades+
-		_items_main+
-		_medic_light+
 		_items_engi
 	};
 
 	case "jtac":
 	{
-		_gto_main+
+		_soldierBase+
 		_weapon_mp+
 		_ammo_mp+
-		["rhs_weap_M320"]+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		_bipod_main+
-		_helmet_main+
-		_uniform_main+
 		_vest_sl+
 		_backpack_radio+
-		_googles+
-		_nvg_main+
 		_binoculars_sl+
-		_mapCompasRadio+
-		_better_radio+
-		_granades+
 		_flares+
-		_items_main+
-		_medic_light+
 		["B_UavTerminal", "ItemcTab", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell"]+
-		["KNB_PanelGreen","KNB_PanelRed","KNB_PanelYellow"]
+		["KNB_PanelGreen", "KNB_PanelRed", "KNB_PanelYellow"]
 	};
 
 	case "pilot":
 	{
-		_gto_main+
+		_soldierBaseNoHelmet+
 		_weapon_mp+
 		_ammo_mp+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		       // _helmet_main+
 		_vest_sl+
 		       // _backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_medium+
-		_mapCompasRadio+
-		_better_radio+
-		_granades+
-		_items_main+
-		_medic_light+
+		_binoculars_sniper+
 		_items_engi+
-		["H_PilotHelmetHeli_I", "H_PilotHelmetHeli_O", "H_PilotHelmetHeli_I_E", "H_PilotHelmetHeli_B", "RHS_jetpilot_usaf", "H_PilotHelmetFighter_I", "H_PilotHelmetFighter_O", "H_PilotHelmetFighter_I_E", "H_PilotHelmetFighter_B", "rhsusf_hgu56p_black", "rhsusf_hgu56p_mask_black", "rhsusf_hgu56p_mask_black_skull", "rhsusf_hgu56p_visor_black", "rhsusf_hgu56p_visor_mask_black", "rhsusf_hgu56p_visor_mask_Empire_black", "rhsusf_hgu56p_visor_mask_black_skull", "rhsusf_hgu56p_green", "rhsusf_hgu56p_mask_green", "rhsusf_hgu56p_visor_green", "rhsusf_hgu56p_visor_mask_green", "rhsusf_hgu56p_visor_mask_green_mo", "rhsusf_hgu56p", "rhsusf_hgu56p_mask", "rhsusf_hgu56p_mask_skull", "rhsusf_hgu56p_visor", "rhsusf_hgu56p_visor_mask", "rhsusf_hgu56p_visor_mask_mo", "rhsusf_hgu56p_visor_mask_skull", "rhsusf_hgu56p_saf", "rhsusf_hgu56p_mask_saf", "rhsusf_hgu56p_visor_saf", "rhsusf_hgu56p_visor_mask_saf", "rhsusf_hgu56p_tan", "rhsusf_hgu56p_mask_tan", "rhsusf_hgu56p_visor_tan", "rhsusf_hgu56p_visor_mask_tan", "rhsusf_hgu56p_white", "rhsusf_hgu56p_visor_white", "U_I_HeliPilotCoveralls", "U_I_E_Uniform_01_coveralls_F", "U_B_HeliPilotCoveralls", "U_I_pilotCoveralls", "U_O_PilotCoveralls", "U_B_PilotCoveralls"]
+		["H_PilotHelmetHeli_I", "H_PilotHelmetHeli_O", "H_PilotHelmetHeli_I_E", "H_PilotHelmetHeli_B", "RHS_jetpilot_usaf", "H_PilotHelmetFighter_I", "H_PilotHelmetFighter_O", "H_PilotHelmetFighter_I_E", "H_PilotHelmetFighter_B", "rhsusf_hgu56p_black", "rhsusf_hgu56p_mask_black", "rhsusf_hgu56p_mask_black_skull", "rhsusf_hgu56p_visor_black", "rhsusf_hgu56p_visor_mask_black", "rhsusf_hgu56p_visor_mask_Empire_black", "rhsusf_hgu56p_visor_mask_black_skull", "rhsusf_hgu56p_green", "rhsusf_hgu56p_mask_green", "rhsusf_hgu56p_visor_green", "rhsusf_hgu56p_visor_mask_green", "rhsusf_hgu56p_visor_mask_green_mo", "rhsusf_hgu56p", "rhsusf_hgu56p_mask", "rhsusf_hgu56p_mask_skull", "rhsusf_hgu56p_visor", "rhsusf_hgu56p_visor_mask", "rhsusf_hgu56p_visor_mask_mo", "rhsusf_hgu56p_visor_mask_skull", "rhsusf_hgu56p_saf", "rhsusf_hgu56p_mask_saf", "rhsusf_hgu56p_visor_saf", "rhsusf_hgu56p_visor_mask_saf", "rhsusf_hgu56p_tan", "rhsusf_hgu56p_mask_tan", "rhsusf_hgu56p_visor_tan", "rhsusf_hgu56p_visor_mask_tan", "rhsusf_hgu56p_white", "rhsusf_hgu56p_visor_white", "U_I_HeliPilotCoveralls", "U_I_E_Uniform_01_coveralls_F", "U_B_HeliPilotCoveralls", "U_I_pilotCoveralls", "U_O_PilotCoveralls", "U_B_PilotCoveralls", "TFAR_bussole"]
 	};
 
 	case "crewman":
 	{
-		_gto_main+
+		_soldierBaseNoHelmet+
 		_weapon_mp+
 		_ammo_mp+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
-		_scope_main+
-		_railAttachments_main+
-		_muzzleAttachments_main+
-		       // _helmet_main+
-		_uniform_main+
 		_vest_light+
 		_backpack_small+
-		_googles+
-		_nvg_main+
-		_binoculars_medium+
-		_mapCompasRadio+
-		_better_radio+
-		_granades+
-		_items_main+
-		_medic_light+
+		_binoculars_sniper+
 		_items_engi+
 		["rhs_gssh18", "rhs_6m2", "rhs_6m2_1", "rhsusf_cvc_green_helmet", "rhsusf_cvc_green_alt_helmet", "rhsusf_cvc_green_ess", "rhsusf_cvc_helmet", "rhsusf_cvc_alt_helmet", "rhsusf_cvc_ess"]
 	};
 
 	case "zeus":{
-		_gto_main+
+		_soldierBaseNoHelmet+
 		_googles+
-		_nvg_main+
+		_nvg+
 		_binoculars_main+
 		_mapCompasRadio+
 		["rhs_weap_SCARH_USA_CQC", "VSM_MBSS_PACA_WTF", "VSM_MBSS_WTF", "TFAR_mr6000l", "TFAR_anprc152", "H_Construction_headset_white_F", "H_Construction_earprot_white_F", "H_Construction_basic_white_F", "H_Construction_headset_vrana_F", "H_Construction_earprot_vrana_F", "H_Construction_basic_vrana_F"]
 	};
 
 	case "admin": {
-		_gto_main+
-		_weapon_medium+
-		_ammo_medium+
-		_weapon_pistoles+
-		_ammo_pistoles+
+		_soldierBase+
+		_gto_equipment+
 		_weapon_mp+
 		_ammo_mp+
+		_weapon_light+
+		_ammo_light+
+		_weapon_medium+
+		_ammo_medium+
 		_weapon_heavy+
 		_ammo_heavy+
 		_weapon_dmr+
@@ -709,46 +414,49 @@ _items append (switch (_role) do
 		_ammo_sapper+
 		_weapon_mg+
 		_ammo_mg+
+		_weapon_pistoles+
+		_ammo_pistoles+
 		_HAT_Pack+
 		_scope_main+
 		_scope_sniper+
-		_railAttachments_main+
-		_muzzleAttachments_main+
+		_railAttachments+
+		_muzzleAttachments+
 		_bipod_main+
 		_bipod_mg+
 		_bipod_sniper+
 		_helmet_main+
-		_uniform_main+
+		_helmet_medic+
+		_helmet_sniper+
+		_uniform+
 		_vest_main+
 		_vest_light+
 		_vest_heavy+
 		_vest_sl+
-		_vest_ftl+
 		_vest_medic+
 		_vest_explosive+
 		_backpack_small+
 		_backpack_middle+
 		_backpack_big+
 		_backpack_radio+
+		_backpack_radio_medic+
 		_googles+
-		_nvg_main+
+		_nvg+
 		_binoculars_main+
+		_binoculars_sniper+
+		_binoculars_sl+
 		_mapCompasRadio+
-		_better_radio+
 		_granades+
+		_flares+
 		_explosives+
 		_items_main+
 		_medic_light+
 		_medic_medium+
 		_medic_heavy+
 		_items_sniper+
+		_items_sapper+
+		_items_pionier+
 		_items_engi+
-		_items_lead+
-		["Rangefinder", "ACE_VectorDay", "ACE_Vector"]+
-		["rhs_weap_M320", "ACE_HuntIR_M203", "Laserdesignator", "Laserdesignator_03", "Laserdesignator_01_khk_F", "Laserdesignator_02", "Laserdesignator_02_ghex_F", "B_UavTerminal", "ACE_HuntIR_monitor", "ItemcTab"]+
-		["ACE_wirecutter","ACE_DefusalKit","ACE_M26_Clacker","ACE_Clacker","MineDetector","ACE_DeadManSwitch","tsp_lockpick","ACE_SpraypaintRed","ACE_Cellphone","ZDZ_EOD_Kit","ZDZ_BombBook_EOD_1","ZDZ_Tool_DSnips","ChemicalDetector_01_watch_F","ZDZ_IMS_1"]+
-		["ACE_Fortify", "ACE_wirecutter", "ACE_Sandbag_empty"]+
-		["GTO_ILBE_Medic_alpine","GTO_ILBE_Medic_black","GTO_ILBE_Medic_multicam","GTO_ILBE_Medic_arid"]
+		_items_lead
 	};
 
 	default {

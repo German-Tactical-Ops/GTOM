@@ -18,7 +18,6 @@ if (_role == "admin") then {
 	ACE_player setUnitTrait ["engineer", true];
 
 	ACE_player setUnitTrait ["explosiveSpecialist", true];
-
 } else {
 	ACE_player setVariable ["ace_medical_medicClass", 0, true];
 	ACE_player setUnitTrait ["medic", false];
@@ -32,25 +31,28 @@ if (_role == "admin") then {
 };
 
 // player Attributes
-if (_role in ["medic", "doctor"]) then {
-	ACE_player setVariable ["ace_medical_medicClass", [2, 1] select (_role == "medic"), true];
-	ACE_player setUnitTrait ["medic", true];
+
+if (_role in ["medic", "doctor", "ldoctor"]) then {
+	if (_role in ["doctor", "ldoctor"]) then {
+		ACE_player setVariable ["ace_medical_medicClass", 2, true];
+		ACE_player setUnitTrait ["medic", true];
+	} else {
+		ACE_player setVariable ["ace_medical_medicClass", 1, true];
+		ACE_player setUnitTrait ["medic", true];
+	};
 } else {
 	ACE_player setVariable ["ace_medical_medicClass", 0, true];
 	ACE_player setUnitTrait ["medic", false];
 };
 
-if (_role == "enginier") then {
-	ACE_player setVariable ["ACE_IsEngineer", 2, true];
-	ACE_player setUnitTrait ["engineer", true];
-} else {
-	ACE_player setVariable ["ACE_IsEngineer", 0, true];
-	ACE_player setUnitTrait ["engineer", false];
-};
-
-if (_role in ["crewman", "pilot"]) then {
-	ACE_player setVariable ["ACE_IsEngineer", 1, true];
-	ACE_player setUnitTrait ["engineer", true];
+if (_role in ["crewman", "pilot", "enginier"]) then {
+	if (_role in ["enginier"]) then {
+		ACE_player setVariable ["ACE_IsEngineer", 2, true];
+		ACE_player setUnitTrait ["engineer", true];
+	} else {
+		ACE_player setVariable ["ACE_IsEngineer", 1, true];
+		ACE_player setUnitTrait ["engineer", true];
+	};
 } else {
 	ACE_player setVariable ["ACE_IsEngineer", 0, true];
 	ACE_player setUnitTrait ["engineer", false];
@@ -78,6 +80,6 @@ removeVest ACE_player;
 removeBackpack ACE_player;
 removeHeadgear ACE_player;
 
-//ACE_player setUnitLoadout [[[],[],[],["GTO_BaseUniform",[]],[],[],"GTO_Beret_Black","",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","TFAR_rf7800str","ItemCompass","TFAR_microdagr",""]],true];
+// ACE_player setUnitLoadout [[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["Binocular", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]], true];
 
 [_arsenalType, _role] call GTO_fnc_loadDefault;

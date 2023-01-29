@@ -60,7 +60,7 @@ class CfgVehicles
                         class role_PL
                         {
                             displayName = "PL (Coming soon)";
-                            condition = "true"; 
+                            condition = "50 <= ([_player] call GTO_fnc_getRankNumber)"; 
                             //statement = "['pl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                         };
 
@@ -72,12 +72,12 @@ class CfgVehicles
                             icon= "gtom\icons\Roles\SL_icon.paa";                                                  
                         };
 
-					    class role_FTL
+                        class role_Lead_Doctor
                         {
-                            displayName = "FTL";
-                            condition = "20 <= ([_player] call GTO_fnc_getRankNumber)"; 
-                            statement = "['ftl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon= "gtom\icons\Roles\SL_icon.paa";                            
+                            displayName = "Lead Doctor";
+                            condition = "50 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            statement = "['ldoctor', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
+                            icon ="gtom\icons\Roles\Med_icon.paa";
                         };
                     };
 
