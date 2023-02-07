@@ -10,8 +10,10 @@ scriptName "fn_setRole";
 
 params ["_role", "_arsenalType", "_target"];
 
+private _playerID = getPlayerUID ACE_player;
+private _isZeus = false;
 
-// reset Player stats
+// reset player stats
 ACE_player setVariable ["ace_medical_medicClass", 0, true];
 ACE_player setUnitTrait ["medic", false];
 
@@ -20,7 +22,25 @@ ACE_player setUnitTrait ["engineer", false];
 
 ACE_player setUnitTrait ["explosiveSpecialist", false];
 
-//set Player stats
+switch (_role) do {
+	case "zeus":{
+		if (!_isZeus) then {
+			publicVariable "_playerID";
+			"ModuleCurator_F" createUnit [position ACE_player, group ACE_player, "_playerID = this"];
+			ACE_player assignCurator _playerID;
+		};
+		_isZeus = true;
+	};
+
+	default
+	{
+		if (_isZeus) then {
+			unassignCurator _playerID;
+		};
+	};
+};
+
+// set player stats
 switch (_role) do
 {
 	case "admin":
@@ -28,6 +48,9 @@ switch (_role) do
 		ACE_player setVariable ["ace_medical_medicClass", 2, true];
 		ACE_player setUnitTrait ["medic", true];
 	};
+
+	case "zeus":
+	{};
 
 	case "ldoctor":
 	{
