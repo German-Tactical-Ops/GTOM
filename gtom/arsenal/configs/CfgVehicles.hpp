@@ -60,7 +60,7 @@ class CfgVehicles
                         class role_PL
                         {
                             displayName = "PL (Coming soon)";
-                            condition = "true"; 
+                            condition = "50 <= ([_player] call GTO_fnc_getRankNumber)"; 
                             //statement = "['pl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                         };
 
@@ -72,19 +72,19 @@ class CfgVehicles
                             icon= "gtom\icons\Roles\SL_icon.paa";                                                  
                         };
 
-					    class role_FTL
+                        class role_Lead_Doctor
                         {
-                            displayName = "FTL";
-                            condition = "20 <= ([_player] call GTO_fnc_getRankNumber)"; 
-                            statement = "['ftl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon= "gtom\icons\Roles\SL_icon.paa";                            
+                            displayName = "Lead Doctor";
+                            condition = "50 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            statement = "['ldoctor', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
+                            icon ="gtom\icons\Roles\Med_icon.paa";
                         };
                     };
 
                     class categorie_support
                     {
                         displayName = "Support";
-                	    condition =  "10 <= ([_player] call GTO_fnc_getRankNumber)";
+                	    condition =  "true";
                 	    exceptions[] = {};				
 
 					    class role_Doctor
@@ -102,6 +102,14 @@ class CfgVehicles
                             statement = "['medic', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon ="gtom\icons\Roles\Med_icon.paa";                            
                         };
+
+                        class role_Ammo_Carrier 
+                        {
+                            displayName = "Ammo Carrier";
+                            condition = "true"; 
+                            statement = "['ammoCarrier', getText(configOf _target >> 'arsenalType'), _target]call GTO_fnc_setRole; [_target, _player]call    ace_arsenal_fnc_openBox;";
+                            icon = "gtom\icons\Roles\Rifleman_icon.paa";                            
+                        };
                     };
 
                     class categorie_Rifleman
@@ -111,31 +119,17 @@ class CfgVehicles
                         exceptions[] = {};
 				        priority = 1;
 
-                        class role_Ammo_Carrier //ftl
-                        {
-                            displayName = "Ammo Carrier";
-                            condition = "true"; 
-                            statement = "['ammoCarrier', getText(configOf _target >> 'arsenalType'), _target]call GTO_fnc_setRole; [_target, _player]call    ace_arsenal_fnc_openBox;";
-                            icon = "gtom\icons\Roles\Rifleman_icon.paa";                            
-                        };
-
-                        class role_AT //ftl
-                        {
-                            displayName = "LAT";
-                            condition = "true"; 
-                            statement = "['lat', getText (configOf _target>> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
-                            icon = "gtom\icons\Roles\AT_icon.paa";                            
-                        };
+                        
                     };
 
                     class categorie_Weapon
                     {
                         displayName = "Weapon";
-                	    condition =  "10 <= ([_player] call GTO_fnc_getRankNumber)";
+                	    condition =  "true";
                 	    exceptions[] = {};
 					    priority = 1;
 
-					    class role_weaponSpecialist // ftl
+					    class role_weaponSpecialist 
                         {
                             displayName = "Weapon Specialist";
                             condition = "true"; 
@@ -143,7 +137,7 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\LMG_icon.paa";                            
                         };
 
-					    class role_MG //ftl
+					    class role_MG 
                         {
                             displayName = "MG";
                             condition = "true"; 
@@ -151,7 +145,7 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\MMG_icon.paa";                            
                         };
 
-					    class role_Grenadier //ftl
+					    class role_Grenadier 
                         {
                             displayName = "Grenadier";
                             condition = "true"; 
@@ -159,7 +153,15 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\Grenadier_icon.paa";                            
                         };
 
-					    class role_HAT //ftl
+                        class role_AT 
+                        {
+                            displayName = "LAT";
+                            condition = "true"; 
+                            statement = "['lat', getText (configOf _target>> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
+                            icon = "gtom\icons\Roles\AT_icon.paa";                            
+                        };
+
+					    class role_HAT 
                         {
                             displayName = "HAT";
                             condition = "true"; 
@@ -167,7 +169,7 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\HAT_icon.paa";                            
                         };
 
-                        class role_Marksman //ftl
+                        class role_Marksman 
                         {
                             displayName = "Marksman";
                             condition = "true"; 
