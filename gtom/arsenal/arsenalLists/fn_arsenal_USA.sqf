@@ -569,7 +569,7 @@ _items append (switch (_role) do
 		["ACE_Fortify", "ACE_wirecutter", "ACE_Sandbag_empty"]
 	};
 
-	case "enginier":
+	case "engineer":
 	{
 		_gto_main+
 		_weapon_medium+

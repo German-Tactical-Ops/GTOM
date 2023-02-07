@@ -215,11 +215,11 @@ class CfgVehicles
                             
                         };
 
-					    class role_Enginier
+					    class role_Engineer
                         {
-                            displayName = "Enginier";
+                            displayName = "Engineer";
                             condition = "true"; 
-                            statement = "['enginier', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
+                            statement = "['engineer', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
                             icon = "gtom\icons\Roles\Eng_icon.paa";
                             
                         };
