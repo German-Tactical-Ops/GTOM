@@ -10,61 +10,77 @@ scriptName "fn_setRole";
 
 params ["_role", "_arsenalType", "_target"];
 
-if (_role == "admin") then {
-	ACE_player setVariable ["ace_medical_medicClass", 2, true];
-	ACE_player setUnitTrait ["medic", true];
 
-	ACE_player setVariable ["ACE_IsEngineer", 2, true];
-	ACE_player setUnitTrait ["engineer", true];
+// reset Player stats
+ACE_player setVariable ["ace_medical_medicClass", 0, true];
+ACE_player setUnitTrait ["medic", false];
 
-	ACE_player setUnitTrait ["explosiveSpecialist", true];
-} else {
-	ACE_player setVariable ["ace_medical_medicClass", 0, true];
-	ACE_player setUnitTrait ["medic", false];
+ACE_player setVariable ["ACE_IsEngineer", 0, true];
+ACE_player setUnitTrait ["engineer", false];
 
-	ACE_player setVariable ["ACE_IsEngineer", 0, true];
-	ACE_player setUnitTrait ["engineer", false];
+ACE_player setUnitTrait ["explosiveSpecialist", false];
 
-	ACE_player setUnitTrait ["explosiveSpecialist", false];
-
-	ACE_player setVariable ["ace_medical_medicClass", 0, true];
-};
-
-// player Attributes
-
-if (_role in ["medic", "doctor", "ldoctor"]) then {
-	if (_role in ["doctor", "ldoctor"]) then {
+//set Player stats
+switch (_role) do
+{
+	case "admin":
+	{
 		ACE_player setVariable ["ace_medical_medicClass", 2, true];
 		ACE_player setUnitTrait ["medic", true];
-	} else {
+	};
+
+	case "ldoctor":
+	{
+		ACE_player setVariable ["ace_medical_medicClass", 2, true];
+		ACE_player setUnitTrait ["medic", true];
+	};
+
+	case "doctor":
+	{
+		ACE_player setVariable ["ace_medical_medicClass", 2, true];
+		ACE_player setUnitTrait ["medic", true];
+	};
+
+	case "medic":
+	{
 		ACE_player setVariable ["ace_medical_medicClass", 1, true];
 		ACE_player setUnitTrait ["medic", true];
 	};
-} else {
-	ACE_player setVariable ["ace_medical_medicClass", 0, true];
-	ACE_player setUnitTrait ["medic", false];
-};
 
-if (_role in ["crewman", "pilot", "engineer"]) then {
-	if (_role in ["engineer"]) then {
+	case "engineer":
+	{
 		ACE_player setVariable ["ACE_IsEngineer", 2, true];
 		ACE_player setUnitTrait ["engineer", true];
-	} else {
+	};
+
+	case "pilot":
+	{
 		ACE_player setVariable ["ACE_IsEngineer", 1, true];
 		ACE_player setUnitTrait ["engineer", true];
 	};
-} else {
-	ACE_player setVariable ["ACE_IsEngineer", 0, true];
-	ACE_player setUnitTrait ["engineer", false];
-};
 
-if (_role == "sapper") then {
-	ACE_player setUnitTrait ["explosiveSpecialist", true];
-} else {
-	ACE_player setUnitTrait ["explosiveSpecialist", false];
-};
+	case "crewman":
+	{
+		ACE_player setVariable ["ACE_IsEngineer", 1, true];
+		ACE_player setUnitTrait ["engineer", true];
+	};
 
-if (_role == "zeus") then {} else {};
+	case "sapper":
+	{
+		ACE_player setUnitTrait ["explosiveSpecialist", true];
+	};
+
+	default
+	{
+		ACE_player setVariable ["ace_medical_medicClass", 0, true];
+		ACE_player setUnitTrait ["medic", false];
+
+		ACE_player setVariable ["ACE_IsEngineer", 0, true];
+		ACE_player setUnitTrait ["engineer", false];
+
+		ACE_player setUnitTrait ["explosiveSpecialist", false];
+	};
+};
 
 // player Arsenal
 [_target, _role] call GTO_fnc_setArsenal;
@@ -79,7 +95,5 @@ removeUniform ACE_player;
 removeVest ACE_player;
 removeBackpack ACE_player;
 removeHeadgear ACE_player;
-
-// ACE_player setUnitLoadout [[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["Binocular", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_rf7800str", "ItemCompass", "TFAR_microdagr", ""]], true];
 
 [_arsenalType, _role] call GTO_fnc_loadDefault;
