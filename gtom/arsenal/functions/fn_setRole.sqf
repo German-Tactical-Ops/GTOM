@@ -45,8 +45,8 @@ if (_role in ["medic", "doctor", "ldoctor"]) then {
 	ACE_player setUnitTrait ["medic", false];
 };
 
-if (_role in ["crewman", "pilot", "enginier"]) then {
-	if (_role in ["enginier"]) then {
+if (_role in ["crewman", "pilot", "engineer"]) then {
+	if (_role in ["engineer"]) then {
 		ACE_player setVariable ["ACE_IsEngineer", 2, true];
 		ACE_player setUnitTrait ["engineer", true];
 	} else {
