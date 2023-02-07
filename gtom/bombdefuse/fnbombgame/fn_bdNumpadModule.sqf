@@ -22,9 +22,9 @@ _buttons = switch (toLower _difficulty) do {
 };
 
 if ((_serialNumber mod 7) == 0) then {
-    _buttonsCombinations = ["^","p","2","P","M","N","0","n","o","%","#",")","}","|","i","m","I"];
+    _buttonsCombinations = ["^","p","2","P","M","N","0","n","o","%","#",")","}","C","i","m","I"];
 } else {
-     _buttonsCombinations = ["0","m",")","o","|","#","^","n","P","i","N","2","I","M","%","p","}"];
+     _buttonsCombinations = ["0","m",")","o","C","#","^","n","P","i","N","2","I","M","%","p","}"];
 };
 
 _ratio =safezoneW / safezoneH;
