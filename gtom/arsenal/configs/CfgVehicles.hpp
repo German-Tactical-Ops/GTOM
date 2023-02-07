@@ -15,7 +15,7 @@ class CfgVehicles
         scope = 1;
         scopeCurator = 1;
 
-        disableInventory = 1;
+        disableInventory = 0;
 
         ace_cargo_canLoad = 0;
         DLC = "";
@@ -273,22 +273,22 @@ class CfgVehicles
                     class categorie_other
                     {
                         displayName = "Other";
-                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has permissions
+                	    condition =  "100 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has permissions
                 	    exceptions[] = {};
+
+                        class role_Admin
+                        {
+                            displayName = "Admin";
+                            condition = "100 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            statement = "['admin', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; ";
+                            icon = "gtom\icons\Roles\Other_icon.paa";
+                        };
 
                         class role_Zeus
                         {
                             displayName = "Zeus";
                             condition = "true"; 
                             statement = "['zeus', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon = "gtom\icons\Roles\Other_icon.paa";
-                        };
-
-					    class role_Admin
-                        {
-                            displayName = "Admin";
-                            condition = "100 <= ([_player] call GTO_fnc_getRankNumber)"; 
-                            statement = "['admin', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; ";
                             icon = "gtom\icons\Roles\Other_icon.paa";
                         };
                     };
