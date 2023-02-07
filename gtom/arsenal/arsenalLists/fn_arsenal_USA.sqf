@@ -341,7 +341,7 @@ _items append (switch (_role) do
 		_items_pionier
 	};
 
-	case "enginier":
+	case "engineer":
 	{
 		_soldierBase+
 		//_vest_light+
