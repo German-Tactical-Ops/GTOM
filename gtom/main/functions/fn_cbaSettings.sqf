@@ -96,3 +96,27 @@ scriptName "fn_cbaSettings";
 		}
 	} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
+
+[
+	"GTO_addDynamicGroupsMenu", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+	"CHECKBOX", // setting type
+	["Add Dynamic Groups", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
+	{
+		params["_value"];
+
+		if (_value) then {
+			if (isServer) then {
+				["Initialize", [true]] call BIS_fnc_dynamicGroups;
+				systemChat "Server Initialised Dynamic Groups Menu";
+			};
+
+			if (hasInterface) then {
+				["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
+				systemChat "Player Initialised Dynamic Groups Menu";
+			};
+		};
+	}, true // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
