@@ -25,8 +25,8 @@ ACE_player setUnitTrait ["explosiveSpecialist", false];
 switch (_role) do {
 	case "zeus":{
 		if (!_isZeus) then {
-			publicVariable "_playerID";
-			"ModuleCurator_F" createUnit [position ACE_player, group ACE_player, "_playerID = this"];
+			publicVariable _playerID;
+			"ModuleCurator_F" createUnit [position ACE_player, group ACE_player, _playerID = this];
 			ACE_player assignCurator _playerID;
 		};
 		_isZeus = true;
