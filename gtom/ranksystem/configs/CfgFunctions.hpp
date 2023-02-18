@@ -13,6 +13,11 @@ class cfgFunctions
 				postInit = 1;
 				recompile = 1;
 			}; // [] call GTO_fnc_cbaSettingsRanksystem;
+
+			class setRank
+			{
+				recompile = 1;
+			}; // [] call GTO_fnc_setRank;
 		};
 	};
 };
