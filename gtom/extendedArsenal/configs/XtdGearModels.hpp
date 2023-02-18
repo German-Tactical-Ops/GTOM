@@ -4,7 +4,7 @@ class XtdGearModels {
 #define CAMOTYPEM(NAME) \
 class camoType \
 { \
-	label = ##NAME##;\
+	label = ##NAME## Camo;\
     values[] = {"alpine", "aor1", "aor2", "dts", "m81", "multicam", "multicam_arid", "multicam_black", "multicam_tropic", "ocp", "oga","tan","oga_grey","oga_od", "oga_od_spray","projecthonor","scorpion","apex","black","white"};\
 	alwaysSelectable = 0;\
     changeingame = 1;\
@@ -172,7 +172,7 @@ class ##CLASSNAME##\
             author = "LucyferHW";
             options[] = {"camoType"};
             
-            CAMOTYPEM("Uniform");
+            CAMOTYPEM(Uniform);
         };
 
         class GTO_Uniform_CG3
@@ -181,7 +181,7 @@ class ##CLASSNAME##\
             author = "LucyferHW";
             options[] = {"camoType", "rolledSleeves"};
             
-            CAMOTYPEM("Uniform");
+            CAMOTYPEM(Uniform);
 
             ROLLEDSLEEVESM(0);
         };
@@ -192,7 +192,7 @@ class ##CLASSNAME##\
             author = "LucyferHW";
             options[] = {"camoType", "rolledSleeves"};
             
-            CAMOTYPEM("Uniform");
+            CAMOTYPEM(Uniform);
 
             ROLLEDSLEEVESM(0);
         };
@@ -508,14 +508,14 @@ class ##CLASSNAME##\
             author = "LucyferHW";
             options[] = {"camoType", "version", "role"};
             
-            CAMOTYPEM("Vest");
+            CAMOTYPEM(Vest);
 
             class version
             {
                 label = "Version";
                 values[] = {"facp","carrierRig","lbt","par"};
                 alwaysSelectable = 0;
-                changeingame = 1;
+                changeingame = 0;
                 changedelay = 1;
 
                 class facp
@@ -533,7 +533,7 @@ class ##CLASSNAME##\
                 label = "Role";
                 values[] = {"breacher","gunner","operator"};
                 alwaysSelectable = 0;
-                changeingame = 1;
+                changeingame = 0;
                 changedelay = 1;
 
                 class breacher
