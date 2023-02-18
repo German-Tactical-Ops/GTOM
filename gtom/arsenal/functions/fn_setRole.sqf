@@ -70,7 +70,7 @@ switch (_role) do
 		ACE_player setUnitTrait ["medic", true];
 	};
 
-	case "engineer":
+	case "pionier":
 	{
 		ACE_player setVariable ["ACE_IsEngineer", 2, true];
 		ACE_player setUnitTrait ["engineer", true];
@@ -120,3 +120,22 @@ removeBackpack ACE_player;
 removeHeadgear ACE_player;
 
 [_arsenalType, _role] call GTO_fnc_loadDefault;
+
+_blacklistItems = [] call GTO_fnc_blacklistItems;
+{ 
+ ACE_player unassignItem _x; 
+ ACE_player removeItem _x; 
+} forEach _arrTemp;
+
+/* ACE_player unassignItem "ItemGPS";
+ACE_player removeItem "ItemGPS";
+ACE_player unassignItem "B_UavTerminal";
+ACE_player removeItem "B_UavTerminal";
+
+ACE_player removeItem "ACE_DAGR";
+ACE_player removeItem "ItemAndroid";
+ACE_player removeItem "ACE_HuntIR_monitor";
+ACE_player removeItem "ACE_Kestrel4500";
+ACE_player removeItem "ItemMicroDAGR";
+ACE_player removeItem "ACE_microDAGR";
+ACE_player removeItem "ItemcTab"; */

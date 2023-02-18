@@ -69,7 +69,9 @@ class CfgVehicles
                             displayName = "SL";
                             condition = "30 <= ([_player] call GTO_fnc_getRankNumber)"; 
                             statement = "['sl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon= "gtom\icons\Roles\SL_icon.paa";                                                  
+                            icon= "gtom\icons\Roles\SL_icon.paa";
+                            modifierFunction ="_actionData = 'SL02'";
+                                                                        
                         };
 
                         class role_Lead_Doctor
@@ -208,19 +210,18 @@ class CfgVehicles
                             icon = "gtom\icons\Roles\ExpSp_icon.paa";                            
                         };
 
-					    class role_Pionier
+                        class role_Pionier
                         {
                             displayName = "Pionier";
                             condition = "true"; 
-                            statement = "['pionier', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call    ace_arsenal_fnc_openBox;";
-                            icon = "gtom\icons\Roles\Eng_icon.paa";
-                            
+                            statement = "['pionier', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
+                            icon = "gtom\icons\Roles\Eng_icon.paa";                            
                         };
 
 					    class role_Engineer
                         {
                             displayName = "Engineer";
-                            condition = "true"; 
+                            condition = "false"; 
                             statement = "['engineer', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
                             icon = "gtom\icons\Roles\Eng_icon.paa";
                             
