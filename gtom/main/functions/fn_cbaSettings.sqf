@@ -95,7 +95,6 @@ scriptName "fn_cbaSettings";
 			[] call GTO_fnc_setMedicationCategorie;
 		}
 	} // function that will be executed once on mission start and every time the setting is changed.
-
 ] call CBA_fnc_addSetting;
 
 [
@@ -142,5 +141,4 @@ scriptName "fn_cbaSettings";
 			[player, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 		};
 	} // function that will be executed once on mission start and every time the setting is changed.
-
 ] call CBA_fnc_addSetting;
