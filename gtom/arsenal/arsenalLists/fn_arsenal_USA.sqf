@@ -92,7 +92,7 @@ private _uniform = ["VSM_AOR1_BDU_Camo", "DTS_BDU_Camo", "VSM_M81_BDU_Camo", "VS
 
 // --------------------------------------------------
 
-private _vest_main = ["VSM_FAPC_Breacher_Multicam","VSM_FAPC_MG_Multicam","VSM_FAPC_Operator_Multicam","VSM_CarrierRig_Breacher_Multicam","VSM_CarrierRig_Gunner_Multicam","VSM_CarrierRig_Operator_Multicam","VSM_LBT6094_MG_Multicam","VSM_LBT6094_operator_Multicam","VSM_RAV_Breacher_Multicam","VSM_RAV_MG_Multicam","VSM_RAV_operator_Multicam","VSM_LBT6094_breacher_Multicam","VSM_FAPC_Breacher_MulticamTropic","VSM_FAPC_MG_MulticamTropic","VSM_FAPC_Operator_MulticamTropic","VSM_CarrierRig_Breacher_multicamTropic","VSM_CarrierRig_Gunner_multicamTropic","VSM_CarrierRig_Operator_multicamTropic","VSM_LBT6094_breacher_multicamTropic","VSM_LBT6094_MG_multicamTropic","VSM_LBT6094_operator_multicamTropic","VSM_RAV_Breacher_MulticamTropic","VSM_RAV_MG_MulticamTropic","VSM_RAV_operator_MulticamTropic","VSM_FAPC_Breacher_AOR1","VSM_FAPC_MG_AOR1","VSM_FAPC_Operator_AOR1","VSM_CarrierRig_Breacher_AOR1","VSM_CarrierRig_Gunner_AOR1","VSM_CarrierRig_Operator_AOR1","VSM_LBT6094_breacher_AOR1","VSM_LBT6094_MG_AOR1","VSM_LBT6094_operator_AOR1","VSM_RAV_Breacher_AOR1","VSM_RAV_MG_AOR1","VSM_RAV_operator_AOR1","dr_AOR2facp_br","dr_AOR2facp_mg","dr_AOR2facp_op","CarrierRig_Breacher_AOR2","CarrierRig_Gunner_AOR2","CarrierRig_Operator_AOR2","dr_AOR2lbt_br","dr_AOR2lbt_mg","dr_AOR2lbt_op","dr_AOR2par_br","dr_AOR2par_mg","dr_AOR2par_op","VSM_FAPC_Breacher_M81","VSM_FAPC_MG_M81","VSM_FAPC_Operator_M81","VSM_CarrierRig_Breacher_M81","VSM_CarrierRig_Gunner_M81","VSM_CarrierRig_Operator_M81","VSM_LBT6094_breacher_M81","VSM_LBT6094_MG_M81","VSM_LBT6094_operator_M81","VSM_RAV_Breacher_M81","VSM_RAV_MG_M81","VSM_RAV_operator_M81","dr_Alpinefacp_br","dr_Alpinefacp_mg","dr_Alpinefacp_op","CarrierRig_Breacher_Alpine","CarrierRig_Gunner_Alpine","CarrierRig_Operator_Alpine","dr_Alpinelbt_br","dr_Alpinelbt_mg","dr_Alpinelbt_op","dr_Alpinepar_br","dr_Alpinepar_mg","dr_Alpinepar_op"];
+private _vest_main = ["VSM_FAPC_Breacher_Multicam", "VSM_FAPC_MG_Multicam", "VSM_FAPC_Operator_Multicam", "VSM_CarrierRig_Breacher_Multicam", "VSM_CarrierRig_Gunner_Multicam", "VSM_CarrierRig_Operator_Multicam", "VSM_LBT6094_MG_Multicam", "VSM_LBT6094_operator_Multicam", "VSM_RAV_Breacher_Multicam", "VSM_RAV_MG_Multicam", "VSM_RAV_operator_Multicam", "VSM_LBT6094_breacher_Multicam", "VSM_FAPC_Breacher_MulticamTropic", "VSM_FAPC_MG_MulticamTropic", "VSM_FAPC_Operator_MulticamTropic", "VSM_CarrierRig_Breacher_multicamTropic", "VSM_CarrierRig_Gunner_multicamTropic", "VSM_CarrierRig_Operator_multicamTropic", "VSM_LBT6094_breacher_multicamTropic", "VSM_LBT6094_MG_multicamTropic", "VSM_LBT6094_operator_multicamTropic", "VSM_RAV_Breacher_MulticamTropic", "VSM_RAV_MG_MulticamTropic", "VSM_RAV_operator_MulticamTropic", "VSM_FAPC_Breacher_AOR1", "VSM_FAPC_MG_AOR1", "VSM_FAPC_Operator_AOR1", "VSM_CarrierRig_Breacher_AOR1", "VSM_CarrierRig_Gunner_AOR1", "VSM_CarrierRig_Operator_AOR1", "VSM_LBT6094_breacher_AOR1", "VSM_LBT6094_MG_AOR1", "VSM_LBT6094_operator_AOR1", "VSM_RAV_Breacher_AOR1", "VSM_RAV_MG_AOR1", "VSM_RAV_operator_AOR1", "dr_AOR2facp_br", "dr_AOR2facp_mg", "dr_AOR2facp_op", "CarrierRig_Breacher_AOR2", "CarrierRig_Gunner_AOR2", "CarrierRig_Operator_AOR2", "dr_AOR2lbt_br", "dr_AOR2lbt_mg", "dr_AOR2lbt_op", "dr_AOR2par_br", "dr_AOR2par_mg", "dr_AOR2par_op", "VSM_FAPC_Breacher_M81", "VSM_FAPC_MG_M81", "VSM_FAPC_Operator_M81", "VSM_CarrierRig_Breacher_M81", "VSM_CarrierRig_Gunner_M81", "VSM_CarrierRig_Operator_M81", "VSM_LBT6094_breacher_M81", "VSM_LBT6094_MG_M81", "VSM_LBT6094_operator_M81", "VSM_RAV_Breacher_M81", "VSM_RAV_MG_M81", "VSM_RAV_operator_M81", "dr_Alpinefacp_br", "dr_Alpinefacp_mg", "dr_Alpinefacp_op", "CarrierRig_Breacher_Alpine", "CarrierRig_Gunner_Alpine", "CarrierRig_Operator_Alpine", "dr_Alpinelbt_br", "dr_Alpinelbt_mg", "dr_Alpinelbt_op", "dr_Alpinepar_br", "dr_Alpinepar_mg", "dr_Alpinepar_op"];
 
 private _vest_light = ["cpc_light_coy", "cpc_lightbelt_coy", "cpc_light_mc", "cpc_lightbelt_mc", "cpc_light_rngr", "cpc_lightbelt_rngr", "lbt_light_aor1", "lbt_light_aor2", "lbt_light_coy", "lbt_light_mc", "lbt_light_od", "cpc_Fast_coy", "cpc_Fastbelt_coy", "cpc_Fast_mc", "cpc_Fastbelt_mc", "cpc_Fast_rngr", "cpc_Fastbelt_rngr", "lbt_fast_coy", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_tna_F"];
 
@@ -136,11 +136,11 @@ private _binoculars_sl = ["Rangefinder", "ACE_VectorDay", "ACE_Vector", "ACE_Yar
 
 // --------------------------------------------------
 
-private _mapCompasRadio = ["ItemMap", "ItemCompass", "TFAR_rf7800str", "TFAR_anprc152", "ItemWatch", "TFAR_microdagr", "ACE_Altimeter", "ItemGPS"];
+private _mapCompasRadio = ["ItemMap", "ItemCompass", "TFAR_rf7800str", "ItemWatch", "TFAR_microdagr", "ACE_Altimeter", "ItemGPS"];
 
 // --------------------------------------------------
 
-private _granades = ["ACE_M14", "ACE_Chemlight_HiBlue", "ACE_Chemlight_HiGreen", "ACE_Chemlight_HiRed", "ACE_Chemlight_HiWhite", "ACE_Chemlight_HiYellow", "ACE_Chemlight_UltraHiOrange", "ACE_CTS9", "B_IR_Grenade", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow", "HandGrenade", "rhs_mag_m69", "SmokeShell", "MiniGrenade", "ACE_M84", "KAT_M7A3"];
+private _granades = ["ACE_M14","ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiWhite","ACE_Chemlight_HiYellow","ACE_Chemlight_UltraHiOrange","ACE_CTS9","B_IR_Grenade","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShellYellow","HandGrenade","rhs_mag_m69","SmokeShell","MiniGrenade","ACE_M84","KAT_M7A3","Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow","ACE_Chemlight_Orange","ACE_Chemlight_White","ACE_Chemlight_IR"];
 
 private _flares = ["UGL_FlareGreen_F", "UGL_FlareCIR_F", "UGL_FlareRed_F", "UGL_FlareWhite_F", "UGL_FlareYellow_F", "ACE_40mm_Flare_white", "ACE_40mm_Flare_green", "ACE_40mm_Flare_red", "ACE_40mm_Flare_ir"];
 
@@ -150,7 +150,7 @@ private _explosives = ["ACE_Cellphone", "tsp_frameCharge_mag", "APERSMineDispens
 
 // --------------------------------------------------
 
-private _items_main = ["ACE_CableTie", "ACE_Canteen", "ACE_EarPlugs", "ACE_EntrenchingTool", "ACE_Flashlight_MX991", "ItemAndroid", "WBK_HeadLampItem", "ItemcTabHCam", "ACE_IR_Strobe_Item", "ACE_Flashlight_XL50", "ACE_MapTools", "ItemMicroDAGR", "ACE_microDAGR", "ACE_SpareBarrel_Item", "ACE_UAVBattery", "ACE_WaterBottle", "B_Parachute", "kat_gasmaskFilter", "vtx_stretcher_item", "ACE_Chemlight_Shield", "KNB_Notebook"];
+private _items_main = ["ACE_CableTie", "ACE_Canteen", "ACE_EarPlugs", "ACE_EntrenchingTool", "ACE_Flashlight_MX991", "ItemAndroid", "WBK_HeadLampItem", "ACE_IR_Strobe_Item", "ACE_Flashlight_XL50", "ACE_MapTools", "ItemMicroDAGR", "ACE_microDAGR", "ACE_SpareBarrel_Item", "ACE_WaterBottle", "B_Parachute", "kat_gasmaskFilter", "vtx_stretcher_item", "KNB_Notebook"];
 
 private _medic_light = ["ACE_packingBandage", "ACE_quikclot", "kat_Painkiller", "kat_PainkillerItem", "ACE_splint", "ACE_tourniquet", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_salineIV_500", "ACE_salineIV_250", "ACE_salineIV"];
 
@@ -158,7 +158,7 @@ private _medic_medium = ["ACE_packingBandage", "ACE_quikclot", "ACE_splint", "AC
 
 private _medic_heavy = ["ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_bloodIV_O_N", "kat_bloodIV_A_N", "kat_bloodIV_AB_N", "kat_bloodIV_B_N", "ACE_elasticBandage", "kat_accuvac", "kat_aatKit", "kat_X_AED", "kat_atropine", "kat_amiodarone", "kat_crossPanel", "kat_chestSeal", "KAT_Empty_bloodIV_250", "KAT_Empty_bloodIV_500", "kat_guedel", "kat_larynx", "kat_lidocaine", "kat_phenylephrine", "ACE_personalAidKit", "ACE_surgicalKit", "kat_Carbonate", "kat_CarbonateItem", "kat_bloodIV_O_N_250", "kat_bloodIV_A_N_250", "kat_bloodIV_AB_N_250", "kat_bloodIV_B_N_250", "kat_bloodIV_O_N_500", "kat_bloodIV_A_N_500", "kat_bloodIV_AB_N_500", "kat_bloodIV_B_N_500", "kat_plate", "kat_clamp", "kat_vacuum", "kat_EACA", "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin", "kat_norepinephrine", "kat_Painkiller", "kat_PainkillerItem", "kat_retractor", "kat_scalpel", "kat_CaffeineItem", "kat_ncdKit", "kat_PervitinItem", "kat_sealant", "ChemicalDetector_01_watch_F"];
 
-private _items_sniper = ["ACE_ATragMX", "ACE_DAGR", "ACE_Kestrel4500", "ACE_RangeCard", "ACE_SpottingScope", "ACE_Tripod"];
+private _items_sniper = ["ACE_ATragMX", "ACE_DAGR", "ACE_Kestrel4500", "ACE_RangeCard", "ACE_SpottingScope", "ACE_Tripod", "TFAR_anprc152"];
 
 private _items_sapper = ["ACE_wirecutter", "ACE_DefusalKit", "ACE_M26_Clacker", "ACE_Clacker", "MineDetector", "ACE_DeadManSwitch", "tsp_lockpick", "ACE_SpraypaintRed", "ACE_Cellphone", "ZDZ_EOD_Kit", "ZDZ_BombBook_EOD_1", "ZDZ_Tool_DSnips", "ChemicalDetector_01_watch_F", "ZDZ_IMS_1"];
 
@@ -166,7 +166,7 @@ private _items_pionier = ["ACE_Fortify", "ACE_wirecutter", "ACE_Sandbag_empty"];
 
 private _items_engi = ["ToolKit"];
 
-private _items_lead = ["rhs_weap_M320", "B_UavTerminal", "ItemcTab", "ACE_HuntIR_M203", "ACE_HuntIR_monitor", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed"];
+private _items_lead = ["rhs_weap_M320", "B_UavTerminal", "ItemcTab", "ACE_HuntIR_M203", "ACE_HuntIR_monitor", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "TFAR_anprc152","ACE_UAVBattery"];
 
 // --------------------------------------------------
 
@@ -203,7 +203,7 @@ _items append (switch (_role) do
 		_weapon_mp+
 		_ammo_mp+
 		_helmet_medic+
-		//_vest_medic+
+		// _vest_medic+
 		_backpack_medic+
 		_backpack_radio_medic+
 		_binoculars_sl+
@@ -218,7 +218,7 @@ _items append (switch (_role) do
 		_weapon_mp+
 		_ammo_mp+
 		_helmet_medic+
-		//_vest_medic+
+		// _vest_medic+
 		_backpack_medic+
 		_medic_heavy
 	};
@@ -227,7 +227,7 @@ _items append (switch (_role) do
 	{
 		_soldierBase+
 		_helmet_medic+
-		//_vest_medic+
+		// _vest_medic+
 		_backpack_medic+
 		_medic_medium
 	};
@@ -237,14 +237,14 @@ _items append (switch (_role) do
 		_soldierBaseNoWeapon+
 		_weapon_light+
 		_ammo_light+
-		//_vest_heavy+
+		// _vest_heavy+
 		_backpack_middle
 	};
 
 	case "lat":
 	{
 		_soldierBase+
-		//_vest_heavy+
+		// _vest_heavy+
 		_backpack_small+
 		["rhs_weap_M136_hp", "rhs_weap_M136_hedp", "rhs_weap_M136", "rhs_weap_m72a7"]
 	};
@@ -254,7 +254,7 @@ _items append (switch (_role) do
 		_soldierBaseNoWeapon+
 		_weapon_heavy+
 		_ammo_heavy+
-		//_vest_heavy+
+		// _vest_heavy+
 		_backpack_small
 	};
 
@@ -264,7 +264,7 @@ _items append (switch (_role) do
 		_weapon_mg+
 		_ammo_mg+
 		_bipod_mg+
-		//_vest_heavy+
+		// _vest_heavy+
 		_backpack_small
 	};
 
@@ -273,7 +273,7 @@ _items append (switch (_role) do
 		_soldierBaseNoWeapon+
 		_weapon_grenadier+
 		_ammo_grenadier+
-		//_vest_heavy+
+		// _vest_heavy+
 		_backpack_small
 	};
 
@@ -281,7 +281,7 @@ _items append (switch (_role) do
 	{
 		_soldierBase+
 		_HAT_Pack+
-		//_vest_heavy+
+		// _vest_heavy+
 		_backpack_middle
 	};
 
@@ -292,7 +292,7 @@ _items append (switch (_role) do
 		_ammo_dmr+
 		_scope_sniper+
 		_bipod_mg+
-		//_vest_light+
+		// _vest_light+
 		_backpack_small+
 		_binoculars_sniper
 	};
@@ -305,7 +305,7 @@ _items append (switch (_role) do
 		_scope_sniper+
 		_bipod_sniper+
 		_helmet_sniper+
-		//_vest_light+
+		// _vest_light+
 		_backpack_small+
 		_binoculars_sniper+
 		_items_sniper
@@ -316,7 +316,7 @@ _items append (switch (_role) do
 		_soldierBase+
 		_scope_sniper+
 		_helmet_sniper+
-		//_vest_medium+
+		// _vest_medium+
 		_backpack_small+
 		_binoculars_sniper+
 		_items_sniper
@@ -336,15 +336,15 @@ _items append (switch (_role) do
 	case "pionier":
 	{
 		_soldierBase+
-		//_vest_light+
 		_backpack_small+
-		_items_pionier
+		_items_pionier+
+		_items_engi
 	};
 
 	case "engineer":
 	{
 		_soldierBase+
-		//_vest_light+
+		// _vest_light+
 		_backpack_small+
 		_items_engi
 	};
@@ -378,7 +378,7 @@ _items append (switch (_role) do
 		_soldierBaseNoHelmet+
 		_weapon_mp+
 		_ammo_mp+
-		//_vest_light+
+		// _vest_light+
 		_backpack_small+
 		_binoculars_sniper+
 		_items_engi+
@@ -430,10 +430,10 @@ _items append (switch (_role) do
 		_helmet_sniper+
 		_uniform+
 		_vest_main+
-		//_vest_light+
-		//_vest_heavy+
+		// _vest_light+
+		// _vest_heavy+
 		_vest_sl+
-		//_vest_medic+
+		// _vest_medic+
 		_vest_explosive+
 		_backpack_small+
 		_backpack_middle+
