@@ -125,7 +125,7 @@ _blacklistItems = [] call GTO_fnc_blacklistItems;
 { 
  ACE_player unassignItem _x; 
  ACE_player removeItem _x; 
-} forEach _arrTemp;
+} forEach _blacklistItems;
 
 /* ACE_player unassignItem "ItemGPS";
 ACE_player removeItem "ItemGPS";
