@@ -46,8 +46,8 @@ class CfgVehicles {
         // model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[] = {"gtom\uniform\textures\GTO_Uniform\GTO_BaseUniform.paa"};
 
-        camouflage = 1.5;  // How likely this character is spotted (smaller number = more stealthy).
-        sensitivity = 2.5; // How likely this character spots enemies when controlled by AI.
+        camouflage = 1;  // How likely this character is spotted (smaller number = more stealthy).
+        sensitivity = 1; // How likely this character spots enemies when controlled by AI.
 
         icon = "gtom\icons\Roles\Other_icon.paa";
         picture = "gtom\icons\Roles\Other_icon.paa";

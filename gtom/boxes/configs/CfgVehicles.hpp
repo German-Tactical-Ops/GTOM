@@ -36,8 +36,8 @@ class CfgVehicles {
         author = "LucyferHW";
         hiddenSelectionsTextures[] = {"gtom\boxes\textures\PlasticCase\uniforms_box_idap_co.paa", "gtom\boxes\textures\PlasticCase\uniforms_box_idap_CA_GTO.paa"};
 
-		editorCategory = "GTO";
-        editorSubcategory = "GTO_Boxes";
+		editorCategory = "Categorie_GTO";
+        editorSubcategory = "Categorie_GTO_Boxes";
 
         class TransportMagazines
         {

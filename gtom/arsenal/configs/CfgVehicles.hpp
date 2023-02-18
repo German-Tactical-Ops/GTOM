@@ -9,8 +9,8 @@ class CfgVehicles
         arsenalType = "";
         arsenalSubType = "";
 
-        editorCategory = "GTO";
-        editorSubcategory = "GTO_Arsenal";
+        editorCategory = "Categorie_GTO";
+        editorSubcategory = "Categorie_GTO_Arsenal";
 
         scope = 1;
         scopeCurator = 1;
