@@ -29,6 +29,12 @@ class cfgFunctions
 			{
 				recompile = 1;
 			}; // [] call GTO_fnc_persistentPlayer;
+
+			class sleepClearHint
+			{
+				recompile = 1;
+			}; // [] call GTO_fnc_sleepClearHint;
+
 		};
 
 		class arsenal
