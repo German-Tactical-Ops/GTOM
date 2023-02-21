@@ -11,48 +11,37 @@ scriptName "fn_setRank";
 
 private _medicState = player getVariable ["ace_medical_medicClass", 0];
 
-// GTO_InsigniaRankList_
-
 if (_medicState > 0 && !GTO_OverrideMedicPatch) exitWith {
-	hint "Medic";
+	hint format ["Player: %1 \nInsignia: Medic", name player];
+
 	[player, "IDAP"] call BIS_fnc_setUnitInsignia;
+
 	[10] spawn GTO_fnc_sleepClearHint;
 };
 
 GTO_SetPlayerRankInsignia = {
 	params["_playerList", "_insignia"];
 
+	private _state = false;
+
 	if (getPlayerUID player in _playerList) exitWith {
-		hint format ["List: %1 \nInsignia: %2", _playerList, _insignia];
-		
-		[player, _insignia select 0] call BIS_fnc_setUnitInsignia;
+
+		private _oneInsignia = parseSimpleArray _insignia select (GTO_InsigniaColorVersion - 1);
+
+		hint format ["Player: %1 \nInsignia: %2", name player, _oneInsignia];
+
+		[player, _oneInsignia] call BIS_fnc_setUnitInsignia;
 		[10] spawn GTO_fnc_sleepClearHint;
+
+		_state = true;
+
+		_state;
 	};
 };
 
-[GTO_PlayerRankList_OF2, GTO_InsigniaRankList_OF2] call GTO_SetPlayerRankInsignia;
-[GTO_PlayerRankList_OF1, GTO_InsigniaRankList_OF1] call GTO_SetPlayerRankInsignia;
-[GTO_PlayerRankList_OF1_2, GTO_InsigniaRankList_OF1_2] call GTO_SetPlayerRankInsignia;
-
-/* if (getPlayerUID player in GTO_PlayerRankList_SL) exitWith {
-		hint "SL";
-		[player, "Curator"] call BIS_fnc_setUnitInsignia;
-		[10] spawn GTO_fnc_sleepClearHint;
-	};
-	
-	if (getPlayerUID player in GTO_PlayerRankList_FTL) exitWith {
-		hint "FTL";
-		[player, "111thID"] call BIS_fnc_setUnitInsignia;
-		[10] spawn GTO_fnc_sleepClearHint;
-	};
-	
-	if (getPlayerUID player in GTO_PlayerRankList_Private) exitWith {
-		hint "Private";
-		[player, "BI"] call BIS_fnc_setUnitInsignia;
-		[10] spawn GTO_fnc_sleepClearHint;
-}; */
+if ([GTO_PlayerRankList_OF2, GTO_InsigniaRankList_OF2] call GTO_SetPlayerRankInsignia) exitWith {};
+if ([GTO_PlayerRankList_OF1, GTO_InsigniaRankList_OF1] call GTO_SetPlayerRankInsignia) exitWith {};
+if ([GTO_PlayerRankList_OF1_2, GTO_InsigniaRankList_OF1_2] call GTO_SetPlayerRankInsignia) exitWith {};
 
 hint format ["%1 is not on rank list.\n Set guest rank.", name player];
 [10] spawn GTO_fnc_sleepClearHint;
-
-// ["a", "b", "c", "d"] select 2;
