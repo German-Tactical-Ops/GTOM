@@ -43,5 +43,13 @@ if ([GTO_PlayerRankList_OF2, GTO_InsigniaRankList_OF2] call GTO_SetPlayerRankIns
 if ([GTO_PlayerRankList_OF1, GTO_InsigniaRankList_OF1] call GTO_SetPlayerRankInsignia) exitWith {};
 if ([GTO_PlayerRankList_OF1_2, GTO_InsigniaRankList_OF1_2] call GTO_SetPlayerRankInsignia) exitWith {};
 
-hint format ["%1 is not on rank list.\n Set guest rank.", name player];
+
+
+//hint format ["%1 is not on rank list.\n Set guest rank.", name player];
+
+private _oneInsignia = parseSimpleArray GTO_InsigniaRankList_guest select (GTO_InsigniaColorVersion - 1);
+
+hint format ["Player: %1 \nInsignia: %2", name player, _oneInsignia];
+
+[player, _oneInsignia] call BIS_fnc_setUnitInsignia;
 [10] spawn GTO_fnc_sleepClearHint;

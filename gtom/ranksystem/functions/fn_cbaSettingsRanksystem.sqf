@@ -41,7 +41,7 @@ GTO_InsigniaRankList_Template = {
 	[
 		_classNameFull, // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 		"EDITBOX", // setting type
-		[_visibleName, "Array of Insignia class names"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+		[_visibleName, "Array of Insignia class names. min 1, max 3"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 		["GTOM Rank", "Insignia List"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 		[], // data for this setting: [min, max, default, number of shown trailing decimals]
 		true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
@@ -67,6 +67,9 @@ GTO_InsigniaRankList_Template = {
 
 ["OR3", "OR-3 (PFC)"] call GTO_InsigniaRankList_Template;
 ["OR2", "OR-2 (PV2)"] call GTO_InsigniaRankList_Template;
+
+["guestplus", "Guest+"] call GTO_InsigniaRankList_Template;
+["guest", "Guest"] call GTO_InsigniaRankList_Template;
 
 
 // ---------- player -----------// 
