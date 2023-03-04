@@ -13,6 +13,6 @@ e
 
 _items = [];
 
-systemChat "Deprecated - Do not use <fn_initArsenal>";
+systemChat "Deprecated - Do not use <fn_mainArsenal>";
 
 _items;
