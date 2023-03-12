@@ -13,7 +13,7 @@ scriptName "fn_setMedicationCategorie";
 */
 
 
-_medicItems=["kat_Painkiller","kat_Carbonate","kat_IV_16","kat_aatKit","kat_accuvac","ACE_adenosine","kat_X_AED","kat_amiodarone","ACE_ATNAA","kat_atropine","kat_AED","Attachable_Helistretcher","ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_quikclot","kat_crossPanel","ACE_bodyBag","kat_chestSeal","ACE_epinephrine","kat_IO_FAST","KAT_Empty_bloodIV_250","KAT_Empty_bloodIV_500","kat_guedel","kat_larynx","kat_lidocaine","ACE_morphine","kat_naloxone","kat_nitroglycerin","kat_norepinephrine","ACE_personalAidKit","kat_phenylephrine","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","kat_Pulseoximeter","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","ACE_splint","kat_stethoscope","ACE_surgicalKit","kat_TXA","ACE_tourniquet","kat_bloodIV_O","ACE_bloodIV","kat_bloodIV_O_N","kat_bloodIV_A","kat_bloodIV_A_N","kat_bloodIV_AB","kat_bloodIV_AB_N","kat_bloodIV_B","kat_bloodIV_B_N","ACE_bloodIV_250","kat_bloodIV_O_250","kat_bloodIV_O_250_N","kat_bloodIV_A_250","kat_bloodIV_A_250_N","kat_bloodIV_AB_250","kat_bloodIV_AB_250_N","kat_bloodIV_B_250","kat_bloodIV_B_250_N","ACE_bloodIV_500","kat_bloodIV_O_500","kat_bloodIV_O_500_N","kat_bloodIV_A_500","kat_bloodIV_A_500_N","kat_bloodIV_AB_500","kat_bloodIV_AB_500_N","kat_bloodIV_B_500","kat_bloodIV_B_500_N"];
+_medicItems=["ACE_adenosine","kat_amiodarone","kat_Carbonate","kat_atropine","kat_CaffeineItem","kat_EACA","kat_etomidate","kat_flumazenil","kat_ketamine","kat_lidocaine","kat_lorazepam","ACE_morphine","kat_nalbuphine","kat_nitroglycerin","kat_norepinephrine","kat_naloxone","kat_Painkiller","kat_PervitinItem","kat_phenylephrine","kat_sealant","kat_TXA","kat_fentanyl","ACE_epinephrine"];
 
 
-[_medicItems, "MedicalStuff","gtom\icons\export\medIcon.paa"] call ace_arsenal_fnc_addRightPanelButton;
+[_medicItems, "MedicalStuff","gtom\arsenal\textures\icon_medical.paa"] call ace_arsenal_fnc_addRightPanelButton;

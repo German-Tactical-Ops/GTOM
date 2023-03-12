@@ -1,3 +1,53 @@
+#define WEAPON(MODEL,CLASS_A, CLASS_B, CLASS_C)\
+class ##CLASS_A## \
+{ \
+    model = ##MODEL##;\
+    weaponCamo = "black";\
+};\
+\
+class ##CLASS_B##\
+{\
+    model = ##MODEL##;\
+    weaponCamo = "desert";\
+};\
+\
+class ##CLASS_C##\
+{\
+    model = ##MODEL##;\
+    weaponCamo = "woodland";\
+};
+
+#define WEAPONV(MODEL, VERSION, CLASS_A, CLASS_B, CLASS_C)\
+class ##CLASS_A## \
+{ \
+    model = ##MODEL##;\
+    weaponCamo = "black";\
+    version = ##VERSION##;\
+};\
+\
+class ##CLASS_B##\
+{\
+    model = ##MODEL##;\
+    weaponCamo = "desert";\
+    version = ##VERSION##;\
+};\
+\
+class ##CLASS_C##\
+{\
+    model = ##MODEL##;\
+    weaponCamo = "woodland";\
+    version = ##VERSION##;\
+};
+
+#define VESTVSM(NAME, CAMO, VERSION, ROLE)\
+class ##NAME##\
+        {\
+            model = "GTO_Vest_VSM";            \
+            camoType = ##CAMO##;\
+            version = ##VERSION##;\
+            role = ##ROLE##;\
+        };
+
 class XtdGearInfos {
 	
 	class CfgVehicles
@@ -1600,5 +1650,292 @@ class XtdGearInfos {
             model = "GTO_Boonie";
             camoType = "projecthonor";
         };
+
+        // ---------- Weapon ---------- //
+
+        WEAPON("GTO_rhs_mk18",rhs_weap_mk18_bk,rhs_weap_mk18_d,rhs_weap_mk18_wd);
+
+        WEAPON("GTO_rhs_m4a1_blockII",rhs_weap_m4a1_blockII_bk,rhs_weap_m4a1_blockII_d,rhs_weap_m4a1_blockII_wd);
+
+        // ---------- Weapon HK ---------- //
+
+        WEAPONV("GTO_HK","a5",arifle_SPAR_01_blk_F,arifle_SPAR_01_snd_F,arifle_SPAR_01_khk_F);
+
+        WEAPONV("GTO_HK","d145",rhs_weap_hk416d145,rhs_weap_hk416d145_d,rhs_weap_hk416d145_wd);
+
+        class rhs_weap_hk416d10
+        {
+            model = "GTO_HK";
+            weaponCamo = "black";
+            version = "d10";
+        };
+
+        // ---------- Pistole Pistol Heavy ---------- //
+
+        class hgun_Pistol_heavy_01_F
+        {
+            model = "GTO_pistol_heavy";
+            weaponCamo = "desert";
+        };
+
+        class hgun_Pistol_heavy_01_green_F
+        {
+            model = "GTO_pistol_heavy";
+            weaponCamo = "woodland";
+        };
+
+        // ---------- Pistole Heavy Gun ---------- //
+
+        class hgun_P07_blk_F
+        {
+            model = "GTO_pistol_P07";
+            weaponCamo = "black";
+        };
+
+        class hgun_P07_khk_F
+        {
+            model = "GTO_pistol_P07";
+            weaponCamo = "woodland";
+        };
+
+        class hgun_P07_F
+        {
+            model = "GTO_pistol_P07";
+            weaponCamo = "desert";
+        };
+
+        // ---------- Weapon M249 ---------- //
+        
+        class rhs_weap_m249_light_L
+        {
+            model = "GTO_m249";
+            
+            length = "long";
+            version = "lcba";
+        };
+
+        class rhs_weap_m249_pip_L_para
+        {
+            model = "GTO_m249";
+            
+            length = "long";
+            version = "para";
+        };
+
+        class rhs_weap_m249_pip_L
+        {
+            model = "GTO_m249";
+            
+            length = "long";
+            version = "savit";
+        };
+
+        class rhs_weap_m249_pip_ris
+        {
+            model = "GTO_m249";
+            
+            length = "long";
+            version = "ris";
+        };
+
+        class rhs_weap_m249_pip
+        {
+            model = "GTO_m249";            
+            length = "long";
+            version = "basic";
+        };
+
+        //
+
+        class rhs_weap_m249_light_S
+        {
+            model = "GTO_m249";
+            
+            length = "short";
+            version = "lcba";
+        };
+
+        class rhs_weap_m249_pip_S_para
+        {
+            model = "GTO_m249";
+            
+            length = "short";
+            version = "para";
+        };
+
+        class rhs_weap_m249_pip_S
+        {
+            model = "GTO_m249";
+            
+            length = "short";
+            version = "savit";
+        };
+
+        // ---------- Weapon LWMMG ---------- //
+
+        WEAPON("GTO_lwmmg",MMG_02_black_F,MMG_02_sand_F,MMG_02_camo_F);
+
+        // ---------- Weapon Stoner ---------- //
+
+        class LMG_Mk200_black_F
+        {
+            model = "GTO_Stoner";            
+            weaponCamo = "black";
+        };
+
+        class LMG_Mk200_F
+        {
+            model = "GTO_Stoner";
+            weaponCamo = "desert";
+        };
+
+        // ---------- Weapon M240 ---------- //
+
+        class rhs_weap_m240B
+        {
+            model = "GTO_rhs_m240";            
+            version = "b";
+        };
+
+        class rhs_weap_m240G
+        {
+            model = "GTO_rhs_m240";            
+            version = "g";
+        };
+
+        // ---------- Weapon MMG ---------- //
+
+        class MMG_01_tan_F
+        {
+            model = "GTO_MMG";            
+            weaponCamo = "tan";
+        };
+
+        class MMG_01_hex_F
+        {
+            model = "GTO_MMG";            
+            weaponCamo = "hex";
+        };
+
+        // ---------- Vest VSM ---------- //
+
+
+        /* class ##NAME##
+        {
+            model = "GTO_Vest_VSM";            
+            camoType = ##CAMO##;
+            version = ##VERSION##;
+            role = ##ROLE##;
+        }; */
+
+        //VESTVSM(NAME, CAMO, VERSION, ROLE);
+
+        // Alpine
+
+        VESTVSM(dr_Alpinefacp_br, "alpine", "facp", "breacher");
+        VESTVSM(dr_Alpinefacp_mg, "alpine", "facp", "gunner");
+        VESTVSM(dr_Alpinefacp_op, "alpine", "facp", "operator");
+
+        VESTVSM(CarrierRig_Breacher_Alpine, "alpine", "carrierRig", "breacher");
+        VESTVSM(CarrierRig_Gunner_Alpine, "alpine", "carrierRig", "gunner");
+        VESTVSM(CarrierRig_Operator_Alpine, "alpine", "carrierRig", "operator");
+
+        VESTVSM(dr_Alpinelbt_br, "alpine", "lbt", "breacher");
+        VESTVSM(dr_Alpinelbt_mg, "alpine", "lbt", "gunner");
+        VESTVSM(dr_Alpinelbt_op, "alpine", "lbt", "operator");
+
+        VESTVSM(dr_Alpinepar_br, "alpine", "par", "breacher");
+        VESTVSM(dr_Alpinepar_mg, "alpine", "par", "gunner");
+        VESTVSM(dr_Alpinepar_op, "alpine", "par", "operator");
+
+        //MC
+
+        VESTVSM(VSM_FAPC_Breacher_Multicam, "multicam", "facp", "breacher");
+        VESTVSM(VSM_FAPC_MG_Multicam, "multicam", "facp", "gunner");
+        VESTVSM(VSM_FAPC_Operator_Multicam, "multicam", "facp", "operator");
+
+        VESTVSM(VSM_CarrierRig_Breacher_Multicam, "multicam", "carrierRig", "breacher");
+        VESTVSM(VSM_CarrierRig_Gunner_Multicam, "multicam", "carrierRig", "gunner");
+        VESTVSM(VSM_CarrierRig_Operator_Multicam, "multicam", "carrierRig", "operator");
+
+        VESTVSM(VSM_LBT6094_breacher_Multicam, "multicam", "lbt", "breacher");
+        VESTVSM(VSM_LBT6094_MG_Multicam, "multicam", "lbt", "gunner");
+        VESTVSM(VSM_LBT6094_operator_Multicam, "multicam", "lbt", "operator");
+
+        VESTVSM(VSM_RAV_Breacher_Multicam, "multicam", "par", "breacher");
+        VESTVSM(VSM_RAV_MG_Multicam, "multicam", "par", "gunner");
+        VESTVSM(VSM_RAV_operator_Multicam, "multicam", "par", "operator");
+
+        //MC Tropic todo: ss
+
+        VESTVSM(VSM_FAPC_Breacher_MulticamTropic, "multicam_tropic", "facp", "breacher");
+        VESTVSM(VSM_FAPC_MG_MulticamTropic, "multicam_tropic", "facp", "gunner");
+        VESTVSM(VSM_FAPC_Operator_MulticamTropic, "multicam_tropic", "facp", "operator");
+
+        VESTVSM(VSM_CarrierRig_Breacher_multicamTropic, "multicam_tropic", "carrierRig", "breacher");
+        VESTVSM(VSM_CarrierRig_Gunner_multicamTropic, "multicam_tropic", "carrierRig", "gunner");
+        VESTVSM(VSM_CarrierRig_Operator_multicamTropic, "multicam_tropic", "carrierRig", "operator");
+
+        VESTVSM(VSM_LBT6094_breacher_multicamTropic, "multicam_tropic", "lbt", "breacher");
+        VESTVSM(VSM_LBT6094_MG_multicamTropic, "multicam_tropic", "lbt", "gunner");
+        VESTVSM(VSM_LBT6094_operator_multicamTropic, "multicam_tropic", "lbt", "operator");
+
+        VESTVSM(VSM_RAV_Breacher_MulticamTropic, "multicam_tropic", "par", "breacher");
+        VESTVSM(VSM_RAV_MG_MulticamTropic, "multicam_tropic", "par", "gunner");
+        VESTVSM(VSM_RAV_operator_MulticamTropic, "multicam_tropic", "par", "operator");
+
+        //AOR1
+
+        VESTVSM(VSM_FAPC_Breacher_AOR1, "aor1", "facp", "breacher");    
+        VESTVSM(VSM_FAPC_MG_AOR1, "aor1", "facp", "gunner");
+        VESTVSM(VSM_FAPC_Operator_AOR1, "aor1", "facp", "operator");
+
+        VESTVSM(VSM_CarrierRig_Breacher_AOR1, "aor1", "carrierRig", "breacher");
+        VESTVSM(VSM_CarrierRig_Gunner_AOR1, "aor1", "carrierRig", "gunner");
+        VESTVSM(VSM_CarrierRig_Operator_AOR1, "aor1", "carrierRig", "operator");
+
+        VESTVSM(VSM_LBT6094_breacher_AOR1, "aor1", "lbt", "breacher");
+        VESTVSM(VSM_LBT6094_MG_AOR1, "aor1", "lbt", "gunner");
+        VESTVSM(VSM_LBT6094_operator_AOR1, "aor1", "lbt", "operator");
+
+        VESTVSM(VSM_RAV_Breacher_AOR1, "aor1", "par", "breacher");
+        VESTVSM(VSM_RAV_MG_AOR1, "aor1", "par", "gunner");
+        VESTVSM(VSM_RAV_operator_AOR1, "aor1", "par", "operator");
+
+        //M81
+
+        VESTVSM(VSM_FAPC_Breacher_M81, "m81", "facp", "breacher");    
+        VESTVSM(VSM_FAPC_MG_M81, "m81", "facp", "gunner");
+        VESTVSM(VSM_FAPC_Operator_M81, "m81", "facp", "operator");
+
+        VESTVSM(VSM_CarrierRig_Breacher_M81, "m81", "carrierRig", "breacher");
+        VESTVSM(VSM_CarrierRig_Gunner_M81, "m81", "carrierRig", "gunner");
+        VESTVSM(VSM_CarrierRig_Operator_M81, "m81", "carrierRig", "operator");
+
+        VESTVSM(VSM_LBT6094_breacher_M81, "m81", "lbt", "breacher");
+        VESTVSM(VSM_LBT6094_MG_M81, "m81", "lbt", "gunner");
+        VESTVSM(VSM_LBT6094_operator_M81, "m81", "lbt", "operator");
+
+        VESTVSM(VSM_RAV_Breacher_M81, "m81", "par", "breacher");
+        VESTVSM(VSM_RAV_MG_M81, "m81", "par", "gunner");
+        VESTVSM(VSM_RAV_operator_M81, "m81", "par", "operator");
+
+        //AOR2
+
+        VESTVSM(dr_AOR2facp_br, "aor2", "facp", "breacher");    
+        VESTVSM(dr_AOR2facp_mg, "aor2", "facp", "gunner");
+        VESTVSM(dr_AOR2facp_op, "aor2", "facp", "operator");
+
+        VESTVSM(CarrierRig_Breacher_AOR2, "aor2", "carrierRig", "breacher");
+        VESTVSM(CarrierRig_Gunner_AOR2, "aor2", "carrierRig", "gunner");
+        VESTVSM(CarrierRig_Operator_AOR2, "aor2", "carrierRig", "operator");
+
+        VESTVSM(dr_AOR2lbt_br, "aor2", "lbt", "breacher");
+        VESTVSM(dr_AOR2lbt_mg, "aor2", "lbt", "gunner");
+        VESTVSM(dr_AOR2lbt_op, "aor2", "lbt", "operator");
+
+        VESTVSM(dr_AOR2par_br, "aor2", "par", "breacher");
+        VESTVSM(dr_AOR2par_mg, "aor2", "par", "gunner");
+        VESTVSM(dr_AOR2par_op, "aor2", "par", "operator");
     };
 };

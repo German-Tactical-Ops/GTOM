@@ -14,7 +14,9 @@ _name = "";
 switch (_shortName) do
 {
     case "sl": {_name = "Squad Leader";};
+    case "pl": {_name = "Platoon Leader";};
     case "ftl": {_name = "Fire Team Leader";};
+    case "ldoctor": {_name = "Lead Doctor";};
     case "doctor": {_name = "Doctor";};
     case "medic": {_name = "Medic";};
     case "ammoCarrier": {_name = "Ammo Carrier";};
@@ -28,7 +30,7 @@ switch (_shortName) do
     case "spotter": {_name = "Spotter";};
     case "sapper": {_name = "Sapper";};
     case "pionier": {_name = "Pionier";};
-    case "enginier": {_name = "Enginier";};
+    case "engineer": {_name = "Engineer";};
     case "jtac": {_name = "JTAC";};
     case "pilot": {_name = "Pilot";};
     case "crewman": {_name = "Crewman";};
