@@ -8,7 +8,7 @@ scriptName "fn_arsenal_USA";
 
 params ["_role"];
 
-private _gto_equipment = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform", "Black_Black_Camo", "U_B_Wetsuit", "V_RebreatherB", "G_Diving", "G_B_Diving", "V_Pocketed_black_F"];
+private _gto_equipment = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform", "Black_Black_Camo", "U_B_Wetsuit", "V_RebreatherB", "G_Diving", "G_B_Diving", "V_Pocketed_black_F", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed"];
 
 private _weapon_mp = ["SMG_01_F", "rhsusf_weap_MP7A2_aor1", "rhsusf_weap_MP7A2_desert", "rhsusf_weap_MP7A2_winter", "rhsusf_weap_MP7A2", "SMG_05_F", "SMG_02_F"];
 
@@ -58,7 +58,7 @@ private _HAT_Pack = ["rhs_weap_fgm148", "rhs_weap_fim92", "rhs_weap_maaws", "lau
 
 // --------------------------------------------------
 
-private _scope_main = ["rhsusf_acc_anpvs27", "optic_Yorris", "ACE_optic_Arco_2D", "optic_Arco_arid_F", "optic_Arco_blk_F", "optic_Arco_lush_F", "ACE_optic_Arco_PIP", "optic_Arco", "optic_Arco_AK_arid_F", "optic_Arco_AK_blk_F", "optic_Arco_AK_lush_F", "optic_Holosight_arid_F", "optic_Holosight_blk_F", "optic_Holosight_khk_F", "optic_Holosight_lush_F", "optic_Holosight", "optic_Holosight_smg_blk_F", "optic_Holosight_smg_khk_F", "optic_Holosight_smg", "optic_MRCO", "ACE_optic_MRCO_2D", "rhsusf_acc_ELCAN", "optic_ACO_grn", "optic_Aco", "optic_ACO_grn_smg", "optic_Aco_smg", "rhsusf_acc_ELCAN_ard", "rhsusf_acc_ACOG", "rhsusf_acc_ACOG2", "rhsusf_acc_ACOG_anpvs27", "optic_Hamr", "ACE_optic_Hamr_2D", "optic_Hamr_khk_F", "ACE_optic_Hamr_PIP", "rhsusf_acc_M2A1", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552_d", "rhsusf_acc_eotech_552_wd", "rhsusf_acc_compm4", "optic_MRD", "optic_MRD_black", "rhs_acc_nita", "optic_ERCO_blk_F", "optic_ERCO_khk_F", "optic_ERCO_snd_F", "rhsusf_acc_su230a", "rhsusf_acc_su230a_c", "rhsusf_acc_su230a_mrds", "rhsusf_acc_su230a_mrds_c", "rhsusf_acc_ACOG_d", "rhsusf_acc_ACOG_wd", "rhsusf_acc_ACOG_RMR", "rhsusf_acc_eotech_xps3", "rhsusf_acc_su230", "rhsusf_acc_su230_c", "rhsusf_acc_su230_mrds", "rhsusf_acc_su230_mrds_c"];
+private _scope_main = ["rhsusf_acc_anpvs27", "optic_Yorris", "ACE_optic_Arco_2D", "optic_Arco_arid_F", "optic_Arco_blk_F", "optic_Arco_lush_F", "ACE_optic_Arco_PIP", "optic_Arco", "optic_Arco_AK_arid_F", "optic_Arco_AK_blk_F", "optic_Arco_AK_lush_F", "optic_Holosight_arid_F", "optic_Holosight_blk_F", "optic_Holosight_khk_F", "optic_Holosight_lush_F", "optic_Holosight", "optic_Holosight_smg_blk_F", "optic_Holosight_smg_khk_F", "optic_Holosight_smg", "optic_MRCO", "ACE_optic_MRCO_2D", "rhsusf_acc_ELCAN", "optic_ACO_grn", "optic_Aco", "optic_ACO_grn_smg", "optic_Aco_smg", "rhsusf_acc_ELCAN_ard", "rhsusf_acc_ACOG", "rhsusf_acc_ACOG2", "rhsusf_acc_ACOG_anpvs27", "optic_Hamr", "ACE_optic_Hamr_2D", "optic_Hamr_khk_F", "ACE_optic_Hamr_PIP", "rhsusf_acc_M2A1", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552_d", "rhsusf_acc_eotech_552_wd", "rhsusf_acc_compm4", "optic_MRD", "optic_MRD_black", "rhs_acc_nita", "optic_ERCO_blk_F", "optic_ERCO_khk_F", "optic_ERCO_snd_F", "rhsusf_acc_su230a", "rhsusf_acc_su230a_c", "rhsusf_acc_su230a_mrds", "rhsusf_acc_su230a_mrds_c", "rhsusf_acc_ACOG_d", "rhsusf_acc_ACOG_wd", "rhsusf_acc_ACOG_RMR", "rhsusf_acc_eotech_xps3", "rhsusf_acc_su230", "rhsusf_acc_su230_c", "rhsusf_acc_su230_mrds", "rhsusf_acc_su230_mrds_c", "rhsusf_acc_g33_T1", "rhsusf_acc_g33_xps3"];
 
 private _scope_sniper = ["rhsusf_acc_nxs_5522x56_md_sun", "rhsusf_acc_nxs_5522x56_md", "rhsusf_acc_nxs_3515x50f1_md_sun", "rhsusf_acc_nxs_3515x50f1_h58_sun", "rhsusf_acc_nxs_3515x50f1_md", "rhsusf_acc_nxs_3515x50f1_h58", "rhsusf_acc_nxs_3515x50_md", "ACE_optic_LRPS_PIP", "optic_LRPS_tna_F", "optic_LRPS_ghex_F", "ACE_optic_LRPS_2D", "optic_LRPS", "optic_Nightstalker", "ACE_optic_SOS_PIP", "optic_SOS_khk_F", "ACE_optic_SOS_2D", "optic_SOS", "rhsusf_acc_LEUPOLDMK4_2_mrds", "rhsusf_acc_LEUPOLDMK4_2_d", "rhsusf_acc_LEUPOLDMK4_wd", "rhsusf_acc_LEUPOLDMK4_d", "rhsusf_acc_LEUPOLDMK4", "rhsusf_acc_premier_mrds", "rhsusf_acc_premier", "rhsusf_acc_premier_anpvs27", "rhsusf_acc_premier_low", "rhsusf_acc_M8541_wd", "rhsusf_acc_M8541_mrds", "rhsusf_acc_LEUPOLDMK4_2", "rhsusf_acc_M8541_low_wd", "rhsusf_acc_M8541_low_d", "rhsusf_acc_M8541_low", "rhsusf_acc_M8541_d", "rhsusf_acc_M8541", "optic_KHS_tan", "optic_KHS_old", "optic_KHS_hex", "optic_KHS_blk", "optic_AMS_snd", "optic_AMS_khk", "optic_AMS", "optic_NVS"];
 
@@ -116,7 +116,7 @@ private _backpack_medic = ["GTO_Carryall_Medic_multicam_tropic", "GTO_Carryall_M
 
 private _backpack_radio_medic = ["GTO_ILBE_Medic_alpine", "GTO_ILBE_Medic_black", "GTO_ILBE_Medic_multicam", "GTO_ILBE_Medic_arid"];
 
-private _backpack_radio = ["TFAR_anprc155","TFAR_anprc155_coyote","TFAR_rt1523g","TFAR_rt1523g_big","TFAR_rt1523g_big_bwmod","TFAR_rt1523g_big_bwmod_tropen","TFAR_rt1523g_big_rhs","TFAR_rt1523g_black","TFAR_rt1523g_bwmod","TFAR_rt1523g_fabric","TFAR_rt1523g_green","TFAR_rt1523g_rhs","TFAR_rt1523g_sage","B_RadioBag_01_black_F","B_RadioBag_01_digi_F","B_RadioBag_01_eaf_F","B_RadioBag_01_ghex_F","B_RadioBag_01_hex_F","B_RadioBag_01_mtp_F","B_RadioBag_01_tropic_F","B_RadioBag_01_oucamo_F","B_RadioBag_01_wdl_F","tfw_ilbe_blade_alpine","tfw_ilbe_blade_arid","tfw_ilbe_blade_black","tfw_ilbe_blade_mc","tfw_ilbe_blade_gr","tfw_ilbe_blade_ocp","tfw_ilbe_DD_alpine","tfw_ilbe_DD_arid","tfw_ilbe_DD_black","tfw_ilbe_DD_gr","tfw_ilbe_DD_mc","tfw_ilbe_DD_ocp","tfw_ilbe_blade_wd2","tfw_ilbe_blade_mct","tfw_ilbe_DD_mct","tfw_ilbe_DD_wd2","tfw_ilbe_whip_alpine","tfw_ilbe_whip_arid","tfw_ilbe_whip_black","tfw_ilbe_whip_gr","tfw_ilbe_whip_mct","tfw_ilbe_whip_mc","tfw_ilbe_whip_ocp","tfw_ilbe_whip_wd2","tfw_rf3080Item","tfw_blade","tfw_whip","tfw_dd","FRXA_tf_rt1523g_Black","FRXA_tf_rt1523g_M81","FRXA_tf_rt1523g_MARPAT_Desert","FRXA_tf_rt1523g_MARPAT_Woodland","FRXA_tf_rt1523g_Ranger_Green","FRXA_tf_rt1523g_big_Black","FRXA_tf_rt1523g_big_M81","FRXA_tf_rt1523g_big_MARPAT_Desert","FRXA_tf_rt1523g_big_MARPAT_Woodlaand","FRXA_tf_rt1523g_big_Ranger_Green","FRXA_tf_rt1523g_big_UCP","FRXA_tf_rt1523g_UCP"];
+private _backpack_radio = ["TFAR_anprc155", "TFAR_anprc155_coyote", "TFAR_rt1523g", "TFAR_rt1523g_big", "TFAR_rt1523g_big_bwmod", "TFAR_rt1523g_big_bwmod_tropen", "TFAR_rt1523g_big_rhs", "TFAR_rt1523g_black", "TFAR_rt1523g_bwmod", "TFAR_rt1523g_fabric", "TFAR_rt1523g_green", "TFAR_rt1523g_rhs", "TFAR_rt1523g_sage", "B_RadioBag_01_black_F", "B_RadioBag_01_digi_F", "B_RadioBag_01_eaf_F", "B_RadioBag_01_ghex_F", "B_RadioBag_01_hex_F", "B_RadioBag_01_mtp_F", "B_RadioBag_01_tropic_F", "B_RadioBag_01_oucamo_F", "B_RadioBag_01_wdl_F", "tfw_ilbe_blade_alpine", "tfw_ilbe_blade_arid", "tfw_ilbe_blade_black", "tfw_ilbe_blade_mc", "tfw_ilbe_blade_gr", "tfw_ilbe_blade_ocp", "tfw_ilbe_DD_alpine", "tfw_ilbe_DD_arid", "tfw_ilbe_DD_black", "tfw_ilbe_DD_gr", "tfw_ilbe_DD_mc", "tfw_ilbe_DD_ocp", "tfw_ilbe_blade_wd2", "tfw_ilbe_blade_mct", "tfw_ilbe_DD_mct", "tfw_ilbe_DD_wd2", "tfw_ilbe_whip_alpine", "tfw_ilbe_whip_arid", "tfw_ilbe_whip_black", "tfw_ilbe_whip_gr", "tfw_ilbe_whip_mct", "tfw_ilbe_whip_mc", "tfw_ilbe_whip_ocp", "tfw_ilbe_whip_wd2", "tfw_rf3080Item", "tfw_blade", "tfw_whip", "tfw_dd", "FRXA_tf_rt1523g_Black", "FRXA_tf_rt1523g_M81", "FRXA_tf_rt1523g_MARPAT_Desert", "FRXA_tf_rt1523g_MARPAT_Woodland", "FRXA_tf_rt1523g_Ranger_Green", "FRXA_tf_rt1523g_big_Black", "FRXA_tf_rt1523g_big_M81", "FRXA_tf_rt1523g_big_MARPAT_Desert", "FRXA_tf_rt1523g_big_MARPAT_Woodlaand", "FRXA_tf_rt1523g_big_Ranger_Green", "FRXA_tf_rt1523g_big_UCP", "FRXA_tf_rt1523g_UCP"];
 
 // --------------------------------------------------
 
@@ -140,7 +140,7 @@ private _mapCompasRadio = ["ItemMap", "ItemCompass", "TFAR_rf7800str", "ItemWatc
 
 // --------------------------------------------------
 
-private _granades = ["ACE_M14","ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiWhite","ACE_Chemlight_HiYellow","ACE_Chemlight_UltraHiOrange","ACE_CTS9","B_IR_Grenade","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShellYellow","HandGrenade","rhs_mag_m69","SmokeShell","MiniGrenade","ACE_M84","KAT_M7A3","Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow","ACE_Chemlight_Orange","ACE_Chemlight_White","ACE_Chemlight_IR"];
+private _granades = ["ACE_M14", "ACE_Chemlight_HiBlue", "ACE_Chemlight_HiGreen", "ACE_Chemlight_HiRed", "ACE_Chemlight_HiWhite", "ACE_Chemlight_HiYellow", "ACE_Chemlight_UltraHiOrange", "ACE_CTS9", "B_IR_Grenade", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow", "HandGrenade", "rhs_mag_m69", "SmokeShell", "MiniGrenade", "ACE_M84", "KAT_M7A3", "Chemlight_blue", "Chemlight_green", "Chemlight_red", "Chemlight_yellow", "ACE_Chemlight_Orange", "ACE_Chemlight_White", "ACE_Chemlight_IR"];
 
 private _flares = ["UGL_FlareGreen_F", "UGL_FlareCIR_F", "UGL_FlareRed_F", "UGL_FlareWhite_F", "UGL_FlareYellow_F", "ACE_40mm_Flare_white", "ACE_40mm_Flare_green", "ACE_40mm_Flare_red", "ACE_40mm_Flare_ir"];
 
@@ -162,11 +162,11 @@ private _items_sniper = ["ACE_ATragMX", "ACE_DAGR", "ACE_Kestrel4500", "ACE_Rang
 
 private _items_sapper = ["ACE_wirecutter", "ACE_DefusalKit", "ACE_M26_Clacker", "ACE_Clacker", "MineDetector", "ACE_DeadManSwitch", "tsp_lockpick", "ACE_SpraypaintRed", "ACE_Cellphone", "ZDZ_EOD_Kit", "ZDZ_BombBook_EOD_1", "ZDZ_Tool_DSnips", "ChemicalDetector_01_watch_F", "ZDZ_IMS_1"];
 
-private _items_pionier = ["ACE_Fortify", "ACE_wirecutter", "ACE_Sandbag_empty"];
+private _items_pionier = ["ACE_Fortify", "ACE_wirecutter", "ACE_Sandbag_empty", "ACE_wirecutter"];
 
 private _items_engi = ["ToolKit"];
 
-private _items_lead = ["rhs_weap_M320", "B_UavTerminal", "ItemcTab", "ACE_HuntIR_M203", "ACE_HuntIR_monitor", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "TFAR_anprc152","ACE_UAVBattery"];
+private _items_lead = ["rhs_weap_M320", "B_UavTerminal", "ItemcTab", "ACE_HuntIR_M203", "ACE_HuntIR_monitor", "TFAR_anprc152", "ACE_UAVBattery"];
 
 // --------------------------------------------------
 
@@ -294,12 +294,15 @@ _items append (switch (_role) do
 		_bipod_mg+
 		// _vest_light+
 		_backpack_small+
-		_binoculars_sniper
+		_binoculars_sniper+
+		[]
 	};
 
 	case "sniper":
 	{
 		_soldierBaseNoWeapon+
+		_weapon_dmr+
+		_ammo_dmr+
 		_weapon_sniper+
 		_ammo_sniper+
 		_scope_sniper+
@@ -318,8 +321,9 @@ _items append (switch (_role) do
 		_helmet_sniper+
 		// _vest_medium+
 		_backpack_small+
-		_binoculars_sniper+
-		_items_sniper
+		_binoculars_sl+
+		_items_sniper+
+		["B_UavTerminal", "B_W_Static_Designator_01_weapon_F"]
 	};
 
 	case "sapper":
@@ -342,6 +346,7 @@ _items append (switch (_role) do
 		_items_engi
 	};
 
+	// outdate
 	case "engineer":
 	{
 		_soldierBase+
