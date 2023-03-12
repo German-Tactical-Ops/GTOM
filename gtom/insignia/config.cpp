@@ -1,25 +1,17 @@
 #include "\gtom\basicDefines_A3.hpp"
 
-#include "\gtom\cfgPatches.hpp"
-
-class CfgUnitInsignia
+class CfgPatches
 {
-
-    class gto_insignia
+    class GTOM_insignia
     {
-        displayName = "GTO";
+        name = "GTO Insignia";
         author = "LucyferHW";
-        material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-        texture = "gtom\logo\gto_unit_logo.paa";
-        textureVehicle = "gtom\logo\gto_unit_logo.paa";
-    };
+        url = "";
 
-    class gto_insignia_medic
-    {
-        displayName = "Medic";
-        author = "LucyferHW";
-        material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-        texture = "gtom\icons\export\medIcon.paa";
-        textureVehicle = "gtom\icons\export\medIcon.paa";
+        units[] = {};
+
+        requiredAddons[] = {"GTOM_Main"};
     };
 };
+
+#include "configs\CfgUnitInsignia.hpp"
