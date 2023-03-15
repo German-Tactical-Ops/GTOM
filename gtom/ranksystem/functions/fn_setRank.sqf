@@ -6,17 +6,12 @@ scriptName "fn_setRank";
 private _medicState = player getVariable ["ace_medical_medicClass", 0];
 
 if (_medicState > 0 && !GTO_OverrideMedicPatch) exitWith {
-	hint format ["Player: %1 \nInsignia: Medic", name player];
-
 	[player, "GTO_Insignia_Medic"] call BIS_fnc_setUnitInsignia;
-
-	[10] spawn GTO_fnc_sleepClearHint;
 };
 
 private _rankList = [];
 
 private _rankCode = profileNamespace getVariable ["GTO_RankCode", -1];
-
 
 switch (_rankCode) do {
 	case 100: {

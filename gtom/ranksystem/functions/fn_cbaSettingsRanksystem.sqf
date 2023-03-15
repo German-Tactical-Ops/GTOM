@@ -18,33 +18,6 @@ scriptName "fn_cbaSettingsRanksystem";
 	} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
-/* [
-	"GTO_InsigniaColorVersion", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-	"Slider", // setting type
-	["Insignia Color Version", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Rank", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-	[1, 3, 1, 0], // data for this setting: [min, max, default, number of shown trailing decimals]
-	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
-		{
-			params["_value"];
-	} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting; */
-
-// ---------- Insignia ----------// 
-
-[
-	"GTO_InsigniaRankList", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-	"EDITBOX", // setting type
-	["Insignia Rank List", "Array of Insignia class names. min 1, max 3"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Rank", "Insignia List"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-	[], // data for this setting: [min, max, default, number of shown trailing decimals]
-	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
-	{
-		params["_value"];
-	} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
-
-
 // ---------- player -----------// 
 
 GTO_PlayerRankList_Template = {
