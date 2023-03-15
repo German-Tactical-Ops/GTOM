@@ -26,7 +26,7 @@ class CfgUnitInsignia
     INSIGNIA(GTO_Rank_CPT, "VG", "gtom\insignia\ranks");
     INSIGNIA(GTO_Rank_CPT, "G", "gtom\insignia\ranks");
 
-    class gto_insignia
+    class GTO_Insignia
     {
         displayName = "GTO";
         author = "LucyferHW";
