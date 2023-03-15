@@ -1,12 +1,6 @@
 scriptName "fn_setRank";
 /*
 	Author: LucyferHW
-	
-	Description:
-	Runs on start.
-	
-	Parameter(s):
-	#0 OBJECT - Description
 */
 
 private _medicState = player getVariable ["ace_medical_medicClass", 0];
@@ -14,42 +8,48 @@ private _medicState = player getVariable ["ace_medical_medicClass", 0];
 if (_medicState > 0 && !GTO_OverrideMedicPatch) exitWith {
 	hint format ["Player: %1 \nInsignia: Medic", name player];
 
-	[player, "IDAP"] call BIS_fnc_setUnitInsignia;
+	[player, "GTO_Insignia_Medic"] call BIS_fnc_setUnitInsignia;
 
 	[10] spawn GTO_fnc_sleepClearHint;
 };
 
-GTO_SetPlayerRankInsignia = {
-	params["_playerList", "_insignia"];
+private _rankList = [];
 
-	private _state = false;
+private _rankCode = profileNamespace getVariable ["GTO_RankCode", -1];
 
-	if (getPlayerUID player in _playerList) exitWith {
 
-		private _oneInsignia = parseSimpleArray _insignia select (GTO_InsigniaColorVersion - 1);
-
-		hint format ["Player: %1 \nInsignia: %2", name player, _oneInsignia];
-
-		[player, _oneInsignia] call BIS_fnc_setUnitInsignia;
-		[10] spawn GTO_fnc_sleepClearHint;
-
-		_state = true;
-
-		_state;
+switch (_rankCode) do {
+	case 100: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	case 90: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	case 70: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	case 60: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	case 50: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	case 40: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	case 30: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	case 20: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	case 10: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	case 0: {
+		[player, _rankList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
+	};
+	default {
+		systemChat format ["Error Player: %1", name player];
 	};
 };
-
-if ([GTO_PlayerRankList_OF2, GTO_InsigniaRankList_OF2] call GTO_SetPlayerRankInsignia) exitWith {};
-if ([GTO_PlayerRankList_OF1, GTO_InsigniaRankList_OF1] call GTO_SetPlayerRankInsignia) exitWith {};
-if ([GTO_PlayerRankList_OF1_2, GTO_InsigniaRankList_OF1_2] call GTO_SetPlayerRankInsignia) exitWith {};
-
-
-
-//hint format ["%1 is not on rank list.\n Set guest rank.", name player];
-
-private _oneInsignia = parseSimpleArray GTO_InsigniaRankList_guest select (GTO_InsigniaColorVersion - 1);
-
-hint format ["Player: %1 \nInsignia: %2", name player, _oneInsignia];
-
-[player, _oneInsignia] call BIS_fnc_setUnitInsignia;
-[10] spawn GTO_fnc_sleepClearHint;

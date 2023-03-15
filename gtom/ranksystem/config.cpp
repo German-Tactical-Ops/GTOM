@@ -11,7 +11,7 @@ class CfgPatches
 
         units[] = {};
 
-        requiredAddons[] = {"cba_common", "cba_events", "GTOM_Main"};
+        requiredAddons[] = {"cba_common", "cba_events", "GTOM_Main","GTOM_Insignia"};
     };
 };
 
