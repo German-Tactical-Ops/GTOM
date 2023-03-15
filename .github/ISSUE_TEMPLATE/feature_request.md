@@ -6,7 +6,3 @@ labels: ''
 assignees: ''
 
 ---
-
-# Vorschlag Titel
-
-some Text ...
