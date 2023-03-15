@@ -136,6 +136,15 @@ class ##CLASSNAME##\
             CAMOTYPEM(Backpack);
         };
 
+        class GTO_Medic_ILBE
+        {
+            label = "ILBE Medic";
+
+            options[] = {"camoType"};
+            
+            CAMOTYPEM(Backpack);
+        };
+
         class GTO_Compact
         {
             label = "Compact";
