@@ -8,7 +8,6 @@ class ##CLASS## \
     textureVehicle = ##TEXTURE##;\
 };\
 
-
 class CfgUnitInsignia
 {
     INSIGNIA(GTO_Rank_CPT, "CPT", "gtom\insignia\ranks");
