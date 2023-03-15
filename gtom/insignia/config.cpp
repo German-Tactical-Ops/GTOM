@@ -2,7 +2,7 @@
 
 class CfgPatches
 {
-    class GTOM_insignia
+    class GTOM_Insignia
     {
         name = "GTO Insignia";
         author = "LucyferHW";

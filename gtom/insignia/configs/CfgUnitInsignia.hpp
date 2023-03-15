@@ -1,5 +1,30 @@
+#define INSIGNIA(CLASS,NAME,TEXTURE)\
+class ##CLASS## \
+{ \
+    displayName = ##NAME##;\
+    author = "w0llkopf";\
+    material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";\
+    texture = ##TEXTURE##;\
+    textureVehicle = ##TEXTURE##;\
+};\
+
+
 class CfgUnitInsignia
 {
+    INSIGNIA(GTO_Rank_CPT, "CPT", "gtom\insignia\ranks");
+    INSIGNIA(GTO_Rank_CPT, "LT", "gtom\insignia\ranks");
+
+    INSIGNIA(GTO_Rank_CPT, "SSG", "gtom\insignia\ranks");
+    INSIGNIA(GTO_Rank_CPT, "SGT", "gtom\insignia\ranks");
+
+    INSIGNIA(GTO_Rank_CPT, "CPL", "gtom\insignia\ranks");
+    INSIGNIA(GTO_Rank_CPT, "SPC", "gtom\insignia\ranks");
+
+    INSIGNIA(GTO_Rank_CPT, "PFC", "gtom\insignia\ranks");
+    INSIGNIA(GTO_Rank_CPT, "PV", "gtom\insignia\ranks");
+
+    INSIGNIA(GTO_Rank_CPT, "VG", "gtom\insignia\ranks");
+    INSIGNIA(GTO_Rank_CPT, "G", "gtom\insignia\ranks");
 
     class gto_insignia
     {
@@ -10,7 +35,7 @@ class CfgUnitInsignia
         textureVehicle = "gtom\logo\gto_unit_logo.paa";
     };
 
-    class gto_insignia_medic
+    class GTO_Insignia_Medic
     {
         displayName = "Medic";
         author = "w0llkopf";
