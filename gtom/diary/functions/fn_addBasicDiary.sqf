@@ -19,9 +19,7 @@ waitUntil {
 	alive player
 };
 
-// <font color='#add118' size=24>Wires Module</font>
-
-//player createDiarySubject ["gtotutorials", "GTO Tutorials"];
+player createDiarySubject ["gtotutorials", "GTO Tutorials"];
 
 player createDiaryRecord ["gtotutorials", ["Funkplan", "<font color='#add118' size=24>Funkplan</font><br/><img image='gtom\images\Funkfrequenzen.jpg' width='375'/><br/><br/><img image='gtom\images\funkTabelle.jpg' width='375' >"]];
 
