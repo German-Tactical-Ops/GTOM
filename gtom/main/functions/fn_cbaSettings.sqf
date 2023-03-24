@@ -136,11 +136,13 @@ scriptName "fn_cbaSettings";
 				_target addItem "TFAR_anprc152";
 				_target assignItem "TFAR_anprc152";
 			}, {
-				20 <= ([player] call GTO_fnc_getRankNumber)
-			}, {}, [], [0, 0, 0], 100] call ace_interact_menu_fnc_createAction; //parameters
+				true
+			}, {}, [], [0, 0, 0], 100] call ace_interact_menu_fnc_createAction;// parameters
 			[player, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 			systemChat "Initialised PromoteFTL System";
 		};
 	} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
+
+// 20 <= ([player] call GTO_fnc_getRankNumber)
