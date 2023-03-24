@@ -154,7 +154,7 @@ private _items_main = ["ACE_CableTie", "ACE_Canteen", "ACE_EarPlugs", "ACE_Entre
 
 private _medic_light = ["ACE_packingBandage", "ACE_quikclot", "kat_Painkiller", "kat_PainkillerItem", "ACE_splint", "ACE_tourniquet", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_salineIV_500", "ACE_salineIV_250", "ACE_salineIV"];
 
-private _medic_medium = ["ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_bloodIV_O_N", "kat_bloodIV_A_N", "kat_bloodIV_AB_N", "kat_bloodIV_B_N", "ACE_elasticBandage", "kat_aatKit", "kat_atropine", "kat_amiodarone", "kat_crossPanel", "kat_chestSeal", "KAT_Empty_bloodIV_250", "KAT_Empty_bloodIV_500", "kat_guedel", "kat_larynx", "kat_lidocaine", "kat_phenylephrine", "ACE_surgicalKit", "kat_Carbonate", "kat_CarbonateItem", "kat_bloodIV_O_N_250", "kat_bloodIV_A_N_250", "kat_bloodIV_AB_N_250", "kat_bloodIV_B_N_250", "kat_bloodIV_O_N_500", "kat_bloodIV_A_N_500", "kat_bloodIV_AB_N_500", "kat_bloodIV_B_N_500", "kat_plate", "kat_clamp", "kat_vacuum", "kat_EACA", "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin", "kat_norepinephrine", "kat_Painkiller", "kat_PainkillerItem", "kat_retractor", "kat_scalpel", "kat_CaffeineItem", "kat_ncdKit", "kat_PervitinItem", "kat_sealant", "ChemicalDetector_01_watch_F"];
+private _medic_medium = ["ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_epinephrine", "kat_IO_FAST", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_bloodIV_O_N", "kat_bloodIV_A_N", "kat_bloodIV_AB_N", "kat_bloodIV_B_N", "ACE_elasticBandage", "kat_aatKit", "kat_atropine", "kat_amiodarone", "kat_crossPanel", "kat_chestSeal", "KAT_Empty_bloodIV_250", "KAT_Empty_bloodIV_500", "kat_guedel", "kat_larynx", "kat_lidocaine", "kat_phenylephrine", "ACE_surgicalKit", "kat_Carbonate", "kat_CarbonateItem", "kat_plate", "kat_clamp", "kat_vacuum", "kat_EACA", "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin", "kat_norepinephrine", "kat_Painkiller", "kat_PainkillerItem", "kat_retractor", "kat_scalpel", "kat_CaffeineItem", "kat_ncdKit", "kat_PervitinItem", "kat_sealant"];
 
 private _medic_heavy = ["ACE_packingBandage", "ACE_quikclot", "ACE_splint", "ACE_tourniquet", "kat_IV_16", "ACE_adenosine", "kat_AED", "ACE_bodyBag", "ACE_epinephrine", "kat_IO_FAST", "ACE_morphine", "kat_naloxone", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "kat_Pulseoximeter", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500", "kat_stethoscope", "kat_TXA", "kat_bloodIV_O_N", "kat_bloodIV_A_N", "kat_bloodIV_AB_N", "kat_bloodIV_B_N", "ACE_elasticBandage", "kat_accuvac", "kat_aatKit", "kat_X_AED", "kat_atropine", "kat_amiodarone", "kat_crossPanel", "kat_chestSeal", "KAT_Empty_bloodIV_250", "KAT_Empty_bloodIV_500", "kat_guedel", "kat_larynx", "kat_lidocaine", "kat_phenylephrine", "ACE_personalAidKit", "ACE_surgicalKit", "kat_Carbonate", "kat_CarbonateItem", "kat_bloodIV_O_N_250", "kat_bloodIV_A_N_250", "kat_bloodIV_AB_N_250", "kat_bloodIV_B_N_250", "kat_bloodIV_O_N_500", "kat_bloodIV_A_N_500", "kat_bloodIV_AB_N_500", "kat_bloodIV_B_N_500", "kat_plate", "kat_clamp", "kat_vacuum", "kat_EACA", "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin", "kat_norepinephrine", "kat_Painkiller", "kat_PainkillerItem", "kat_retractor", "kat_scalpel", "kat_CaffeineItem", "kat_ncdKit", "kat_PervitinItem", "kat_sealant", "ChemicalDetector_01_watch_F"];
 
@@ -234,17 +234,13 @@ _items append (switch (_role) do
 
 	case "ammoCarrier":
 	{
-		_soldierBaseNoWeapon+
-		_weapon_light+
-		_ammo_light+
-		// _vest_heavy+
+		_soldierBase+
 		_backpack_middle
 	};
 
 	case "lat":
 	{
 		_soldierBase+
-		// _vest_heavy+
 		_backpack_small+
 		["rhs_weap_M136_hp", "rhs_weap_M136_hedp", "rhs_weap_M136", "rhs_weap_m72a7"]
 	};
@@ -254,7 +250,6 @@ _items append (switch (_role) do
 		_soldierBaseNoWeapon+
 		_weapon_heavy+
 		_ammo_heavy+
-		// _vest_heavy+
 		_backpack_small
 	};
 
@@ -264,7 +259,6 @@ _items append (switch (_role) do
 		_weapon_mg+
 		_ammo_mg+
 		_bipod_mg+
-		// _vest_heavy+
 		_backpack_small
 	};
 
@@ -273,15 +267,14 @@ _items append (switch (_role) do
 		_soldierBaseNoWeapon+
 		_weapon_grenadier+
 		_ammo_grenadier+
-		// _vest_heavy+
-		_backpack_small
+		_backpack_small+
+		["ACE_HuntIR_monitor"]
 	};
 
 	case "hat":
 	{
 		_soldierBase+
 		_HAT_Pack+
-		// _vest_heavy+
 		_backpack_middle
 	};
 
@@ -292,7 +285,6 @@ _items append (switch (_role) do
 		_ammo_dmr+
 		_scope_sniper+
 		_bipod_mg+
-		// _vest_light+
 		_backpack_small+
 		_binoculars_sniper+
 		[]
@@ -308,7 +300,6 @@ _items append (switch (_role) do
 		_scope_sniper+
 		_bipod_sniper+
 		_helmet_sniper+
-		// _vest_light+
 		_backpack_small+
 		_binoculars_sniper+
 		_items_sniper
@@ -319,7 +310,6 @@ _items append (switch (_role) do
 		_soldierBase+
 		_scope_sniper+
 		_helmet_sniper+
-		// _vest_medium+
 		_backpack_small+
 		_binoculars_sl+
 		_items_sniper+
@@ -349,10 +339,7 @@ _items append (switch (_role) do
 	// outdate
 	case "engineer":
 	{
-		_soldierBase+
-		// _vest_light+
-		_backpack_small+
-		_items_engi
+		hint "Schwerer Fehler engineer outdate"
 	};
 
 	case "jtac":
@@ -384,7 +371,6 @@ _items append (switch (_role) do
 		_soldierBaseNoHelmet+
 		_weapon_mp+
 		_ammo_mp+
-		// _vest_light+
 		_backpack_small+
 		_binoculars_sniper+
 		_items_engi+

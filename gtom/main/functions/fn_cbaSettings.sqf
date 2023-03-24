@@ -127,7 +127,7 @@ scriptName "fn_cbaSettings";
 	["Promote to FTL", "Adds the possibility to promote a player to FTL with ACE Interaction."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
-	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
+	false, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
 		params["_value"];
 

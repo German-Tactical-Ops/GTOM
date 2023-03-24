@@ -117,7 +117,7 @@ class CfgVehicles
                     class categorie_Rifleman
                     {
                         displayName = "Basic";
-                        condition =  "true";
+                        condition =  "false";
                         exceptions[] = {};
 				        priority = 1;
 

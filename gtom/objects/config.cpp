@@ -5,6 +5,7 @@ class CfgWeapons
 {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
+
     class ACE_bodyBag : ACE_ItemCore
     {
         class ItemInfo : CBA_MiscItem_ItemInfo
@@ -12,6 +13,46 @@ class CfgWeapons
             mass = 0;
         }
     }
+
+    class ACE_Fortify : ACE_ItemCore
+    {
+        class ItemInfo : CBA_MiscItem_ItemInfo
+        {
+            mass = 15;
+        }
+    }
+
+    class ACE_bloodIV : ACE_ItemCore
+    {
+        class ItemInfo : CBA_MiscItem_ItemInfo
+        {
+            mass = 5;
+        }
+    }
+
+    class ACE_bloodIV_500 : ACE_bloodIV
+    {
+        class ItemInfo : CBA_MiscItem_ItemInfo
+        {
+            mass = 2.5;
+        }
+    }
+
+    class ACE_bloodIV_250 : ACE_bloodIV
+    {
+        class ItemInfo : CBA_MiscItem_ItemInfo
+        {
+            mass = 1.2;
+        }
+    }
+
+    class vtx_stretcher_item : ACE_ItemCore
+    {
+        class ItemInfo : CBA_MiscItem_ItemInfo
+        {
+            mass = 50;
+        }
+    };
 };
 
 class CfgVehicles
@@ -43,7 +84,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"gtom\logo\gto_unit_logo_2x1.paa"};
     };
 
-    class Man;
+    /* class Man;
     class CAManBase : Man
     {
         class ACE_SelfActions
@@ -60,5 +101,5 @@ class CfgVehicles
                 };
             };
         };
-    };
+    }; */
 };

@@ -155,12 +155,12 @@ class XtdGearInfos {
            
         };
 
-        class GTO_Carryall_Medic_projecthonor 
+        /* class GTO_Carryall_Medic_projecthonor 
         {
             model = "GTO_Medic_ILBE"; 
             camoType = "alpine";
            
-        };
+        }; */
 
         class GTO_ILBE_Medic_black 
         {
