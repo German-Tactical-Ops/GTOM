@@ -74,14 +74,14 @@ _action = ["Sniper", "Sniper", "", {['sniper', "USA", _target] call GTO_fnc_setR
 _action = ["Spotter", "Spotter", "", {['spotter', "USA", _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; }, {true}] call ace_interact_menu_fnc_createAction;
 ["C_IDAP_supplyCrate_F", 0, ["ACE_MainActions","takeRole","Special"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 //
-_action = ["Sapper", "Sapper", "", {['sapper', "USA", _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; }, {true}] call ace_interact_menu_fnc_createAction;
+_action = ["Sapper", "Sapper/Breacher", "", {['sapper', "USA", _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; }, {true}] call ace_interact_menu_fnc_createAction;
 ["C_IDAP_supplyCrate_F", 0, ["ACE_MainActions","takeRole","Special"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
-_action = ["Pionier", "Pionier", "", {['pionier', "USA", _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; }, {true}] call ace_interact_menu_fnc_createAction;
+_action = ["Pionier", "Pionier/Engineer", "", {['pionier', "USA", _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; }, {true}] call ace_interact_menu_fnc_createAction;
 ["C_IDAP_supplyCrate_F", 0, ["ACE_MainActions","takeRole","Special"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
-_action = ["Enginier", "Enginier", "", {['enginier', "USA", _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; }, {true}] call ace_interact_menu_fnc_createAction;
-["C_IDAP_supplyCrate_F", 0, ["ACE_MainActions","takeRole","Special"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+/* _action = ["Engineer", "Engineer", "", {['engineer', "USA", _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; }, {true}] call ace_interact_menu_fnc_createAction;
+["C_IDAP_supplyCrate_F", 0, ["ACE_MainActions","takeRole","Special"], _action, true] call ace_interact_menu_fnc_addActionToClass; */
 
 // Vehicle
 
