@@ -204,7 +204,7 @@ class CfgVehicles
 
 					    class role_Sapper
                         {
-                            displayName = "Sapper";
+                            displayName = "Sapper/Breacher";
                             condition = "true"; 
                             statement = "['sapper', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon = "gtom\icons\Roles\ExpSp_icon.paa";                            
@@ -212,7 +212,7 @@ class CfgVehicles
 
                         class role_Pionier
                         {
-                            displayName = "Pionier";
+                            displayName = "Pionier/Engineer";
                             condition = "true"; 
                             statement = "['pionier', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon = "gtom\icons\Roles\Eng_icon.paa";                            
@@ -223,8 +223,7 @@ class CfgVehicles
                             displayName = "Engineer";
                             condition = "false"; 
                             statement = "['engineer', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call   ace_arsenal_fnc_openBox;";
-                            icon = "gtom\icons\Roles\Eng_icon.paa";
-                            
+                            icon = "gtom\icons\Roles\Eng_icon.paa";                           
                         };
 
 					    class role_JTAC
@@ -232,17 +231,7 @@ class CfgVehicles
                             displayName = "JTAC";
                             condition = "true"; 
                             statement = "['jtac', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon = "gtom\icons\Roles\Pilot_icon.paa";
-                            
-                        };
-
-                        class role_UAV
-                        {
-                            displayName = "UAV (Coming soon)";
-                            condition = "true"; 
-                            //statement = "['uav', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon = "gtom\icons\Roles\Pilot_icon.paa";
-                            
+                            icon = "gtom\icons\Roles\Pilot_icon.paa";          
                         };
                     };
 
