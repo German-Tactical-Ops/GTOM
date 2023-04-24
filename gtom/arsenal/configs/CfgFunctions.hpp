@@ -26,11 +26,6 @@ class cfgFunctions
 				recompile = 1;
 			}; // [_player] call GTO_fnc_getRankNumber;
 
-			class whitelist
-			{
-				recompile = 1;
-			}; // [_items] call GTO_fnc_whitelist;
-
 			class blacklistItems
 			{
 				recompile = 1;
