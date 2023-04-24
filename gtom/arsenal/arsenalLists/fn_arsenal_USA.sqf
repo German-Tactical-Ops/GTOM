@@ -94,13 +94,7 @@ private _uniform = ["VSM_AOR1_BDU_Camo", "DTS_BDU_Camo", "VSM_M81_BDU_Camo", "VS
 
 private _vest_main = ["VSM_FAPC_Breacher_Multicam", "VSM_FAPC_MG_Multicam", "VSM_FAPC_Operator_Multicam", "VSM_CarrierRig_Breacher_Multicam", "VSM_CarrierRig_Gunner_Multicam", "VSM_CarrierRig_Operator_Multicam", "VSM_LBT6094_MG_Multicam", "VSM_LBT6094_operator_Multicam", "VSM_RAV_Breacher_Multicam", "VSM_RAV_MG_Multicam", "VSM_RAV_operator_Multicam", "VSM_LBT6094_breacher_Multicam", "VSM_FAPC_Breacher_MulticamTropic", "VSM_FAPC_MG_MulticamTropic", "VSM_FAPC_Operator_MulticamTropic", "VSM_CarrierRig_Breacher_multicamTropic", "VSM_CarrierRig_Gunner_multicamTropic", "VSM_CarrierRig_Operator_multicamTropic", "VSM_LBT6094_breacher_multicamTropic", "VSM_LBT6094_MG_multicamTropic", "VSM_LBT6094_operator_multicamTropic", "VSM_RAV_Breacher_MulticamTropic", "VSM_RAV_MG_MulticamTropic", "VSM_RAV_operator_MulticamTropic", "VSM_FAPC_Breacher_AOR1", "VSM_FAPC_MG_AOR1", "VSM_FAPC_Operator_AOR1", "VSM_CarrierRig_Breacher_AOR1", "VSM_CarrierRig_Gunner_AOR1", "VSM_CarrierRig_Operator_AOR1", "VSM_LBT6094_breacher_AOR1", "VSM_LBT6094_MG_AOR1", "VSM_LBT6094_operator_AOR1", "VSM_RAV_Breacher_AOR1", "VSM_RAV_MG_AOR1", "VSM_RAV_operator_AOR1", "dr_AOR2facp_br", "dr_AOR2facp_mg", "dr_AOR2facp_op", "CarrierRig_Breacher_AOR2", "CarrierRig_Gunner_AOR2", "CarrierRig_Operator_AOR2", "dr_AOR2lbt_br", "dr_AOR2lbt_mg", "dr_AOR2lbt_op", "dr_AOR2par_br", "dr_AOR2par_mg", "dr_AOR2par_op", "VSM_FAPC_Breacher_M81", "VSM_FAPC_MG_M81", "VSM_FAPC_Operator_M81", "VSM_CarrierRig_Breacher_M81", "VSM_CarrierRig_Gunner_M81", "VSM_CarrierRig_Operator_M81", "VSM_LBT6094_breacher_M81", "VSM_LBT6094_MG_M81", "VSM_LBT6094_operator_M81", "VSM_RAV_Breacher_M81", "VSM_RAV_MG_M81", "VSM_RAV_operator_M81", "dr_Alpinefacp_br", "dr_Alpinefacp_mg", "dr_Alpinefacp_op", "CarrierRig_Breacher_Alpine", "CarrierRig_Gunner_Alpine", "CarrierRig_Operator_Alpine", "dr_Alpinelbt_br", "dr_Alpinelbt_mg", "dr_Alpinelbt_op", "dr_Alpinepar_br", "dr_Alpinepar_mg", "dr_Alpinepar_op"];
 
-private _vest_light = ["cpc_light_coy", "cpc_lightbelt_coy", "cpc_light_mc", "cpc_lightbelt_mc", "cpc_light_rngr", "cpc_lightbelt_rngr", "lbt_light_aor1", "lbt_light_aor2", "lbt_light_coy", "lbt_light_mc", "lbt_light_od", "cpc_Fast_coy", "cpc_Fastbelt_coy", "cpc_Fast_mc", "cpc_Fastbelt_mc", "cpc_Fast_rngr", "cpc_Fastbelt_rngr", "lbt_fast_coy", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_tna_F"];
-
-private _vest_heavy = ["cpc_weapons_coy", "cpc_weaponsbelt_coy", "cpc_weapons_mc", "cpc_weaponsbelt_mc", "cpc_weapons_rngr", "cpc_weaponsbelt_rngr", "lbt_weapons_aor1", "lbt_weapons_aor2", "lbt_weapons_coy", "lbt_weapons_mc", "lbt_weapons_od", "dr_Alpinefacp_mg", "CarrierRig_Gunner_Alpine", "dr_Alpinelbt_mg", "dr_Alpinepar_mg", "VSM_FAPC_MG_AOR1", "VSM_CarrierRig_Gunner_AOR1", "VSM_LBT6094_MG_AOR1", "VSM_RAV_MG_AOR1", "dr_AOR2facp_mg", "CarrierRig_Gunner_AOR2", "dr_AOR2lbt_mg", "dr_AOR2par_mg", "DTSfacp_mg", "CarrierRig_Gunner_DTS", "DTSlbt_mg", "DTSpar_mg", "VSM_FAPC_MG_M81", "VSM_CarrierRig_Gunner_M81", "VSM_LBT6094_MG_M81", "VSM_RAV_MG_M81", "dr_ARDfacp_mg", "CarrierRig_Gunner_Arid", "dr_ARDlbt_mg", "dr_ARDpar_mg", "dr_BLKfacp_mg", "dr_BLKlbt_mg", "dr_BLKpar_mg", "VSM_FAPC_MG_Multicam", "VSM_CarrierRig_Gunner_Multicam", "VSM_LBT6094_MG_Multicam", "VSM_RAV_MG_Multicam", "VSM_FAPC_MG_MulticamTropic", "VSM_CarrierRig_Gunner_multicamTropic", "VSM_LBT6094_MG_multicamTropic", "VSM_RAV_MG_MulticamTropic", "VSM_FAPC_MG_OCP", "VSM_CarrierRig_Gunner_OCP", "VSM_LBT6094_MG_OCP", "VSM_RAV_MG_OCP", "VSM_FAPC_MG_OGA", "VSM_CarrierRig_Gunner_OGA", "VSM_LBT6094_MG_OGA", "VSM_FAPC_MG_OGA_OD", "VSM_CarrierRig_Gunner_OGA_OD", "VSM_LBT6094_MG_OGA_OD", "VSM_RAV_MG_OGA_OD", "VSM_RAV_MG_OGA", "VSM_FAPC_MG_ProjectHonor", "VSM_CarrierRig_Gunner_ProjectHonor", "VSM_LBT6094_MG_ProjectHonor", "VSM_RAV_MG_ProjectHonor", "V_PlateCarrierSpec_tna_F"];
-
 private _vest_sl = ["lbt_operator_aor1", "lbt_operator_aor2", "lbt_operator_coy", "lbt_operator_mc", "lbt_operator_od", "dr_Alpinefacp_op", "CarrierRig_Operator_Alpine", "dr_Alpinelbt_op", "dr_Alpinepar_op", "VSM_FAPC_Operator_AOR1", "VSM_CarrierRig_Operator_AOR1", "VSM_LBT6094_operator_AOR1", "VSM_RAV_operator_AOR1", "dr_AOR2facp_op", "CarrierRig_Operator_AOR2", "dr_AOR2lbt_op", "dr_AOR2par_op", "DTSfacp_op", "CarrierRig_Operator_DTS", "DTSlbt_op", "DTSpar_op", "VSM_FAPC_Operator_M81", "VSM_CarrierRig_Operator_M81", "VSM_LBT6094_operator_M81", "VSM_RAV_operator_M81", "dr_ARDfacp_op", "CarrierRig_Operator_Arid", "dr_ARDlbt_op", "dr_ARDpar_op", "dr_BLKfacp_op", "dr_BLKlbt_op", "dr_BLKpar_op", "VSM_FAPC_Operator_Multicam", "VSM_CarrierRig_Operator_Multicam", "VSM_LBT6094_operator_Multicam", "VSM_RAV_operator_Multicam", "VSM_FAPC_Operator_MulticamTropic", "VSM_CarrierRig_Operator_multicamTropic", "VSM_LBT6094_operator_multicamTropic", "VSM_RAV_operator_MulticamTropic", "VSM_FAPC_Operator_OCP", "VSM_CarrierRig_Operator_OCP", "VSM_LBT6094_operator_OCP", "VSM_RAV_operator_OCP", "VSM_FAPC_Operator_OGA", "VSM_CarrierRig_Operator_OGA", "VSM_LBT6094_operator_OGA", "VSM_FAPC_Operator_OGA_OD", "VSM_CarrierRig_Operator_OGA_OD", "VSM_LBT6094_operator_OGA_OD", "VSM_RAV_operator_OGA_OD", "VSM_RAV_operator_OGA", "VSM_FAPC_Operator_ProjectHonor", "VSM_CarrierRig_Operator_ProjectHonor", "VSM_LBT6094_operator_ProjectHonor", "VSM_RAV_operator_ProjectHonor", "cpc_communications_coy", "cpc_communicationsbelt_coy", "cpc_communications_mc", "cpc_communicationsbelt_mc", "cpc_communications_rngr", "cpc_communicationsbelt_rngr", "cpc_tl_coy", "cpc_tlbelt_coy", "cpc_tl_mc", "cpc_tlbelt_mc", "cpc_tl_rngr", "cpc_tlbelt_rngr", "lbt_tl_aor1", "lbt_tl_aor2", "lbt_tl_coy", "lbt_tl_mc", "lbt_tl_od", "lbt_comms_aor1", "lbt_comms_aor2", "lbt_comms_coy", "lbt_comms_mc", "lbt_comms_od", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_tna_F"];
-
-private _vest_medic = ["dr_Alpinelbt_op", "VSM_LBT6094_operator_AOR1", "dr_AOR2lbt_op", "DTSlbt_op", "VSM_LBT6094_operator_M81", "dr_ARDlbt_op", "dr_BLKlbt_op", "VSM_LBT6094_operator_Multicam", "VSM_LBT6094_operator_multicamTropic", "VSM_LBT6094_operator_OCP", "VSM_LBT6094_operator_OGA", "VSM_LBT6094_operator_OGA_OD", "VSM_LBT6094_operator_ProjectHonor", "dr_Alpinepar_op", "VSM_RAV_operator_AOR1", "dr_AOR2par_op", "DTSpar_op", "VSM_RAV_operator_M81", "dr_ARDpar_op", "dr_BLKpar_op", "VSM_RAV_operator_Multicam", "VSM_RAV_operator_MulticamTropic", "VSM_RAV_operator_OCP", "VSM_RAV_operator_OGA_OD", "VSM_RAV_operator_OGA", "VSM_RAV_operator_ProjectHonor", "V_TacVestIR_blk", "cpc_medical_coy", "cpc_medicalbelt_coy", "cpc_medical_mc", "cpc_medicalbelt_mc", "cpc_medical_rngr", "cpc_medicalbelt_rngr", "lbt_medical_aor1", "lbt_medical_aor2", "lbt_medical_coy", "lbt_medical_mc", "lbt_medical_od", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_tna_F"];
 
 private _vest_explosive = ["dr_Alpinefacp_br", "CarrierRig_Breacher_Alpine", "dr_Alpinelbt_br", "dr_Alpinepar_br", "VSM_FAPC_Breacher_AOR1", "VSM_CarrierRig_Breacher_AOR1", "VSM_LBT6094_breacher_AOR1", "VSM_RAV_Breacher_AOR1", "dr_AOR2facp_br", "CarrierRig_Breacher_AOR2", "dr_AOR2lbt_br", "dr_AOR2par_br", "DTSfacp_br", "CarrierRig_Breacher_DTS", "DTSlbt_br", "DTSpar_br", "VSM_FAPC_Breacher_M81", "VSM_CarrierRig_Breacher_M81", "VSM_LBT6094_breacher_M81", "VSM_RAV_Breacher_M81", "dr_ARDfacp_br", "CarrierRig_Breacher_Arid", "dr_ARDlbt_br", "dr_ARDpar_br", "dr_BLKfacp_br", "dr_BLKlbt_br", "dr_BLKpar_br", "VSM_FAPC_Breacher_Multicam", "VSM_CarrierRig_Breacher_Multicam", "VSM_LBT6094_breacher_Multicam", "VSM_RAV_Breacher_Multicam", "VSM_FAPC_Breacher_MulticamTropic", "VSM_CarrierRig_Breacher_multicamTropic", "VSM_LBT6094_breacher_multicamTropic", "VSM_RAV_Breacher_MulticamTropic", "VSM_FAPC_Breacher_OCP", "VSM_CarrierRig_Breacher_OCP", "VSM_LBT6094_breacher_OCP", "VSM_RAV_Breacher_OCP", "VSM_FAPC_Breacher_OGA", "VSM_CarrierRig_Breacher_OGA", "VSM_LBT6094_breacher_OGA", "VSM_FAPC_Breacher_OGA_OD", "VSM_CarrierRig_Breacher_OGA_OD", "VSM_LBT6094_breacher_OGA_OD", "VSM_RAV_Breacher_OGA_OD", "VSM_RAV_Breacher_OGA", "VSM_FAPC_Breacher_ProjectHonor", "VSM_CarrierRig_Breacher_ProjectHonor", "VSM_LBT6094_breacher_ProjectHonor", "VSM_RAV_Breacher_ProjectHonor", "V_PlateCarrierGL_tna_F", "V_PlateCarrierGL_mtp", "V_PlateCarrierGL_blk", "V_PlateCarrierGL_wdl", "V_PlateCarrierGL_rgr"];
 
@@ -203,7 +197,7 @@ _items append (switch (_role) do
 		_weapon_mp+
 		_ammo_mp+
 		_helmet_medic+
-		// _vest_medic+
+		_backpack_big+
 		_backpack_medic+
 		_backpack_radio_medic+
 		_binoculars_sl+
@@ -218,7 +212,7 @@ _items append (switch (_role) do
 		_weapon_mp+
 		_ammo_mp+
 		_helmet_medic+
-		// _vest_medic+
+		_backpack_big+
 		_backpack_medic+
 		_medic_heavy
 	};
@@ -227,7 +221,7 @@ _items append (switch (_role) do
 	{
 		_soldierBase+
 		_helmet_medic+
-		// _vest_medic+
+		_backpack_big+
 		_backpack_medic+
 		_medic_medium
 	};
@@ -359,7 +353,6 @@ _items append (switch (_role) do
 		_soldierBaseNoHelmet+
 		_weapon_mp+
 		_ammo_mp+
-		_vest_sl+
 		       // _backpack_small+
 		_binoculars_sniper+
 		_items_engi+
@@ -375,15 +368,6 @@ _items append (switch (_role) do
 		_binoculars_sniper+
 		_items_engi+
 		["rhs_gssh18", "rhs_6m2", "rhs_6m2_1", "rhsusf_cvc_green_helmet", "rhsusf_cvc_green_alt_helmet", "rhsusf_cvc_green_ess", "rhsusf_cvc_helmet", "rhsusf_cvc_alt_helmet", "rhsusf_cvc_ess"]
-	};
-
-	case "zeus":{
-		_soldierBaseNoHelmet+
-		_googles+
-		_nvg+
-		_binoculars_main+
-		_mapCompasRadio+
-		["rhs_weap_SCARH_USA_CQC", "VSM_MBSS_PACA_WTF", "VSM_MBSS_WTF", "TFAR_mr6000l", "TFAR_anprc152", "H_Construction_headset_white_F", "H_Construction_earprot_white_F", "H_Construction_basic_white_F", "H_Construction_headset_vrana_F", "H_Construction_earprot_vrana_F", "H_Construction_basic_vrana_F"]
 	};
 
 	case "admin": {
@@ -422,10 +406,7 @@ _items append (switch (_role) do
 		_helmet_sniper+
 		_uniform+
 		_vest_main+
-		// _vest_light+
-		// _vest_heavy+
 		_vest_sl+
-		// _vest_medic+
 		_vest_explosive+
 		_backpack_small+
 		_backpack_middle+
