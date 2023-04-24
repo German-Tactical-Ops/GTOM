@@ -120,8 +120,6 @@ class CfgVehicles
                         condition =  "false";
                         exceptions[] = {};
 				        priority = 1;
-
-                        
                     };
 
                     class categorie_Weapon
