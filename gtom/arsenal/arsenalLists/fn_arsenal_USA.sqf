@@ -8,7 +8,7 @@ scriptName "fn_arsenal_USA";
 
 params ["_role"];
 
-private _gto_equipment = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform", "Black_Black_Camo", "U_B_Wetsuit", "V_RebreatherB", "G_Diving", "G_B_Diving", "V_Pocketed_black_F", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed"];
+private _gto_equipment = ["GTO_Beret_Black", "GTO_Beret_Blue", "GTO_Beret_Gray", "GTO_Beret_Green", "GTO_Beret_Orange", "GTO_Beret_Pink", "GTO_Beret_Red", "GTO_Beret_Violett", "GTO_Beret_White", "GTO_Beret_Yellow", "GTO_BaseUniform", "Black_Black_Camo", "U_B_Wetsuit", "V_RebreatherB", "G_Diving", "G_B_Diving", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed"];
 
 private _weapon_mp = ["SMG_01_F", "rhsusf_weap_MP7A2_aor1", "rhsusf_weap_MP7A2_desert", "rhsusf_weap_MP7A2_winter", "rhsusf_weap_MP7A2", "SMG_05_F", "SMG_02_F"];
 
@@ -118,7 +118,7 @@ private _googles = ["VSM_balaclava_Black_Skull", "VSM_balaclava_Black", "VSM_bal
 
 // --------------------------------------------------
 
-private _nvg = ["A3_GPNVG18_BLK_F", "A3_GPNVG18_F"];
+private _nvg = ["A3_GPNVG18_BLK_F", "A3_GPNVG18_F","rhsusf_ANPVS_14","rhsusf_ANPVS_15"];
 
 // --------------------------------------------------
 
@@ -199,6 +199,7 @@ _items append (switch (_role) do
 		_helmet_medic+
 		_backpack_big+
 		_backpack_medic+
+		_backpack_radio+
 		_backpack_radio_medic+
 		_binoculars_sl+
 		_medic_heavy+
