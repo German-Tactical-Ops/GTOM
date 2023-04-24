@@ -28,17 +28,11 @@ class cfgFunctions
 			class getRankNumber
 			{}; // [_player] call GTO_fnc_getRankNumber;
 
-			class whitelist
-			{}; // [_items] call GTO_fnc_whitelist;
-
 			class blacklistItems
 			{}; // [_items] call GTO_fnc_blacklistItems;
 
 			class loadDefault 
 			{}; // [_arsenalType, _role] call GTO_fnc_loadDefault;
-
-			class setMedicationCategorie
-			{}; // [] call GTO_fnc_setMedicationCategorie;
 
 			class initArsenal
 			{

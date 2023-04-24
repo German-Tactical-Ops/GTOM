@@ -10,9 +10,6 @@ scriptName "fn_setRole";
 
 params ["_role", "_arsenalType", "_target"];
 
-private _playerID = getPlayerUID ACE_player;
-private _isZeus = false;
-
 // reset player stats
 ACE_player setVariable ["ace_medical_medicClass", 0, true];
 ACE_player setUnitTrait ["medic", false];
@@ -22,23 +19,6 @@ ACE_player setUnitTrait ["engineer", false];
 
 ACE_player setUnitTrait ["explosiveSpecialist", false];
 
-/* switch (_role) do {
-	case "zeus":{
-		if (!_isZeus) then {
-			publicVariable _playerID;
-			"ModuleCurator_F" createUnit [position ACE_player, group ACE_player, format ["%1 = this", _playerID]];
-			ACE_player assignCurator _playerID;
-		};
-		_isZeus = true;
-	};
-
-	default
-	{
-		if (_isZeus) then {
-			unassignCurator _playerID;
-		};
-	};
-}; */
 
 // set player stats
 switch (_role) do
@@ -48,9 +28,6 @@ switch (_role) do
 		ACE_player setVariable ["ace_medical_medicClass", 2, true];
 		ACE_player setUnitTrait ["medic", true];
 	};
-
-	case "zeus":
-	{};
 
 	case "ldoctor":
 	{
@@ -108,7 +85,7 @@ switch (_role) do
 // player Arsenal
 [_target, _role] call GTO_fnc_setArsenal;
 
-systemChat format ["You are now: %1 (%2)", [_role] call GTO_fnc_getRoleName, _arsenalType];
+systemChat format ["You are now: %1 (%2)", _role, _arsenalType];
 
 // Remove current stuff
 removeAllWeapons ACE_player;
@@ -126,16 +103,3 @@ _blacklistItems = [] call GTO_fnc_blacklistItems;
 	ACE_player unassignItem _x;
 	ACE_player removeItem _x;
 } forEach _blacklistItems;
-
-/* ACE_player unassignItem "ItemGPS";
-	ACE_player removeItem "ItemGPS";
-	ACE_player unassignItem "B_UavTerminal";
-	ACE_player removeItem "B_UavTerminal";
-	
-	ACE_player removeItem "ACE_DAGR";
-	ACE_player removeItem "ItemAndroid";
-	ACE_player removeItem "ACE_HuntIR_monitor";
-	ACE_player removeItem "ACE_Kestrel4500";
-	ACE_player removeItem "ItemMicroDAGR";
-	ACE_player removeItem "ACE_microDAGR";
-ACE_player removeItem "ItemcTab"; */
