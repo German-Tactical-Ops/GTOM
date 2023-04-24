@@ -8,32 +8,26 @@ class cfgFunctions
 
 			class setRole
 			{
-				recompile = 1;
 			}; // [] call GTO_fnc_setRole;
 
 			class setArsenal 
 			{
-				recompile = 1;
 			}; // [] call GTO_fnc_setArsenal;
 
 			class getRoleName 
 			{
-				recompile = 1;
 			}; // [] call GTO_fnc_getRoleName;
 
 			class getRankNumber
 			{
-				recompile = 1;
 			}; // [_player] call GTO_fnc_getRankNumber;
 
 			class blacklistItems
 			{
-				recompile = 1;
 			}; // [_items] call GTO_fnc_blacklistItems;
 
 			class loadDefault 
 			{
-				recompile = 1;
 			}; // [_arsenalType, _role] call GTO_fnc_loadDefault;
 
 
@@ -56,12 +50,10 @@ class cfgFunctions
 
 			class arsenal_USA
 			{
-				recompile = 1;
 			}; // [] call GTO_fnc_arsenal_USA
 
 			class arsenal_Vanilla
 			{
-				recompile = 1;
 			}; // [] call GTO_fnc_arsenal_Vanilla
 		};
 	};
