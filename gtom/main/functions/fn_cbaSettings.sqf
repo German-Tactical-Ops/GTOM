@@ -144,5 +144,3 @@ scriptName "fn_cbaSettings";
 		};
 	} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
-
-// 20 <= ([player] call GTO_fnc_getRankNumber)

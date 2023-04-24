@@ -46,6 +46,11 @@ class cfgFunctions
 				description = "Returns arsenal item ARRAY";
 				recompile = 1;
 			}; //_itemArray = [] call GTO_fnc_mainArsenal;
+
+			class setMedicationCategorie
+			{
+				recompile = 1;
+			}; // [] call GTO_fnc_setMedicationCategorie;
 		};
 
 		// class permissionCheck

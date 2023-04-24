@@ -29,10 +29,6 @@ private _allItems = [_role] call (switch (_type) do
 	};
 });
 
-_allItems = [_allItems] call GTO_fnc_whitelist;
-
-ace_arsenal_cameraPosition = [4, -8, 15, [0, 0, 1]];
-
 // Box cleanen & items hinzufügen
 [_ammoBox, false] call ace_arsenal_fnc_removeBox;
 [_ammoBox, true, false] call ace_arsenal_fnc_removeVirtualItems;
