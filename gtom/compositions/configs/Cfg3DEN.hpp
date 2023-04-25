@@ -27,7 +27,7 @@ class Cfg3DEN
         class GTO_Zeus // one class per composition
         {
             path = "gtom\compositions\Zeus";  // pbo path to a folder containing header.sqe/composition.sqe files
-            side = 8;                               // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+            side = 1;                               // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
             editorCategory = "Categorie_GTO";                 // link to CfgEditorCategories
             editorSubcategory = "Categorie_GTO_MissionMaker"; // link to CfgEditorSubcategories
             displayName = "Zeus";
