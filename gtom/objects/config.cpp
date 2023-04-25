@@ -57,14 +57,6 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    /*     class C_IDAP_supplyCrate_F;
-        class GTO_Arsenal : C_IDAP_supplyCrate_F
-        {
-            scopeCurator = 2;
-            displayName = "[GTO] Arsenal (only object)";
-            author = "LucyferHW";
-        }; */
-
     class FlagMarker_01_F;
     class GTO_MarkerFlag : FlagMarker_01_F
     {
@@ -83,23 +75,4 @@ class CfgVehicles
         author = "LucyferHW";
         hiddenSelectionsTextures[] = {"gtom\logo\gto_unit_logo_2x1.paa"};
     };
-
-    /* class Man;
-    class CAManBase : Man
-    {
-        class ACE_SelfActions
-        {
-            class ACE_Equipment
-            {
-                class placeRalypoint
-                {
-                    displayName = "Place Rallypoint";
-                    condition = "'ace_marker_flags_blue' in (items _player)";
-                    exceptions[] = {};
-                    statement = "[_player] call GTO_fnc_placeRalypoint";
-                    icon = "";
-                };
-            };
-        };
-    }; */
 };
