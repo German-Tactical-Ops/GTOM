@@ -43,7 +43,7 @@ switch (_role) do
 
 	case "medic":
 	{
-		ACE_player setVariable ["ace_medical_medicClass", 1, true];
+		ACE_player setVariable ["ace_medical_medicClass", 2, true];
 		ACE_player setUnitTrait ["medic", true];
 	};
 
@@ -98,6 +98,8 @@ removeHeadgear ACE_player;
 
 [_arsenalType, _role] call GTO_fnc_loadDefault;
 
+
+// todo: put in an if
 _blacklistItems = [] call GTO_fnc_blacklistItems;
 {
 	ACE_player unassignItem _x;

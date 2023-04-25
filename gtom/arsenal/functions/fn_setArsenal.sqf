@@ -21,6 +21,9 @@ private _allItems = [_role] call (switch (_type) do
 	case "VANILLA": {
 		GTO_fnc_arsenal_Vanilla
 	};
+	case "Custom": {
+		GTO_fnc_arsenal_Custom
+	};
 	default {
 		hint "Schwerer Fehler #300 | Arsenaltyp unbekannt";
 		{

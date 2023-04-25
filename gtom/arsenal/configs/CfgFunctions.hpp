@@ -30,7 +30,15 @@ class cfgFunctions
 			{
 			}; // [_arsenalType, _role] call GTO_fnc_loadDefault;
 
+			class cbaArsenal
+			{
+				//preStart = 1;
+			}; // [] call GTO_fnc_cbaArsenal;
 
+			class FTLItems
+			{
+
+			}; // [] call GTO_fnc_FTLItems;
 
 			// class empty
 			// {
@@ -55,6 +63,10 @@ class cfgFunctions
 			class arsenal_Vanilla
 			{
 			}; // [] call GTO_fnc_arsenal_Vanilla
+
+			class arsenal_Custom
+			{				
+			}; // [] call GTO_fnc_arsenal_Custom
 		};
 	};
 };
