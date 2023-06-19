@@ -7,9 +7,9 @@ scriptName "fn_cbaArsenal";
 */
 
 [
-	"GTO_AllRolesAvaible", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+	"GTO_AllRolesAvailable", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
-	["All roles avaible"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+	["All roles available"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 	["GTOM Arsenal"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
@@ -49,6 +49,18 @@ GTO_RoleList_Template = {
 	] call CBA_fnc_addSetting;
 };
 
+[
+	"GTO_Equipment_googles", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+	"EDITBOX", // setting type
+	["Equipment googles", "Array of googles"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+	["GTOM Equipment", "0. Basic"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	["[]"], // data for this setting: [min, max, default, number of shown trailing decimals]
+	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
+	{
+		params["_value"];
+	} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
 ["basic", "Basic", "0. Basic"] call GTO_RoleList_Template;
 
 ["sl", "SL", "1. Lead"] call GTO_RoleList_Template;
@@ -71,6 +83,5 @@ GTO_RoleList_Template = {
 
 // todo: make default loadout slots
 
-
-// Soft Force for Default loadout
+// Soft Force for default loadout
 // ["kat_circulation_bloodgroup", _bloodType] call CBA_settings_fnc_set;
