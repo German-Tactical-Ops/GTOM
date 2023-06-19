@@ -50,10 +50,10 @@ GTO_RoleList_Template = {
 };
 
 [
-	"GTO_Equipment_googles", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+	"GTO_Equipment_Goggles", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"EDITBOX", // setting type
-	["Equipment googles", "Array of googles"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Equipment", "0. Basic"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	["Equipment Goggles", "Array of goggles"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+	["GTOM Equipment", "10. Other"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	["[]"], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
