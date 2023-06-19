@@ -41,6 +41,12 @@ private _allItems = [_role] call (switch (_type) do
 if (_subType=="noElectronics") then {
 	_blacklistItems = [] call GTO_fnc_blacklistItems;
 	[_ammoBox, _blacklistItems, false] call ace_arsenal_fnc_removeVirtualItems;
+
+	_blacklistItems = [] call GTO_fnc_blacklistItems;
+	{
+		ACE_player unassignItem _x;
+		ACE_player removeItem _x;
+	} forEach _blacklistItems;
 };
 
 // sinchronise virtual items on player and sync other arsenals

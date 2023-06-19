@@ -39,6 +39,9 @@ private _roleItems_crewman = parseSimpleArray GTO_RoleItems_crewman;
 
 private _items = [];
 
+_items append _roleEquipment_basic;
+_items append _roleItems_basic;
+
 _items append (switch (_role) do
 {
 	case "sl":

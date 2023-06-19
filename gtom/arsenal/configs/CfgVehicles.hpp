@@ -65,14 +65,14 @@ class CfgVehicles
                     class categorie_lead
                     {
                         displayName = "Lead";
-                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)";
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber) || GTO_AllRolesAvaible";
                 	    exceptions[] = {};
 
 
                         class role_SL
                         {
                             displayName = "SL";
-                            condition = "30 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            condition = "30 <= ([_player] call GTO_fnc_getRankNumber) || GTO_AllRolesAvaible"; 
                             statement = "['sl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon= "gtom\icons\Roles\SL_icon.paa";
                             modifierFunction ="_actionData = 'SL02'";
@@ -82,7 +82,7 @@ class CfgVehicles
                         class permissions_FTL
                         {
                             displayName = "FTL Items (after role selection)";
-                            condition = "20 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            condition = "20 <= ([_player] call GTO_fnc_getRankNumber) || GTO_AllRolesAvaible"; 
                             statement = "[_target] call GTO_fnc_FTLItems; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon= "gtom\icons\Roles\SL_icon.paa";
                             modifierFunction ="_actionData = 'SL02'";
@@ -91,7 +91,7 @@ class CfgVehicles
                         class role_Doctor
                         {
                             displayName = "Doctor";
-                            condition = "50 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            condition = "50 <= ([_player] call GTO_fnc_getRankNumber) || GTO_AllRolesAvaible"; 
                             statement = "['doctor', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon ="gtom\icons\Roles\Med_icon.paa";
                         };
@@ -99,7 +99,7 @@ class CfgVehicles
                         class role_Admin
                         {
                             displayName = "Admin";
-                            condition = "100 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            condition = "100 <= ([_player] call GTO_fnc_getRankNumber) || GTO_AllRolesAvaible"; 
                             statement = "['admin', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; ";
                             icon = "gtom\icons\Roles\Other_icon.paa";
                         };
@@ -114,7 +114,7 @@ class CfgVehicles
 					    class role_Medic
                         {
                             displayName = "Medic";
-                            condition = "10 <= ([_player] call GTO_fnc_getRankNumber)"; 
+                            condition = "10 <= ([_player] call GTO_fnc_getRankNumber) || GTO_AllRolesAvaible"; 
                             statement = "['medic', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon ="gtom\icons\Roles\Med_icon.paa";                            
                         };
@@ -179,7 +179,7 @@ class CfgVehicles
                     class categorie_special
                     {
                         displayName = "Special";
-                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)";
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber) || GTO_AllRolesAvaible";
                 	    exceptions[] = {};
 
 					    class role_Sniper
@@ -218,7 +218,7 @@ class CfgVehicles
                     class categorie_Vehicle
                     {
                         displayName = "Vehicle";
-                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber)";
+                	    condition =  "20 <= ([_player] call GTO_fnc_getRankNumber) || GTO_AllRolesAvaible";
                 	    exceptions[] = {};
 
 					    class role_Pilot

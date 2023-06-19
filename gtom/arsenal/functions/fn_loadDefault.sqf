@@ -75,3 +75,14 @@ if (_arsenalType == "USA") exitWith {
 
 	ACE_player setUnitLoadout [_layout, true];
 };
+
+if (_arsenalType == "Custom") exitWith {
+	private _layout = switch (_role) do
+	{
+		default {
+			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_anprc152", "ItemCompass", "TFAR_microdagr", ""]]
+		};
+	};
+
+	ACE_player setUnitLoadout [_layout, true];
+};

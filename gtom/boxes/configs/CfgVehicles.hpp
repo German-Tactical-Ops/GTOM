@@ -150,18 +150,18 @@ class CfgVehicles {
 
         class TransportMagazines
         {
-            MAG_XX(tsp_frameCharge_mag, 20);
+            //MAG_XX(tsp_frameCharge_mag, 20);
 			MAG_XX(APERSMineDispenser_Mag, 20);
-			MAG_XX(tsp_popperCharge_mag, 20);
-			MAG_XX(tsp_popperCharge_auto_mag, 20);
+			//MAG_XX(tsp_popperCharge_mag, 20);
+			//MAG_XX(tsp_popperCharge_auto_mag, 20);
 			MAG_XX(DemoCharge_Remote_Mag, 20);
 			MAG_XX(ATMine_Range_Mag, 20);
 			MAG_XX(SatchelCharge_Remote_Mag, 20);
 			MAG_XX(ClaymoreDirectionalMine_Remote_Mag, 20);
 			MAG_XX(APERSBoundingMine_Range_Mag, 20);
 			MAG_XX(SLAMDirectionalMine_Wire_Mag, 20);
-			MAG_XX(tsp_stickCharge_mag, 20);
-			MAG_XX(tsp_stickCharge_auto_mag, 20);
+			//MAG_XX(tsp_stickCharge_mag, 20);
+			//MAG_XX(tsp_stickCharge_auto_mag, 20);
 			MAG_XX(TrainingMine_Mag, 20);
 			MAG_XX(ACE_FlareTripMine_Mag, 20);
 			MAG_XX(APERSMine_Range_Mag, 20);

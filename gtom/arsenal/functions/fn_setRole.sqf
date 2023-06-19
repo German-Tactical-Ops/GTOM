@@ -97,11 +97,3 @@ removeBackpack ACE_player;
 removeHeadgear ACE_player;
 
 [_arsenalType, _role] call GTO_fnc_loadDefault;
-
-
-// todo: put in an if
-_blacklistItems = [] call GTO_fnc_blacklistItems;
-{
-	ACE_player unassignItem _x;
-	ACE_player removeItem _x;
-} forEach _blacklistItems;
