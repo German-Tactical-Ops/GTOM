@@ -83,5 +83,6 @@ GTO_RoleList_Template = {
 
 // todo: make default loadout slots
 
+//ToDo: default loadouts
 // Soft Force for default loadout
 // ["kat_circulation_bloodgroup", _bloodType] call CBA_settings_fnc_set;
