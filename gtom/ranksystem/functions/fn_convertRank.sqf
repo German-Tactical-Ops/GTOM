@@ -21,41 +21,42 @@ GTO_ExtractPlayerFromList = {
 };
 
 if ([GTO_PlayerRankList_CPT, 100] call GTO_ExtractPlayerFromList) exitWith {
-	call GTO_fnc_setRank;
+	call GTO_fnc_setInsignia;
 };
 
 if ([GTO_PlayerRankList_LT, 90] call GTO_ExtractPlayerFromList) exitWith {
-	call GTO_fnc_setRank;
+	call GTO_fnc_setInsignia;
 };
 
 if ([GTO_PlayerRankList_SSG, 70] call GTO_ExtractPlayerFromList) exitWith {
-	call GTO_fnc_setRank;
+	call GTO_fnc_setInsignia;
 };
 
+//Seargent
 if ([GTO_PlayerRankList_SGT, 60] call GTO_ExtractPlayerFromList) exitWith {
-	call GTO_fnc_setRank;
+	call GTO_fnc_setInsignia;
 };
 
+//Capral
 if ([GTO_PlayerRankList_CPL, 50] call GTO_ExtractPlayerFromList) exitWith {
-	call GTO_fnc_setRank;
+	call GTO_fnc_setInsignia;
 };
 
 if ([GTO_PlayerRankList_SPC, 40] call GTO_ExtractPlayerFromList) exitWith {
-	call GTO_fnc_setRank;
+	call GTO_fnc_setInsignia;
 };
 
 if ([GTO_PlayerRankList_PFC, 30] call GTO_ExtractPlayerFromList) exitWith {
-	call GTO_fnc_setRank;
+	call GTO_fnc_setInsignia;
 };
 
 if ([GTO_PlayerRankList_PV, 20] call GTO_ExtractPlayerFromList) exitWith {
-	call GTO_fnc_setRank;
+	call GTO_fnc_setInsignia;
 };
 
 if ([GTO_PlayerRankList_VG, 10] call GTO_ExtractPlayerFromList) exitWith {
-	call GTO_fnc_setRank;
+	call GTO_fnc_setInsignia;
 };
 
-
 profileNamespace setVariable ["GTO_RankCode", 0];
-[] call GTO_fnc_setRank;
+[] call GTO_fnc_setInsignia;

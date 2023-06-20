@@ -10,19 +10,17 @@ class cfgFunctions
 
 			class cbaSettingsRanksystem
 			{
-				postInit = 1;
-				recompile = 1;
 			}; // [] call GTO_fnc_cbaSettingsRanksystem;
 
 			class convertRank
 			{
 				recompile = 1;
-			}; // [] call GTO_fn_convertRank;
+			}; // [] call GTO_fnc_convertRank;
 
-			class setRank
+			class setInsignia
 			{
 				recompile = 1;
-			}; // [] call GTO_fnc_setRank;
+			}; // [] call GTO_fnc_setInsignia;
 		};
 	};
 };

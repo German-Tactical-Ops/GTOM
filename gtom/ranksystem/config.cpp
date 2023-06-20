@@ -19,3 +19,9 @@ class CfgPatches
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgWeapons.hpp"
+
+class Extended_PreInit_EventHandlers {
+    class GTO_cbaRankSystemSettings {
+        init = "call compile preprocessFileLineNumbers 'gtom\ranksystem\functions\fn_cbaSettingsRanksystem.sqf'";
+    };
+};
