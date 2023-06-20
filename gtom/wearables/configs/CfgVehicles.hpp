@@ -49,7 +49,7 @@ class CfgVehicles {
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\CarryallMedic\carryall_medic_dts.paa"};
     };
 
-	    class GTO_Carryall_Medic_m81 : GTO_Carryall_Medic_Base
+	class GTO_Carryall_Medic_m81 : GTO_Carryall_Medic_Base
     {
         scope= 2;
 		scopeCurator= 2;
@@ -172,13 +172,24 @@ class CfgVehicles {
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_multicam.paa"};
     };
 
-    class GTO_ILBE_Medic_arid : GTO_ILBE_Medic_Base
+    class GTO_ILBE_Medic_multicamtropic : GTO_ILBE_Medic_Base
     {
         scope= 2;
 		scopeCurator= 2;
 		scopeArsenal= 2;
-        displayName= "ILBE B. Medic (arid)";
+        displayName= "ILBE B. Medic (multicam tropic)";
+        //todo: add textrure with Medic Patch
+        hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_multicamtropic.paa"};
+    };
+
+    class GTO_ILBE_Medic_aor1 : GTO_ILBE_Medic_Base
+    {
+        scope= 2;
+		scopeCurator= 2;
+		scopeArsenal= 2;
+        displayName= "ILBE B. Medic (AOR1)";
         //todo: add textrure with Medic Patch
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_arid.paa"};
     };
+
 };

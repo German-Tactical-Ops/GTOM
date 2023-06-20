@@ -10,24 +10,18 @@ class cfgFunctions
 
 			class cbaSettings
 			{
-				postInit = 1;
-				recompile = 1;
 			}; //
 
 			class setPlayerRank
 			{
-				description = "Gives Player his Rank";
-				recompile = 1;
 			}; // [_player] call GTO_fnc_setPlayerRank;
 
 			class initFortify
 			{
-				recompile = 1;
 			}; // [] call GTO_fnc_initFortify;
 
 			class persistentPlayer
 			{
-				recompile = 1;
 			}; // [] call GTO_fnc_persistentPlayer;
 
 			class sleepClearHint
@@ -43,15 +37,15 @@ class cfgFunctions
 
 			class initArsenal
 			{
-				description = "Creates a arsenal on the given object";
-				recompile = 1;
 			}; // [box] call GTO_fnc_initArsenal;
 
 			class mainArsenal
 			{
-				description = "Returns arsenal item ARRAY";
-				recompile = 1;
 			}; //_itemArray = [] call GTO_fnc_mainArsenal;
+
+			class setMedicationCategorie
+			{
+			}; // [] call GTO_fnc_setMedicationCategorie;
 		};
 
 		// class permissionCheck

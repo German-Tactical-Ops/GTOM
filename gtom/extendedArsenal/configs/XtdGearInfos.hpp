@@ -146,6 +146,50 @@ class XtdGearInfos {
            
         };
 
+        // ---------- GTO_Medic_ILBE ---------- //
+
+        class GTO_ILBE_Medic_alpine 
+        {
+            model = "GTO_Medic_ILBE"; 
+            camoType = "alpine";
+           
+        };
+
+        /* class GTO_Carryall_Medic_projecthonor 
+        {
+            model = "GTO_Medic_ILBE"; 
+            camoType = "alpine";
+           
+        }; */
+
+        class GTO_ILBE_Medic_black 
+        {
+            model = "GTO_Medic_ILBE"; 
+            camoType = "multicam_black";
+           
+        };
+
+        class GTO_ILBE_Medic_multicam 
+        {
+            model = "GTO_Medic_ILBE"; 
+            camoType = "multicam";
+           
+        };
+
+        class GTO_ILBE_Medic_multicamtropic 
+        {
+            model = "GTO_Medic_ILBE"; 
+            camoType = "multicam_tropic";
+           
+        };
+
+        class GTO_ILBE_Medic_aor1 
+        {
+            model = "GTO_Medic_ILBE"; 
+            camoType = "aor1";
+           
+        };
+
         // ---------- GTO_Compact ---------- //
 
         class Alpine_Backpack_Compact 

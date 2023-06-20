@@ -1,6 +1,6 @@
 class CfgEditorCategories
 {
-    class GTO
+    class Categorie_GTO
     {
         displayName = "GTO";
     };
@@ -8,22 +8,22 @@ class CfgEditorCategories
 
 class CfgEditorSubcategories
 {
-    class GTO_Boxes
+    class Categorie_GTO_Boxes
     {
         displayName = "GTO Boxes";
     };
 
-    class GTO_Arsenal
+    class Categorie_GTO_Arsenal
     {
         displayName = "GTO Arsenal";
     };
 
-    class GTO_Infantry // CfgGroups Armored
+    class Categorie_GTO_Infantry // CfgGroups Armored
     {
         displayName = "GTO Infantry";
     };
 
-    class GTO_MissionMaker // CfgGroups Armored
+    class Categorie_GTO_MissionMaker
     {
         displayName = "GTO Mission Maker";
     };

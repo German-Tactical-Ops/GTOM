@@ -5,7 +5,7 @@ class CfgPatches
 {
     class GTOM_Compositions
     {
-        name = "GTO Boxes";
+        name = "GTO Compositions";
         author = "LucyferHW";
         url = "";
 

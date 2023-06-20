@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class GTOM
+	class GTOM_old
 	{
 		// Meta information for editor
 		name = "GTO Mod";

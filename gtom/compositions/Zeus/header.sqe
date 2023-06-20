@@ -1,0 +1,9 @@
+version=54;
+name="Zeus";
+author="LucyferHW";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"GTOM_Uniform",
+	"A3_Modules_F_Curator_Curator"
+};

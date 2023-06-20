@@ -38,6 +38,8 @@ This mod contains many small things for Players, Curators and Mission Makers.
 
 Lars
 
+Fronthalter
+
 # Credits
 [Tactical Bacon](https://tacticalbacon.de)
 
