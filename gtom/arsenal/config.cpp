@@ -24,3 +24,9 @@ class CfgPatches
 #include "configs\CfgFunctions.hpp"
 
 // todo: make function that returns full arsenal list
+
+class Extended_PreInit_EventHandlers {
+    class GTO_pre_init_event {
+        init = "call compile preprocessFileLineNumbers 'gtom\arsenal\functions\fn_cbaArsenal.sqf'";
+    };
+};
