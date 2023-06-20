@@ -37,7 +37,7 @@ if ([GTO_PlayerRankList_SGT, 60] call GTO_ExtractPlayerFromList) exitWith {
 	call GTO_fnc_setInsignia;
 };
 
-//Capral
+//Copral
 if ([GTO_PlayerRankList_CPL, 50] call GTO_ExtractPlayerFromList) exitWith {
 	call GTO_fnc_setInsignia;
 };
@@ -50,11 +50,13 @@ if ([GTO_PlayerRankList_PFC, 30] call GTO_ExtractPlayerFromList) exitWith {
 	call GTO_fnc_setInsignia;
 };
 
-if ([GTO_PlayerRankList_PV, 20] call GTO_ExtractPlayerFromList) exitWith {
+// Veteran Guest
+if ([GTO_PlayerRankList_VG, 20] call GTO_ExtractPlayerFromList) exitWith {
 	call GTO_fnc_setInsignia;
 };
 
-if ([GTO_PlayerRankList_VG, 10] call GTO_ExtractPlayerFromList) exitWith {
+
+if ([GTO_PlayerRankList_PV, 10] call GTO_ExtractPlayerFromList) exitWith {
 	call GTO_fnc_setInsignia;
 };
 
