@@ -10,9 +10,6 @@ scriptName "fn_FTLItems";
 */
 params ["_ammoBox"];
 
-
-private _items = ["TFAR_anprc152"];
-
-//"TFAR_anprc152";
+private _items = parseSimpleArray GTO_Items_FTL;
 
 [_ammoBox, _items, false] call ace_arsenal_fnc_addVirtualItems;

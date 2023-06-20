@@ -80,7 +80,7 @@ if (_arsenalType == "Custom") exitWith {
 	private _layout = switch (_role) do
 	{
 		default {
-			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_anprc152", "ItemCompass", "TFAR_microdagr", ""]]
+			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "", "", "ItemCompass", "", ""]]
 		};
 	};
 
