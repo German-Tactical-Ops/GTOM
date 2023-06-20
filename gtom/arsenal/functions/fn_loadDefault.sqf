@@ -1,10 +1,5 @@
 scriptName "fn_loadDefault";
-/*
-	Author: LucyferHW
-	
-	Description:
-	Describe your function
-*/
+
 params ["_arsenalType", "_role"];
 
 if (_arsenalType == "USA") exitWith {
@@ -13,7 +8,6 @@ if (_arsenalType == "USA") exitWith {
 		case "pl": {
 			[];
 		};
-
 		case "sl": {
 			[["rhs_weap_m4a1_carryhandle", "", "rhsusf_acc_anpeq15_bk_light", "rhsusf_acc_ACOG_RMR", ["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red", 30], [], "rhsusf_acc_kac_grip"], [], ["rhs_weap_M320", "", "", "", ["ACE_HuntIR_M203", 1], [], ""], ["VSM_Multicam_Crye_Camo", [["ACE_EarPlugs", 1], ["ACE_IR_Strobe_Item", 1], ["ACE_CableTie", 3], ["ItemAndroid", 1], ["ACE_MapTools", 1], ["ace_marker_flags_blue", 1], ["ACE_packingBandage", 25], ["ACE_tourniquet", 4], ["ACE_splint", 1], ["A3_GPNVG18b_F", 1], ["GTO_Beret_Red", 1], ["rhsusf_acc_rotex5_grey", 1], ["kat_Painkiller", 1, 10]]], ["lbt_comms_mc", [["ACE_EntrenchingTool", 1], ["WBK_HeadLampItem", 1], ["ACE_HuntIR_monitor", 1], ["ItemcTab", 1], ["ItemcTabHCam", 1], ["SmokeShellBlue", 1, 1], ["SmokeShell", 2, 1], ["UGL_FlareRed_F", 1, 1], ["B_IR_Grenade", 1, 1], ["ACE_HuntIR_M203", 4, 1]]], ["TFAR_rt1523g_big_rhs", [["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red", 8, 30]]], "VSM_OPS_2_multicam", "", ["Laserdesignator", "", "", "", [], [], ""], ["ItemMap", "ItemGPS", "TFAR_anprc152", "ItemCompass", "ItemWatch", ""]]
 		};
@@ -76,9 +70,65 @@ if (_arsenalType == "USA") exitWith {
 	ACE_player setUnitLoadout [_layout, true];
 };
 
+GTO_CutomLoadout_Template = {
+	params[ "_default", "_custom"];
+
+	if (_custom == "[]") then {
+		parseSimpleArray _default;
+	} else {
+		systemChat "Loading Custom Loadout";
+		parseSimpleArray _custom;
+		
+	};
+};
+
 if (_arsenalType == "Custom") exitWith {
 	private _layout = switch (_role) do
 	{
+		case "sl": {
+			[GTO_DefaultLoadout_sl, GTO_Loadout_sl] call GTO_CutomLoadout_Template;
+		};
+
+		case "medic": {
+			[GTO_DefaultLoadout_medic, GTO_Loadout_medic] call GTO_CutomLoadout_Template;
+		};
+		case "ammoCarrier": {
+			[GTO_DefaultLoadout_ammoCarrier, GTO_Loadout_ammoCarrier] call GTO_CutomLoadout_Template;
+		};
+
+		case "weaponSpecialist": {
+			[GTO_DefaultLoadout_weaponSpecialist, GTO_Loadout_weaponSpecialist] call GTO_CutomLoadout_Template;
+		};
+		case "mg": {
+			[GTO_DefaultLoadout_mg, GTO_Loadout_mg] call GTO_CutomLoadout_Template;
+		};
+		case "grenadier": {
+			[GTO_DefaultLoadout_grenadier, GTO_Loadout_grenadier] call GTO_CutomLoadout_Template;
+		};
+		case "at": {
+			[GTO_DefaultLoadout_at, GTO_Loadout_at] call GTO_CutomLoadout_Template;
+		};
+
+		case "sniper": {
+			[GTO_DefaultLoadout_sniper, GTO_Loadout_sniper] call GTO_CutomLoadout_Template;
+		};
+		case "spotter": {
+			[GTO_DefaultLoadout_spotter, GTO_Loadout_spotter] call GTO_CutomLoadout_Template;
+		};
+		case "sapper": {
+			[GTO_DefaultLoadout_sapper, GTO_Loadout_sapper] call GTO_CutomLoadout_Template;
+		};
+		case "engineer": {
+			[GTO_DefaultLoadout_engineer, GTO_Loadout_engineer] call GTO_CutomLoadout_Template;
+		};
+
+		case "pilot": {
+			[GTO_DefaultLoadout_pilot, GTO_Loadout_pilot] call GTO_CutomLoadout_Template;
+		};
+		case "crewman": {
+			[GTO_DefaultLoadout_crewman, GTO_Loadout_crewman] call GTO_CutomLoadout_Template;
+		};
+
 		default {
 			[[], [], [], ["GTO_BaseUniform", []], [], [], "GTO_Beret_Black", "", ["", "", "", "", [], [], ""], ["ItemMap", "", "", "ItemCompass", "", ""]]
 		};
@@ -86,3 +136,11 @@ if (_arsenalType == "Custom") exitWith {
 
 	ACE_player setUnitLoadout [_layout, true];
 };
+
+/* if (GTO_Loadout_sl == "[]") then {
+		systemChat "SL no Custom Loadout";
+		
+		parseSimpleArray GTO_DefaultLoadout_sl;
+	} else {
+		parseSimpleArray GTO_Loadout_sl;
+}; */
