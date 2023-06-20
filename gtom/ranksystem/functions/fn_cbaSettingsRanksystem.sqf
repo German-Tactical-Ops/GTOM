@@ -10,7 +10,7 @@ scriptName "fn_cbaSettingsRanksystem";
 	"GTO_ExtractRank", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
 	["Extract Rank", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Rank", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[".GTOM Rank", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -22,7 +22,7 @@ scriptName "fn_cbaSettingsRanksystem";
 	"GTO_OverrideMedicPatch", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
 	["Override Medic Patch", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Rank", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[".GTOM Rank", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 	false, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -39,7 +39,7 @@ GTO_PlayerRankList_Template = {
 		_classNameFull, // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 		"EDITBOX", // setting type
 		[_visibleName, "Array of Player SteamIDs"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-		["GTOM Rank", "Player List"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+		[".GTOM Rank", "Player List"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 		[], // data for this setting: [min, max, default, number of shown trailing decimals]
 		true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 		{

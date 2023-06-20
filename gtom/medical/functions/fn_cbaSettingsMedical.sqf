@@ -8,11 +8,14 @@ scriptName "fn_cbaSettingsMedical";
 	Parameter(s):
 	#0 OBJECT - Description
 */
+
+private _gto_Settings = ".GTOM Settings";
+
 [
 	"GTO_BloodRegenSpeed", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"SLIDER", // setting type
 	["Blood Regen Speed", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Medical"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[_gto_Settings, "Medical"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[0, 1, 0.1, 3], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{} // function that will be executed once on mission start and every time the setting is changed.
@@ -22,7 +25,7 @@ scriptName "fn_cbaSettingsMedical";
 	"GTO_healthRegen",
 	"CHECKBOX",
 	["Health Regeneration", "Wenn man volle Ausdauer hat und ruhig steht, regeniert man leicht Blut und genähte Wunden/Prellungen werden geschlossen"],
-	["GTOM Settings", "Medical"],
+	[_gto_Settings, "Medical"],
 	true,
 	1,
 	{
@@ -128,20 +131,4 @@ scriptName "fn_cbaSettingsMedical";
 			}, _delay, [_codeToRun, _parameters, _exitCode, _condition]] call CBA_fnc_addPerFrameHandler;
 		};
 	}, true
-] call CBA_fnc_addSetting;
-
-[
-	"GTO_SetBloodGroup", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-	"CHECKBOX", // setting type
-	["Set Blood Group", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Medical"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
-	false, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
-	{
-		params ["_value"];
-
-		if (_value) then {
-			[] call GTO_fnc_setBloodGroup;
-		};
-	}, true // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;

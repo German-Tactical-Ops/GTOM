@@ -10,7 +10,7 @@ class CfgPatches
 
         units[] = {"GTO_Base_Uniform","GTO_Soldier_Pilot","GTO_Soldier_Crewman","GTO_Soldier_LC","GTO_Soldier_Grenadier","GTO_Soldier_Rifleman","GTO_Soldier_Marksman","GTO_Soldier_MMG","GTO_Soldier_LMG","GTO_Soldier_AT","GTO_Soldier_Eng","GTO_Soldier_Med","GTO_Soldier_ExpSp","GTO_Soldier_FTL","GTO_Soldier_SL"};
 
-        requiredAddons[] = {"GTOM_Main"};
+        requiredAddons[] = {"A3_Characters_F","A3_Weapons_F_Items","GTOM_Main"};
     };
 };
 

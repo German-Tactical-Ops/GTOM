@@ -5,9 +5,9 @@ scriptName "fn_cbaArsenal";
 	Description:
 	Describe your function
 */
-private _gto_Arsenal = "GTOM Arsenal";
-private _gto_Equipment = "GTOM Equipment";
-private _gto_Item = "GTOM Items";
+private _gto_Arsenal = ".GTOM Arsenal";
+private _gto_Equipment = ".GTOM Equipment";
+private _gto_Item = ".GTOM Items";
 
 
 [
@@ -22,7 +22,6 @@ private _gto_Item = "GTOM Items";
 	} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
-// ---------- player ----------//
 
 GTO_RoleList_Template = {
 	params["_className", "_visibleName", "_category"];
@@ -52,9 +51,6 @@ GTO_RoleList_Template = {
 		} // function that will be executed once on mission start and every time the setting is changed.
 	] call CBA_fnc_addSetting;
 };
-
-
-
 
 
 ["basic", "Basic", "0. Basic"] call GTO_RoleList_Template;

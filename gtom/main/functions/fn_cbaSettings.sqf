@@ -9,11 +9,13 @@ scriptName "fn_cbaSettings";
 	#0 OBJECT - Description
 */
 
+private _gto_Settings = ".GTOM Settings";
+
 [
 	"GTO_SetRank", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
 	["Set Rank", "set the GTO player rank"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[_gto_Settings, "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -28,7 +30,7 @@ scriptName "fn_cbaSettings";
 	"GTO_InitFortify", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
 	["initialize Fortify", "initializes a basic fortify sytem"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[_gto_Settings, "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -43,7 +45,7 @@ scriptName "fn_cbaSettings";
 	"GTO_persistentPlayer", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
 	["Persistent player", "When the player disconnects and connect again he spawns at the same spot and has the same loadout."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[_gto_Settings, "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -58,7 +60,7 @@ scriptName "fn_cbaSettings";
 	"GTO_SetPlayerRecoilCoefficient", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"SLIDER", // setting type
 	["Recoil Coefficient", "Set player recoil coefficient"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[_gto_Settings, "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[0, 2, 1, 1], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -71,7 +73,7 @@ scriptName "fn_cbaSettings";
 	"GTO_addBasicDiary", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
 	["Add GTO Tutorial Diary", "adds GTO guides as a diary"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Misc"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[_gto_Settings, "Misc"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 	false, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -86,7 +88,7 @@ scriptName "fn_cbaSettings";
 	"GTO_createMedicalCategory", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
 	["Medicine Category", "creates a medicine category in the arsenal"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Arsenal"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[_gto_Settings, "Arsenal"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 	false, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -101,7 +103,7 @@ scriptName "fn_cbaSettings";
 	"GTO_addDynamicGroupsMenu", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
 	["Add Dynamic Groups", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[_gto_Settings, "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -125,7 +127,7 @@ scriptName "fn_cbaSettings";
 //	"GTO_channel_side", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 //	"CHECKBOX", // setting type
 //	["Add Dynamic Groups", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-//	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+//	[_gto_Settings, "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 //	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 //	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 //	{
@@ -141,7 +143,7 @@ GTO_Channel_Template = {
 		"GTO_channel_" + _className, // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 		"CHECKBOX", // setting type
 		[_className, ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-		["GTOM Settings", "Channels"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+		[_gto_Settings, "Channels"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 		[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
 		true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 		{

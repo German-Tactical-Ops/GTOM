@@ -131,7 +131,7 @@ class CfgVehicles {
     };
 
 
-    class tfw_ilbe_DD_Base;
+    /* class tfw_ilbe_DD_Base;
     class tfw_ilbe_blade_Base;
 
     class GTO_ILBE_Medic_Base : tfw_ilbe_blade_Base
@@ -190,6 +190,6 @@ class CfgVehicles {
         displayName= "ILBE B. Medic (AOR1)";
         //todo: add textrure with Medic Patch
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_arid.paa"};
-    };
+    }; */
 
 };

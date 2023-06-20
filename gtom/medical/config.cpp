@@ -11,7 +11,7 @@ class CfgPatches
 
         units[] = {};
 
-        requiredAddons[] = {"cba_common", "cba_events", "GTOM_Main"};
+        requiredAddons[] = {"A3_Weapons_F","A3_Weapons_F_Items","cba_common", "cba_events", "GTOM_Main"};
     };
 };
 

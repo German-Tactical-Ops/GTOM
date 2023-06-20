@@ -1,6 +1,5 @@
 #include "\gtom\basicDefines_A3.hpp"
 
-
 class CfgPatches
 {
     class GTOM_Compositions
@@ -9,10 +8,9 @@ class CfgPatches
         author = "LucyferHW";
         url = "";
 
-        units[] = {"GTO_Army","GTO_MainSystem","GTO_AirDrop"};
+        units[] = {"GTO_Army", "GTO_MainSystem", "GTO_Zeus"};
 
-        requiredAddons[] = {"A3_Modules_F_Curator_Curator",
-	"A3_Modules_F_Multiplayer","GTOM_Main"};
+        requiredAddons[] = {"A3_Modules_F_Curator_Curator", "A3_Modules_F_Multiplayer", "GTOM_Main"};
     };
 };
 

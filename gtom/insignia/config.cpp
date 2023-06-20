@@ -10,7 +10,7 @@ class CfgPatches
 
         units[] = {};
 
-        requiredAddons[] = {"GTOM_Main"};
+        requiredAddons[] = {"A3_Ui_F","GTOM_Main"};
     };
 };
 

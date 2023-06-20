@@ -20,15 +20,8 @@ class CfgVehicles {
 	    };
 
 	
-	
-	class rhsusf_mags_crate;
-	class GTO_Box_Ammo_Basic: rhsusf_mags_crate
-	{
-		displayName= "GTO Box Ammo Basic";
-	};
 
 	class Box_IDAP_Uniforms_F;
-	class NATO_Box_Base;
 
     class GTO_Box_Base : Box_IDAP_Uniforms_F
     {
@@ -358,7 +351,6 @@ class CfgVehicles {
 			ITEM_XX(kat_PainkillerItem, 20);
 			ITEM_XX(kat_retractor, 20);
 			ITEM_XX(kat_scalpel, 20);
-			ITEM_XX(KNB_PanelRed, 20);
         };
     };
 

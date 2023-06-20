@@ -1,8 +1,0 @@
-version=54;
-name="Arsenal";
-author="LucyferHW";
-category="EdSubcat_Default";
-requiredAddons[]=
-{
-	"GTOM"
-};
