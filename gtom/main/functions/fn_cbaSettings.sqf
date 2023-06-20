@@ -121,26 +121,39 @@ scriptName "fn_cbaSettings";
 	}, true // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
-[
-	"GTO_PromoteFTL", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-	"CHECKBOX", // setting type
-	["Promote to FTL", "Adds the possibility to promote a player to FTL with ACE Interaction."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
-	false, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
-	{
-		params["_value"];
+//[
+//	"GTO_channel_side", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+//	"CHECKBOX", // setting type
+//	["Add Dynamic Groups", ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+//	["GTOM Settings", "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+//	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+//	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
+//	{
+//		params["_value"];
+//
+//		1 enableChannel _value;
+//	}, true // function that will be executed once on mission start and every time the setting is changed.
+//] call CBA_fnc_addSetting;
 
-		if (_value) then {
-			_action = ["PromoteFTL", "Promote to FTL", "", {
-				_target addItem "TFAR_anprc152";
-				_target assignItem "TFAR_anprc152";
-			}, {
-				true
-			}, {}, [], [0, 0, 0], 100] call ace_interact_menu_fnc_createAction;// parameters
-			[player, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+GTO_Channel_Template = {
+	params["_className", "_channel"];
+	[
+		"GTO_channel_" + _className, // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+		"CHECKBOX", // setting type
+		[_className, ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+		["GTOM Settings", "Channels"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+		[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+		true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
+		{
+			params["_value"];
 
-			systemChat "Initialised PromoteFTL System";
-		};
-	} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
+			_channel enableChannel _value;
+		}, true // function that will be executed once on mission start and every time the setting is changed.
+	] call CBA_fnc_addSetting;
+};
+
+["Side", 1] call GTO_Channel_Template;
+["Command", 2] call GTO_Channel_Template;
+["Group", 3] call GTO_Channel_Template;
+["Vehicle", 4] call GTO_Channel_Template;
+["Direct", 5] call GTO_Channel_Template;

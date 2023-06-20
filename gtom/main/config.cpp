@@ -29,3 +29,9 @@ class CfgPatches
 
 #include "configs\CfgEditorCategories.hpp"
 #include "configs\CfgFunctions.hpp"
+
+class Extended_PreInit_EventHandlers {
+    class GTO_cbaMainSettings {
+        init = "call compile preprocessFileLineNumbers 'gtom\main\functions\fn_cbaSettings.sqf'";
+    };
+};
