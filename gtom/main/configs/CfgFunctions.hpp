@@ -12,10 +12,6 @@ class cfgFunctions
 			{
 			}; //
 
-			class setPlayerRank
-			{
-			}; // [_player] call GTO_fnc_setPlayerRank;
-
 			class initFortify
 			{
 			}; // [] call GTO_fnc_initFortify;
