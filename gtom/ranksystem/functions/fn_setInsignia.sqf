@@ -17,7 +17,6 @@ private _rankCode = profileNamespace getVariable ["GTO_RankCode", -1]; // gets t
 if (_rankCode>-1) exitWith {
 	[player, _insigniaList select (_rankCode/10)] call BIS_fnc_setUnitInsignia;
 	player setUnitRank (_rankList select (_rankCode/10));
-	//todo: test this!
 };
 
 systemChat format ["Error Player: %1", name player];

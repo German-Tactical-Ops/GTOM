@@ -94,10 +94,6 @@ GTO_RoleList_Template = {
 	} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
-// todo: make default loadout slots
-
-// ToDo: default loadouts
-// Soft Force for default loadout
 // ["kat_circulation_bloodgroup", _bloodType] call CBA_settings_fnc_set;
 
 GTO_DefaultLoadout_Template = {

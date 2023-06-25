@@ -148,7 +148,6 @@ class CfgVehicles {
 		scopeCurator= 2;
 		scopeArsenal= 2;
         displayName= "ILBE B. Medic (alpine)";
-        //todo: add textrure with Medic Patch
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_alpine.paa"};
     };
 
@@ -158,7 +157,6 @@ class CfgVehicles {
 		scopeCurator= 2;
 		scopeArsenal= 2;
         displayName= "ILBE B. Medic (black)";
-        //todo: add textrure with Medic Patch
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_black.paa"};
     };
 
@@ -168,7 +166,6 @@ class CfgVehicles {
 		scopeCurator= 2;
 		scopeArsenal= 2;
         displayName= "ILBE B. Medic (multicam)";
-        //todo: add textrure with Medic Patch
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_multicam.paa"};
     };
 
@@ -178,7 +175,6 @@ class CfgVehicles {
 		scopeCurator= 2;
 		scopeArsenal= 2;
         displayName= "ILBE B. Medic (multicam tropic)";
-        //todo: add textrure with Medic Patch
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_multicamtropic.paa"};
     };
 
@@ -188,7 +184,6 @@ class CfgVehicles {
 		scopeCurator= 2;
 		scopeArsenal= 2;
         displayName= "ILBE B. Medic (AOR1)";
-        //todo: add textrure with Medic Patch
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_arid.paa"};
     }; */
 

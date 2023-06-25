@@ -22,7 +22,7 @@ class CfgUnitInsignia
     INSIGNIA(GTO_Rank_PFC, "PFC", "gtom\insignia\ranks\Insignia_2.paa");
     INSIGNIA(GTO_Rank_PV, "PV", "gtom\insignia\ranks\Insignia_1.paa");
 
-    INSIGNIA(GTO_Rank_VG, "VG", "gtom\insignia\ranks\Insignia_9.paa");
+    INSIGNIA(GTO_Rank_VG, "VG", "gtom\insignia\ranks\Insignia_10.paa");
     INSIGNIA(GTO_Rank_G, "G", "gtom\insignia\ranks\Insignia_9.paa");
 
     class GTO_Insignia

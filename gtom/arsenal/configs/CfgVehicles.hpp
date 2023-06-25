@@ -483,7 +483,7 @@ class CfgVehicles
                     class categorie_other
                     {
                         displayName = "Other";
-                	    condition =  "100 <= ([_player] call GTO_fnc_getRankNumber)"; //todo: has permissions
+                	    condition =  "100 <= ([_player] call GTO_fnc_getRankNumber)";
                 	    exceptions[] = {};
 
                         class role_Admin
