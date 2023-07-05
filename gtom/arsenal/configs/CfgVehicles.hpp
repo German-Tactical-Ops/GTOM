@@ -129,7 +129,7 @@ class CfgVehicles
                     class categorie_Weapon
                     {
                         displayName = "Weapon";
-                	    condition =  "true";
+                	    condition =  "10 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable";
                 	    exceptions[] = {};
 					    priority = 1;
 
