@@ -9,9 +9,9 @@ class CfgPatches
         url = "";
 
         units[] = {
-            "GTO_arsenal_usa", "GTO_arsenal_usa_noElectronics"};
+            "GTO_arsenal_usa", "GTO_arsenal_usa_noElectronics", "GTO_arsenal_custom"};
 
-        requiredAddons[] = {"cba_common","GTOM_Main"};
+        requiredAddons[] = {"cba_common", "GTOM_Main"};
     };
 };
 
