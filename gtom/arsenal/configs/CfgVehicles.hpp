@@ -26,7 +26,6 @@ class CfgVehicles
         class TransportBackpacks {};
     };
 
-
     class GTO_arsenal_custom : GTO_arsenal_base
     {
         displayName = "Custom Arsenal";
@@ -73,7 +72,7 @@ class CfgVehicles
                         class role_SL
                         {
                             displayName = "SL";
-                            condition = "60 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable"; 
+                            condition = "true"; 
                             statement = "['sl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon= "gtom\icons\Roles\SL_icon.paa";                                                                      
                         };
@@ -86,18 +85,18 @@ class CfgVehicles
                             icon= "gtom\icons\Roles\SL_icon.paa";
                         };
 
-                        class role_Doctor
+                        /*class role_Doctor
                         {
                             displayName = "Doctor";
                             condition = "100 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable"; 
                             statement = "['doctor', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon ="gtom\icons\Roles\Med_icon.paa";
-                        };
+                        };*/
 
                         class role_Admin
                         {
                             displayName = "Admin";
-                            condition = "100 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable"; 
+                            condition = "100 <= profileNamespace getVariable ['GTO_RankCode', -1]"; 
                             statement = "['admin', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; ";
                             icon = "gtom\icons\Roles\Other_icon.paa";
                         };
@@ -119,7 +118,7 @@ class CfgVehicles
 
                         class role_Ammo_Carrier 
                         {
-                            displayName = "Ammo Carrier";
+                            displayName = "Ammo Carrier / Rifleman";
                             condition = "true"; 
                             statement = "['ammoCarrier', getText(configOf _target >> 'arsenalType'), _target]call GTO_fnc_setRole; [_target, _player]call    ace_arsenal_fnc_openBox;";
                             icon = "gtom\icons\Roles\Rifleman_icon.paa";                            
