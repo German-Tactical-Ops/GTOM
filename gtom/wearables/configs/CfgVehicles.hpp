@@ -131,7 +131,8 @@ class CfgVehicles {
     };
 
 
-    /* class tfw_ilbe_DD_Base;
+    //class tfw_ilbe_DD_Base; // <--kann entfernt werden wenn Rucksacke fertig sind.
+    
     class tfw_ilbe_blade_Base;
 
     class GTO_ILBE_Medic_Base : tfw_ilbe_blade_Base
@@ -158,7 +159,7 @@ class CfgVehicles {
 		scopeArsenal= 2;
         displayName= "ILBE B. Medic (black)";
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_black.paa"};
-    };
+    }; // 1. wichtig!
 
     class GTO_ILBE_Medic_multicam : GTO_ILBE_Medic_Base
     {
@@ -167,7 +168,7 @@ class CfgVehicles {
 		scopeArsenal= 2;
         displayName= "ILBE B. Medic (multicam)";
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_multicam.paa"};
-    };
+    }; // 2. wichtig
 
     class GTO_ILBE_Medic_multicamtropic : GTO_ILBE_Medic_Base
     {
@@ -185,6 +186,6 @@ class CfgVehicles {
 		scopeArsenal= 2;
         displayName= "ILBE B. Medic (AOR1)";
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_arid.paa"};
-    }; */
+    };
 
 };
