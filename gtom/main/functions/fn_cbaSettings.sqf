@@ -33,6 +33,21 @@ private _gto_Settings = ".GTOM Settings";
 ] call CBA_fnc_addSetting;
 
 [
+	"GTO_UniformFix", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+	"CHECKBOX", // setting type
+	["Uniform Fix", "A system that fixes the buggy uniforms."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+	[_gto_Settings, "Main"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
+	{
+		params["_value"];
+		if (_value) then {
+			"" remoteExec ["GTO_fnc_uniformFix", 0];
+		};
+	}, true // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
+[
 	"GTO_SetPlayerRecoilCoefficient", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"SLIDER", // setting type
 	["Recoil Coefficient", "Set player recoil coefficient"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.

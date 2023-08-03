@@ -28,6 +28,10 @@ class cfgFunctions
 			class getModList
 			{
 			}; // [] call GTO_fnc_getModList;
+
+			class uniformFix
+			{
+			}; // [] call GTO_fnc_uniformFix
 		};
 
 		class arsenal
