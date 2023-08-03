@@ -85,13 +85,13 @@ class CfgVehicles
                             icon= "gtom\icons\Roles\SL_icon.paa";
                         };
 
-                        /*class role_Doctor
+                        class role_Doctor
                         {
                             displayName = "Doctor";
-                            condition = "100 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable"; 
+                            condition = "true"; 
                             statement = "['doctor', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon ="gtom\icons\Roles\Med_icon.paa";
-                        };*/
+                        };
 
                         class role_Admin
                         {
@@ -132,7 +132,7 @@ class CfgVehicles
                 	    exceptions[] = {};
 					    priority = 1;
 
-					    class role_weaponSpecialist 
+					    class role_weaponSpecialist
                         {
                             displayName = "Weapon Specialist";
                             condition = "true"; 

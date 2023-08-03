@@ -11,9 +11,14 @@ private _roleEquipment_basic = parseSimpleArray GTO_RoleEquipment_basic;
 private _roleItems_basic = parseSimpleArray GTO_RoleItems_basic;
 
 private _roleEquipment_sl = parseSimpleArray GTO_RoleEquipment_sl;
-private _roleEquipment_medic = parseSimpleArray GTO_RoleEquipment_medic;
 private _roleItems_sl = parseSimpleArray GTO_RoleItems_sl;
+
+private _roleEquipment_doctor = parseSimpleArray GTO_RoleEquipment_doctor;
+private _roleItems_doctor = parseSimpleArray GTO_RoleItems_doctor;
+
+private _roleEquipment_medic = parseSimpleArray GTO_RoleEquipment_medic;
 private _roleItems_medic = parseSimpleArray GTO_RoleItems_medic;
+
 private _roleEquipment_ammoCarrier = parseSimpleArray GTO_RoleEquipment_ammoCarrier;
 private _roleItems_ammoCarrier = parseSimpleArray GTO_RoleItems_ammoCarrier;
 private _roleEquipment_weaponSpecialist = parseSimpleArray GTO_RoleEquipment_weaponSpecialist;
@@ -52,9 +57,11 @@ _items append (switch (_role) do
 	case "doctor":
 	{
 		_roleEquipment_sl+
-		_roleEquipment_medic+
 		_roleItems_sl+
-		_roleItems_medic
+		_roleEquipment_medic+
+		_roleItems_medic+
+		_roleEquipment_doctor+
+		_roleItems_doctor
 	};
 	case "medic":
 	{

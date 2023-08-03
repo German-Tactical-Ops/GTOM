@@ -43,7 +43,7 @@ switch (_role) do
 
 	case "medic":
 	{
-		ACE_player setVariable ["ace_medical_medicClass", 2, true];
+		ACE_player setVariable ["ace_medical_medicClass", 1, true];
 		ACE_player setUnitTrait ["medic", true];
 	};
 

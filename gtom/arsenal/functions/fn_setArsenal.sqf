@@ -49,6 +49,8 @@ if (_subType=="noElectronics") then {
 	} forEach _blacklistItems;
 };
 
+//todo: move this code obove to fn_setRole.sqf to the end.
+
 // sinchronise virtual items on player and sync other arsenals
 private _gtoCargo = _ammoBox getVariable "ace_arsenal_virtualItems";
 ACE_player setVariable ["gto_arsenalCargo", _gtoCargo];
