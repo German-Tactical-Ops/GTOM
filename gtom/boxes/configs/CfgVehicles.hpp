@@ -20,15 +20,8 @@ class CfgVehicles {
 	    };
 
 	
-	
-	class rhsusf_mags_crate;
-	class GTO_Box_Ammo_Basic: rhsusf_mags_crate
-	{
-		displayName= "GTO Box Ammo Basic";
-	};
 
 	class Box_IDAP_Uniforms_F;
-	class NATO_Box_Base;
 
     class GTO_Box_Base : Box_IDAP_Uniforms_F
     {
@@ -150,18 +143,18 @@ class CfgVehicles {
 
         class TransportMagazines
         {
-            MAG_XX(tsp_frameCharge_mag, 20);
+            //MAG_XX(tsp_frameCharge_mag, 20);
 			MAG_XX(APERSMineDispenser_Mag, 20);
-			MAG_XX(tsp_popperCharge_mag, 20);
-			MAG_XX(tsp_popperCharge_auto_mag, 20);
+			//MAG_XX(tsp_popperCharge_mag, 20);
+			//MAG_XX(tsp_popperCharge_auto_mag, 20);
 			MAG_XX(DemoCharge_Remote_Mag, 20);
 			MAG_XX(ATMine_Range_Mag, 20);
 			MAG_XX(SatchelCharge_Remote_Mag, 20);
 			MAG_XX(ClaymoreDirectionalMine_Remote_Mag, 20);
 			MAG_XX(APERSBoundingMine_Range_Mag, 20);
 			MAG_XX(SLAMDirectionalMine_Wire_Mag, 20);
-			MAG_XX(tsp_stickCharge_mag, 20);
-			MAG_XX(tsp_stickCharge_auto_mag, 20);
+			//MAG_XX(tsp_stickCharge_mag, 20);
+			//MAG_XX(tsp_stickCharge_auto_mag, 20);
 			MAG_XX(TrainingMine_Mag, 20);
 			MAG_XX(ACE_FlareTripMine_Mag, 20);
 			MAG_XX(APERSMine_Range_Mag, 20);
@@ -254,6 +247,9 @@ class CfgVehicles {
 			ITEM_XX(TFAR_microdagr, 20);
 			ITEM_XX(ACE_Altimeter, 20);
 			ITEM_XX(ItemGPS, 20);
+			ITEM_XX(ItemAndroid, 20);
+			ITEM_XX(ItemMicroDAGR, 20);
+			ITEM_XX(ACE_microDAGR, 20);
         };
     };
 
@@ -262,34 +258,22 @@ class CfgVehicles {
         displayName = "[GTO] basic Items Box";
 
         class TransportItems
-        {
-			ITEM_XX(ACE_RangeTable_82mm, 20); 
-			ITEM_XX(ACE_artilleryTable, 20); 
+        { 
 			ITEM_XX(Attachable_Helistretcher, 20); 
 			ITEM_XX(ACE_CableTie, 20); 
 			ITEM_XX(ACE_Canteen, 20); 
-			ITEM_XX(ACE_Canteen_Empty, 20); 
-			ITEM_XX(ACE_Canteen_Half, 20); 
 			ITEM_XX(ACE_Chemlight_Shield, 20); 
-			ITEM_XX(ACE_Cellphone, 20); 
 			ITEM_XX(ACE_EarPlugs, 20); 
 			ITEM_XX(ACE_EntrenchingTool, 20); 
 			ITEM_XX(ACE_Flashlight_MX991, 20); 
-			ITEM_XX(ItemAndroid, 20); 
 			ITEM_XX(WBK_HeadLampItem, 20); 
 			ITEM_XX(ItemcTabHCam, 20); 
 			ITEM_XX(ACE_IR_Strobe_Item, 20); 
-			ITEM_XX(ACE_Flashlight_KSF1, 20); 
-			ITEM_XX(ACE_Flashlight_XL50, 20); 
 			ITEM_XX(ACE_MapTools, 20); 
-			ITEM_XX(ItemMicroDAGR, 20); 
-			ITEM_XX(ACE_microDAGR, 20); 
 			ITEM_XX(ACE_RangeCard, 20); 
 			ITEM_XX(ACE_SpareBarrel_Item, 20); 
 			ITEM_XX(ACE_UAVBattery, 20); 
 			ITEM_XX(ACE_WaterBottle, 20); 
-			ITEM_XX(ACE_WaterBottle_Empty, 20); 
-			ITEM_XX(ACE_WaterBottle_Half, 20); 
 			ITEM_XX(B_Parachute, 20);
         };
     };
@@ -367,7 +351,6 @@ class CfgVehicles {
 			ITEM_XX(kat_PainkillerItem, 20);
 			ITEM_XX(kat_retractor, 20);
 			ITEM_XX(kat_scalpel, 20);
-			ITEM_XX(KNB_PanelRed, 20);
         };
     };
 

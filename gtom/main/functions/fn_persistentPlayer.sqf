@@ -30,7 +30,6 @@ if (isServer) then {
 				private _loadout = getUnitLoadout _body;
 				private _position = getPos _body;
 				private _direction = getDir _body;
-				       // todo: 
 				if(isNil {
 					profileNamespace getVariable "GTO_disconnectedLoadouts"
 				}) then {

@@ -21,6 +21,9 @@ private _allItems = [_role] call (switch (_type) do
 	case "VANILLA": {
 		GTO_fnc_arsenal_Vanilla
 	};
+	case "Custom": {
+		GTO_fnc_arsenal_Custom
+	};
 	default {
 		hint "Schwerer Fehler #300 | Arsenaltyp unbekannt";
 		{
@@ -28,10 +31,6 @@ private _allItems = [_role] call (switch (_type) do
 		}
 	};
 });
-
-_allItems = [_allItems] call GTO_fnc_whitelist;
-
-ace_arsenal_cameraPosition = [4, -8, 15, [0, 0, 1]];
 
 // Box cleanen & items hinzufügen
 [_ammoBox, false] call ace_arsenal_fnc_removeBox;
@@ -42,6 +41,12 @@ ace_arsenal_cameraPosition = [4, -8, 15, [0, 0, 1]];
 if (_subType=="noElectronics") then {
 	_blacklistItems = [] call GTO_fnc_blacklistItems;
 	[_ammoBox, _blacklistItems, false] call ace_arsenal_fnc_removeVirtualItems;
+
+	_blacklistItems = [] call GTO_fnc_blacklistItems;
+	{
+		ACE_player unassignItem _x;
+		ACE_player removeItem _x;
+	} forEach _blacklistItems;
 };
 
 // sinchronise virtual items on player and sync other arsenals

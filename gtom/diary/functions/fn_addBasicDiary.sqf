@@ -19,13 +19,59 @@ waitUntil {
 	alive player
 };
 
-// <font color='#add118' size=24>Wires Module</font>
-
-//player createDiarySubject ["gtotutorials", "GTO Tutorials"];
+player createDiarySubject ["gtotutorials", "GTO Tutorials"];
 
 player createDiaryRecord ["gtotutorials", ["Funkplan", "<font color='#add118' size=24>Funkplan</font><br/><img image='gtom\images\Funkfrequenzen.jpg' width='375'/><br/><br/><img image='gtom\images\funkTabelle.jpg' width='375' >"]];
 
-player createDiaryRecord ["gtotutorials", ["Ränge", "<font color='#add118' size=24>Ränge</font><br/><img image='gtom\images\RaengePunkte.jpg' width='375'/>"]];
+player createDiaryRecord ["gtotutorials", ["Ränge", "<font color='#add118' size=24>Ränge</font><br/><img image='gtom\diary\img\RaengePunkte.jpg' width='375'/>"]];
+
+
+player createDiaryRecord ["gtotutorials", ["Begriffe", '
+<font color="#afdf1f" size="18">Allgemeine Begriffe:</font>
+<br/>(werden in der Regel nicht auf der Karte markiert)
+<br/><br/>- HVI / HVT :  High Value Individual / High Value Target - Person die Meistens gefangen und mitgebracht werden muss
+<br/><br/>- TIC : Troops in Contact - Einheiten im Feuerkampf
+<br/><br/>- MSR : Main Supply Route - Hauptstraße die durch den aktuellen Operationsbereich führt.
+<br/><br/>- ASR : Alternative Supply Route - Nebenstraße die durch das aktuelle Operationsgebiet führt.
+<br/><br/>- AO : Area of Operations - Operations Gebiet
+<br/><br/>- ISR : Intelligence, Surveillance and Reconnaissance - Aufklärungseinheiten (meistens ist damit eine Drohne gemeint)
+<br/><br/><br/>
+<font color="#afdf1f" size="18">Funkcalls</font>
+<br/><br/>"Oscar Mike" : on the move (wir bewegen uns)
+<br/><br/>"Bravo Zulu" : "Gut gemacht"
+<br/><br/>"Jackpot" : HVI / HVT wurde getötet oder gefangen genommen. Oder Objekt was laut Missionsziel gefunden werden sollte, wurde gefunden.
+<br/><br/>"Netcall" : Funknetzruf - Eine meist kurze, wichtige Meldung an alle. (Keine Antwort erwünscht)
+<br/><br/>"Lasso" : IR Laser - Wird meistens in dem Kontext verwendet, die eigene Position anzugeben ("Schmeißt ein Lasso in die Luft!" -> zeigen mit IR Lasern in die Luft)
+']];
+
+player createDiaryRecord ["gtotutorials", ["Kartenmarkierungen", '
+<font color="#afdf1f" size="18">Wichtige Kartenmarkierungen:</font>
+<br/><br/>- POI (NU) : Point of Interest - Dorf, Basis, Burg
+<br/><br/>- NAI (NU) : Named Area of Interest - Bereich der eine taktische Relevanz hat, ihn zu benennen
+<br/><br/>- BP (HR) : Blocking Point - Eine Stellung, dessen Ziel es ist, Feindeinheiten aufzuhalten Verstärkung nachzubringen
+<br/><br/>- SBF  : Support by fire - Feuerunterstüztungstellung (Von einem Weapons Squad)
+<br/><br/>- LCC  : Last Cover and Consilment - Letzte Deckungstellung vor angriff
+<br/><br/>- CCP  : Casulty Collection Point
+<br/><br/>- CN (HR) : Containment/Concealment Position - Punkt von dem aus sichergestellt wird, dass nichts ein oder ausdringt
+<br/><br/>- ORP  : Objective Rally Point (Position die sich außerhalb der Sichtweite des Objektives befindet, um sich vor oder nach einem Angriff zu sammeln, von dort aus teilen sich Einheiten meist auch für einen Angriff auf)
+<br/><br/>- OP (NU) : Observation Post - Position die eingenommen wird um Aufzuklären und wird nicht zum Kämpfen verwendet
+<br/><br/>- OW (NA) : Overwatch - Stellung von der aus Feinde gesichtet und bekämpft werden kann
+<br/><br/><br/>
+<font color="#afdf1f" size="18">Weitere Kartenmarkierungen</font>
+<br/><br/>- ISBF  : Intermidiate Support by fire - Leichte Feuerunterstützungstellung (Von einem Rifle Squad)
+<br/><br/>- LZ (NA) : Landing Zone
+<br/><br/>- HLZ (NA) : Helicopter/Hot Landing Zone
+<br/><br/>- TRP (N) : Target Reference Point - Punkt der meist auf Kreuzungen plaziert wird, um auf ihm oder relativ zu ihm, Feind anzugeben
+<br/><br/>- OTP (NA) : Own Troops Position (Position eigener Einheiten)
+<br/><br/>- OCP (NA) : Own Coordination/Command Position (Position von Führung und oder JTAC, die nicht aufklärt)
+<br/><br/>- EA (NA) : Engagement Area - Ein Bereich der meist offne Flächen wie Felder markiert, um Flugzeuge schneller die gemeinte Fläche verständlich zu machen
+<br/><br/>- MFP  : Mortar Firing Position - Stellung von der aus Mörser feuern.
+<br/><br/><br/>
+<font color="#afdf1f" size="18">Legende</font>
+<br/><br/> - HR = Eine Himmelsrichtung ist einzusetzen zB: CN N (North)
+<br/><br/> - NU = Eine Nummer ist einzusetzen zB: POI 001, NAI 002
+<br/><br/> - NA = Ein Name ist einzusetzen z.B.: Anna, New York, Ravenfield, Romeo
+']];
 
 player createDiaryRecord ["gtotutorials", ["SITREP & Kurzer SITREP", '
 	<font color="#afdf1f" size="24">Kurzer SITREP</font><br/>
@@ -59,10 +105,10 @@ player createDiaryRecord ["gtotutorials", ["Statusbericht", '<font color="#add11
 	🟡 <font color="#fff200">GELB</font> => Das fire-Team oder Squad hat bereit einiges an Munition verschossen aber hat noch genügend um weiterzukämpfen.<br/>
 🔴 <font color="#ff0000">ROT</font> => Die Munition des Fire-Teams oder Squads ist vollständig aufgebraucht oder ist sehr Knapp davor aufgebraucht zu werden.<br/>']];
 
-player createDiaryRecord ["gtotutorials", ["Medic cheat sheet", "<font color='#add118' size=24>Medic cheat sheet</font><br/><img image='gtom\images\ace_medical_cheat sheet.jpg' width='375'/>"]];
+player createDiaryRecord ["gtotutorials", ["Medic cheat sheet", "<font color='#add118' size=24>Medic cheat sheet</font><br/><img image='gtom\diary\img\ace_medical_cheat sheet.jpg' width='375'/>"]];
 
 player createDiaryRecord ["gtotutorials", ["Formationen", "<font color='#add118' size=24>Formationen</font><br/>
-<img image='gtom\images\Formationen.jpg' width='375'/>"]];
+<img image='gtom\diary\img\Formationen.jpg' width='375'/><br/><img image='gtom\diary\img\Formationen2.jpg' width='375'/>"]];
 
 player createDiaryRecord ["gtotutorials", ["Feuerstatus", '<font color="#add118" size=24>Feuerstatus</font><br/>
 	<font color="#ff0000" size="16">Feuerstatus Rot - Keine Feuererlaubnis</font><br/>

@@ -18,9 +18,8 @@ class CfgPatches
                    "GTO_Box_Medic",
                    "GTO_Box_NVG"};
 
-        requiredAddons[] = {"A3_Supplies_F_Orange_Ammoboxes","GTOM_Main",};
+        requiredAddons[] = {"A3_Supplies_F_Orange_Ammoboxes","kat_breathing","kat_airway","kat_surgery","kat_pharma","kat_circulation","kat_chemical","GTOM_Main"};
     };
 };
 
 #include "configs\CfgVehicles.hpp"
-#include "configs\CfgFunctions.hpp"

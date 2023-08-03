@@ -29,6 +29,9 @@
 
 .sourceFiles
 ~gtom.vr
+~arsenal.stratis
 /@gtom/addons/gtom.pbo
 /@gtom/addons/gtom.pbo.LucyferHW.bisign
+
+/.idea/
 .idea

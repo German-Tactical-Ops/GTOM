@@ -1,0 +1,53 @@
+author			= "GTO Zeus Team";
+// your name
+
+briefingName = "GTO Training Ground";
+onLoadName		= "GTO Training Ground";
+// the same thing
+
+onLoadMission	= "Train until you can no longer.";
+//Longer loading text
+
+//loadScreen		= "pictures\gto_unit_logo.jpg";
+//loading image
+
+class Header
+{
+	gameType =  Zeus;
+	minPlayers =  1;
+	maxPlayers = 24;
+};
+
+skipLobby = 0;
+// Schnelles joinen (nicht verändern)
+respawn=3;
+// Typ vom Respawn (nicht verändern)
+respawnOnStart=0;
+// Respawn am Start (nicht verändern)
+
+respawnDelay=5;
+respawnVehicleDelay = 10;
+// Delay für den Respawn
+
+respawnButton = 1;
+respawnDialog = 0;
+respawnTemplates[] = { "Counter", "Wave","MenuPosition" };
+// Weitere Respawn Einstellungen (nicht verändern)
+
+briefing = 0;
+// briefing Bildschirm
+debriefing = 0;
+// debriefing Bildschirm
+
+disableChannels[] = {0,2,3,5};
+// Text Channels die aus sind
+
+disabledAI = 1;
+// KI in der Lobby aus
+
+saving = 0;
+// Speichern von der Mission (Test)
+
+// Lösche die SteamID und gebe deine rein um Zeus zu bekomme
+
+#include "gto\cfgFunctions.hpp"

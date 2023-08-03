@@ -10,7 +10,7 @@ class CfgPatches
 
         units[] = {};
 
-        requiredAddons[] = {"GTOM_Main"};
+        requiredAddons[] = {"A3_Weapons_F_Ammoboxes","A3_Weapons_F","A3_Characters_F","GTOM_Main"};
     };
 };
 
