@@ -23,7 +23,8 @@ class CfgPatches
 
             // ACE3
             "ace_common",
-            "ace_main"};
+            "ace_main",
+            "ace_medical_treatment"};
     };
 };
 
