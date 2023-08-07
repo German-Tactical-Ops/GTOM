@@ -41,7 +41,7 @@ private _gto_Settings = ".GTOM Settings";
 				// _hasPain = (0 max ((player getVariable ["ace_medical_pain", 0]) - (player getVariable ["ace_medical_painSuppress", 0])) min 1) > 0.05;
 				// _isBleeding = (player getVariable ["ace_medical_woundBleeding", 0]) > 0;
 
-				if ((speed player)^2 > 7^2 || ace_advanced_fatigue_anReserve / 2300 < 0.6 || (0 max ((player getVariable ["ace_medical_pain", 0]) - (player getVariable ["ace_medical_painSuppress", 0])) min 1) > 0.05 || (player getVariable ["ace_medical_woundBleeding", 0]) > 0) exitWith {};
+				if ((speed player)^2 > 7^2 || (0 max ((player getVariable ["ace_medical_pain", 0]) - (player getVariable ["ace_medical_painSuppress", 0])) min 1) > 0.1 || (player getVariable ["ace_medical_woundBleeding", 0]) > 0) exitWith {};
 
 				playerIsRegenerating = true;
 
