@@ -10,7 +10,7 @@ class CfgVehicles
                 class GTO_Medikit_Heal
                 {
                     displayName = "Use Medikit";
-                    condition = "'GTO_Medikit' in (items player)";
+                    condition = "'GTO_Medikit' in (items _player)";
                     //exceptions[] = {};
                     statement = "[_target, _player,'GTO_Medikit', false] call GTO_fnc_full_Heal";
                     //icon = "";
@@ -19,7 +19,7 @@ class CfgVehicles
                 class GTO_FirstAidKit_Heal
                 {
                     displayName = "Use FirstAidKit";
-                    condition = "'GTO_FirstAidKit' in (items player) && [_target] call ace_medical_status_fnc_hasStableVitals";
+                    condition = "'GTO_FirstAidKit' in (items _player) && [_target] call ace_medical_status_fnc_hasStableVitals";
                     //exceptions[] = {};
                     statement = "[_target, _player, 'GTO_FirstAidKit', false] call GTO_fnc_full_Heal";
                     //icon = "";

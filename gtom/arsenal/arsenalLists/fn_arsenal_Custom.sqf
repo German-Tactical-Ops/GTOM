@@ -15,9 +15,10 @@ private _roleItems_sl = parseSimpleArray GTO_RoleItems_sl;
 
 private _roleEquipment_doctor = parseSimpleArray GTO_RoleEquipment_doctor;
 private _roleItems_doctor = parseSimpleArray GTO_RoleItems_doctor;
-
 private _roleEquipment_medic = parseSimpleArray GTO_RoleEquipment_medic;
 private _roleItems_medic = parseSimpleArray GTO_RoleItems_medic;
+// private _roleEquipment_medic = parseSimpleArray GTO_RoleEquipment_afr;
+// private _roleItems_medic = parseSimpleArray GTO_RoleItems_afr;
 
 private _roleEquipment_ammoCarrier = parseSimpleArray GTO_RoleEquipment_ammoCarrier;
 private _roleItems_ammoCarrier = parseSimpleArray GTO_RoleItems_ammoCarrier;
@@ -42,10 +43,14 @@ private _roleItems_pilot = parseSimpleArray GTO_RoleItems_pilot;
 private _roleEquipment_crewman = parseSimpleArray GTO_RoleEquipment_crewman;
 private _roleItems_crewman = parseSimpleArray GTO_RoleItems_crewman;
 
+private _goggles = parseSimpleArray GTO_Equipment_Goggles;
+
 private _items = [];
 
 _items append _roleEquipment_basic;
 _items append _roleItems_basic;
+_items append _goggles;
+
 
 _items append (switch (_role) do
 {
