@@ -181,14 +181,6 @@ class CfgVehicles
                 	    condition =  "40 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable || 20 == profileNamespace getVariable ['GTO_RankCode', -1]";
                 	    exceptions[] = {};
 
-                        class role_Marksman
-                        {
-                            displayName = "Marksman";
-                            condition = "true"; 
-                            statement = "['sniper', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon = "gtom\icons\Roles\Marksman_icon.paa";                       
-                        };
-
 					    class role_Sniper
                         {
                             displayName = "Sniper";

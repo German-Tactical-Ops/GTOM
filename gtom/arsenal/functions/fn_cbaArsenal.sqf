@@ -13,7 +13,7 @@ private _gto_Item = ".GTOM Items";
 
 private _gto_Basic = "00. Basic";
 private _gto_Lead = "01. Lead";
-private _gto_Support = "02. Support"
+private _gto_Support = "02. Support";
 private _gto_Weapon = "03. Weapon";
 private _gto_Special = "04. Special";
 private _gto_Vehicle = "05. Vehicle";
@@ -63,10 +63,10 @@ GTO_RoleList_Template = {
 ["sl", "SL", _gto_Lead] call GTO_RoleList_Template;
 ["ftl", "FTL", _gto_Lead] call GTO_RoleList_Template;
 
-["doctor", "Doctor", _gto_Support] call GTO_RoleList_Template;
-["medic", "Medic", _gto_Support] call GTO_RoleList_Template;
-["afr", "AFR", _gto_Support] call GTO_RoleList_Template;
 ["ammoCarrier", "Ammo Carrier", _gto_Support] call GTO_RoleList_Template;
+["afr", "AFR", _gto_Support] call GTO_RoleList_Template;
+["medic", "Medic", _gto_Support] call GTO_RoleList_Template;
+["doctor", "Doctor", _gto_Support] call GTO_RoleList_Template;
 
 ["weaponSpecialist", "Weapon Specialist", _gto_Weapon] call GTO_RoleList_Template;
 ["mg", "MG", _gto_Weapon] call GTO_RoleList_Template;
