@@ -40,6 +40,11 @@ class cfgFunctions
 
 			}; // [] call GTO_fnc_FTLItems;
 
+			class AFRItems
+			{
+
+			}; // [] call GTO_fnc_AFRItems;
+
 			// class empty
 			// {
 			// 	// description = "Function description"; // You can write some words about your fonction

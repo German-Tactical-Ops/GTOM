@@ -1,15 +1,11 @@
 scriptName "fn_FTLItems";
 /*
 	Author: LucyferHW
-	
-	Description:
-	Runs on start.
-	
-	Parameter(s):
-	#0 OBJECT - Description
 */
 params ["_ammoBox"];
 
-private _items = parseSimpleArray GTO_Items_FTL;
+private _items = parseSimpleArray GTO_RoleEquipment_ftl;
+
+_items append GTO_RoleItems_ftl;
 
 [_ammoBox, _items, false] call ace_arsenal_fnc_addVirtualItems;

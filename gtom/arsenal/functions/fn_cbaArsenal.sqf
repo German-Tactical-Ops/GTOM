@@ -11,6 +11,14 @@ private _gto_Loadout = ".GTOM Loadout";
 private _gto_DefaultLoadout = ".GTOM Default Loadout";
 private _gto_Item = ".GTOM Items";
 
+private _gto_Basic = "00. Basic";
+private _gto_Lead = "01. Lead";
+private _gto_Support = "02. Support"
+private _gto_Weapon = "03. Weapon";
+private _gto_Special = "04. Special";
+private _gto_Vehicle = "05. Vehicle";
+private _gto_Other = "10. Other";
+
 [
 	"GTO_AllRolesAvailable", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"CHECKBOX", // setting type
@@ -50,34 +58,34 @@ GTO_RoleList_Template = {
 	] call CBA_fnc_addSetting;
 };
 
-["basic", "Basic", "00. Basic"] call GTO_RoleList_Template;
+["basic", "Basic", _gto_Basic] call GTO_RoleList_Template;
 
-["sl", "SL", "01. Lead"] call GTO_RoleList_Template;
-["ftl", "FTL", "01. Lead"] call GTO_RoleList_Template;
+["sl", "SL", _gto_Lead] call GTO_RoleList_Template;
+["ftl", "FTL", _gto_Lead] call GTO_RoleList_Template;
 
-["doctor", "doctor", "02. Support"] call GTO_RoleList_Template;
-["medic", "Medic", "02. Support"] call GTO_RoleList_Template;
-["afr", "AFR", "02. Support"] call GTO_RoleList_Template;
-["ammoCarrier", "Ammo Carrier", "02. Support"] call GTO_RoleList_Template;
+["doctor", "Doctor", _gto_Support] call GTO_RoleList_Template;
+["medic", "Medic", _gto_Support] call GTO_RoleList_Template;
+["afr", "AFR", _gto_Support] call GTO_RoleList_Template;
+["ammoCarrier", "Ammo Carrier", _gto_Support] call GTO_RoleList_Template;
 
-["weaponSpecialist", "Weapon Specialist", "03. Weapon"] call GTO_RoleList_Template;
-["mg", "MG", "03. Weapon"] call GTO_RoleList_Template;
-["grenadier", "Grenadier", "03. Weapon"] call GTO_RoleList_Template;
-["at", "AT", "3. Weapon"] call GTO_RoleList_Template;
+["weaponSpecialist", "Weapon Specialist", _gto_Weapon] call GTO_RoleList_Template;
+["mg", "MG", _gto_Weapon] call GTO_RoleList_Template;
+["grenadier", "Grenadier", _gto_Weapon] call GTO_RoleList_Template;
+["at", "AT", _gto_Weapon] call GTO_RoleList_Template;
 
-["sniper", "Sniper", "04. Special"] call GTO_RoleList_Template;
-["spotter", "Spotter", "04. Special"] call GTO_RoleList_Template;
-["sapper", "Sapper", "04. Special"] call GTO_RoleList_Template;
-["engineer", "Engineer", "04. Special"] call GTO_RoleList_Template;
+["sniper", "Sniper", _gto_Special] call GTO_RoleList_Template;
+["spotter", "Spotter", _gto_Special] call GTO_RoleList_Template;
+["sapper", "Sapper", _gto_Special] call GTO_RoleList_Template;
+["engineer", "Engineer", _gto_Special] call GTO_RoleList_Template;
 
-["pilot", "Pilot", "05. Vehicle"] call GTO_RoleList_Template;
-["crewman", "Crewman", "05. Vehicle"] call GTO_RoleList_Template;
+["pilot", "Pilot", _gto_Vehicle] call GTO_RoleList_Template;
+["crewman", "Crewman", _gto_Vehicle] call GTO_RoleList_Template;
 
 [
 	"GTO_Equipment_Goggles", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 	"EDITBOX", // setting type
 	["Equipment Goggles", "Array of goggles"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-	[_gto_Equipment, "10. Other"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	[_gto_Equipment, _gto_Other], // Pretty name of the category where the setting can be found. Can be stringtable entry.
 	["[]"], // data for this setting: [min, max, default, number of shown trailing decimals]
 	true, // "_isGlobal" flag. set this to true to always have this setting synchronized between all clients in multiplayer
 	{
@@ -114,20 +122,21 @@ GTO_DefaultLoadout_Template = {
 	] call CBA_fnc_addSetting;
 };
 
-["sl", "SL", "1. Lead"] call GTO_DefaultLoadout_Template;
+["sl", "SL", _gto_Lead] call GTO_DefaultLoadout_Template;
 
-["medic", "Medic", "2. Support"] call GTO_DefaultLoadout_Template;
-["ammoCarrier", "Ammo Carrier", "2. Support"] call GTO_DefaultLoadout_Template;
+["doctor", "Doctor", _gto_Support] call GTO_DefaultLoadout_Template;
+["medic", "Medic", _gto_Support] call GTO_DefaultLoadout_Template;
+["ammoCarrier", "Ammo Carrier", _gto_Support] call GTO_DefaultLoadout_Template;
 
-["weaponSpecialist", "Weapon Specialist", "3. Weapon"] call GTO_DefaultLoadout_Template;
-["mg", "MG", "3. Weapon"] call GTO_DefaultLoadout_Template;
-["grenadier", "Grenadier", "3. Weapon"] call GTO_DefaultLoadout_Template;
-["at", "AT", "3. Weapon"] call GTO_DefaultLoadout_Template;
+["weaponSpecialist", "Weapon Specialist", _gto_Weapon] call GTO_DefaultLoadout_Template;
+["mg", "MG", _gto_Weapon] call GTO_DefaultLoadout_Template;
+["grenadier", "Grenadier", _gto_Weapon] call GTO_DefaultLoadout_Template;
+["at", "AT", _gto_Weapon] call GTO_DefaultLoadout_Template;
 
-["sniper", "Sniper", "4. Special"] call GTO_DefaultLoadout_Template;
-["spotter", "Spotter", "4. Special"] call GTO_DefaultLoadout_Template;
-["sapper", "Sapper", "4. Special"] call GTO_DefaultLoadout_Template;
-["engineer", "Engineer", "4. Special"] call GTO_DefaultLoadout_Template;
+["sniper", "Sniper", _gto_Special] call GTO_DefaultLoadout_Template;
+["spotter", "Spotter", _gto_Special] call GTO_DefaultLoadout_Template;
+["sapper", "Sapper", _gto_Special] call GTO_DefaultLoadout_Template;
+["engineer", "Engineer", _gto_Special] call GTO_DefaultLoadout_Template;
 
-["pilot", "Pilot", "5. Vehicle"] call GTO_DefaultLoadout_Template;
-["crewman", "Crewman", "5. Vehicle"] call GTO_DefaultLoadout_Template;
+["pilot", "Pilot", _gto_Vehicle] call GTO_DefaultLoadout_Template;
+["crewman", "Crewman", _gto_Vehicle] call GTO_DefaultLoadout_Template;
