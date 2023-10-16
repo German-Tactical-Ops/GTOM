@@ -5,7 +5,7 @@ params ["_target", "_player", "_type", "_self"];
 if (!_self) then {
 	switch (_type) do {
 		case "GTO_Medikit": {
-			_player removeItem "GTO_Medikit";
+			//_player removeItem "GTO_Medikit";
 			[_target] call ace_medical_treatment_fnc_fullHealLocal;
 		};
 		case "GTO_FirstAidKit": {

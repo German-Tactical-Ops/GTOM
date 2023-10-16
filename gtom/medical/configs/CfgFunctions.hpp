@@ -15,11 +15,6 @@ class cfgFunctions
 				recompile = 1;
 			}; // [] call GTO_fnc_cbaSettingsMedical;
 
-			class setBloodGroup
-			{
-				recompile = 1;
-			}; // [] call GTO_fnc_setBloodGroup;
-
 			class full_Heal
 			{
 				recompile = 1;

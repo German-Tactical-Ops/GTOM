@@ -11,7 +11,7 @@ class CfgPatches
 
         units[] = {};
 
-        requiredAddons[] = {"GTOM_Main"};
+        requiredAddons[] = {"aceax_gearinfo","GTOM_Main"};
     };
 };
 

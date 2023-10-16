@@ -32,7 +32,6 @@
     };
 
 class CfgVehicles {
-
 	class B_RangeMaster_F;
     class GTO_Soldier_base : B_RangeMaster_F
     {
@@ -40,17 +39,17 @@ class CfgVehicles {
         scope = 2;                                                          // 2 = class is available in the editor; 1 = class is unavailable in the editor, but can be accessed via a macro; 0 = class is unavailable (and used for inheritance only).
         scopeCurator = 2;                                                   // 2 = class is available in Zeus; 0 = class is unavailable in Zeus.
         scopeArsenal = 2;                                                   // 2 = class is available in the Virtual Arsenal; 0 = class is unavailable in the Virtual Arsenal.
-        identityTypes[] = {"LanguageENG_F", "Head_NATO", "G_NATO_default"}; // Identity Types are explained in the Headgear section of this guide.
+        //identityTypes[] = {"LanguageENG_F", "Head_NATO", "G_NATO_default"}; // Identity Types are explained in the Headgear section of this guide.
         displayName = "GTO Soldier";                                        // The name of the soldier, which is displayed in the editor.
 
         // model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[] = {"gtom\uniform\textures\GTO_Uniform\GTO_BaseUniform.paa"};
 
-        camouflage = 1;  // How likely this character is spotted (smaller number = more stealthy).
-        sensitivity = 1; // How likely this character spots enemies when controlled by AI.
+        //camouflage = 1;  // How likely this character is spotted (smaller number = more stealthy).
+        //sensitivity = 1; // How likely this character spots enemies when controlled by AI.
 
-        icon = "gtom\icons\Roles\Other_icon.paa";
-        picture = "gtom\icons\Roles\Other_icon.paa";
+        //icon = "gtom\icons\Roles\Other_icon.paa";
+        picture = "";
 
         uniformClass = "GTO_BaseUniform"; // This links this soldier to a particular uniform. For the details, see below.
         backpack = "";                    // Which backpack the character is wearing.
@@ -58,37 +57,23 @@ class CfgVehicles {
         weapons[] = {};        // Which weapons the character has.
         respawnWeapons[] = {}; // Which weapons the character respawns with.
 
-        Items[] = {MAG_15(ACE_packingBandage),
-                   ACE_EarPlugs,
-                   MAG_2(ACE_CableTie),
-                   ACE_IR_Strobe_Item,
-                   GTO_Beret_Black,
-                   ACE_splint}; // Which items the character has.
-        RespawnItems[] = {MAG_15(ACE_packingBandage),
-                          ACE_EarPlugs,
-                          MAG_2(ACE_CableTie),
-                          ACE_IR_Strobe_Item,
-                          GTO_Beret_Black,
-                          ACE_splint}; // Which items the character respawns with.
+        Items[] = {GTO_Beret_Black}; // Which items the character has.
+        RespawnItems[] = {GTO_Beret_Black}; // Which items the character respawns with.
 
-        magazines[] = {ACE_Chemlight_HiGreen};        // What ammunition the character has.
-        respawnMagazines[] = {ACE_Chemlight_HiGreen}; // What ammunition the character respawns with.
+        magazines[] = {};        // What ammunition the character has.
+        respawnMagazines[] = {}; // What ammunition the character respawns with.
 
         linkedItems[] = {GTO_Beret_Black,
                          ItemMap,
                          ItemCompass,
                          ItemWatch,
-                         TFAR_anprc152,
-                         Rangefinder,
                          none}; // Which items the character has.
 
         respawnLinkedItems[] = {GTO_Beret_Black,
-                                ItemMap,
-                                ItemCompass,
-                                ItemWatch,
-                                TFAR_anprc152,
-                                Rangefinder,
-                                none}; // Which items the character respawns with.
+                         ItemMap,
+                         ItemCompass,
+                         ItemWatch,
+                         none}; // Which items the character respawns with.
     };
 
     class GTO_Soldier_SL : GTO_Soldier_base

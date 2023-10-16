@@ -10,15 +10,15 @@ class CfgPatches
 
         units[] = {"JoinServerGTO"};
 
-        requiredAddons[] = {"GTOM_Main"};
+        requiredAddons[] = {"A3_Ui_F","GTOM_Main"};
     };
 };
 
 class CfgMainMenuSpotlight
 {
-    class JoinServerGTO
+    class JoinServerGTOold
     {
-        text = "GTO Server";
+        text = "GTO Server old";
         picture = "gtom\logo\gto_unit_logo.paa";
         //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
         action = "connectToServer ['5.83.170.148', 21000, 'asdf0987']";
@@ -26,14 +26,14 @@ class CfgMainMenuSpotlight
         condition = "true";
     };
 
-    class JoinServerFschJgRgt
+    class JoinServerGTO
     {
-        text = "FschJgRgt Server";
-        picture = "gtom\logo\Fallschirmjagerregiment_42.paa";
+        text = "GTO Server new";
+        picture = "gtom\logo\gto_unit_logo.paa";
         //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
-        action = "connectToServer ['185.240.242.109', 2302, 'FschJgRgt42']";
-        actionText = "Join FschJgRgt Server";
-        condition = "false";
+        action = "connectToServer ['46.4.37.180', 2302, 'asdf0987']";
+        actionText = "Join GTO Server";
+        condition = "true";
     };
 
     delete ApexProtocol;

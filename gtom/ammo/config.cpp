@@ -10,17 +10,13 @@ class CfgPatches
 
         units[] = {};
 
-        requiredAddons[] = {"A3_Weapons_F";
-        "GTOM_Main"
-    };
+        requiredAddons[] = {"GTOM_Main"};
 
-    ammo[] = {
-        "FlareBase",
-        "F_40mm_White",
-        "Flare_82mm_AMOS_White",
-        "Sh_155mm_AMOS"};
+        ammo[] = {
+            "FlareBase",
+            "F_40mm_White",
+            "Flare_82mm_AMOS_White"};
+    };
 };
-}
-;
 
 #include "configs\cfgAmmo.hpp"

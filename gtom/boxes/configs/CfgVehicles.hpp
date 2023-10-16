@@ -20,15 +20,8 @@ class CfgVehicles {
 	    };
 
 	
-	
-	class rhsusf_mags_crate;
-	class GTO_Box_Ammo_Basic: rhsusf_mags_crate
-	{
-		displayName= "GTO Box Ammo Basic";
-	};
 
 	class Box_IDAP_Uniforms_F;
-	class NATO_Box_Base;
 
     class GTO_Box_Base : Box_IDAP_Uniforms_F
     {
@@ -150,18 +143,18 @@ class CfgVehicles {
 
         class TransportMagazines
         {
-            MAG_XX(tsp_frameCharge_mag, 20);
+            //MAG_XX(tsp_frameCharge_mag, 20);
 			MAG_XX(APERSMineDispenser_Mag, 20);
-			MAG_XX(tsp_popperCharge_mag, 20);
-			MAG_XX(tsp_popperCharge_auto_mag, 20);
+			//MAG_XX(tsp_popperCharge_mag, 20);
+			//MAG_XX(tsp_popperCharge_auto_mag, 20);
 			MAG_XX(DemoCharge_Remote_Mag, 20);
 			MAG_XX(ATMine_Range_Mag, 20);
 			MAG_XX(SatchelCharge_Remote_Mag, 20);
 			MAG_XX(ClaymoreDirectionalMine_Remote_Mag, 20);
 			MAG_XX(APERSBoundingMine_Range_Mag, 20);
 			MAG_XX(SLAMDirectionalMine_Wire_Mag, 20);
-			MAG_XX(tsp_stickCharge_mag, 20);
-			MAG_XX(tsp_stickCharge_auto_mag, 20);
+			//MAG_XX(tsp_stickCharge_mag, 20);
+			//MAG_XX(tsp_stickCharge_auto_mag, 20);
 			MAG_XX(TrainingMine_Mag, 20);
 			MAG_XX(ACE_FlareTripMine_Mag, 20);
 			MAG_XX(APERSMine_Range_Mag, 20);
@@ -358,7 +351,6 @@ class CfgVehicles {
 			ITEM_XX(kat_PainkillerItem, 20);
 			ITEM_XX(kat_retractor, 20);
 			ITEM_XX(kat_scalpel, 20);
-			ITEM_XX(KNB_PanelRed, 20);
         };
     };
 
