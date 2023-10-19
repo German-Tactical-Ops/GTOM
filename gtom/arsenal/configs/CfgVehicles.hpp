@@ -223,7 +223,7 @@ class CfgVehicles
 					    class role_Pilot
                         {
                             displayName = "Pilot";
-                            condition = "30 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable || 20 == profileNamespace getVariable ['GTO_RankCode', -1]"; 
+                            condition = "false"; // (30 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable || 20 == profileNamespace getVariable ['GTO_RankCode', -1])
                             statement = "['pilot', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon = "gtom\icons\Roles\Pilot_icon.paa";
                         };
