@@ -262,13 +262,13 @@ class ##CLASSNAME##\
                 class black
                 {
                     label = "Black";
-                    description = "Soldier";
+                    description = "Mannschaftssoldat";
                     image = "gtom\extendedArsenal\textures\colors\BeretColor_Black.paa";
                 };
                 class red
                 {
                     label = "Red";
-                    description = "SL";
+                    description = "Offizier";
                     image = "gtom\extendedArsenal\textures\colors\BeretColor_Red.paa";
                 };
                 class orange
@@ -286,7 +286,7 @@ class ##CLASSNAME##\
                 class green
                 {
                     label = "Green";
-                    description = "FTL";
+                    description = "Unteroffizier";
                     image = "gtom\extendedArsenal\textures\colors\BeretColor_Green.paa";
                 };
                 class blue
