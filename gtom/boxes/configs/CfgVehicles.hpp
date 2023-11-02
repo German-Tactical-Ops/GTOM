@@ -41,101 +41,16 @@ class CfgVehicles {
         };
     };
 
-    class GTO_Box_Ammo : GTO_Box_Base
+/*     class GTO_Box_Ammo : GTO_Box_Base
     {
         displayName = "[GTO] Ammo Box";
 
         class TransportMagazines
         {
-			MAG_XX(rhsusf_mag_7x45acp_MHP, 20);
-			MAG_XX(rhsusf_mag_17Rnd_9x19_JHP, 20);
-			MAG_XX(rhsusf_mag_17Rnd_9x19_FMJ, 20);
-			MAG_XX(rhsusf_mag_15Rnd_9x19_JHP, 20);
-			MAG_XX(rhsusf_mag_15Rnd_9x19_FMJ, 20);
-			MAG_XX(rhsusf_5Rnd_00Buck, 20);
-			MAG_XX(rhsusf_8Rnd_00Buck, 20);
-			MAG_XX(rhsusf_5Rnd_Slug, 20);
-			MAG_XX(rhsusf_8Rnd_Slug, 20);
-			MAG_XX(rhsusf_5Rnd_HE, 20);
-			MAG_XX(rhsusf_8Rnd_HE, 20);
-			MAG_XX(rhsusf_5Rnd_FRAG, 20);
-			MAG_XX(rhsusf_8Rnd_FRAG, 20);
-			MAG_XX(rhsusf_mag_40Rnd_46x30_FMJ, 20);
-			MAG_XX(rhsusf_mag_40Rnd_46x30_JHP, 20);
-			MAG_XX(rhsusf_mag_40Rnd_46x30_AP, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855A1_Stanag, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855_Stanag, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_Mk318_Stanag, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_Mk262_Stanag, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M200_Stanag, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855A1_PMAG, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855_PMAG, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_Mk318_PMAG, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_Mk262_PMAG, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan_Tracer_Red, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855_PMAG_Tan, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_M855_PMAG_Tan_Tracer_Red, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_Mk318_PMAG_Tan, 20);
-			MAG_XX(rhs_mag_30Rnd_556x45_Mk262_PMAG_Tan, 20);
-			MAG_XX(rhsusf_200Rnd_556x45_box, 20);
-			MAG_XX(rhsusf_200rnd_556x45_mixed_box, 20);
-			MAG_XX(rhsusf_200rnd_556x45_M855_box, 20);
-			MAG_XX(rhsusf_200rnd_556x45_M855_mixed_box, 20);
-			MAG_XX(rhsusf_200Rnd_556x45_soft_pouch, 20);
-			MAG_XX(rhsusf_200Rnd_556x45_mixed_soft_pouch, 20);
-			MAG_XX(rhsusf_200Rnd_556x45_M855_soft_pouch, 20);
-			MAG_XX(rhsusf_200Rnd_556x45_M855_mixed_soft_pouch, 20);
-			MAG_XX(rhsusf_100Rnd_556x45_soft_pouch, 20);
-			MAG_XX(rhsusf_100Rnd_556x45_mixed_soft_pouch, 20);
-			MAG_XX(rhsusf_100Rnd_556x45_M855_soft_pouch, 20);
-			MAG_XX(rhsusf_100Rnd_556x45_M855_mixed_soft_pouch, 20);
-			MAG_XX(rhsusf_100Rnd_556x45_M200_soft_pouch, 20);
-			MAG_XX(rhsusf_50Rnd_762x51, 20);
-			MAG_XX(rhsusf_50Rnd_762x51_m61_ap, 20);
-			MAG_XX(rhsusf_50Rnd_762x51_m62_tracer, 20);
-			MAG_XX(rhsusf_50Rnd_762x51_m80a1epr, 20);
-			MAG_XX(rhsusf_50Rnd_762x51_m82_blank, 20);
-			MAG_XX(rhsusf_100Rnd_762x51, 20);
-			MAG_XX(rhsusf_100Rnd_762x51_m61_ap, 20);
-			MAG_XX(rhsusf_100Rnd_762x51_m62_tracer, 20);
-			MAG_XX(rhsusf_100Rnd_762x51_m80a1epr, 20);
-			MAG_XX(rhsusf_100Rnd_762x51_m82_blank, 20);
-			MAG_XX(rhsusf_20Rnd_762x51_m118_special_Mag, 20);
-			MAG_XX(rhsusf_20Rnd_762x51_m993_Mag, 20);
-			MAG_XX(rhsusf_20Rnd_762x51_m62_Mag, 20);
-			MAG_XX(rhsusf_20Rnd_762x51_SR25_m118_special_Mag, 20);
-			MAG_XX(rhsusf_20Rnd_762x51_SR25_m993_Mag, 20);
-			MAG_XX(rhsusf_20Rnd_762x51_SR25_m62_Mag, 20);
-			MAG_XX(rhsusf_5Rnd_762x51_m118_special_Mag, 20);
-			MAG_XX(rhsusf_5Rnd_762x51_m993_Mag, 20);
-			MAG_XX(rhsusf_5Rnd_762x51_m62_Mag, 20);
-			MAG_XX(rhsusf_10Rnd_762x51_m118_special_Mag, 20);
-			MAG_XX(rhsusf_10Rnd_762x51_m993_Mag, 20);
-			MAG_XX(rhsusf_10Rnd_762x51_m62_Mag, 20);
-			MAG_XX(rhsusf_5Rnd_762x51_AICS_m118_special_Mag, 20);
-			MAG_XX(rhsusf_5Rnd_762x51_AICS_m993_Mag, 20);
-			MAG_XX(rhsusf_5Rnd_762x51_AICS_m62_Mag, 20);
-			MAG_XX(rhsusf_5Rnd_300winmag_xm2010, 20);
-			MAG_XX(rhsusf_mag_10Rnd_STD_50BMG_M33, 20);
-			MAG_XX(rhsusf_mag_10Rnd_STD_50BMG_mk211, 20);
-			MAG_XX(rhs_mag_20Rnd_SCAR_762x51_m61_ap, 20);
-			MAG_XX(rhs_mag_20Rnd_SCAR_762x51_m62_tracer, 20);
-			MAG_XX(rhs_mag_20Rnd_SCAR_762x51_m80_ball, 20);
-			MAG_XX(rhs_mag_20Rnd_SCAR_762x51_m80a1_epr, 20);
-			MAG_XX(rhs_mag_20Rnd_SCAR_762x51_m118_special, 20);
-			MAG_XX(rhs_mag_20Rnd_SCAR_762x51_mk316_special, 20);
-			MAG_XX(rhsusf_mag_6Rnd_M433_HEDP, 20);
-			MAG_XX(rhsusf_mag_6Rnd_M397_HET, 20);
-			MAG_XX(rhsusf_mag_6Rnd_M576_Buckshot, 20);
-			MAG_XX(rhsusf_mag_6Rnd_M441_HE, 20);
+			MAG_XX(exampleMag, 3);
 
         };
-    };
+    }; */
 
     class GTO_Box_Explosives : GTO_Box_Base
     {
@@ -143,18 +58,13 @@ class CfgVehicles {
 
         class TransportMagazines
         {
-            //MAG_XX(tsp_frameCharge_mag, 20);
 			MAG_XX(APERSMineDispenser_Mag, 20);
-			//MAG_XX(tsp_popperCharge_mag, 20);
-			//MAG_XX(tsp_popperCharge_auto_mag, 20);
 			MAG_XX(DemoCharge_Remote_Mag, 20);
 			MAG_XX(ATMine_Range_Mag, 20);
 			MAG_XX(SatchelCharge_Remote_Mag, 20);
 			MAG_XX(ClaymoreDirectionalMine_Remote_Mag, 20);
 			MAG_XX(APERSBoundingMine_Range_Mag, 20);
 			MAG_XX(SLAMDirectionalMine_Wire_Mag, 20);
-			//MAG_XX(tsp_stickCharge_mag, 20);
-			//MAG_XX(tsp_stickCharge_auto_mag, 20);
 			MAG_XX(TrainingMine_Mag, 20);
 			MAG_XX(ACE_FlareTripMine_Mag, 20);
 			MAG_XX(APERSMine_Range_Mag, 20);
