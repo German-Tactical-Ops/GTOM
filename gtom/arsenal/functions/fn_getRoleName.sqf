@@ -27,7 +27,6 @@ switch (_shortName) do
     case "hat": {_name = "HAT";};
     case "marksman": {_name = "Marksman";};
     case "sniper": {_name = "Sniper";};
-    case "spotter": {_name = "Spotter";};
     case "sapper": {_name = "Sapper";};
     case "pionier": {_name = "Pionier";};
     case "engineer": {_name = "Engineer";};

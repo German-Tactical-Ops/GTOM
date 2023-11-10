@@ -16,23 +16,31 @@ class CfgPatches
 
 class CfgMainMenuSpotlight
 {
-    class JoinServerGTOold
+
+    class JoinServerGTOMain
     {
-        text = "GTO Server old";
+        text = "Main Server";
         picture = "gtom\logo\gto_unit_logo.paa";
-        //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
-        action = "connectToServer ['5.83.170.148', 21000, 'asdf0987']";
-        actionText = "Join GTO Server";
+        action = "connectToServer ['46.4.37.180', 2302, 'asdf0987']";
+        actionText = "Join Main Server";
         condition = "true";
     };
 
-    class JoinServerGTO
+    class JoinServerGTOStarWars
     {
-        text = "GTO Server new";
+        text = "Star Wars";
         picture = "gtom\logo\gto_unit_logo.paa";
-        //action = QUOTE([_this, 'server.tacticalbacon.de', '2302', 'tbm'] call COMPILE_SCRIPT(joinServer)); // execVM QPATHTOF
-        action = "connectToServer ['46.4.37.180', 2302, 'asdf0987']";
-        actionText = "Join GTO Server";
+        action = "connectToServer ['46.4.37.180', 2322, 'asdf0987']"; //46.4.37.180:2322
+        actionText = "Join StarWars Server";
+        condition = "true";
+    };
+
+    class JoinServerGTOSideOP
+    {
+        text = "Side Op Server";
+        picture = "gtom\logo\gto_unit_logo.paa";
+        action = "connectToServer ['46.4.37.180', 2312, 'asdf0987']";
+        actionText = "Join Side Op Server";
         condition = "true";
     };
 

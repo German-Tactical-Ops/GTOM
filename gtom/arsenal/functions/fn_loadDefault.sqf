@@ -109,11 +109,11 @@ if (_arsenalType == "Custom") exitWith {
 			[GTO_DefaultLoadout_at, GTO_Loadout_at] call GTO_CutomLoadout_Template;
 		};
 
+		case "marksman": {
+			[GTO_DefaultLoadout_marksman, GTO_Loadout_marksman] call GTO_CutomLoadout_Template;
+		};
 		case "sniper": {
 			[GTO_DefaultLoadout_sniper, GTO_Loadout_sniper] call GTO_CutomLoadout_Template;
-		};
-		case "spotter": {
-			[GTO_DefaultLoadout_spotter, GTO_Loadout_spotter] call GTO_CutomLoadout_Template;
 		};
 		case "sapper": {
 			[GTO_DefaultLoadout_sapper, GTO_Loadout_sapper] call GTO_CutomLoadout_Template;

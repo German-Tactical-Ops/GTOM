@@ -73,6 +73,7 @@ GTO_RoleList_Template = {
 ["grenadier", "Grenadier", _gto_Weapon] call GTO_RoleList_Template;
 ["at", "AT", _gto_Weapon] call GTO_RoleList_Template;
 
+["marksman", "Marksman", _gto_Special] call GTO_RoleList_Template;
 ["sniper", "Sniper", _gto_Special] call GTO_RoleList_Template;
 ["spotter", "Spotter", _gto_Special] call GTO_RoleList_Template;
 ["sapper", "Sapper", _gto_Special] call GTO_RoleList_Template;
@@ -133,8 +134,8 @@ GTO_DefaultLoadout_Template = {
 ["grenadier", "Grenadier", _gto_Weapon] call GTO_DefaultLoadout_Template;
 ["at", "AT", _gto_Weapon] call GTO_DefaultLoadout_Template;
 
+["marksman", "Marksman", _gto_Special] call GTO_DefaultLoadout_Template;
 ["sniper", "Sniper", _gto_Special] call GTO_DefaultLoadout_Template;
-["spotter", "Spotter", _gto_Special] call GTO_DefaultLoadout_Template;
 ["sapper", "Sapper", _gto_Special] call GTO_DefaultLoadout_Template;
 ["engineer", "Engineer", _gto_Special] call GTO_DefaultLoadout_Template;
 

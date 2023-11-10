@@ -30,10 +30,10 @@ private _roleEquipment_grenadier = parseSimpleArray GTO_RoleEquipment_grenadier;
 private _roleItems_grenadier = parseSimpleArray GTO_RoleItems_grenadier;
 private _roleEquipment_at = parseSimpleArray GTO_RoleEquipment_at;
 private _roleItems_at = parseSimpleArray GTO_RoleItems_at;
+private _roleEquipment_marksman = parseSimpleArray GTO_RoleEquipment_marksman;
+private _roleItems_marksman = parseSimpleArray GTO_RoleItems_marksman;
 private _roleEquipment_sniper = parseSimpleArray GTO_RoleEquipment_sniper;
 private _roleItems_sniper = parseSimpleArray GTO_RoleItems_sniper;
-private _roleEquipment_spotter = parseSimpleArray GTO_RoleEquipment_spotter;
-private _roleItems_spotter = parseSimpleArray GTO_RoleItems_spotter;
 private _roleEquipment_sapper = parseSimpleArray GTO_RoleEquipment_sapper;
 private _roleItems_sapper = parseSimpleArray GTO_RoleItems_sapper;
 private _roleEquipment_engineer = parseSimpleArray GTO_RoleEquipment_engineer;
@@ -98,15 +98,15 @@ _items append (switch (_role) do
 		_roleEquipment_at+
 		_roleItems_at
 	};
+	case "marksman":
+	{
+		_roleEquipment_marksman+
+		_roleItems_marksman
+	};
 	case "sniper":
 	{
 		_roleEquipment_sniper+
 		_roleItems_sniper
-	};
-	case "spotter":
-	{
-		_roleEquipment_spotter+
-		_roleItems_spotter
 	};
 	case "sapper":
 	{
