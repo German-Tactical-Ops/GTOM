@@ -75,7 +75,6 @@ GTO_RoleList_Template = {
 
 ["marksman", "Marksman", _gto_Special] call GTO_RoleList_Template;
 ["sniper", "Sniper", _gto_Special] call GTO_RoleList_Template;
-["spotter", "Spotter", _gto_Special] call GTO_RoleList_Template;
 ["sapper", "Sapper", _gto_Special] call GTO_RoleList_Template;
 ["engineer", "Engineer", _gto_Special] call GTO_RoleList_Template;
 

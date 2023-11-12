@@ -43,13 +43,21 @@ private _roleItems_pilot = parseSimpleArray GTO_RoleItems_pilot;
 private _roleEquipment_crewman = parseSimpleArray GTO_RoleEquipment_crewman;
 private _roleItems_crewman = parseSimpleArray GTO_RoleItems_crewman;
 
+// Extra Fields
 private _goggles = parseSimpleArray GTO_Equipment_Goggles;
+
+private _base_weapons = parseSimpleArray GTO_Base_Weapon; //ToDo: create such Array
+private _base_Attachments = parseSimpleArray GTO_Base_Attachments; //ToDo: create such Array
+
+
+private _base = _goggles + _roleEquipment_basic + _roleItems_basic;
+private _base_soldier = _base + _base_weapons + _base_Attachments;
 
 private _items = [];
 
-_items append _roleEquipment_basic;
-_items append _roleItems_basic;
-_items append _goggles;
+_items append _roleEquipment_basic; // ToDo: move to other destination
+_items append _roleItems_basic; // ToDo: move to other destination
+_items append _goggles; // ToDo: move to other destination
 
 
 _items append (switch (_role) do
