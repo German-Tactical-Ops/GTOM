@@ -4,8 +4,8 @@ scriptName "fn_FTLItems";
 */
 params ["_ammoBox"];
 
-private _items = parseSimpleArray GTO_RoleEquipment_ftl;
+private _items = parseSimpleArray GTO_Primary_ftl;
 
-_items append parseSimpleArray GTO_RoleItems_ftl;
+_items append parseSimpleArray GTO_Secondary_ftl;
 
 [_ammoBox, _items, false] call ace_arsenal_fnc_addVirtualItems;

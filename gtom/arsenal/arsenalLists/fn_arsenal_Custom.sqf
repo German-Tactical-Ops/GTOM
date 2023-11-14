@@ -7,163 +7,187 @@ scriptName "fn_arsenal_Custom";
 */
 params ["_role"];
 
-private _roleEquipment_basic = parseSimpleArray GTO_RoleEquipment_basic;
-private _roleItems_basic = parseSimpleArray GTO_RoleItems_basic;
+private _primary_basic = parseSimpleArray GTO_Primary_basic;
+private _secondary_basic = parseSimpleArray GTO_Secondary_basic;
 
-private _roleEquipment_sl = parseSimpleArray GTO_RoleEquipment_sl;
-private _roleItems_sl = parseSimpleArray GTO_RoleItems_sl;
+private _primary_basicWeapon = parseSimpleArray GTO_Primary_basicWeapon;
+private _secondary_basicWeapon = parseSimpleArray GTO_Secondary_basicWeapon;
 
-private _roleEquipment_doctor = parseSimpleArray GTO_RoleEquipment_doctor;
-private _roleItems_doctor = parseSimpleArray GTO_RoleItems_doctor;
-private _roleEquipment_medic = parseSimpleArray GTO_RoleEquipment_medic;
-private _roleItems_medic = parseSimpleArray GTO_RoleItems_medic;
-// private _roleEquipment_medic = parseSimpleArray GTO_RoleEquipment_afr;
-// private _roleItems_medic = parseSimpleArray GTO_RoleItems_afr;
+private _primary_basicAttachments = parseSimpleArray GTO_Primary_basicAttachments;
+private _secondary_basicAttachments = parseSimpleArray GTO_Secondary_basicAttachments;
 
-private _roleEquipment_ammoCarrier = parseSimpleArray GTO_RoleEquipment_ammoCarrier;
-private _roleItems_ammoCarrier = parseSimpleArray GTO_RoleItems_ammoCarrier;
-private _roleEquipment_weaponSpecialist = parseSimpleArray GTO_RoleEquipment_weaponSpecialist;
-private _roleItems_weaponSpecialist = parseSimpleArray GTO_RoleItems_weaponSpecialist;
-private _roleEquipment_mg = parseSimpleArray GTO_RoleEquipment_mg;
-private _roleItems_mg = parseSimpleArray GTO_RoleItems_mg;
-private _roleEquipment_grenadier = parseSimpleArray GTO_RoleEquipment_grenadier;
-private _roleItems_grenadier = parseSimpleArray GTO_RoleItems_grenadier;
-private _roleEquipment_at = parseSimpleArray GTO_RoleEquipment_at;
-private _roleItems_at = parseSimpleArray GTO_RoleItems_at;
-private _roleEquipment_marksman = parseSimpleArray GTO_RoleEquipment_marksman;
-private _roleItems_marksman = parseSimpleArray GTO_RoleItems_marksman;
-private _roleEquipment_sniper = parseSimpleArray GTO_RoleEquipment_sniper;
-private _roleItems_sniper = parseSimpleArray GTO_RoleItems_sniper;
-private _roleEquipment_sapper = parseSimpleArray GTO_RoleEquipment_sapper;
-private _roleItems_sapper = parseSimpleArray GTO_RoleItems_sapper;
-private _roleEquipment_engineer = parseSimpleArray GTO_RoleEquipment_engineer;
-private _roleItems_engineer = parseSimpleArray GTO_RoleItems_engineer;
-private _roleEquipment_pilot = parseSimpleArray GTO_RoleEquipment_pilot;
-private _roleItems_pilot = parseSimpleArray GTO_RoleItems_pilot;
-private _roleEquipment_crewman = parseSimpleArray GTO_RoleEquipment_crewman;
-private _roleItems_crewman = parseSimpleArray GTO_RoleItems_crewman;
+private _primary_sl = parseSimpleArray GTO_Primary_sl;
+private _secondary_sl = parseSimpleArray GTO_Secondary_sl;
+private _primary_ftl = parseSimpleArray GTO_Primary_ftl;
+private _secondary_ftl = parseSimpleArray GTO_Secondary_ftl;
+
+private _primary_doctor = parseSimpleArray GTO_Primary_doctor;
+private _secondary_doctor = parseSimpleArray GTO_Secondary_doctor;
+private _primary_medic = parseSimpleArray GTO_Primary_medic;
+private _secondary_medic = parseSimpleArray GTO_Secondary_medic;
+// private _primary_medic = parseSimpleArray GTO_Primary_afr;
+// private _secondary_medic = parseSimpleArray GTO_Secondary_afr;
+
+private _primary_ammoCarrier = parseSimpleArray GTO_Primary_ammoCarrier;
+private _secondary_ammoCarrier = parseSimpleArray GTO_Secondary_ammoCarrier;
+private _primary_weaponSpecialist = parseSimpleArray GTO_Primary_weaponSpecialist;
+private _secondary_weaponSpecialist = parseSimpleArray GTO_Secondary_weaponSpecialist;
+private _primary_mg = parseSimpleArray GTO_Primary_mg;
+private _secondary_mg = parseSimpleArray GTO_Secondary_mg;
+private _primary_grenadier = parseSimpleArray GTO_Primary_grenadier;
+private _secondary_grenadier = parseSimpleArray GTO_Secondary_grenadier;
+private _primary_at = parseSimpleArray GTO_Primary_at;
+private _secondary_at = parseSimpleArray GTO_Secondary_at;
+private _primary_marksman = parseSimpleArray GTO_Primary_marksman;
+private _secondary_marksman = parseSimpleArray GTO_Secondary_marksman;
+private _primary_sniper = parseSimpleArray GTO_Primary_sniper;
+private _secondary_sniper = parseSimpleArray GTO_Secondary_sniper;
+private _primary_sapper = parseSimpleArray GTO_Primary_sapper;
+private _secondary_sapper = parseSimpleArray GTO_Secondary_sapper;
+private _primary_engineer = parseSimpleArray GTO_Primary_engineer;
+private _secondary_engineer = parseSimpleArray GTO_Secondary_engineer;
+private _primary_pilot = parseSimpleArray GTO_Primary_pilot;
+private _secondary_pilot = parseSimpleArray GTO_Secondary_pilot;
+private _primary_crewman = parseSimpleArray GTO_Primary_crewman;
+private _secondary_crewman = parseSimpleArray GTO_Secondary_crewman;
 
 // Extra Fields
-private _goggles = parseSimpleArray GTO_Equipment_Goggles;
 
-private _base_weapons = parseSimpleArray GTO_Base_Weapon; //ToDo: create such Array
-private _base_Attachments = parseSimpleArray GTO_Base_Attachments; //ToDo: create such Array
+private _primary_goggles = parseSimpleArray GTO_Primary_goggles;
+private _secondary_goggles = parseSimpleArray GTO_Secondary_goggles;
 
-
-private _base = _goggles + _roleEquipment_basic + _roleItems_basic;
-private _base_soldier = _base + _base_weapons + _base_Attachments;
+private _base = _primary_goggles + _secondary_goggles + _primary_basic + _secondary_basic;
+private _base_soldier = _base + _primary_basicWeapon + _secondary_basicWeapon + _primary_basicAttachments + _secondary_basicAttachments;
 
 private _items = [];
-
-_items append _roleEquipment_basic; // ToDo: move to other destination
-_items append _roleItems_basic; // ToDo: move to other destination
-_items append _goggles; // ToDo: move to other destination
-
 
 _items append (switch (_role) do
 {
 	case "sl":
 	{
-		_roleEquipment_sl+
-		_roleItems_sl
+		_base_soldier+
+		_primary_sl+
+		_secondary_sl+
+		_primary_ftl+
+		_secondary_ftl
 	};
 	case "doctor":
 	{
-		_roleEquipment_sl+
-		_roleItems_sl+
-		_roleEquipment_medic+
-		_roleItems_medic+
-		_roleEquipment_doctor+
-		_roleItems_doctor
+		_base_soldier+
+		_primary_sl+
+		_secondary_sl+
+		_primary_medic+
+		_secondary_medic+
+		_primary_doctor+
+		_secondary_doctor
 	};
 	case "medic":
 	{
-		_roleEquipment_medic+
-		_roleItems_medic
+		_base_soldier+
+		_primary_medic+
+		_secondary_medic
 	};
 	case "ammoCarrier":
 	{
-		_roleEquipment_ammoCarrier+
-		_roleItems_ammoCarrier
+		_base_soldier+
+		_primary_ammoCarrier+
+		_secondary_ammoCarrier
 	};
 	case "weaponSpecialist":
 	{
-		_roleEquipment_weaponSpecialist+
-		_roleItems_weaponSpecialist
+		_base+
+		_primary_basicAttachments+
+		_secondary_basicAttachments+
+		_primary_weaponSpecialist+
+		_secondary_weaponSpecialist
 	};
 	case "mg":
 	{
-		_roleEquipment_mg+
-		_roleItems_mg
+		_base+
+		_primary_basicAttachments+
+		_secondary_basicAttachments+
+		_primary_mg+
+		_secondary_mg
 	};
 	case "grenadier":
 	{
-		_roleEquipment_grenadier+
-		_roleItems_grenadier
+		_base+
+		_primary_basicAttachments+
+		_secondary_basicAttachments+
+		_primary_grenadier+
+		_secondary_grenadier
 	};
 	case "at":
 	{
-		_roleEquipment_at+
-		_roleItems_at
+		_base_soldier+
+		_primary_at+
+		_secondary_at
 	};
 	case "marksman":
 	{
-		_roleEquipment_marksman+
-		_roleItems_marksman
+		_base+
+		_primary_marksman+
+		_secondary_marksman
 	};
 	case "sniper":
 	{
-		_roleEquipment_sniper+
-		_roleItems_sniper
+		_base+
+		_primary_sniper+
+		_secondary_sniper
 	};
 	case "sapper":
 	{
-		_roleEquipment_sapper+
-		_roleItems_sapper
+		_base_soldier+
+		_primary_sapper+
+		_secondary_sapper
 	};
 	case "engineer":
 	{
-		_roleEquipment_engineer+
-		_roleItems_engineer
+		_base_soldier+
+		_primary_engineer+
+		_secondary_engineer
 	};
 	case "pilot":
 	{
-		_roleEquipment_pilot+
-		_roleItems_pilot
+		_base_soldier+
+		_primary_pilot+
+		_secondary_pilot
 	};
 	case "crewman":
 	{
-		_roleEquipment_crewman+
-		_roleItems_crewman
+		_base_soldier+
+		_primary_crewman+
+		_secondary_crewman
 	};
 	case "admin":
 	{
-		_roleEquipment_sl+
-		_roleEquipment_medic+
-		_roleItems_sl+
-		_roleItems_medic+
-		_roleEquipment_ammoCarrier+
-		_roleItems_ammoCarrier+
-		_roleEquipment_weaponSpecialist+
-		_roleItems_weaponSpecialist+
-		_roleEquipment_mg+
-		_roleItems_mg+
-		_roleEquipment_grenadier+
-		_roleItems_grenadier+
-		_roleEquipment_at+
-		_roleItems_at+
-		_roleEquipment_sniper+
-		_roleItems_sniper+
-		_roleEquipment_spotter+
-		_roleItems_spotter+
-		_roleEquipment_sapper+
-		_roleItems_sapper+
-		_roleEquipment_engineer+
-		_roleItems_engineer+
-		_roleEquipment_pilot+
-		_roleItems_pilot+
-		_roleEquipment_crewman+
-		_roleItems_crewman
+		_base_soldier+
+		_primary_sl+
+		_primary_medic+
+		_secondary_sl+
+		_secondary_medic+
+		_primary_ammoCarrier+
+		_secondary_ammoCarrier+
+		_primary_weaponSpecialist+
+		_secondary_weaponSpecialist+
+		_primary_mg+
+		_secondary_mg+
+		_primary_grenadier+
+		_secondary_grenadier+
+		_primary_at+
+		_secondary_at+
+		_primary_sniper+
+		_secondary_sniper+
+		_primary_marksman+
+		_secondary_marksman+
+		_primary_sapper+
+		_secondary_sapper+
+		_primary_engineer+
+		_secondary_engineer+
+		_primary_pilot+
+		_secondary_pilot+
+		_primary_crewman+
+		_secondary_crewman
 	};
 
 	default {

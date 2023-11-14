@@ -7,8 +7,6 @@ scriptName "fn_getRankNumber";
 */
 params ["_player"];
 
-systemChat "Deprecated Function fn_getRankNumber";
-
 _rank = rank _player;
 
 _rankID = 0;
