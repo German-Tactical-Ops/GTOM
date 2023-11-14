@@ -137,10 +137,10 @@ class CfgVehicles {
 
     class GTO_ILBE_Medic_Base : tfw_ilbe_blade_Base
 	{
-		scope= 0;
+		scope= 1;
 		author= "LucyferHW";
 		picture= "\gtom\wearables\icons\gto_medic_icon.paa";
-		maximumLoad= 400;
+		maximumLoad = 400;
 	};
 
     class GTO_ILBE_Medic_alpine : GTO_ILBE_Medic_Base
@@ -158,7 +158,7 @@ class CfgVehicles {
 		scopeCurator= 2;
 		scopeArsenal= 2;
         displayName= "ILBE B. Medic (black)";
-        hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_black.paa"};
+        hiddenSelectionsTextures[]= {"gtom\wearables\textures\ILBE\ilbe_medic.paa"};
     }; // 1. wichtig!
 
     class GTO_ILBE_Medic_multicam : GTO_ILBE_Medic_Base

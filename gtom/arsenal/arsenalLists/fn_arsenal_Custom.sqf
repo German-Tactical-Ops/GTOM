@@ -79,7 +79,8 @@ _items append (switch (_role) do
 		_primary_medic+
 		_secondary_medic+
 		_primary_doctor+
-		_secondary_doctor
+		_secondary_doctor+
+		["GTO_ILBE_Medic_black"]
 	};
 	case "medic":
 	{
