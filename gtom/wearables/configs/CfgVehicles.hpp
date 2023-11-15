@@ -31,7 +31,7 @@ class CfgVehicles {
         hiddenSelectionsTextures[]= {"gtom\wearables\textures\CarryallMedic\carryall_medic_aor1.paa"};
     };
 
-	    class GTO_Carryall_Medic_aor2 : GTO_Carryall_Medic_Base
+	class GTO_Carryall_Medic_aor2 : GTO_Carryall_Medic_Base
     {
         scope= 2;
 		scopeCurator= 2;
@@ -137,7 +137,7 @@ class CfgVehicles {
 
     class GTO_ILBE_Medic_Base : tfw_ilbe_blade_Base
 	{
-		scope= 1;
+		scope= 0;
 		author= "LucyferHW";
 		picture= "\gtom\wearables\icons\gto_medic_icon.paa";
 		maximumLoad = 400;
