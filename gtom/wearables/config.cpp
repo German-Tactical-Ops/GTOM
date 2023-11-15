@@ -8,7 +8,8 @@ class CfgPatches
         author = "LucyferHW";
         url = "";
 
-        units[] = {};
+        units[] = {"GTO_ILBE_Medic_black"};
+
 
         requiredAddons[] = {"A3_Weapons_F_Ammoboxes","A3_Weapons_F","A3_Characters_F","GTOM_Main"};
     };
