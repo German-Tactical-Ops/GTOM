@@ -85,7 +85,6 @@ GTO_RoleList_Template = {
 
 ["goggles", "Goggles", _gto_Other] call GTO_RoleList_Template;
 
-
 // ["kat_circulation_bloodgroup", _bloodType] call CBA_settings_fnc_set;
 
 GTO_DefaultLoadout_Template = {
@@ -102,7 +101,7 @@ GTO_DefaultLoadout_Template = {
 		} // function that will be executed once on mission start and every time the setting is changed.
 	] call CBA_fnc_addSetting;
 
-/* 	[
+	[
 		"GTO_Loadout_" + _className, // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 		"EDITBOX", // setting type
 		["Loadout " + _visibleName, ""], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
@@ -112,7 +111,7 @@ GTO_DefaultLoadout_Template = {
 		{
 			params["_value"];
 		} // function that will be executed once on mission start and every time the setting is changed.
-	] call CBA_fnc_addSetting; */
+	] call CBA_fnc_addSetting;
 };
 
 ["sl", "SL", _gto_Lead] call GTO_DefaultLoadout_Template;
