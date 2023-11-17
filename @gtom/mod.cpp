@@ -21,7 +21,7 @@ logo = "gtom.paa"; // Logo displayed in bottom left of main menu
 tooltip = "GTOM";
 tooltipOwned = "GTOM Owned";
 
-overview = "Version: 1.22.2 - Rescue<br/><br/>This mod is made for the GTO Unit. Everybody can use it, but it will only work as intended with the GTO-modpack. This mod contains many small things for Players, Curators and Mission Makers.";
+overview = "Version: 1.22.3 - Rescue<br/><br/>This mod is made for the GTO Unit. Everybody can use it, but it will only work as intended with the GTO-modpack. This mod contains many small things for Players, Curators and Mission Makers.";
 
 // fieldManualTopicAndHint[] = {"Curator", "Curator"};
 
