@@ -112,9 +112,7 @@ _items append (switch (_role) do
 	};
 	case "grenadier":
 	{
-		_base+
-		_primary_basicAttachments+
-		_secondary_basicAttachments+
+		_base_soldier+
 		_primary_grenadier+
 		_secondary_grenadier
 	};
