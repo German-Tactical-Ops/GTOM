@@ -61,20 +61,20 @@ class CfgVehicles
                     statement = "[] call GTO_fnc_convertRank";
                     runOnHover = "GTO_ExtractRank";
                 	exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-					priority = 2;                
+					priority = 2;
 
                     class categorie_lead
                     {
                         displayName = "Lead";
-                	    condition =  "50 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable || 20 == profileNamespace getVariable ['GTO_RankCode', -1]";
+                	    condition =  "true"; // 50 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable || 20 == profileNamespace getVariable ['GTO_RankCode', -1]
                 	    exceptions[] = {};
 
                         class role_SL
                         {
                             displayName = "SL";
-                            condition = "([_player] call GTO_fnc_getRankNumber) >= 30";
+                            condition = "true"; // ([_player] call GTO_fnc_getRankNumber) >= 30
                             statement = "['sl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon= "gtom\icons\Roles\SL_icon.paa";                                                                      
+                            icon= "gtom\icons\Roles\SL_icon.paa";
                         };
 
                         class permissions_FTL
@@ -119,7 +119,7 @@ class CfgVehicles
                         class role_Medic
                         {
                             displayName = "Medic";
-                            condition = "([_player] call GTO_fnc_getRankNumber) >= 20";
+                            condition = "true";
                             statement = "['medic', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon ="gtom\icons\Roles\Med_icon.paa";                            
                         };
@@ -136,7 +136,7 @@ class CfgVehicles
                     class categorie_Weapon
                     {
                         displayName = "Weapon";
-                	    condition =  "10 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable";
+                	    condition =  "true"; // 10 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable
                 	    exceptions[] = {};
 					    priority = 1;
 
@@ -178,7 +178,7 @@ class CfgVehicles
                     class categorie_special
                     {
                         displayName = "Special";
-                	    condition =  "40 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable || 20 == profileNamespace getVariable ['GTO_RankCode', -1]";
+                	    condition =  "true";
                 	    exceptions[] = {};
 
 					    class role_Marksman
