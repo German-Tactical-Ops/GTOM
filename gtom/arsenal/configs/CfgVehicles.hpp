@@ -104,7 +104,7 @@ class CfgVehicles
                         {
                             displayName = "Ammo Carrier / Rifleman";
                             condition = "true"; 
-                            statement = "['ammoCarrier', getText(configOf _target >> 'arsenalType'), _target]call GTO_fnc_setRole; [_target, _player]call    ace_arsenal_fnc_openBox;";
+                            statement = "['ammoCarrier', getText(configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon = "gtom\icons\Roles\Rifleman_icon.paa";                            
                         };
 
