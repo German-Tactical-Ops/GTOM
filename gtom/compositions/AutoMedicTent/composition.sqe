@@ -1,0 +1,133 @@
+version=54;
+center[]={6075.2656,1.49,1287.5364};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="MedicineTent";
+		class Entities
+		{
+			items=5;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,1.3745635,0};
+					angles[]={0,0.32838279,-0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=793;
+				type="Land_MedicalTent_01_MTP_closed_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Door_Hide";
+						expression="_this animateSource ['Door_Hide',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=1;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="SolarPanel2_Hide";
+						expression="_this animateSource ['SolarPanel2_Hide',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=1;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="SolarPanel1_Hide";
+						expression="_this animateSource ['SolarPanel1_Hide',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=1;
+							};
+						};
+					};
+					nAttributes=3;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					angles[]={0,0.32838279,-0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=795;
+				type="Land_ConnectorTent_01_floor_dark_F";
+			};
+			class Item2
+			{
+				dataType="Trigger";
+				position[]={0.00048828125,0,-0.00036621094};
+				angle=0.32838371;
+				class Attributes
+				{
+					onActivation="{[objNull, _x] call ace_medical_treatment_fnc_fullHeal} forEach thisList";
+					sizeA=4.3309999;
+					sizeB=4.8800001;
+					sizeC=5;
+					timeout[]={1,1,1};
+					repeatable=1;
+					activationBy="ANYPLAYER";
+					isRectangle=1;
+				};
+				id=817;
+				type="EmptyDetectorArea10x10";
+			};
+			class Item3
+			{
+				dataType="Marker";
+				position[]={0,0,0};
+				name="marker_46";
+				type="loc_Hospital";
+				angle=18.814939;
+				id=818;
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					angles[]={0,0.32838279,-0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=2317;
+				type="Land_ClutterCutter_large_F";
+			};
+		};
+		id=2318;
+	};
+};
