@@ -29,6 +29,7 @@ class CfgPatches
 
 #include "configs\CfgEditorCategories.hpp"
 #include "configs\CfgFunctions.hpp"
+#include "configs\CfgWorlds.hpp"
 
 class Extended_PreInit_EventHandlers {
     class GTO_cbaMainSettings {
