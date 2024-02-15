@@ -11,9 +11,8 @@ class CfgWorlds
 		// Loading texts displayed on the bottom of the loading screen (picked randomly)
 		loadingTexts[] =
 		{
-			"GTO",
-			"GTO",
-			"GTO"
+			"German Tactical Ops",
+			"German Tactical Ops"
 		};
 	};
 };
