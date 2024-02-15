@@ -32,7 +32,7 @@ class CfgMainMenuSpotlight
         picture = "gtom\logo\gto_unit_logo.paa";
         action = "connectToServer ['46.4.37.180', 2322, 'asdf0987']"; //46.4.37.180:2322
         actionText = "Join StarWars Server";
-        condition = "true";
+        condition = "false";
     };
 
     class JoinServerGTOSideOP
@@ -41,7 +41,7 @@ class CfgMainMenuSpotlight
         picture = "gtom\logo\gto_unit_logo.paa";
         action = "connectToServer ['46.4.37.180', 2312, 'asdf0987']";
         actionText = "Join Side Op Server";
-        condition = "true";
+        condition = "false";
     };
 
     delete ApexProtocol;
