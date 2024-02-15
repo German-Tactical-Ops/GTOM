@@ -126,8 +126,8 @@ class CfgVehicles
 
                         class role_Doctor
                         {
-                            displayName = "Doctor";
-                            condition = "([_player] call GTO_fnc_getRankNumber) >= 30";
+                            displayName = "Doctor (first ask)";
+                            condition = "true"; //([_player] call GTO_fnc_getRankNumber) >= 30
                             statement = "['doctor', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon ="gtom\icons\Roles\Med_icon.paa";
                         };
