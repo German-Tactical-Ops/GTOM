@@ -1,16 +1,13 @@
 scriptName "fn_uniformFix";
 
-//Store TFAR radio settings and active radio channel
-_settings = (call TFAR_fnc_activeLrRadio) call TFAR_fnc_getLrSettings;
-_channel = (call TFAR_fnc_ActiveLrRadio) call TFAR_fnc_getLrChannel;
+_mags = uniformMagazines ACE_playerplayer; 
+_items = uniformItems ACE_player;
+ACE_player forceaddUniform (uniform ACE_player);
 
-ACE_player setUnitLoadout [getUnitLoadout ACE_player, true];
-systemChat "Uniform.sqf";
+{
+	ACE_player addItemToUniform _x
+} forEach _items;
 
-//Apply previously saved TFAR settings to the new backpack radio
-if (isClass(configFile >> "cfgPatches" >> "tfar_core")) then {
-     [(call TFAR_fnc_ActiveLrRadio), _settings] call TFAR_fnc_setLrSettings;
- } else {
-     [(call TFAR_fnc_ActiveLrRadio) select 0, (call TFAR_fnc_ActiveLrRadio) select 1, _settings] call TFAR_fnc_setLrSettings;
- };
-_settings set [0, _channel]; // sets the active channel to 2
+{
+	ACE_player addMagazine _x
+} forEach _mags;
