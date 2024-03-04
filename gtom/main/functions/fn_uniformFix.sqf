@@ -1,4 +1,13 @@
 scriptName "fn_uniformFix";
 
-ACE_player setUnitLoadout [getUnitLoadout ACE_player, true];
-systemChat "Uniform.sqf";
+_mags = uniformMagazines ACE_playerplayer; 
+_items = uniformItems ACE_player;
+ACE_player forceaddUniform (uniform ACE_player);
+
+{
+	ACE_player addItemToUniform _x
+} forEach _items;
+
+{
+	ACE_player addMagazine _x
+} forEach _mags;
