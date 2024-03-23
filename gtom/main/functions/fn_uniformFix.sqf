@@ -1,6 +1,6 @@
 scriptName "fn_uniformFix";
 
-_mags = uniformMagazines ACE_playerplayer; 
+_mags = uniformMagazines ACE_player; 
 _items = uniformItems ACE_player;
 ACE_player forceaddUniform (uniform ACE_player);
 
