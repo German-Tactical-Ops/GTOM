@@ -1,7 +1,5 @@
 #include "\gtom\basicDefines_A3.hpp"
 
-
-
 class CfgPatches
 {
 	class GTOM_old
@@ -28,7 +26,7 @@ class CfgWeapons
     {
         class ItemInfo : CBA_MiscItem_ItemInfo
         {
-            mass = 0;
+            mass = 2.25;
         }
     }
 
