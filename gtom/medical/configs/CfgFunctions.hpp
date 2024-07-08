@@ -9,11 +9,11 @@ class cfgFunctions
 		{
 			file = "gtom\medical\functions";
 
-			class cbaSettingsMedical
+/* 			class cbaSettingsMedical
 			{
 				postInit = 1;
 				recompile = 1;
-			}; // [] call GTO_fnc_cbaSettingsMedical;
+			}; // [] call GTO_fnc_cbaSettingsMedical; */
 
 			class full_Heal
 			{
