@@ -10,11 +10,38 @@ class CfgPatches
 
         units[] = {"JoinServerGTO"};
 
-        requiredAddons[] = {"A3_Ui_F","GTOM_Main"};
+        requiredAddons[] = {"A3_Ui_F", "FIR_AWS_Cutscene_F", "GTOM_Main"};
     };
 };
 
-class CfgMainMenuSpotlight
+class RscStandardDisplay;
+class RscDisplayMain : RscStandardDisplay
+{
+    enableDisplay = 1;
+    class Spotlight
+    {
+        class JoinServerGTOMain
+        {
+            text = "Main Server";
+            picture = "gtom\logo\gto_unit_logo.paa";
+            action = "connectToServer ['46.4.37.180', 2302, 'asdf0987']";
+            actionText = "Join Main Server";
+            condition = "true";
+        };
+    }
+
+    class controls
+    {
+        class Spotlight1{};
+        class Spotlight2{};
+        class Spotlight3{};
+        class BackgroundSpotlightRight{};
+        class BackgroundSpotlightLeft{};
+        class BackgroundSpotlight{};
+    };
+};
+
+/* class CfgMainMenuSpotlight
 {
 
     class JoinServerGTOMain
@@ -30,7 +57,7 @@ class CfgMainMenuSpotlight
     {
         text = "Star Wars";
         picture = "gtom\logo\gto_unit_logo.paa";
-        action = "connectToServer ['46.4.37.180', 2322, 'asdf0987']"; //46.4.37.180:2322
+        action = "connectToServer ['46.4.37.180', 2322, 'asdf0987']"; // 46.4.37.180:2322
         actionText = "Join StarWars Server";
         condition = "false";
     };
@@ -51,7 +78,10 @@ class CfgMainMenuSpotlight
     delete Orange_Showcase_IDAP;
     delete Orange_Showcase_LoW;
     delete Showcase_TankDestroyers;
-    class Tacops_Campaign_01 { condition = "false";}; // Can´t be deleted
+    class Tacops_Campaign_01
+    {
+        condition = "false";
+    }; // Can´t be deleted
     delete Tacops_Campaign_02;
     delete Tacops_Campaign_03;
     delete Tanks_Campaign_01;
@@ -62,7 +92,7 @@ class CfgMainMenuSpotlight
     delete Orange_Campaign;
     delete AoW_Showcase_AOW;
     delete AoW_Showcase_Future;
-};
+}; */
 
 /*
 Server name: [GTO] German Tactical Ops
