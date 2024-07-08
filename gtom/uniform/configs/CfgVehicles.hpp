@@ -66,14 +66,12 @@ class CfgVehicles {
         linkedItems[] = {GTO_Beret_Black,
                          ItemMap,
                          ItemCompass,
-                         ItemWatch,
-                         none}; // Which items the character has.
+                         ItemWatch}; // Which items the character has.
 
         respawnLinkedItems[] = {GTO_Beret_Black,
                          ItemMap,
                          ItemCompass,
-                         ItemWatch,
-                         none}; // Which items the character respawns with.
+                         ItemWatch}; // Which items the character respawns with.
     };
 
     class GTO_Soldier_SL : GTO_Soldier_base
