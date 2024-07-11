@@ -30,8 +30,8 @@ class CfgUnitInsignia
         displayName = "GTO";
         author = "LucyferHW";
         material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-        texture = "gtom\logo\gto_unit_logo.paa";
-        textureVehicle = "gtom\logo\gto_unit_logo.paa";
+        texture = "gtom\images\logo\gto_unit_logo.paa";
+        textureVehicle = "gtom\images\logo\gto_unit_logo.paa";
     };
 
     class GTO_Insignia_Medic
