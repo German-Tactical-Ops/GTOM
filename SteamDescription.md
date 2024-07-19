@@ -16,7 +16,6 @@ This mod contains many small things for Players, Curators and Mission Makers.
 - - Set Rank
 - - Enable ACE Fortify
 - - health regeneration
-- - recoil coefficient
 - - automatic Blood group setup (via SteamID)
 
 [h2]For Curator and Mission Maker[/h2]
