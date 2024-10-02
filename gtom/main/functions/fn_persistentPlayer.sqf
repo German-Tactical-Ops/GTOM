@@ -7,13 +7,14 @@ scriptName "fn_persistentPlayer";
 */
 
 GTO_fnc_loadClientData = {
-	params ["_loadout", "_positionASL", "_dir"];
+	params ["_loadout", "_positionASL", "_dir", "_medicState"];
 	waitUntil {
 		!isNull player
 	};
 	player setUnitLoadout _loadout;
 	player setDir _dir;
 	player setPosASL _positionASL;
+	player setVariable ["ace_medical_medicclass", _medicState, true];
 
 	systemChat "Please check your role permissions after reconnect. (Medic, Sapper, Engi)";
 
@@ -30,12 +31,13 @@ if (isServer) then {
 				private _loadout = getUnitLoadout _body;
 				private _position = getPos _body;
 				private _direction = getDir _body;
+				private _medicState = getVariable ["ace_medical_medicclass", 0];
 				if(isNil {
 					profileNamespace getVariable "GTO_disconnectedLoadouts"
 				}) then {
-					profileNamespace setVariable ["GTO_disconnectedLoadouts", createHashMapFromArray [[_uid, [_loadout, _position, _direction]]]];
+					profileNamespace setVariable ["GTO_disconnectedLoadouts", createHashMapFromArray [[_uid, [_loadout, _position, _direction, _medicState]]]];
 				} else {
-					(profileNamespace getVariable "GTO_disconnectedLoadouts") set [_uid, [_loadout, _position, _direction]];
+					(profileNamespace getVariable "GTO_disconnectedLoadouts") set [_uid, [_loadout, _position, _direction, _medicState]];
 				};
 				diag_log [_uid, (profileNamespace getVariable "GTO_disconnectedLoadouts")];
 			};
