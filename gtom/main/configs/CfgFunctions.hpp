@@ -20,15 +20,6 @@ class cfgFunctions
 			{
 			}; // [] call GTO_fnc_persistentPlayer;
 
-			class sleepClearHint
-			{
-				recompile = 1;
-			}; // [] call GTO_fnc_sleepClearHint;
-
-			class getModList
-			{
-			}; // [] call GTO_fnc_getModList;
-
 			class uniformFix
 			{
 			}; // [] call GTO_fnc_uniformFix

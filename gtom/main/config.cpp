@@ -23,7 +23,7 @@ class CfgPatches
 
             // ACE3
             "ace_common",
-            "ace_main"};
+            "ace_main"}; // "aceax_gearinfo"
     };
 };
 
