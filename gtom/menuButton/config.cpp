@@ -20,7 +20,7 @@ class CfgMainMenuSpotlight
     class JoinServerGTOMain
     {
         text = "Main Server";
-        picture = "gtom\images\logo\gto_unit_logo.paa";
+        picture = "gtom\images\logo\MainMenu_1.paa";
         action = "connectToServer ['46.4.37.180', 2302, 'asdf0987']";
         actionText = "Join Main Server";
         condition = "true";
@@ -29,28 +29,28 @@ class CfgMainMenuSpotlight
     class JoinServerGTOBritain
     {
         text = "Britain";
-        picture = "gtom\images\logo\gto_unit_logo_brit.paa";
+        picture = "gtom\images\logo\MainMenu_2.paa";
         action = "connectToServer ['46.4.37.180', 2312, 'asdf0987']";
         actionText = "Join Britain Server";
         condition = "true";
     };
 
-    class JoinServerGTOStarWars
+    class JoinServerGTOHalo
     {
-        text = "Star Wars";
-        picture = "gtom\images\logo\gto_unit_logo.paa";
+        text = "HALO";
+        picture = "gtom\images\logo\MainMenu_1.paa";
         action = "connectToServer ['46.4.37.180', 2322, 'asdf0987']";
-        actionText = "Join StarWars Server";
+        actionText = "Join HALO Server";
         condition = "false";
     };
 
-    class JoinServerGTOSideOP
+    class JoinServerGTORanger
     {
-        text = "Side Op Server";
-        picture = "gtom\images\logo\gto_unit_logo.paa";
-        action = "connectToServer ['46.4.37.180', 2312, 'asdf0987']";
-        actionText = "Join Side Op Server";
-        condition = "false";
+        text = "Ranger";
+        picture = "gtom\images\logo\MainMenu_3.paa";
+        action = "connectToServer ['46.4.37.180', 2332, 'asdf0987']";
+        actionText = "Join Ranger Server";
+        condition = "true";
     };
 
     delete ApexProtocol;
@@ -72,16 +72,3 @@ class CfgMainMenuSpotlight
     delete AoW_Showcase_AOW;
     delete AoW_Showcase_Future;
 };
-
-/*
-Server name: [GTO] German Tactical Ops
-Address: 5.83.170.148:21000
-Server version: 210149954
-Required game version: 2.10.0
-
-
-/*Server name: Fallschirmjägerregiment 42 Offizieller Gameserver
-Address: 185.240.242.109:2302
-Server version: 210149799
-Required game version: 2.10.0
-*/
