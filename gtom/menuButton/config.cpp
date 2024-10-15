@@ -26,11 +26,20 @@ class CfgMainMenuSpotlight
         condition = "true";
     };
 
+    class JoinServerGTOBritain
+    {
+        text = "Britain";
+        picture = "gtom\images\logo\gto_unit_logo_brit.paa";
+        action = "connectToServer ['46.4.37.180', 2312, 'asdf0987']";
+        actionText = "Join Britain Server";
+        condition = "true";
+    };
+
     class JoinServerGTOStarWars
     {
         text = "Star Wars";
         picture = "gtom\images\logo\gto_unit_logo.paa";
-        action = "connectToServer ['46.4.37.180', 2322, 'asdf0987']"; //46.4.37.180:2322
+        action = "connectToServer ['46.4.37.180', 2322, 'asdf0987']";
         actionText = "Join StarWars Server";
         condition = "false";
     };
