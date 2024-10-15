@@ -389,4 +389,24 @@ class CfgWeapons
 			containerClass = "Supply40";
 		};
 	};
+
+	class V_DeckCrew_white_F;
+
+    class GTO_Zeus_Vest : V_DeckCrew_white_F
+    {
+        scope= 2;
+		scopeCurator= 2;
+		scopeArsenal= 2;
+        displayName= "GTO Zeus Vest";
+        hiddenSelectionsTextures[]= {"gtom\wearables\textures\SpecialVests\Zeus_Vest.paa"};
+    }
+
+	class GTO_Spielleitung_Vest : V_DeckCrew_white_F
+    {
+        scope= 2;
+		scopeCurator= 2;
+		scopeArsenal= 2;
+        displayName= "GTO Spielleitung Vest";
+        hiddenSelectionsTextures[]= {"gtom\wearables\textures\SpecialVests\Spielleitung_Vest.paa"};
+    }
 };

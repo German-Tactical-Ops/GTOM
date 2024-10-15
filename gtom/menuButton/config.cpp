@@ -20,7 +20,7 @@ class CfgMainMenuSpotlight
     class JoinServerGTOMain
     {
         text = "Main Server";
-        picture = "gtom\logo\gto_unit_logo.paa";
+        picture = "gtom\images\logo\gto_unit_logo.paa";
         action = "connectToServer ['46.4.37.180', 2302, 'asdf0987']";
         actionText = "Join Main Server";
         condition = "true";
@@ -29,7 +29,7 @@ class CfgMainMenuSpotlight
     class JoinServerGTOStarWars
     {
         text = "Star Wars";
-        picture = "gtom\logo\gto_unit_logo.paa";
+        picture = "gtom\images\logo\gto_unit_logo.paa";
         action = "connectToServer ['46.4.37.180', 2322, 'asdf0987']"; //46.4.37.180:2322
         actionText = "Join StarWars Server";
         condition = "false";
@@ -38,7 +38,7 @@ class CfgMainMenuSpotlight
     class JoinServerGTOSideOP
     {
         text = "Side Op Server";
-        picture = "gtom\logo\gto_unit_logo.paa";
+        picture = "gtom\images\logo\gto_unit_logo.paa";
         action = "connectToServer ['46.4.37.180', 2312, 'asdf0987']";
         actionText = "Join Side Op Server";
         condition = "false";

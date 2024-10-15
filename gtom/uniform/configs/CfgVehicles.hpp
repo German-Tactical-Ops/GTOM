@@ -48,7 +48,7 @@ class CfgVehicles {
         //camouflage = 1;  // How likely this character is spotted (smaller number = more stealthy).
         //sensitivity = 1; // How likely this character spots enemies when controlled by AI.
 
-        //icon = "gtom\icons\Roles\Other_icon.paa";
+        //icon = "gtom\images\icons\Roles\Other_icon.paa";
         picture = "";
 
         uniformClass = "GTO_BaseUniform"; // This links this soldier to a particular uniform. For the details, see below.
@@ -66,35 +66,33 @@ class CfgVehicles {
         linkedItems[] = {GTO_Beret_Black,
                          ItemMap,
                          ItemCompass,
-                         ItemWatch,
-                         none}; // Which items the character has.
+                         ItemWatch}; // Which items the character has.
 
         respawnLinkedItems[] = {GTO_Beret_Black,
                          ItemMap,
                          ItemCompass,
-                         ItemWatch,
-                         none}; // Which items the character respawns with.
+                         ItemWatch}; // Which items the character respawns with.
     };
 
     class GTO_Soldier_SL : GTO_Soldier_base
     {
         displayName = "GTO SL";
-        icon = "gtom\icons\Roles\SL_icon.paa";
-        picture = "gtom\icons\Roles\SL_icon.paa";
+        icon = "gtom\images\icons\Roles\SL_icon.paa";
+        picture = "gtom\images\icons\Roles\SL_icon.paa";
     };
 
     class GTO_Soldier_FTL : GTO_Soldier_base
     {
         displayName = "GTO FTL";
-        icon = "gtom\icons\Roles\Other_icon.paa";
-        picture = "gtom\icons\Roles\Other_icon.paa";
+        icon = "gtom\images\icons\Roles\Other_icon.paa";
+        picture = "gtom\images\icons\Roles\Other_icon.paa";
     };
 
     class GTO_Soldier_ExpSp : GTO_Soldier_base
     {
         displayName = "GTO Explosiv Specialist";
-        icon = "gtom\icons\Roles\ExpSp_icon.paa";
-        picture = "gtom\icons\Roles\ExpSp_icon.paa";
+        icon = "gtom\images\icons\Roles\ExpSp_icon.paa";
+        picture = "gtom\images\icons\Roles\ExpSp_icon.paa";
 
         canDeactivateMines = true;
     };
@@ -102,8 +100,8 @@ class CfgVehicles {
     class GTO_Soldier_Med : GTO_Soldier_base
     {
         displayName = "GTO Medic";
-        icon = "gtom\icons\Roles\Med_icon.paa";
-        picture = "gtom\icons\Roles\Med_icon.paa";
+        icon = "gtom\images\icons\Roles\Med_icon.paa";
+        picture = "gtom\images\icons\Roles\Med_icon.paa";
 
         attendant = 1;
     };
@@ -111,8 +109,8 @@ class CfgVehicles {
     class GTO_Soldier_Eng : GTO_Soldier_base
     {
         displayName = "GTO Engineer";
-        icon = "gtom\icons\Roles\Eng_icon.paa";
-        picture = "gtom\icons\Roles\Eng_icon.paa";
+        icon = "gtom\images\icons\Roles\Eng_icon.paa";
+        picture = "gtom\images\icons\Roles\Eng_icon.paa";
 
         engineer = true;
     };
@@ -120,63 +118,63 @@ class CfgVehicles {
     class GTO_Soldier_AT : GTO_Soldier_base
     {
         displayName = "GTO AT";
-        icon = "gtom\icons\Roles\AT_icon.paa";
-        picture = "gtom\icons\Roles\AT_icon.paa";
+        icon = "gtom\images\icons\Roles\AT_icon.paa";
+        picture = "gtom\images\icons\Roles\AT_icon.paa";
     };
 
     class GTO_Soldier_LMG : GTO_Soldier_base
     {
         displayName = "GTO LMG";
-        icon = "gtom\icons\Roles\LMG_icon.paa";
-        picture = "gtom\icons\Roles\LMG_icon.paa";
+        icon = "gtom\images\icons\Roles\LMG_icon.paa";
+        picture = "gtom\images\icons\Roles\LMG_icon.paa";
     };
 
     class GTO_Soldier_MMG : GTO_Soldier_base
     {
         displayName = "GTO MMG";
-        icon = "gtom\icons\Roles\MMG_icon.paa";
-        picture = "gtom\icons\Roles\MMG_icon.paa";
+        icon = "gtom\images\icons\Roles\MMG_icon.paa";
+        picture = "gtom\images\icons\Roles\MMG_icon.paa";
     };
 
     class GTO_Soldier_Marksman : GTO_Soldier_base
     {
         displayName = "GTO Marksman";
-        icon = "gtom\icons\Roles\Marksman_icon.paa";
-        picture = "gtom\icons\Roles\Marksman_icon.paa";
+        icon = "gtom\images\icons\Roles\Marksman_icon.paa";
+        picture = "gtom\images\icons\Roles\Marksman_icon.paa";
     };
 
     class GTO_Soldier_Rifleman : GTO_Soldier_base
     {
         displayName = "GTO Rifleman";
-        icon = "gtom\icons\Roles\Rifleman_icon.paa";
-        picture = "gtom\icons\Roles\Rifleman_icon.paa";
+        icon = "gtom\images\icons\Roles\Rifleman_icon.paa";
+        picture = "gtom\images\icons\Roles\Rifleman_icon.paa";
     };
 
     class GTO_Soldier_Grenadier : GTO_Soldier_base
     {
         displayName = "GTO Grenadier";
-        icon = "gtom\icons\Roles\Grenadier_icon.paa";
-        picture = "gtom\icons\Roles\Grenadier_icon.paa";
+        icon = "gtom\images\icons\Roles\Grenadier_icon.paa";
+        picture = "gtom\images\icons\Roles\Grenadier_icon.paa";
     };
 
     class GTO_Soldier_LC : GTO_Soldier_base
     {
         displayName = "GTO Lead Crewman";
-        icon = "gtom\icons\Roles\LC_icon.paa";
-        picture = "gtom\icons\Roles\LC_icon.paa";
+        icon = "gtom\images\icons\Roles\LC_icon.paa";
+        picture = "gtom\images\icons\Roles\LC_icon.paa";
     };
 
     class GTO_Soldier_Crewman : GTO_Soldier_base
     {
         displayName = "GTO Crewman";
-        icon = "gtom\icons\Roles\Crewman_icon.paa";
-        picture = "gtom\icons\Roles\Crewman_icon.paa";
+        icon = "gtom\images\icons\Roles\Crewman_icon.paa";
+        picture = "gtom\images\icons\Roles\Crewman_icon.paa";
     };
 
     class GTO_Soldier_Pilot : GTO_Soldier_base
     {
         displayName = "GTO Pilot";
-        icon = "gtom\icons\Roles\Pilot_icon.paa";
-        picture = "gtom\icons\Roles\Pilot_icon.paa";
+        icon = "gtom\images\icons\Roles\Pilot_icon.paa";
+        picture = "gtom\images\icons\Roles\Pilot_icon.paa";
     };
 };

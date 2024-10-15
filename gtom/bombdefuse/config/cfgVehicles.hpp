@@ -46,9 +46,9 @@ class CfgVehicles
 		author = "Wollkopf";
 		vehicleClass = "Modules";
 		category = "GTOM_ZEUS";
-		icon = "\gtom\logo\gto_unit_logo";
-		picture = "\gtom\logo\gto_unit_logo";
-		portrait = "\gtom\logo\gto_unit_logo";
+		icon = "\gtom\images\logo\gto_unit_logo";
+		picture = "\gtom\images\logo\gto_unit_logo";
+		portrait = "\gtom\images\logo\gto_unit_logo";
 
 		scope = 1;
 		scopeCurator = 1;

@@ -16,12 +16,12 @@ logo = "gtom.paa"; // Logo displayed in bottom left of main menu
 
 //logoOver = "GTOM-hover.paa"; // Logo displayed in the mod menu when mod icon is clicked
 
-// logoSmall = "gtom\logo\gto_unit_logo.paa"; // Logo displayed next to all units and vehicles in the editor
+// logoSmall = "gtom\images\logo\gto_unit_logo.paa"; // Logo displayed next to all units and vehicles in the editor
 
 tooltip = "GTOM";
 tooltipOwned = "GTOM Owned";
 
-overview = "Version: 1.23.2";
+overview = "Version: 1.30.0";
 
 // fieldManualTopicAndHint[] = {"Curator", "Curator"};
 
