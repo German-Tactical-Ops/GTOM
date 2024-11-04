@@ -360,6 +360,15 @@ class CfgWeapons
 		};
 	};
 
+	//3DMA Helmet mufling overwrite
+
+	class H_HelmetB;
+
+	class 3DMA_WD_BASE_Helmet_ACE : H_HelmetB
+	{
+		ace_hearing_lowerVolume = 0;
+	};
+
 	class Uniform_Base;
 	class UniformItem;
 
