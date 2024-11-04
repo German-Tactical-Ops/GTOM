@@ -2,9 +2,6 @@ class CfgWeapons
 {
 	class H_Beret_02;
 
-    // todo: make icons for berets
-    // todo: medic patch
-
     class GTO_Beret_Empty : H_Beret_02
     {
         scope = 0;
