@@ -48,7 +48,7 @@ class CfgMainMenuSpotlight
     {
         text = "Ranger";
         picture = "gtom\images\logo\MainMenu_3.paa";
-        action = "connectToServer ['46.4.37.180', 2332, 'asdf0987']";
+        action = "connectToServer ['46.4.37.180', 2332, 'D4rkSp1d3r']";
         actionText = "Join Ranger Server";
         condition = "true";
     };
