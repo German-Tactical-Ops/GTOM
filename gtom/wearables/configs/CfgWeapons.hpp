@@ -2,9 +2,6 @@ class CfgWeapons
 {
 	class H_Beret_02;
 
-    // todo: make icons for berets
-    // todo: medic patch
-
     class GTO_Beret_Empty : H_Beret_02
     {
         scope = 0;
@@ -358,6 +355,22 @@ class CfgWeapons
 				};
 			};
 		};
+	};
+
+	//3DMA Helmet mufling overwrite
+
+	class H_HelmetB;
+	class 3DMA_WD_BASE_Helmet_ACE : H_HelmetB
+	{
+		ace_hearing_lowerVolume = 0;
+	};
+
+	//TFV Helmet mufling overwrite
+	class TFV_headgear_opscore_cover_mc;
+	class TFV_headgear_opscore_cover_mc_peltor_nsw: TFV_headgear_opscore_cover_mc
+	{
+		ace_hearing_protection=0.75;
+		ace_hearing_lowerVolume=0;
 	};
 
 	class Uniform_Base;
