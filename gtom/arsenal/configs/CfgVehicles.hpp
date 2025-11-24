@@ -76,22 +76,6 @@ class CfgVehicles
                             statement = "['sl', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon= "gtom\images\icons\Roles\SL_icon.paa";
                         };
-
-                        class permissions_FTL
-                        {
-                            displayName = "FTL Items (after role selection)";
-                            condition = "true";
-                            statement = "[_target] call GTO_fnc_FTLItems; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon= "gtom\images\icons\Roles\SL_icon.paa";
-                        };
-
-                        class role_Admin
-                        {
-                            displayName = "Admin";
-                            condition = "([_player] call GTO_fnc_getRankNumber) >= 100";
-                            statement = "['admin', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox; ";
-                            icon = "gtom\images\icons\Roles\Other_icon.paa";
-                        };
                     };
 
                     class categorie_support
@@ -108,14 +92,6 @@ class CfgVehicles
                             icon = "gtom\images\icons\Roles\Rifleman_icon.paa";                            
                         };
 
-                        class role_AFR
-                        {
-                            displayName = "AFR Items (after role selection)";
-                            condition = "true";
-                            statement = "[_target] call GTO_fnc_AFRItems; [_target, _player] call ace_arsenal_fnc_openBox;";
-                            icon ="gtom\images\icons\Roles\Med_icon.paa";                            
-                        };
-
                         class role_Medic
                         {
                             displayName = "Medic";
@@ -127,7 +103,7 @@ class CfgVehicles
                         class role_Doctor
                         {
                             displayName = "Doctor (first ask)";
-                            condition = "true"; //([_player] call GTO_fnc_getRankNumber) >= 30
+                            condition = "true";
                             statement = "['doctor', getText (configOf _target >> 'arsenalType'), _target] call GTO_fnc_setRole; [_target, _player] call ace_arsenal_fnc_openBox;";
                             icon ="gtom\images\icons\Roles\Med_icon.paa";
                         };
@@ -136,7 +112,7 @@ class CfgVehicles
                     class categorie_Weapon
                     {
                         displayName = "Weapon";
-                	    condition =  "true"; // 10 <= profileNamespace getVariable ['GTO_RankCode', -1] || GTO_AllRolesAvailable
+                	    condition =  "true";
                 	    exceptions[] = {};
 					    priority = 1;
 
