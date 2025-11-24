@@ -39,7 +39,7 @@ switch (_role) do
 	{
 		ACE_player setVariable ["ACE_IsEngineer", 2, true];
 		ACE_player setUnitTrait ["engineer", true];
-		
+
 		ACE_player setUnitTrait ["explosiveSpecialist", true];
 	};
 
@@ -106,14 +106,5 @@ switch (_role) do
 [_target, _role] call GTO_fnc_setArsenal;
 
 systemChat format ["You are now: %1 (%2)", _role, _arsenalType];
-
-// Remove current stuff
-removeAllWeapons ACE_player;
-removeAllItems ACE_player;
-removeAllAssignedItems ACE_player;
-removeUniform ACE_player;
-removeVest ACE_player;
-removeBackpack ACE_player;
-removeHeadgear ACE_player;
 
 [_arsenalType, _role] call GTO_fnc_loadDefault;
