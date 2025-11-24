@@ -23,6 +23,26 @@ ACE_player setUnitTrait ["explosiveSpecialist", false];
 // set player stats
 switch (_role) do
 {
+	case "medic_bravo":
+	{
+		ACE_player setVariable ["ace_medical_medicClass", 2, true];
+		ACE_player setUnitTrait ["medic", true];
+	};
+
+	case "medic_charlie":
+	{
+		ACE_player setVariable ["ace_medical_medicClass", 2, true];
+		ACE_player setUnitTrait ["medic", true];
+	};
+
+	case "eod":
+	{
+		ACE_player setVariable ["ACE_IsEngineer", 2, true];
+		ACE_player setUnitTrait ["engineer", true];
+		
+		ACE_player setUnitTrait ["explosiveSpecialist", true];
+	};
+
 	case "admin":
 	{
 		ACE_player setVariable ["ace_medical_medicClass", 2, true];
