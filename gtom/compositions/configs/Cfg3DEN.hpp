@@ -24,6 +24,17 @@ class Cfg3DEN
             useSideColorOnIcon = 1;                             // 1 == icon is always colored in faction color
         };
 
+        class GTO_USA_Ranger_Boxes // one class per composition
+        {
+            path = "gtom\compositions\Munition+Granaten+Medic_Kisten";  // pbo path to a folder containing header.sqe/composition.sqe files
+            side = 8;                               // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+            editorCategory = "Categorie_GTO";                 // link to CfgEditorCategories
+            editorSubcategory = "Categorie_GTO_MissionMaker"; // link to CfgEditorSubcategories
+            displayName = "Munition- Granaten- Medic-Kisten";
+            // icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa"; // left side icon in groups list
+            useSideColorOnIcon = 1; // 1 == icon is always colored in faction color
+        };
+
         class GTO_MainSystem // one class per composition
         {
             path = "gtom\compositions\MainSystem";  // pbo path to a folder containing header.sqe/composition.sqe files
