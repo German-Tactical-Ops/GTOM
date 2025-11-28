@@ -1,19 +1,21 @@
 package com.gto.app;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) {
 
         for (int i = 0; i < Loadouts.list.size(); i++) {
-            ArrayList<String> list = transformToSimpleArray(Loadouts.list.get(i));
+            List<String> list = transformToSimpleArray(Loadouts.list.get(i));
 
             System.out.println();
+            System.out.println(Loadouts.listOfNames.get(i));
             System.out.println(makeFancyArray(list));
         }
     }
 
-    private static ArrayList<String> transformToSimpleArray(String input) {
+    private static List<String> transformToSimpleArray(String input) {
         if (input.isEmpty()) throw new IllegalArgumentException();
 
         ArrayList<String> list = new ArrayList<>();
@@ -41,7 +43,7 @@ public class App {
         return list;
     }
 
-    private static String makeFancyArray(ArrayList<String> list) {
+    private static String makeFancyArray(List<String> list) {
         StringBuilder result = new StringBuilder("[");
 
         for (String s : list) {
