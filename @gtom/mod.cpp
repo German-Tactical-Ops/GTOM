@@ -21,7 +21,7 @@ logo = "gtom.paa"; // Logo displayed in bottom left of main menu
 tooltip = "GTOM";
 tooltipOwned = "GTOM Owned";
 
-overview = "Version: 1.32.0";
+overview = "Version: 1.33.1";
 
 // fieldManualTopicAndHint[] = {"Curator", "Curator"};
 
