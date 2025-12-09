@@ -1,0 +1,184 @@
+version=54;
+center[]={3964.9119,204.46895,4603.0474};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="CS_Platoon_v3";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Layer";
+				name="CS_Platoon_v3";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Layer";
+						name="CS_Platoon_v3_1";
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Layer";
+								name="CS_Platoon_v3_2";
+								class Entities
+								{
+									items=1;
+									class Item0
+									{
+										dataType="Layer";
+										name="CS_Platoon_v3_3";
+										class Entities
+										{
+											items=2;
+											class Item0
+											{
+												dataType="Layer";
+												name="DS_Platoon_v2_5";
+												class Entities
+												{
+													items=1;
+													class Item0
+													{
+														dataType="Layer";
+														name="DS_Platoon_6";
+														class Entities
+														{
+															items=2;
+															class Item0
+															{
+																dataType="Object";
+																class PositionInfo
+																{
+																	position[]={-2.0585938,0.28382874,0.033203125};
+																	angles[]={0.012496558,1.5791739,0.037472218};
+																};
+																side="Empty";
+																flags=4;
+																class Attributes
+																{
+																};
+																id=78;
+																type="Box_NATO_Ammo_F";
+																atlOffset=1.5258789e-05;
+																class CustomAttributes
+																{
+																	class Attribute0
+																	{
+																		property="ammoBox";
+																		expression="[_this,_value] call bis_fnc_initAmmoBox;";
+																		class Value
+																		{
+																			class data
+																			{
+																				singleType="STRING";
+																				value="[[[[],[]],[[""rhs_mag_30Rnd_556x45_M855A1_PMAG"",""rhs_mag_20Rnd_SCAR_762x51_m61_ap"",""rhsusf_100Rnd_762x51_m62_tracer"",""rhsusf_100Rnd_556x45_mixed_soft_pouch_coyote"",""rhsusf_20Rnd_762x51_SR25_m993_Mag"",""ACE_10Rnd_127x99_AMAX_Mag""],[100,40,40,40,10,10]],[[],[]],[[],[]]],false]";
+																			};
+																		};
+																	};
+																	nAttributes=1;
+																};
+															};
+															class Item1
+															{
+																dataType="Object";
+																class PositionInfo
+																{
+																	position[]={-0.043212891,0.34643555,0.017089844};
+																	angles[]={0.012496558,1.5446687,0.022497294};
+																};
+																side="Empty";
+																flags=4;
+																class Attributes
+																{
+																};
+																id=79;
+																type="Box_NATO_Grenades_F";
+																class CustomAttributes
+																{
+																	class Attribute0
+																	{
+																		property="ammoBox";
+																		expression="[_this,_value] call bis_fnc_initAmmoBox;";
+																		class Value
+																		{
+																			class data
+																			{
+																				singleType="STRING";
+																				value="[[[[""rhs_weap_m72a7""],[4]],[[""MRAWS_HE_F"",""MRAWS_HEAT55_F"",""HandGrenade"",""SmokeShell"",""SmokeShellYellow"",""SmokeShellGreen"",""SmokeShellRed"",""SmokeShellPurple"",""SmokeShellOrange"",""SmokeShellBlue"",""ACE_M84"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""ACE_40mm_Flare_ir"",""DemoCharge_Remote_Mag""],[6,6,5,10,3,3,3,3,3,3,15,100,10,5,20,4]],[[],[]],[[],[]]],false]";
+																			};
+																		};
+																	};
+																	nAttributes=1;
+																};
+															};
+														};
+														id=74;
+														atlOffset=0.018493652;
+													};
+												};
+												id=73;
+												atlOffset=0.018493652;
+											};
+											class Item1
+											{
+												dataType="Object";
+												class PositionInfo
+												{
+													position[]={2.0842285,0.10095215,-0.044433594};
+													angles[]={0.017488198,0,0.017505653};
+												};
+												side="Empty";
+												flags=4;
+												class Attributes
+												{
+												};
+												id=90;
+												type="ACE_medicalSupplyCrate_advanced";
+												atlOffset=1.5258789e-05;
+												class CustomAttributes
+												{
+													class Attribute0
+													{
+														property="ammoBox";
+														expression="[_this,_value] call bis_fnc_initAmmoBox;";
+														class Value
+														{
+															class data
+															{
+																singleType="STRING";
+																value="[[[[],[]],[[""ACE_painkillers""],[15]],[[""ACE_packingBandage"",""ACE_tourniquet"",""ACE_splint"",""ACE_morphine"",""ACE_adenosine"",""ACE_epinephrine"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_plasmaIV_250"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_salineIV_250"",""ACE_bloodIV"",""ACE_bloodIV_500"",""ACE_bloodIV_250"",""ACE_bodyBag""],[200,15,15,15,15,15,7,7,7,7,7,7,7,7,7,10]],[[],[]]],false]";
+															};
+														};
+													};
+													nAttributes=1;
+												};
+											};
+										};
+										id=3;
+										atlOffset=0.079360962;
+									};
+								};
+								id=2;
+								atlOffset=0.079360962;
+							};
+						};
+						id=1;
+						atlOffset=0.079360962;
+					};
+				};
+				id=0;
+				atlOffset=0.079360962;
+			};
+		};
+		id=91;
+		atlOffset=0.079360962;
+	};
+};
