@@ -14,14 +14,6 @@ class cfgFunctions
 			{
 			}; // [] call GTO_fnc_setArsenal;
 
-			class getRoleName 
-			{
-			}; // [] call GTO_fnc_getRoleName;
-
-			class getRankNumber
-			{
-			}; // [_player] call GTO_fnc_getRankNumber;
-
 			class blacklistItems
 			{
 			}; // [_items] call GTO_fnc_blacklistItems;
@@ -34,16 +26,6 @@ class cfgFunctions
 			{
 				//preStart = 1;
 			}; // [] call GTO_fnc_cbaArsenal;
-
-			class FTLItems
-			{
-
-			}; // [] call GTO_fnc_FTLItems;
-
-			class AFRItems
-			{
-
-			}; // [] call GTO_fnc_AFRItems;
 
 			// class empty
 			// {

@@ -23,6 +23,32 @@ ACE_player setUnitTrait ["explosiveSpecialist", false];
 // set player stats
 switch (_role) do
 {
+	case "medic_bravo":
+	{
+		ACE_player setVariable ["ace_medical_medicClass", 2, true];
+		ACE_player setUnitTrait ["medic", true];
+	};
+
+	case "medic_charlie":
+	{
+		ACE_player setVariable ["ace_medical_medicClass", 2, true];
+		ACE_player setUnitTrait ["medic", true];
+	};
+
+	case "pmed":
+	{
+		ACE_player setVariable ["ace_medical_medicClass", 2, true];
+		ACE_player setUnitTrait ["medic", true];
+	};
+
+	case "eod":
+	{
+		ACE_player setVariable ["ACE_IsEngineer", 2, true];
+		ACE_player setUnitTrait ["engineer", true];
+
+		ACE_player setUnitTrait ["explosiveSpecialist", true];
+	};
+
 	case "admin":
 	{
 		ACE_player setVariable ["ace_medical_medicClass", 2, true];
@@ -86,14 +112,5 @@ switch (_role) do
 [_target, _role] call GTO_fnc_setArsenal;
 
 systemChat format ["You are now: %1 (%2)", _role, _arsenalType];
-
-// Remove current stuff
-removeAllWeapons ACE_player;
-removeAllItems ACE_player;
-removeAllAssignedItems ACE_player;
-removeUniform ACE_player;
-removeVest ACE_player;
-removeBackpack ACE_player;
-removeHeadgear ACE_player;
 
 [_arsenalType, _role] call GTO_fnc_loadDefault;

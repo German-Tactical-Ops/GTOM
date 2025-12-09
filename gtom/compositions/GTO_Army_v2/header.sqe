@@ -1,0 +1,13 @@
+version=54;
+name="GTO_Army_v2";
+author="Lucyfer Angel";
+category="EdSubcat_Personnel";
+requiredAddons[]=
+{
+	"A3_Characters_F",
+	"GTOM_Wearables",
+	"GTOM_Uniform",
+	"A3_Weapons_F_Items",
+	"ace_medical_engine",
+	"ace_medical_treatment"
+};
