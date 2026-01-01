@@ -26,14 +26,14 @@ class CfgMainMenuSpotlight
         condition = "true";
     };
 
-    class JoinServerGTOBritain
+/*     class JoinServerGTOBritain
     {
         text = "Britain";
         picture = "gtom\images\logo\MainMenu_2.paa";
         action = "connectToServer ['46.4.37.180', 2312, 'asdf0987']";
         actionText = "Join Britain Server";
         condition = "false";
-    };
+    }; */
 
     class JoinServerGTOFunOp
     {
@@ -50,6 +50,15 @@ class CfgMainMenuSpotlight
         picture = "gtom\images\logo\MainMenu_3.paa";
         action = "connectToServer ['46.4.37.180', 2332, 'RangersLeadTheWay']";
         actionText = "Join Ranger Server";
+        condition = "true";
+    };
+
+    class JoinServerGTOCustom
+    {
+        text = "Custom";
+        picture = "gtom\images\logo\MainMenu_4.paa";
+        action = "connectToServer ['46.4.37.180', 2342, 'asdf0987']";
+        actionText = "Join Custom Server";
         condition = "true";
     };
 
